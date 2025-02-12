@@ -5,14 +5,350 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>어드민 메인 페이지</title>
-    <link href="../../resources/css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../resources/cdn/krds.min.css">
+    <link href="../../resources/css/main.css" type="text/css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../../resources/cdn/krds.min.js"></script>
 </head>
 <body>
-    <div>
-        a
+    <div id="wrap">
+        <!-- 건너뛰기 링크 -->
+        <div id="krds-skip-link">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!-- //건너뛰기 링크 -->
+
+        <!-- header -->
+        <header id="jc-header">
+            <style>
+                .krds-btn:focus {
+                    outline: auto;
+                    box-shadow: none;
+                }
+                #wrap {
+                    max-width: 1920px;
+                }
+                #jc-header .header-top {
+                    display: flex;
+                    width: 100%;
+                    height: 120px;
+                    position: fixed;
+                    top: 0;
+                    left: 0;    
+                    background-color: transparent;
+                    z-index: 200;
+                }                
+                #jc-header .header-top .ht-logo {
+                    display: flex;
+                    width: 260px;
+                    height: 100%;
+                    background-color: #f4f4f4;
+                    align-items: center;
+                    justify-content: center;
+                }
+                #jc-header .header-top .ht-logo img {
+                    vertical-align: baseline;
+                }
+                #jc-header .header-top .ht-util {
+                    margin-left: auto;    
+                    margin-right: 60px;        
+                }
+                #jc-header .header-top .ht-util .util-list {
+                    display: flex;            
+                    height: 100%;
+                    align-items: center;
+                    gap: 10px;
+                }
+                #jc-header .header-top .ht-util .util-button {
+                    width: 140px;
+                    height: 30px;
+                    background: #1e2326;
+                    color: #fff;
+                    border-radius: 30px;
+                    border: 1px solid #1e2326;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                #jc-header .header-top .ht-util .drop-btn.util-button {
+                    background-color: #fff;
+                    color: #000;
+                    border-color: #d9d9d9;
+                }
+                #jc-header .header-top .ht-util .drop-menu::before {
+                    content: none;
+                }
+                #jc-header .header-top .ht-util .drop-menu {
+                    padding: 0;
+                    background-color: #f4f4f4;
+                }
+                #jc-header .header-top .ht-util .drop-list .item-link {
+                    height: 30px;
+                    background-color: #f4f4f4;
+                    color: #000;
+                    font-size: 14px;
+                    justify-content: center;
+                }
+                #jc-header .header-top .ht-util .drop-menu .drop-list li + li {
+                    border-top: 1px solid #d9d9d9;
+                }
+                
+                #jc-header .header-top .ico-toggle-type02 {
+                    width: 12px;
+                    height: 8px;
+                    background-color: #6c6e72;
+                    mask-image: url(../../resources/img/component/icon/ico-toggle-type02.svg);
+                    mask-repeat: no-repeat;
+                }
+               
+                #jc-header .gnb-menu {
+                    max-width: 320px;
+                    height: 100%;
+                    padding-top: 120px;
+                    position: fixed;
+                    top: 0;
+                    left: 0;                    
+                    z-index: 100;
+                }
+                #jc-header .gnb-menu .gnb-list {
+                    width: 60px;
+                    height: 100%;
+                    position: relative;                    
+                    background-color: #99b2f9;                    
+                }
+                #jc-header .gnb-menu .gnb-item.active .krds-btn {
+                    background-color: #f4f4f4;
+                }
+                #jc-header .gnb-menu .gnb-item .krds-btn {
+                    width: 60px;
+                    height: 60px;
+                    background-color: #99b2f9;
+                    border-radius: 0;
+                }
+                #jc-header .gnb-menu .gnb-item.active .ico-nav {
+                    background-color: #1e2326;
+                }
+                #jc-header .gnb-menu .krds-tooltip-popover::before {background-color: #4158d1;}
+                #jc-header .gnb-menu .krds-tooltip-popover {background-color: #4158d1;}
+                #jc-header .gnb-menu .ico-nav {background-color: #f7f7f7; mask-repeat: no-repeat;}
+                #jc-header .gnb-menu .ico-nav-menu01 {
+                    mask-image: url(../../resources/img/component/icon/ico-nav-menu01.svg);                    
+                }
+                #jc-header .gnb-menu .ico-nav-menu02 {
+                    mask-image: url(../../resources/img/component/icon/ico-nav-menu02.svg);                    
+                }
+                #jc-header .gnb-menu .ico-nav-menu03 {
+                    mask-image: url(../../resources/img/component/icon/ico-nav-menu03.svg);                    
+                }
+                #jc-header .gnb-menu .ico-nav-menu04 {
+                    mask-image: url(../../resources/img/component/icon/ico-nav-menu04.svg);                    
+                }
+                #jc-header .gnb-menu .ico-nav-menu05 {
+                    mask-image: url(../../resources/img/component/icon/ico-nav-menu05.svg);                    
+                }
+                #jc-header .gnb-menu .ico-nav-menu06 {
+                    mask-image: url(../../resources/img/component/icon/ico-nav-menu06.svg);                    
+                }
+                #jc-header .gnb-menu .ico-nav-menu07 {
+                    mask-image: url(../../resources/img/component/icon/ico-nav-menu07.svg);                    
+                }
+                #jc-header .gnb-menu .ico-nav-menu08 {
+                    mask-image: url(../../resources/img/component/icon/ico-nav-menu08.svg);                    
+                }
+                #jc-header .gnb-menu .ico-nav-menu09 {
+                    mask-image: url(../../resources/img/component/icon/ico-nav-menu09.svg);                    
+                }
+                #jc-header .gnb-menu .gnb-depth {
+                    display: block;
+                    width: 260px;
+                    height: 100%;
+                    padding: 0 30px;
+                    position: absolute;
+                    top: 0;
+                    left: 60px;
+                    background-color: #f4f4f4;
+                }
+                #jc-header .gnb-menu .gnb-depth h3 {
+                    padding: 16px 0;
+                    color: #1e2326;
+                    font-size: 20px;
+                }
+                #jc-header .gnb-menu .gnb-depth ul li {
+                    position: relative;
+                    padding-left: 10px;
+                }
+                #jc-header .gnb-menu .gnb-depth ul li + li {
+                    margin-top: 15px;
+                }
+                #jc-header .gnb-menu .gnb-depth ul li::before {
+                    content: '-';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                #jc-header .gnb-menu .gnb-depth ul li a {
+                    display: inline-block;
+                    color: #1e2326;
+                    font-size: 16px;
+                }
+                #container {
+                    height: 1000px;
+                }
+            </style>
+            <div class="header-top">
+                <style>
+                    #jc-header .header-top .btn-gnb {
+                        width: 60px;
+                        height: 120px;
+                        background-color: #99b2f9;
+                        border-radius: 0;
+                    }
+                     #jc-header .header-top .btn-gnb.open .ico-hd-menu {
+                        mask-image: url(../../resources/img/component/icon/ico_head_menu_op.svg);
+                     }
+                     #jc-header .header-top .ico-hd-menu {
+                        width: 24px;
+                        height: 24px;
+                        background-color: #fff;
+                        mask-image: url(../../resources/img/component/icon/ico_head_menu_cl.svg);
+                        mask-repeat: no-repeat;
+                    }
+                </style>
+                <button type="button" class="krds-btn icon btn-gnb">
+                    <span class="sr-only">메뉴</span>
+                    <i class="svg-icon ico-hd-menu"></i>
+                </button>      
+                <div class="ht-logo">
+                    <h2><a href="#!"><img src="../../resources/img/common/logo_img.png" alt="jobcloud admin"></a></h2>
+                </div>
+                <div class="ht-util">
+                    <ul class="util-list">
+                        <li>
+                            <a href="#!" class="krds-btn util-button"><span>사이트 바로가기</span></a>
+                        </li>
+                        <li>
+                            <div class="krds-drop-wrap">
+                                <button type="button" class="krds-btn drop-btn util-button"><span>홍길동</span> 님<i class="svg-icon ico-toggle-type02"></i></button>
+                                <div class="drop-menu">
+                                <div class="drop-in">
+                                    <ul class="drop-list">
+                                        <li><a href="#" class="item-link active">정보 변경</a></li>
+                                        <li><a href="#" class="item-link">로그 아웃</a></li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </li>               
+                    </ul>
+                </div>
+            </div>
+            <nav class="gnb-menu">
+                <ul class="gnb-list">
+                    <li class="gnb-item active">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="제공정보 관리">
+                            <span class="sr-only">제공정보 관리</span>
+                            <i class="svg-icon ico-nav ico-nav-menu01"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>정보제공 관리</h3>
+                            <ul>
+                                <li><a href="#!">지원정책</a></li>
+                                <li><a href="#!">기업지원</a></li>
+                                <li><a href="#!">교육훈련</a></li>
+                                <li><a href="#!">대외활동</a></li>
+                                <li><a href="#!">카테고리 관리</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu02"></i>
+                        </button>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu03"></i>
+                        </button>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu04"></i>
+                        </button>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu05"></i>
+                        </button>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu06"></i>
+                        </button>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu07"></i>
+                        </button>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu08"></i>
+                        </button>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="환경설정">
+                            <span class="sr-only">환경 설정</span>
+                            <i class="svg-icon ico-nav ico-nav-menu09"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="container">
+            <h1 class="contain-title">지원정책</h1>
+        </div>
+        <footer>
+
+        </footer>
     </div>
-    <div class="active">
-        a
-    </div>
+    
+    <script>        
+        jQuery(function ($) {
+            // const menuCookieKey = "g5_admin_btn_gnb";
+
+            function toggleMenuState() {
+                const $btnGnb = $("#jc-header .header-top .btn-gnb");
+                // const isOpen = $btnGnb.hasClass("open");
+
+                // if (isOpen) {
+                //     delete_cookie(menuCookieKey);
+                // } else {
+                //     set_cookie(menuCookieKey, 1, 60 * 60 * 24 * 365);
+                // }
+
+                // $("#container").toggleClass("container-small");
+                // $("#gnb").toggleClass("gnb_small");
+                $btnGnb.toggleClass("open");
+            }
+
+            // $(".tnb_mb_btn").on("click", function () {
+            //     $(".tnb_mb_area").toggle();
+            // });
+
+            $("#jc-header .header-top .btn-gnb").on("click", toggleMenuState);
+
+            $(".gnb-list").on("click", "li .btn-op", function () {
+                $(this).parent().addClass("active").siblings().removeClass("active");
+            });
+        });
+
+    </script>
 </body>
 </html>
