@@ -418,8 +418,18 @@
                 <p>지원정책 보기</p>
             </div>
         </div>
-        <footer>
-
+        <style>
+            #jc-footer {
+                display: flex;
+                padding-left: 60px;
+                align-items: center;
+                height: 60px;
+                border-top: 1px solid #ddd;
+                justify-content: center;
+            }
+        </style>
+        <footer id="jc-footer">
+            <p>Copyright ⓒ 2025. JOBCloud . All rights reserved.</p>
         </footer>
     </div>
     
@@ -438,6 +448,7 @@
                 // }
                 $("#jc-header").toggleClass("header-small")
                 $("#container").toggleClass("container-small");
+                $("#jc-footer").toggleClass("footer-small");
                 // $("#jc-header .gnb-menu").toggleClass("gnb-small");
                 $btnGnb.toggleClass("open");
             }
