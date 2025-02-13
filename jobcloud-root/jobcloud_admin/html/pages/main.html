@@ -116,7 +116,7 @@
                     position: fixed;
                     top: 0;
                     left: 0;                    
-                    z-index: 100;
+                    z-index: 150;
                 }
                 #jc-header .gnb-menu .gnb-list {
                     width: 60px;
@@ -437,30 +437,16 @@
     
     <script>        
         jQuery(function ($) {
-            // const menuCookieKey = "g5_admin_btn_gnb";
+           const $btnGnb = $("#jc-header .btn-gnb");
 
             function toggleMenuState() {
-                const $btnGnb = $("#jc-header .btn-gnb");
-                // const isOpen = $btnGnb.hasClass("open");
-
-                // if (isOpen) {
-                //     delete_cookie(menuCookieKey);
-                // } else {
-                //     set_cookie(menuCookieKey, 1, 60 * 60 * 24 * 365);
-                // }
+                
                 $("#jc-header").toggleClass("header-small")
                 $("#container").toggleClass("container-small");
                 $("#jc-footer").toggleClass("footer-small");
-                // $("#jc-header .gnb-menu").toggleClass("gnb-small");
                 $btnGnb.toggleClass("open");
             }
-
-            // $(".tnb_mb_btn").on("click", function () {
-            //     $(".tnb_mb_area").toggle();
-            // });
-
-            $("#jc-header .header-top .btn-gnb").on("click", toggleMenuState);
-
+            $btnGnb.on("click", toggleMenuState);
             $(".gnb-list").on("click", "li .btn-op", function () {
                 $(this).parent().addClass("active").siblings().removeClass("active");
             });
