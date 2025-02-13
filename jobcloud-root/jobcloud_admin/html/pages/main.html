@@ -22,12 +22,17 @@
         <!-- header -->
         <header id="jc-header">
             <style>
-                .krds-btn:focus {
+                :focus {
+                    position: relative;
+                    z-index: 100;
+                }
+                #jc-header .gnb-menu .krds-btn:focus {
                     outline: auto;
+                    outline-color: #3679F4;
                     box-shadow: none;
                 }
                 #wrap {
-                    max-width: 1920px;
+                    /* max-width: 1920px; */
                 }
                 #jc-header .header-top {
                     display: flex;
@@ -38,7 +43,10 @@
                     left: 0;    
                     background-color: transparent;
                     z-index: 200;
-                }                
+                }       
+                #jc-header.header-small .header-top {
+                    background-color: #f4f4f4;
+                }  
                 #jc-header .header-top .ht-logo {
                     display: flex;
                     width: 260px;
@@ -158,8 +166,11 @@
                 #jc-header .gnb-menu .ico-nav-menu09 {
                     mask-image: url(../../resources/img/component/icon/ico-nav-menu09.svg);                    
                 }
-                #jc-header .gnb-menu .gnb-depth {
+                #jc-header .gnb-menu .gnb-item.active .gnb-depth {
                     display: block;
+                }
+                #jc-header .gnb-menu .gnb-depth {
+                    display: none;
                     width: 260px;
                     height: 100%;
                     padding: 0 30px;
@@ -167,6 +178,13 @@
                     top: 0;
                     left: 60px;
                     background-color: #f4f4f4;
+                }
+                #jc-header.header-small .gnb-menu .gnb-item:hover .gnb-depth,
+                #jc-header.header-small .gnb-menu .gnb-item.active:hover .gnb-depth {
+                    display: block;
+                }
+                #jc-header.header-small .gnb-menu .gnb-item.active .gnb-depth {
+                    display: none;
                 }
                 #jc-header .gnb-menu .gnb-depth h3 {
                     padding: 16px 0;
@@ -190,9 +208,6 @@
                     display: inline-block;
                     color: #1e2326;
                     font-size: 16px;
-                }
-                #container {
-                    height: 1000px;
                 }
             </style>
             <div class="header-top">
@@ -265,54 +280,143 @@
                             <span class="sr-only">채용공고</span>
                             <i class="svg-icon ico-nav ico-nav-menu02"></i>
                         </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴2</h3>
+                            <ul>
+                                <li><a href="#!">메뉴2</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="gnb-item">
                         <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
                             <span class="sr-only">채용공고</span>
                             <i class="svg-icon ico-nav ico-nav-menu03"></i>
                         </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴3</h3>
+                            <ul>
+                                <li><a href="#!">메뉴3</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="gnb-item">
                         <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
                             <span class="sr-only">채용공고</span>
                             <i class="svg-icon ico-nav ico-nav-menu04"></i>
                         </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴4</h3>
+                            <ul>
+                                <li><a href="#!">메뉴4</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="gnb-item">
                         <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
                             <span class="sr-only">채용공고</span>
                             <i class="svg-icon ico-nav ico-nav-menu05"></i>
                         </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴5</h3>
+                            <ul>
+                                <li><a href="#!">메뉴5</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="gnb-item">
                         <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
                             <span class="sr-only">채용공고</span>
                             <i class="svg-icon ico-nav ico-nav-menu06"></i>
                         </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴6</h3>
+                            <ul>
+                                <li><a href="#!">메뉴6</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="gnb-item">
                         <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
                             <span class="sr-only">채용공고</span>
                             <i class="svg-icon ico-nav ico-nav-menu07"></i>
                         </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴7</h3>
+                            <ul>
+                                <li><a href="#!">메뉴7</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="gnb-item">
                         <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
                             <span class="sr-only">채용공고</span>
                             <i class="svg-icon ico-nav ico-nav-menu08"></i>
                         </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴8</h3>
+                            <ul>
+                                <li><a href="#!">메뉴8</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="gnb-item">
                         <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="환경설정">
                             <span class="sr-only">환경 설정</span>
                             <i class="svg-icon ico-nav ico-nav-menu09"></i>
                         </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴9</h3>
+                            <ul>
+                                <li><a href="#!">메뉴9</a></li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </nav>
         </header>
+        <style>
+            #container {             
+                margin-top: 120px;   
+                padding-left: 380px;                
+            }
+            #container.container-small {
+                margin-top: 200px;  
+                padding-left: 80px;
+            }
+            #container .contain-title {
+                display: flex;
+                width: 100%;
+                height: 120px;
+                margin-left: 380px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+                color: #1e2326;
+                font-size: 30px;
+                border-bottom: 1px solid #ddd;
+                align-items: center;
+            }
+            #container.container-small .contain-title {
+                margin-left: 80px;
+                top: 120px;
+                height: 80px;
+            }
+            #container.container-small .container_wr {
+                max-width: 1440px;
+            }
+            #container .container_wr {
+                max-width: 1140px;
+                padding: 30px 0;
+                height: 1000px;
+                background-color: #f9f9f9;
+            }
+        </style>
         <div id="container">
             <h1 class="contain-title">지원정책</h1>
+            <div class="container_wr">
+                <p>지원정책 보기</p>
+            </div>
         </div>
         <footer>
 
@@ -324,7 +428,7 @@
             // const menuCookieKey = "g5_admin_btn_gnb";
 
             function toggleMenuState() {
-                const $btnGnb = $("#jc-header .header-top .btn-gnb");
+                const $btnGnb = $("#jc-header .btn-gnb");
                 // const isOpen = $btnGnb.hasClass("open");
 
                 // if (isOpen) {
@@ -332,9 +436,9 @@
                 // } else {
                 //     set_cookie(menuCookieKey, 1, 60 * 60 * 24 * 365);
                 // }
-
-                // $("#container").toggleClass("container-small");
-                // $("#gnb").toggleClass("gnb_small");
+                $("#jc-header").toggleClass("header-small")
+                $("#container").toggleClass("container-small");
+                // $("#jc-header .gnb-menu").toggleClass("gnb-small");
                 $btnGnb.toggleClass("open");
             }
 
