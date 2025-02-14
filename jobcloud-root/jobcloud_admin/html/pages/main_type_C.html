@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>메인 type-A</title>
+    <title>메인 type-C</title>
     <link rel="stylesheet" href="../../resources/cdn/krds.min.css">
     <link href="../../resources/css/main.css" type="text/css" rel="stylesheet" />
 
@@ -15,31 +15,32 @@
     <style>
         body {font-size: 1.6rem;}
         :focus { position: relative; z-index: 100; } 
+        #jc-header .gnb-menu .krds-btn {font-size: 2rem;}
         #jc-header .gnb-menu .krds-btn:focus { outline: auto; outline-color: #3679F4; box-shadow: none; } 
-        #jc-header .header-top { display: flex; width: 100%; height: 120px; position: fixed; top: 0; left: 0; background-color: transparent; z-index: 200; } 
-        #jc-header .header-top .ht-logo { display: flex; width: 260px; height: 100%; background-color: #f4f4f4; align-items: center; justify-content: center; } 
+        #jc-header .header-top { display: flex; width: 100%; height: 100px; position: fixed; top: 0; left: 0; background-color: #053762; flex-wrap: wrap; z-index: 200;box-shadow:rgba(0, 0, 0, 0.45) 0 2px 10px 0px;} 
+        #jc-header .header-top .ht-logo { display: flex; background-color: #053762; align-items: center; justify-content: center; } 
         #jc-header .header-top .ht-logo img { vertical-align: baseline; } 
-        #jc-header .header-top .ht-util { margin-left: auto; margin-right: 60px; } 
-        #jc-header .header-top .ht-util .util-list { display: flex; height: 100%; align-items: center; gap: 10px; } 
-        #jc-header .header-top .ht-util .util-button { width: 140px; height: 30px; background: #1e2326; color: #fff; border-radius: 30px; border: 1px solid #1e2326; font-size: 14px; font-weight: 500; } 
-        #jc-header .header-top .ht-util .drop-btn.util-button { background-color: #fff; color: #000; border-color: #d9d9d9; } 
-        #jc-header .header-top .ht-util .drop-menu::before { content: none; } 
+        #jc-header .header-top .ht-util {position: absolute; top:10px; right: 50px;} 
+        #jc-header .header-top .ht-util .util-list {display: flex; gap: 10px;} 
+        #jc-header .header-top .ht-util .krds-drop-wrap {width: 100%;}
+        #jc-header .header-top .ht-util .util-button { width: 100%; height: 30px; background: #1e2326; color: #fff; border-radius: 30px; border: 1px solid #1e2326; font-size: 14px; font-weight: 500; } 
+        #jc-header .header-top .ht-util .drop-btn.util-button { background-color: transparent; color: #fff; border-color: transparent; } 
         #jc-header .header-top .ht-util .drop-menu { padding: 0; background-color: #f4f4f4; } 
         #jc-header .header-top .ht-util .drop-list .item-link { height: 30px; background-color: #f4f4f4; color: #000; font-size: 14px; justify-content: center; } 
         #jc-header .header-top .ht-util .drop-menu .drop-list li + li { border-top: 1px solid #d9d9d9; } 
-        #jc-header .header-top .ico-toggle-type02 { width: 12px; height: 8px; background-color: #6c6e72; mask-image: url(../../resources/img/component/icon/ico-toggle-type02.svg); mask-repeat: no-repeat; } 
-        #jc-header .header-top .btn-gnb { width: 60px; height: 120px; background-color: #99b2f9; border-radius: 0; } 
-        #jc-header .header-top .btn-gnb.open .ico-hd-menu { mask-image: url(../../resources/img/component/icon/ico_head_menu_op.svg); } 
+        #jc-header .header-top .ico-toggle-type02 { width: 12px; height: 8px; margin-left: 10px; background-color: #fff; mask-image: url(../../resources/img/component/icon/ico-toggle-type02.svg); mask-repeat: no-repeat; } 
+        #jc-header .header-top .btn-gnb { width: 50px; height: 100px; margin-right: 10px; background-color: #053762; border-radius: 0; } 
+        #jc-header .header-top .btn-gnb.open .ico-hd-menu { mask-image: url(../../resources/img/component/icon/ico_head_menu_op.svg); } 1
         #jc-header .header-top .ico-hd-menu { width: 24px; height: 24px; background-color: #fff; mask-image: url(../../resources/img/component/icon/ico_head_menu_cl.svg); mask-repeat: no-repeat; } 
 
-        #jc-header .gnb-menu { max-width: 320px; height: 100%; padding-top: 120px; position: fixed; top: 0; left: 0; z-index: 150; } 
-        #jc-header .gnb-menu .gnb-list { width: 60px; height: 100%; position: relative; background-color: #99b2f9; } 
-        #jc-header .gnb-menu .gnb-item.active .krds-btn { background-color: #f4f4f4; } 
-        #jc-header .gnb-menu .gnb-item .krds-btn { width: 60px; height: 60px; background-color: #99b2f9; border-radius: 0; } 
-        #jc-header .gnb-menu .gnb-item.active .ico-nav { background-color: #1e2326; } 
-        #jc-header .gnb-menu .krds-tooltip-popover::before { background-color: #4158d1; } 
-        #jc-header .gnb-menu .krds-tooltip-popover { background-color: #4158d1; } 
-        #jc-header .gnb-menu .ico-nav { background-color: #f7f7f7; mask-repeat: no-repeat; } 
+        #jc-header .gnb-menu { max-width: 250px; height: 100%; padding-top: 100px; position: fixed; top: 0; left: 0; background-color: #194e84; z-index: 150; } 
+        #jc-header .gnb-menu .gnb-list { width: 50px; height: 100%; margin-top: 20px; position: relative;  } 
+        #jc-header .gnb-menu .gnb-item.active .krds-btn { background-color: #0c2e4a; } 
+        #jc-header .gnb-menu .gnb-item .krds-btn { width: 50px; height: 50px;  border-radius: 0; } 
+        #jc-header .gnb-menu .gnb-item.active .ico-nav { background-color: #fff; } 
+        #jc-header .gnb-menu .krds-tooltip-popover::before { background-color: #194E84; } 
+        #jc-header .gnb-menu .krds-tooltip-popover { background-color: #194E84; } 
+        #jc-header .gnb-menu .ico-nav { background-color: #8ca7c2; mask-repeat: no-repeat; } 
         #jc-header .gnb-menu .ico-nav-menu01 { mask-image: url(../../resources/img/component/icon/ico-nav-menu01.svg); } 
         #jc-header .gnb-menu .ico-nav-menu02 { mask-image: url(../../resources/img/component/icon/ico-nav-menu02.svg); } 
         #jc-header .gnb-menu .ico-nav-menu03 { mask-image: url(../../resources/img/component/icon/ico-nav-menu03.svg); } 
@@ -50,27 +51,26 @@
         #jc-header .gnb-menu .ico-nav-menu08 { mask-image: url(../../resources/img/component/icon/ico-nav-menu08.svg); } 
         #jc-header .gnb-menu .ico-nav-menu09 { mask-image: url(../../resources/img/component/icon/ico-nav-menu09.svg); } 
         #jc-header .gnb-menu .gnb-item.active .gnb-depth { display: block; } 
-        #jc-header .gnb-menu .gnb-depth { display: none; width: 260px; height: 100%; padding: 0 30px; position: absolute; top: 0; left: 60px; background-color: #f4f4f4; } 
-        #jc-header .gnb-menu .gnb-depth h3 { padding: 16px 0; color: #1e2326; font-size: 20px; } 
+        #jc-header .gnb-menu .gnb-depth { display: none; width: 200px; height: 100%; padding: 30px; position: absolute; top: -20px; left:50px; background-color: #0c2e4a; } 
+        #jc-header .gnb-menu .gnb-depth h3 {margin-bottom: 10px; padding-bottom: 10px; color: #fff; font-size: 20px; border-bottom: 1px solid #8697a5; } 
         #jc-header .gnb-menu .gnb-depth ul li { position: relative; padding-left: 10px; } 
         #jc-header .gnb-menu .gnb-depth ul li + li { margin-top: 15px; } 
-        #jc-header .gnb-menu .gnb-depth ul li::before { content: '-'; position: absolute; top: 0; left: 0; } 
-        #jc-header .gnb-menu .gnb-depth ul li a { display: inline-block; color: #1e2326; font-size: 16px; } 
+        #jc-header .gnb-menu .gnb-depth ul li::before { content: '-'; position: absolute; top: 0; left: 0; color: #d5d8db; } 
+        #jc-header .gnb-menu .gnb-depth ul li a { display: inline-block; color: #d5d8db;} 
 
-        #jc-header.header-small .header-top { background-color: #f4f4f4; } 
         #jc-header.header-small .gnb-menu .gnb-item:hover .gnb-depth,
         #jc-header.header-small .gnb-menu .gnb-item.active:hover .gnb-depth { display: block; } 
         #jc-header.header-small .gnb-menu .gnb-item.active .gnb-depth { display: none; } 
 
-        #container { margin-top: 120px; padding-left: 380px; } 
-        #container .contain-title { display: flex; width: 100%; height: 120px; margin-left: 380px; position: fixed; top: 0; left: 0; background-color: #fff; color: #1e2326; font-size: 30px; border-bottom: 1px solid #ddd; align-items: center; z-index: 100; } 
-        #container .container_wr { max-width: 1140px; height: 1000px; padding: 30px 0; position: relative; background-color: #f9f9f9; } 
+        #container { margin-top: 100px; padding-left: 280px; background-color: #eef3f8;} 
+        #container .contain-title { width: 100%; padding: 20px 0; color: #1e2326; font-size: 3rem; } 
+        #container .container_wr { max-width: 1140px; height: 1000px; position: relative; background-color: #eef3f8; } 
+        #container .container_wr .box {padding: 20px; background: #fff; border-radius: 10px;}
         
-        #container.container-small { margin-top: 200px; padding-left: 80px; } 
-        #container.container-small .contain-title { margin-left: 80px; top: 120px; height: 80px; } 
+        #container.container-small { padding-left: 80px; }
         #container.container-small .container_wr { max-width: 1440px; } 
 
-        #jc-footer { display: flex; padding-left: 60px; align-items: center; height: 60px; border-top: 1px solid #ddd; justify-content: center; } 
+        #jc-footer { display: flex; height: 60px; padding-left: 60px; background-color: #053762; color: #fff; align-items: center;  border-top: 1px solid #ddd; justify-content: center; } 
 
     </style>
     <div id="wrap">
@@ -88,7 +88,7 @@
                     <i class="svg-icon ico-hd-menu"></i>
                 </button>      
                 <div class="ht-logo">
-                    <h2><a href="#!"><img src="../../resources/img/common/logo_img.png" alt="jobcloud admin"></a></h2>
+                    <h2><a href="#!"><img src="../../resources/img/common/logo_img03.png" alt="jobcloud admin"></a></h2>
                 </div>
                 <div class="ht-util">
                     <ul class="util-list">
@@ -231,7 +231,10 @@
         <div id="container">
             <h1 class="contain-title">지원정책</h1>
             <div class="container_wr">
-                <p>지원정책 보기</p>
+                <div class="box">
+                    <p>지원정책 보기</p>
+                </div>
+                
             </div>
         </div>
         <footer id="jc-footer">
