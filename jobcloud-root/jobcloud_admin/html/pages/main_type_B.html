@@ -14,27 +14,29 @@
 <body>
     <style>
         body {font-size: 1.6rem;}
-        :focus { position: relative; z-index: 100; } 
+        :focus { position: relative; z-index: 100; }
+        #jc-header .gnb-menu .krds-btn {font-size: 2rem;}
         #jc-header .gnb-menu .krds-btn:focus { outline: auto; outline-color: #3679F4; box-shadow: none; } 
-        #jc-header .header-top { display: flex; width: 250px; height: 165px; position: fixed; top: 0; left: 0; background-color: #99B2F9; flex-wrap: wrap; z-index: 200;} 
+        #jc-header .header-top { display: flex; width: 250px; height: 100px; position: fixed; top: 0; left: 0; background-color: #99B2F9; flex-wrap: wrap; z-index: 200;} 
         #jc-header .header-top .ht-logo { display: flex; width: 200px; background-color: #f4f4f4; align-items: center; justify-content: center; } 
+        #jc-header .header-top .ht-logo a {display: block; font-size: 0;}
         #jc-header .header-top .ht-logo img { vertical-align: baseline; } 
-        #jc-header .header-top .ht-util { width: 100%; margin-left: 50px; padding: 0 20px; background-color: #f4f4f4; text-align: center;} 
+        #jc-header .header-top .ht-util {width: 160px; position: absolute; top: 96px; left: 70px;} 
         #jc-header .header-top .ht-util .util-list {  } 
         #jc-header .header-top .ht-util .util-list li + li { margin-top: 5px;}
         #jc-header .header-top .ht-util .krds-drop-wrap {width: 100%;}
         #jc-header .header-top .ht-util .util-button { width: 100%; height: 30px; background: #1e2326; color: #fff; border-radius: 30px; border: 1px solid #1e2326; font-size: 14px; font-weight: 500; } 
-        #jc-header .header-top .ht-util .drop-btn.util-button { background-color: #fff; color: #000; border-color: #d9d9d9; } 
+        #jc-header .header-top .ht-util .drop-btn.util-button { background-color: transparent; color: #000; border-color: transparent; } 
         #jc-header .header-top .ht-util .drop-menu { padding: 0; background-color: #f4f4f4; } 
         #jc-header .header-top .ht-util .drop-list .item-link { height: 30px; background-color: #f4f4f4; color: #000; font-size: 14px; justify-content: center; } 
         #jc-header .header-top .ht-util .drop-menu .drop-list li + li { border-top: 1px solid #d9d9d9; } 
-        #jc-header .header-top .ico-toggle-type02 { width: 12px; height: 8px; background-color: #6c6e72; mask-image: url(../../resources/img/component/icon/ico-toggle-type02.svg); mask-repeat: no-repeat; } 
+        #jc-header .header-top .ico-toggle-type02 { width: 12px; height: 8px; margin-left: 10px; background-color: #6c6e72; mask-image: url(../../resources/img/component/icon/ico-toggle-type02.svg); mask-repeat: no-repeat; } 
         #jc-header .header-top .btn-gnb { width: 50px; height: 100px; background-color: #99b2f9; border-radius: 0; } 
         #jc-header .header-top .btn-gnb.open .ico-hd-menu { mask-image: url(../../resources/img/component/icon/ico_head_menu_op.svg); } 
         #jc-header .header-top .ico-hd-menu { width: 24px; height: 24px; background-color: #fff; mask-image: url(../../resources/img/component/icon/ico_head_menu_cl.svg); mask-repeat: no-repeat; } 
 
-        #jc-header .gnb-menu { max-width: 250px; height: 100%; padding-top: 165px; position: fixed; top: 0; left: 0; z-index: 150; } 
-        #jc-header .gnb-menu .gnb-list { width: 50px; height: 100%; position: relative; background-color: #99b2f9; } 
+        #jc-header .gnb-menu { max-width: 250px; height: 100%; padding-top: 100px; position: fixed; top: 0; left: 0; background-color: #99b2f9; z-index: 150; } 
+        #jc-header .gnb-menu .gnb-list { width: 50px; height: 100%; margin-top: 70px; position: relative; background-color: #99b2f9; } 
         #jc-header .gnb-menu .gnb-item.active .krds-btn { background-color: #f4f4f4; } 
         #jc-header .gnb-menu .gnb-item .krds-btn { width: 50px; height: 50px; background-color: #99b2f9; border-radius: 0; } 
         #jc-header .gnb-menu .gnb-item.active .ico-nav { background-color: #1e2326; } 
@@ -51,24 +53,31 @@
         #jc-header .gnb-menu .ico-nav-menu08 { mask-image: url(../../resources/img/component/icon/ico-nav-menu08.svg); } 
         #jc-header .gnb-menu .ico-nav-menu09 { mask-image: url(../../resources/img/component/icon/ico-nav-menu09.svg); } 
         #jc-header .gnb-menu .gnb-item.active .gnb-depth { display: block; } 
-        #jc-header .gnb-menu .gnb-depth { display: none; width: 200px; height: 100%; padding: 0 30px; position: absolute; top: 0; left:50px; background-color: #f4f4f4; } 
-        #jc-header .gnb-menu .gnb-depth h3 { padding: 16px 0; color: #1e2326; font-size: 20px; } 
+        #jc-header .gnb-menu .gnb-depth { display: none; width: 200px; height: 100%; padding: 10px 30px; position: absolute; top: 0; left:50px; background-color: #f4f4f4; }
+        #jc-header .gnb-menu .gnb-depth::before {content: ''; width: 100%; height: 100%; position: absolute; left: 0; top: -100%; background-color: #f4f4f4;} 
+        #jc-header .gnb-menu .gnb-depth h3 { margin-bottom: 10px; color: #1e2326; font-size: 20px; } 
         #jc-header .gnb-menu .gnb-depth ul li { position: relative; padding-left: 10px; } 
         #jc-header .gnb-menu .gnb-depth ul li + li { margin-top: 15px; } 
         #jc-header .gnb-menu .gnb-depth ul li::before { content: '-'; position: absolute; top: 0; left: 0; } 
         #jc-header .gnb-menu .gnb-depth ul li a { display: inline-block; color: #1e2326; font-size: 16px; } 
 
         #jc-header.header-small .header-top {width: 100%; background-color: #F4F4F4;}
+        #jc-header.header-small .header-top .ht-util {width: auto; top: 10px;right: 50px;left: auto;}
+        #jc-header.header-small .header-top .ht-util .util-list {display: flex; gap: 10px;}
+        #jc-header.header-small .header-top .ht-util .util-list li:first-child {order: 2;}
+        #jc-header.header-small .header-top .ht-util .util-list li + li {margin-top: 0;}
         #jc-header.header-small .gnb-menu .gnb-item:hover .gnb-depth,
         #jc-header.header-small .gnb-menu .gnb-item.active:hover .gnb-depth { display: block; } 
         #jc-header.header-small .gnb-menu .gnb-item.active .gnb-depth { display: none; } 
+        #jc-header.header-small .gnb-menu .gnb-list {margin-top: 0;}
 
         #container { margin-top: 120px; padding-left: 280px; } 
-        #container .contain-title { display: flex; width: 100%; height: 100px; margin-left: 280px; position: fixed; top: 0; left: 0; background-color: #fff; color: #1e2326; font-size: 30px; border-bottom: 1px solid #ddd; align-items: center; z-index: 100; } 
+        #container .contain-title { display: flex; width: 100%; height: 100px; margin-left: 280px; position: fixed; top: 0; left: 0; background-color: #fff; color: #1e2326; font-size: 3rem; border-bottom: 1px solid #ddd; align-items: center; z-index: 100; } 
         #container .container_wr { max-width: 1140px; height: 1000px; padding: 30px 0; position: relative; background-color: #f9f9f9; } 
-        
-        #container.container-small { margin-top: 200px; padding-left: 80px; } 
-        #container.container-small .contain-title { margin-left: 80px; top: 120px; height: 80px; } 
+        #container .container_wr .box {padding: 20px; background: #fff; border: 1px solid #000; border-radius: 10px;}
+
+        #container.container-small { margin-top: 160px; padding-left: 80px; } 
+        #container.container-small .contain-title { margin-left: 80px; top: 100px; height: 60px; } 
         #container.container-small .container_wr { max-width: 1440px; } 
 
         #jc-footer { display: flex; padding-left: 60px; align-items: center; height: 60px; border-top: 1px solid #ddd; justify-content: center; } 
@@ -82,7 +91,7 @@
         <!-- //건너뛰기 링크 -->
 
         <!-- header -->
-        <header id="jc-header">
+        <header id="jc-header" class="header-small">
             <div class="header-top">
                 <button type="button" class="krds-btn icon btn-gnb">
                     <span class="sr-only">메뉴</span>
@@ -93,9 +102,6 @@
                 </div>
                 <div class="ht-util">
                     <ul class="util-list">
-                        <li>
-                            <a href="#!" class="krds-btn util-button"><span>사이트 바로가기</span></a>
-                        </li>
                         <li>
                             <div class="krds-drop-wrap">
                                 <button type="button" class="krds-btn drop-btn util-button"><span>홍길동</span> 님<i class="svg-icon ico-toggle-type02"></i></button>
@@ -108,7 +114,11 @@
                                 </div>
                                 </div>
                             </div>
-                        </li>               
+                        </li> 
+                        <li>
+                            <a href="#!" class="krds-btn util-button"><span>사이트 바로가기</span></a>
+                        </li>
+                                      
                     </ul>
                 </div>
             </div>
@@ -229,10 +239,12 @@
                 </ul>
             </nav>
         </header>
-        <div id="container">
+        <div id="container" class="container-small">
             <h1 class="contain-title">지원정책</h1>
             <div class="container_wr">
-                <p>지원정책 보기</p>
+                <div class="box">
+                    <p>지원정책 보기</p>
+                </div>
             </div>
         </div>
         <footer id="jc-footer">
