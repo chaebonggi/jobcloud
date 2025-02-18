@@ -1,0 +1,28 @@
+:root {
+    --krds-pc-font-size-body-medium: 1.6rem;
+    --krds-pc-font-size-label-medium: 1.6rem;
+    --krds-pc-font-size-label-large: 2rem;
+}
+:focus { position: relative; z-index: 100; } 
+
+.sign-wrap { display: flex; justify-content: center; align-items: center; min-height: 100dvh; background-color: #fff; flex-direction: column; } 
+.sign-wrap .sign-area { max-width: 600px; width: 100%; } 
+.sign-wrap .sign-top { width: 100%; background-color: #F4F4F4; border: 1px solid #ddd; border-bottom: 0; border-radius: 10px 10px 0 0; } 
+.sign-wrap .sign-top h2 { padding: 30px; } 
+.sign-wrap .sign-top h2 img { display: block; margin: 0 auto; } 
+.sign-wrap .sign-mid { background-color: #fff; border: 1px solid #ddd; border-radius: 0 0 10px 10px; overflow: hidden;} 
+.sign-wrap .sign-mid .sign-cont {padding: 50px;}
+.sign-wrap .sign-mid .input-area {margin-top: 20px;}
+.sign-wrap .sign-mid .input-area .krds-form-check.medium>input[type=checkbox]~label:before { border-radius: 50%; } 
+.sign-wrap .sign-mid .krds-btn.sign { background-color: #4158D1; }        
+.sign-wrap .sign-mid .krds-btn.full {width: 100%;}
+.sign-wrap .sign-mid .find-area {margin-top: 20px; text-align: right;} 
+.sign-wrap .sign-mid .find-area .find-btns a { display: inline-block; position: relative; } 
+.sign-wrap .sign-mid .find-area .find-btns a:first-child { padding-right: 10px; margin-right: 5px; } 
+.sign-wrap .sign-mid .find-area .find-btns a:first-child::after { content: ""; position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 4px; height: 4px; border-radius: 50%; background: #dcdee5; } 
+.sign-wrap .sign-mid .cont-bottom {display: flex;padding: 20px;background-color: #D8D8D8;align-items: center;justify-content: space-between;flex-wrap: wrap;gap: 10px;}
+.sign-wrap .sign-mid .cont-bottom .cont-txt {font-size: 1.4rem;}
+.sign-wrap .sign-bottom {margin-top: 20px; text-align: center;}
+.sign-wrap .btn-wrap {margin-top: 20px;}
+.sign-wrap .find-txt {font-size: 2rem; text-align: center;}
+.sign-wrap .find-txt .find-id {margin-top: 10px; padding: 10px; color: #4158D1; font-weight: bold; border-radius: 10px; border: 1px solid #ddd;}
