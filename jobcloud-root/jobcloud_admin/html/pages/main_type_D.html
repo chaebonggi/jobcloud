@@ -18,7 +18,7 @@
         #jc-wrap .inner {max-width: 100%;}
         #jc-header .main-menu .krds-btn {font-size: 2rem;}
         #jc-header .main-menu .krds-btn:focus { outline: auto; outline-color: #3679F4; box-shadow: none; } 
-        #jc-header .header-top { display: flex; width: 100%; height: 70px; position: fixed; top: 0; left: 0; background-color: #F4F4F4; flex-wrap: wrap; align-items: center; z-index: 200;box-shadow:rgba(0, 0, 0, 0.45) 250px 0px 6px -2px;} 
+        #jc-header .header-top { display: flex; width: 100%; height: 70px; position: fixed; top: 0; left: 0; background-color: #efefef; flex-wrap: wrap; align-items: center; z-index: 200;box-shadow:rgba(0, 0, 0, 0.45) 0 0px 6px -2px;} 
         #jc-header .header-top .ht-logo { display: flex; width: 180px; align-items: center; justify-content: center; } 
         #jc-header .header-top .ht-logo img { vertical-align: baseline; } 
         #jc-header .header-top .ht-util { margin-left: auto; margin-right: 10px;} 
@@ -30,11 +30,11 @@
         #jc-header .header-top .ht-util .drop-list .item-link { height: 30px; background-color: #f4f4f4; color: #000; font-size: 14px; justify-content: center; } 
         #jc-header .header-top .ht-util .drop-menu .drop-list li + li { border-top: 1px solid #d9d9d9; } 
         #jc-header .header-top .ico-toggle-type02 { width: 12px; height: 8px; margin-left: 10px; background-color: #6c6e72; mask-image: url(../../resources/img/component/icon/ico-toggle-type02.svg); mask-repeat: no-repeat; } 
-        #jc-header .header-top .btn-gnb { width: 50px; height: 70px; margin-right: 10px; background-color: #99B2F9; border-radius: 0; } 
+        #jc-header .header-top .btn-gnb { width: 50px; height: 70px; margin-right: 10px; background-color: #7196ff; border-radius: 0; } 
         #jc-header .header-top .btn-gnb.open .ico-hd-menu { mask-image: url(../../resources/img/component/icon/ico_head_menu_op.svg); } 
         #jc-header .header-top .ico-hd-menu { width: 24px; height: 24px; background-color: #fff; mask-image: url(../../resources/img/component/icon/ico_head_menu_cl.svg); mask-repeat: no-repeat; } 
 
-        #jc-header .main-menu { max-width: 250px; height: 100%; padding-top: 70px; position: fixed; top: 0; left: 0; background-color: #99B2F9; z-index: 150; } 
+        #jc-header .main-menu { max-width: 250px; height: 100%; margin-top: 20px; padding-top: 70px; position: fixed; top: 0; left: 0; background-color: #99B2F9; z-index: 150; } 
         #jc-header .main-menu .gnb-list { width: 50px; height: 100%; position: relative;  } 
         #jc-header .main-menu .gnb-item.active .krds-btn { background-color: #F4F4F4; } 
         #jc-header .main-menu .gnb-item .krds-btn { width: 50px; height: 50px; border-radius: 0; } 
@@ -326,7 +326,6 @@
                     @media (max-width: 1024px) { 
                         #jc-header .header-top {
                             padding: 0 1.6rem;
-                            box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 6px -2px;
                         }
                         #jc-header .header-top .ht-util {
                             display: none;
@@ -363,25 +362,35 @@
                             <colgroup>
                                 <col style="width: 30%;">
                                 <col>
+                                <col class="test">
+                                <col>
                             </colgroup>
                             <thead>
                                 <tr>
                                 <th scope="col">제목1</th>
                                 <th scope="col">제목2</th>
+                                <th scope="col" class="test">제목3</th>
+                                <th scope="col">제목4</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                 <th scope="row">제목1-1</th>
                                 <td>내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. </td>
-                                </tr>
+                                <td class="test">3</td>
+                                <td>4</td>
+                            </tr>
                                 <tr>
                                 <th scope="row">제목1-2</th>
                                 <td>내용이 들어갑니다.</td>
+                                <td class="test">3</td>
+                                <td>4</td>
                                 </tr>
                                 <tr>
                                 <th scope="row">제목1-3</th>
                                 <td>내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. 내용이 들어갑니다. </td>
+                                <td class="test">3</td>
+                                <td>4</td>
                                 </tr>
                             </tbody>
                             </table>
