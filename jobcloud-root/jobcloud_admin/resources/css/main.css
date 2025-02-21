@@ -3,6 +3,7 @@
   --krds-pc-font-size-label-medium: 1.6rem;
   --krds-pc-font-size-heading-xxsmall: 1.6rem;
   --krds-pc-font-size-label-large: 2rem;
+  --krds-light-color-input-border: #d9d9d9;
 }
 
 body {
@@ -344,7 +345,6 @@ body {
 }
 
 #container .container_wr {
-  height: 1000px;
   position: relative;
   background-color: #fff;
 }
@@ -569,6 +569,7 @@ body {
 #jc-footer {
   display: flex;
   height: 60px;
+  margin-top: 6rem;
   padding-left: 60px;
   background-color: #fff;
   color: #000;
