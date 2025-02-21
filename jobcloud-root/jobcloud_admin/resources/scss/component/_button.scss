@@ -1,0 +1,66 @@
+
+.krds-btn.small .ico-all {
+    width: 20px;
+    height: 20px;
+}
+.krds-btn.small .ico-plus02 {
+    width: 13px;
+    height: 13px;
+}
+.krds-btn.small .ico-angle02 {
+    width: 14px;
+    height: 14px;
+    margin-left: 1rem;
+}
+.krds-btn.type02 {
+    background-color: #4158d1;
+    border-color: #4158d1;
+    color: #fff;
+}
+.krds-btn.type03 {
+    background-color: #1e2326;
+    border-color: #1e2326;
+    color: #fff;
+}
+.krds-btn.type04 {
+    background-color: #ececec;
+    border-color: #ececec;
+    color: #000;
+}
+.krds-btn.type04 .svg-icon {
+    background-color: #000;
+}
+.krds-btn.type05 {
+    background-color: #fff;
+    border-color: #d9d9d9;
+    color: #000;
+}
+.krds-btn.type05 .svg-icon {
+    background-color: #000;
+}
+.krds-btn.sort-btn.active {
+    background-color: #f4f4f4;
+}
+
+.krds-btn.sort-btn.active .ico-angle02 {
+    transform: rotate(-180deg);
+}
+.krds-btn .svg-icon.ico-public {
+    background-color: #dcdcdd;
+}
+.krds-btn.active .svg-icon.ico-public {
+    background-color: #23282b;
+}
+.krds-btn .svg-icon.ico-angle02 {
+    background-color: #6c6e72;
+}
+.krds-btn .svg-icon.ico-del02 {
+    background-color: #d7d8d9;
+}
+.krds-btn:hover .svg-icon.ico-del02 {
+    background-color: #ff3d42;
+}
+.krds-form-select.type02 {
+    background-size: 1.4rem !important;
+    background-image: url(../../resources/img/component/icon/ico_angle02.svg);
+}

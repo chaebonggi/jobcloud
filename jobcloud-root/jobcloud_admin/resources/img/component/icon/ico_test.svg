@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_타이틀" data-name="타이틀" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.41 24.98">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #6c6e72;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="1.5" y1="1.5" x2="26.91" y2="1.5"/>
+  <line class="cls-1" x1="1.5" y1="12.49" x2="26.91" y2="12.49"/>
+  <line class="cls-1" x1="1.5" y1="23.48" x2="26.91" y2="23.48"/>
+</svg>

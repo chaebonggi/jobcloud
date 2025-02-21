@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_타이틀" data-name="타이틀" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.54 7.27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #74767a;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <polyline class="cls-1" points="10.04 1.5 5.77 5.77 1.5 1.5"/>
+</svg>

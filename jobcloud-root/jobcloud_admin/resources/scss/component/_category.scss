@@ -1,0 +1,9 @@
+.category-group dl {display: flex;align-items: center;justify-content: flex-start; } 
+.category-group dt {display: flex;width: 10rem;margin-right: 2rem;align-items: center;justify-content: flex-start;font-weight: 700; } 
+.category-group dd .krds-check-area {flex-wrap: wrap;gap: 1rem 2rem; } 
+.category-group .krds-form-check input[type=checkbox]~label,
+.category-group .krds-form-check input[type=radio]~label {font-size: 1.4rem; } 
+.category-group .krds-form-check.medium>input[type=checkbox]~label:before,
+.category-group .krds-form-check.medium>input[type=radio]~label:before {margin-top: 0; } 
+.category-group .krds-form-check.medium>input[type=checkbox]~label:after {top: 0.5rem; } 
+.category-group .krds-form-check input[type=checkbox]:checked~label:before {background-color: #1e2326;border-color: #1e2326; } 

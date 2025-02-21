@@ -1,3 +1,42 @@
+.w100 {width: 10rem;}
 .flex {display: flex;}
 .flex-1 {flex: 1;}
 .gap-10 {gap: 10px;}
+.mla {margin-left: auto;}
+.tlt {text-align: left !important;}
+.items-group {
+    margin-top: 3rem;
+    padding: 0 1.6rem;
+    border-radius: 10px;
+    border: 1px solid #d9d9d9;
+}
+.items-group .item {
+    padding: 2rem 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+.items-group .item:last-child {
+    border-bottom: 0;
+}
+.input-group.cal .krds-form-select {
+    width: 10rem;
+}
+.input-group.cal .form-group.cal {
+    width: 40rem;
+}
+.input-group.cal .input-group.range {
+    align-items: center;
+}
+.input-group.range > li:not(.mark) {    
+    flex: 1 1 0px;
+}
+.input-group.sort-group {
+    margin-top: 2rem;
+    display: none;
+}
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 5px;    
+}

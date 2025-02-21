@@ -1,0 +1,902 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제공정보관리-지원정책목록</title>
+    <link rel="stylesheet" href="../../resources/cdn/krds.min.css">
+    <link href="../../resources/css/main.css" type="text/css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../../resources/cdn/krds.min.js"></script>
+</head>
+<body>
+    <div id="jc-wrap">
+        <!-- 건너뛰기 링크 -->
+        <div id="krds-skip-link">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!-- //건너뛰기 링크 -->
+
+        <!-- header -->
+        <header id="jc-header">
+            <div class="header-top">
+                <button type="button" class="krds-btn icon btn-gnb">
+                    <span class="sr-only">메뉴</span>
+                    <i class="svg-icon ico-hd-menu"></i>
+                </button>      
+                <h2 class="ht-logo"><a href="#!"><img src="../../resources/img/common/logo_img.png" alt="jobcloud admin"></a></h2>
+                <div class="ht-util">
+                    <ul class="util-list">
+                        <li>
+                            <a href="#!" class="krds-btn util-button"><span>사이트 바로가기</span></a>
+                        </li>
+                        <li>
+                            <div class="krds-drop-wrap">
+                                <button type="button" class="krds-btn drop-btn util-button"><span>홍길동</span> 님<i class="svg-icon ico-toggle-type02"></i></button>
+                                <div class="drop-menu">
+                                <div class="drop-in">
+                                    <ul class="drop-list">
+                                        <li><a href="#" class="item-link active">정보 변경</a></li>
+                                        <li><a href="#" class="item-link">로그 아웃</a></li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </li>               
+                    </ul>
+                </div>
+                <button type="button" class="btn-navi all" aria-controls="mobile-nav">전체메뉴</button>
+            </div>
+            <nav class="main-menu">
+                <ul class="gnb-list">
+                    <li class="gnb-item active">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="제공정보 관리">
+                            <span class="sr-only">제공정보 관리</span>
+                            <i class="svg-icon ico-nav ico-nav-menu01"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <div class="krds-side-navigation">
+                                <h3 class="lnb-tit">제공정보 관리</h3>
+                                <!-- lnb-list -->
+                                <ul class="lnb-list" role="menubar">
+                                  <li class="lnb-item">
+                                    <a href="#!" class="lnb-btn lnb-toggle" role="menuitem">지원정책</a>
+                                    <!-- lnb-submenu -->
+                                    <div class="lnb-submenu">
+                                      <ul role="menu">
+                                        <li class="lnb-subitem">
+                                            <a href="#!" class="lnb-btn lnb-link" role="menuitem">지원정책-1</a>                                            
+                                        </li>
+                                        <li class="lnb-subitem">
+                                            <a href="#" class="lnb-btn lnb-link" role="menuitem">지원정책-2</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <!-- //lnb-submenu -->
+                                  </li>
+                                  <li class="lnb-item">
+                                    <a href="#!" class="lnb-btn lnb-toggle" role="menuitem">기업지원</a>
+                                    <!-- lnb-submenu -->
+                                    <div class="lnb-submenu">
+                                        <ul role="menu">
+                                          <li class="lnb-subitem">
+                                              <a href="#!" class="lnb-btn lnb-link" role="menuitem">기업지원-1</a>                                            
+                                          </li>
+                                          <li class="lnb-subitem">
+                                              <a href="#" class="lnb-btn lnb-link" role="menuitem">기업지원-2</a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <!-- //lnb-submenu -->
+                                  </li>
+                                  <li class="lnb-item">
+                                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">교육훈련</a>
+                                  </li>
+                                  <li class="lnb-item">
+                                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">대외활동</a>
+                                  </li>
+                                  <li class="lnb-item">
+                                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">카테고리 관리</a>
+                                  </li>
+                                </ul>
+                                <!-- //lnb-list -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu02"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴2</h3>
+                            <ul>
+                                <li><a href="#!">메뉴2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu03"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴3</h3>
+                            <ul>
+                                <li><a href="#!">메뉴3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu04"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴4</h3>
+                            <ul>
+                                <li><a href="#!">메뉴4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu05"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴5</h3>
+                            <ul>
+                                <li><a href="#!">메뉴5</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu06"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴6</h3>
+                            <ul>
+                                <li><a href="#!">메뉴6</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu07"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴7</h3>
+                            <ul>
+                                <li><a href="#!">메뉴7</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu08"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴8</h3>
+                            <ul>
+                                <li><a href="#!">메뉴8</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="환경설정">
+                            <span class="sr-only">환경 설정</span>
+                            <i class="svg-icon ico-nav ico-nav-menu09"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴9</h3>
+                            <ul>
+                                <li><a href="#!">메뉴9</a></li>
+                            </ul> 
+                        </div>
+                    </li>
+                </ul>
+            </nav>            
+        </header>
+        <div id="container">
+            <h1 class="contain-title">지원정책</h1>
+            <div class="container_wr">
+                <section>
+                    <div class="inner-section">
+                        <div class="form-group">
+                            <div class="form-conts">
+                                <div class="input-group">
+                                    <input type="text" class="krds-input small" placeholder="검색어 입력">
+                                    <div class="btn-group">
+                                        <button type="button" class="krds-btn small type02 w100"><i class="svg-icon ico-sch"></i>검색</button>
+                                        <button type="button" class="krds-btn small type03"><i class="svg-icon ico-all"></i>검색 필터</button>
+                                    </div>                                        
+                                </div>                                    
+                            </div>
+                        </div>
+                        <div class="items-group">
+                            <div class="item">
+                                <div class="form-group">
+                                    <div class="form-conts">
+                                        <div class="input-group">
+                                            <input type="text" class="krds-input small" placeholder="검색어 입력">
+                                            <button type="button" class="krds-btn small type02 w100"><i class="svg-icon ico-sch"></i>검색</button>                                      
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="item">
+                                <div class="input-group cal">
+                                    <select class="krds-form-select small type02" title="등록일">
+                                      <option value="">등록일</option>
+                                    </select>
+                                    <!-- calendar -->
+                                    <div class="form-group cal">
+                                        <div class="form-conts calendar-conts">
+                                            <div class="calendar-input">
+                                                <ul class="input-group range set">
+                                                    <li>
+                                                        <input type="number" class="krds-input datepicker small" placeholder="시작날짜" title="시작날짜 입력">
+                                                    </li>
+                                                    <li class="mark">~</li>
+                                                    <li>
+                                                        <input type="number" class="krds-input datepicker small" placeholder="종료날짜" title="종료날짜 입력">
+                                                    </li>
+                                                </ul>
+                                                <button type="button" class="krds-btn small icon form-btn-datepicker">
+                                                    <span class="sr-only">달력 열기</span>
+                                                    <i class="svg-icon ico-calendar"></i>
+                                                </button>
+                                            </div>
+                                            <!-- cal -->
+                                            <div class="krds-calendar-area">
+                                                <div class="calendar-wrap" aria-label="달력">
+                                                  <div class="calendar-head">
+                                                    <button type="button" class="btn-cal-move prev"><span class="sr-only">이전 달</span></button>
+                                                    <div class="calendar-switch-wrap">
+                                                      <div class="calendar-drop-down">
+                                                        <button type="button" class="btn-cal-switch year" aria-label="연도 선택">2024년</button>
+                                                        <div class="calendar-select calendar-year-wrap">
+                                                          <ul class="sel year">
+                                                            <li>
+                                                              <button type="button">2001년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2002년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button" disabled>2003년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2004년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2005년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2006년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2007년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2008년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2009년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2010년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button" class="active">2011년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2012년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2013년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2014년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2015년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2016년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2017년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2018년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2019년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2020년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2021년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2022년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2023년</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">2024년</button>
+                                                            </li>
+                                                          </ul>
+                                                        </div>
+                                                      </div>
+                                                      <div class="calendar-drop-down">
+                                                        <button type="button" class="btn-cal-switch month" aria-label="월 선택">12월</button>
+                                                        <div class="calendar-select calendar-mon-wrap">
+                                                          <ul class="sel month">
+                                                            <li>
+                                                              <button type="button" disabled>01월</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button" class="active">02월</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">03월</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">04월</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">05월</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">06월</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">07월</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">08월</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">09월</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">10월</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">11월</button>
+                                                            </li>
+                                                            <li>
+                                                              <button type="button">12월</button>
+                                                            </li>
+                                                          </ul>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <button type="button" class="btn-cal-move next"><span class="sr-only">다음 달</span></button>
+                                                  </div>
+                                                  <div class="calendar-body">
+                                                    <div class="calendar-table-wrap">
+                                                      <table class="calendar-tbl">
+                                                        <caption>
+                                                          2024년 12월
+                                                        </caption>
+                                                        <thead>
+                                                          <tr>
+                                                            <th>일</th>
+                                                            <th>월</th>
+                                                            <th>화</th>
+                                                            <th>수</th>
+                                                            <th>목</th>
+                                                            <th>금</th>
+                                                            <th>토</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <td class="old day-off"><button type="button" class="btn-set-date"><span>26</span></button></td>
+                                                            <td class="old"><button type="button" class="btn-set-date"><span>27</span></button></td>
+                                                            <td class="old"><button type="button" class="btn-set-date"><span>28</span></button></td>
+                                                            <td class="old"><button type="button" class="btn-set-date"><span>29</span></button></td>
+                                                            <td class="old"><button type="button" class="btn-set-date"><span>30</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>1</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>2</span></button></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="day-off"><button type="button" class="btn-set-date"><span>3</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>4</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>5</span></button></td>
+                                                            <td class="day-event"><button type="button" class="btn-set-date"><span>6</span></button></td>
+                                                            <td class="period start"><button type="button" class="btn-set-date"><span>7</span></button></td>
+                                                            <td class="period"><button type="button" class="btn-set-date"><span>8</span></button></td>
+                                                            <td class="period"><button type="button" class="btn-set-date"><span>9</span></button></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="period day-off"><button type="button" class="btn-set-date"><span>10</span></button></td>
+                                                            <td class="period"><button type="button" class="btn-set-date"><span>11</span></button></td>
+                                                            <td class="period"><button type="button" class="btn-set-date"><span>12</span></button></td>
+                                                            <td class="period"><button type="button" class="btn-set-date"><span>13</span></button></td>
+                                                            <td class="period"><button type="button" class="btn-set-date"><span>14</span></button></td>
+                                                            <td class="period"><button type="button" class="btn-set-date"><span>15</span></button></td>
+                                                            <td class="period end"><button type="button" class="btn-set-date"><span>16</span></button></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="day-off"><button type="button" class="btn-set-date"><span>17</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>18</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>19</span></button></td>
+                                                            <td class="today"><button type="button" class="btn-set-date"><span>20</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>21</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>22</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>23</span></button></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="day-off"><button type="button" class="btn-set-date"><span>24</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>25</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>26</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>27</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>28</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>29</span></button></td>
+                                                            <td><button type="button" class="btn-set-date"><span>30</span></button></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td class="day-off"><button type="button" class="btn-set-date"><span>31</span></button></td>
+                                                            <td class="new"><button type="button" class="btn-set-date"><span>1</span></button></td>
+                                                            <td class="new"><button type="button" class="btn-set-date"><span>2</span></button></td>
+                                                            <td class="new"><button type="button" class="btn-set-date"><span>3</span></button></td>
+                                                            <td class="new"><button type="button" class="btn-set-date"><span>4</span></button></td>
+                                                            <td class="new"><button type="button" class="btn-set-date"><span>5</span></button></td>
+                                                            <td class="new"><button type="button" class="btn-set-date"><span>6</span></button></td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
+                                                    </div>
+                                                  </div>
+                                                  <div class="calendar-footer">
+                                                    <div class="calendar-btn-wrap">
+                                                      <button type="button" class="krds-btn small text" id="get-today">오늘</button>
+                                                      <button type="button" class="krds-btn small type05">취소</button>
+                                                      <button type="button" class="krds-btn small primary">확인</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                             <!-- //cal -->
+                                        </div>
+                                    </div>
+                                    <!-- //calendar -->
+                                    <div class="btn-group">
+                                        <button type="button" class="krds-btn small type05">오늘</button>  
+                                        <button type="button" class="krds-btn small type05">15일</button>  
+                                        <button type="button" class="krds-btn small type05">1개월</button> 
+                                        <button type="button" class="krds-btn small type05">3개월</button> 
+                                        <button type="button" class="krds-btn small type05">6개월</button> 
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="item">
+                                <div class="category-group">
+                                    <dl>
+                                        <dt>카테고리</dt>
+                                        <dd>
+                                            <div class="krds-check-area">
+                                                <div class="krds-form-check medium">
+                                                    <input type="checkbox" id="chk_1-1">
+                                                    <label for="chk_1-1">전체</label>
+                                                </div>
+                                                <div class="krds-form-check medium">
+                                                    <input type="checkbox" id="chk_1-2">
+                                                    <label for="chk_1-2">재직지원</label>
+                                                </div>
+                                                <div class="krds-form-check medium">
+                                                    <input type="checkbox" id="chk_1-3">
+                                                    <label for="chk_1-3">취업지원</label>
+                                                </div>
+                                                <div class="krds-form-check medium">
+                                                    <input type="checkbox" id="chk_1-4">
+                                                    <label for="chk_1-4">교통/주거</label>
+                                                </div>
+                                                <div class="krds-form-check medium">
+                                                    <input type="checkbox" id="chk_1-5">
+                                                    <label for="chk_1-5">생활/금융</label>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <style>
+                            .table-group {
+                                margin-top: 6rem;
+                            }
+                            .table-group .table-top {
+                              padding-bottom: 2rem;
+                              border-bottom: 1px solid #d9d9d9;
+                            }
+                            .table-group .krds-table-wrap {
+                              margin-top: 2.5rem;
+                            }
+                        </style>
+                        <div class="table-group">
+                            <div class="input-group table-top">
+                                <div class="switch-group">
+                                    <input type="radio" id="radio-one" name="switch-one" value="simple" checked/>
+                                    <label for="radio-one">간편 목록</label>
+                                    <input type="radio" id="radio-two" name="switch-one" value="detail" />
+                                    <label for="radio-two">상세 목록</label>
+                                </div>
+                               <div class="btn-group">
+                                  <button type="button" class="krds-btn small type05 sort-btn">정렬 <i class="svg-icon ico-angle02"></i></button>
+                                  <select class="krds-form-select small type02" title="20개">
+                                      <option value="">20개</option>
+                                      <option value="">30개</option>
+                                      <option value="">50개</option>
+                                      <option value="">100개</option>
+                                  </select>
+                               </div>                                
+                                <div class="btn-group mla">
+                                    <button type="button" class="krds-btn small type05"><i class="svg-icon ico-plus02"></i> 신규 작성</button>
+                                    <button type="button" class="krds-btn small type04"><i class="svg-icon ico-download"></i> 엑셀 다운로드</button>
+                                </div>
+                            </div>
+                            <div class="input-group sort-group">
+                              <button type="button" class="krds-btn small type05">카테고리 <i class="svg-icon ico-angle02"></i></button>
+                              <button type="button" class="krds-btn small type05"><i class="svg-icon ico-plus02"></i> 정렬 추가</button>
+                            </div>
+                             <!-- table -->
+                              <style>
+                                .krds-table-wrap.tbl-type {
+                                  border-radius: 10px 10px 0 0;
+                                  overflow-x: auto;
+                                }
+                                .krds-table-wrap.tbl-type table {
+                                  min-width: 1024px;
+                                  width: 100%;
+                                }
+                                .krds-table-wrap.tbl-type .tbl.data thead th {
+                                  padding: 1.6rem 1rem;
+                                  background-color: #f4f4f4;
+                                  color: #1e2326;
+                                  font-weight: 500;
+                                  border-bottom: 0;
+                                  text-align: center;
+                                }
+                                .krds-table-wrap.tbl-type .tbl.data tbody td, 
+                                .krds-table-wrap.tbl-type .tbl.data tbody th {
+                                  text-align: center;
+                                  line-height: 1;
+                                }
+                                .krds-table-wrap.tbl-type .detail {
+                                  display: none;
+                                }
+
+                                .ico-preview {
+                                  width: 16px;
+                                  height: 16px;
+                                  background-image: url(../../resources/img/component/icon/ico_preview.png);
+                                  background-repeat: no-repeat;
+                                  background-position: center center;
+                                }
+                                .ellip {
+                                  display: inline-block;
+                                  position: relative;
+                                  white-space: nowrap;
+                                  max-width: calc(100% - 120px);
+                                  overflow: hidden;
+                                  text-overflow: ellipsis;
+                                  padding-right: 30px;
+                                }
+                                .krds-tooltip.preview {
+                                  width: 1.6rem;
+                                  height: 1.6rem;
+                                  position: absolute;
+                                  top: 50%;
+                                  right: 0;
+                                  transform: translateY(-50%);
+                                }
+                                .krds-tooltip.preview + .krds-tooltip-popover::before { background-color: #6c6d72; } 
+                                .krds-tooltip.preview + .krds-tooltip-popover { background-color: #6c6d72; } 
+                                .krds-tooltip.preview:focus {
+                                  outline: none;
+                                  box-shadow: none;
+                                }
+                              </style>
+                            <div class="krds-table-wrap tbl-type">
+                              <table class="tbl col data">
+                                  <caption>지원정책 정보</caption>
+                                  <colgroup>
+                                      <col style="width: 80px;">
+                                      <col style="width: 100px;">
+                                      <col style="width: 120px;">
+                                      <col style="width: 120px;" class="detail">
+                                      <col>
+                                      <col style="width: 120px;">
+                                      <col style="width: 110px;">
+                                      <col style="width: 80px;">
+                                  </colgroup>
+                                  <thead>
+                                      <tr>
+                                      <th scope="col">No.</th>
+                                      <th scope="col">노출여부</th>
+                                      <th scope="col">카테고리</th>
+                                      <th scope="col" class="detail">상세메뉴</th>
+                                      <th scope="col">제목</th>
+                                      <th scope="col">등록일</th>
+                                      <th scope="col">조회</th>
+                                      <th scope="col">삭제</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                        <td scope="row">535</td>
+                                        <td>
+                                          <button type="button" class="krds-btn icon medium active">
+                                            <span class="sr-only">공개여부</span>
+                                            <i class="svg-icon ico-public"></i>
+                                          </button>
+                                        </td>
+                                        <td>취업지원</td>
+                                        <td class="detail">상세메뉴</td>
+                                        <td class="tlt">
+                                          <div class="ellip">
+                                            청년활동지원센터 공간 제공 청년활동지원센터 공간 제공 청년활동지원센터 공간 제공
+                                            <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical" data-tooltip="미리보기">
+                                              <span class="sr-only">미리보기</span>                                            
+                                              <i class="ico-preview"></i>
+                                            </button>
+                                          </div>                                          
+                                        </td>
+                                        <td>2025-01-20</td>
+                                        <td>2,354</td>
+                                        <td>
+                                          <button type="button" class="krds-btn icon medium">
+                                            <span class="sr-only">삭제</span>
+                                            <i class="svg-icon ico-del02"></i>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">535</td>
+                                        <td>
+                                          <button type="button" class="krds-btn icon medium">
+                                            <span class="sr-only">공개여부</span>
+                                            <i class="svg-icon ico-public"></i>
+                                          </button>
+                                        </td>
+                                        <td>취업지원</td>
+                                        <td class="detail">상세메뉴</td>
+                                        <td class="tlt">
+                                          <div class="ellip">
+                                            청년활동지원센터 공간 제공 청년활동지원센터 공간 제공 
+                                            <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical" data-tooltip="미리보기">
+                                              <span class="sr-only">미리보기</span>                                            
+                                              <i class="ico-preview"></i>
+                                            </button>
+                                          </div>                                          
+                                        </td>
+                                        <td>2025-01-20</td>
+                                        <td>2,354</td>
+                                        <td>
+                                          <button type="button" class="krds-btn icon medium">
+                                            <span class="sr-only">삭제</span>
+                                            <i class="svg-icon ico-del02"></i>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">535</td>
+                                        <td>
+                                          <button type="button" class="krds-btn icon medium">
+                                            <span class="sr-only">공개여부</span>
+                                            <i class="svg-icon ico-public"></i>
+                                          </button>
+                                        </td>
+                                        <td>취업지원</td>
+                                        <td class="detail">상세메뉴</td>
+                                        <td class="tlt">
+                                          <div class="ellip">
+                                            청년활동지원센터 공간 제공 청년활동지원센터 공간 제공 
+                                            <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical" data-tooltip="미리보기">
+                                              <span class="sr-only">미리보기</span>                                            
+                                              <i class="ico-preview"></i>
+                                            </button>
+                                          </div>                                          
+                                        </td>
+                                        <td>2025-01-20</td>
+                                        <td>2,354</td>
+                                        <td>
+                                          <button type="button" class="krds-btn icon medium">
+                                            <span class="sr-only">삭제</span>
+                                            <i class="svg-icon ico-del02"></i>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">535</td>
+                                        <td>
+                                          <button type="button" class="krds-btn icon medium">
+                                            <span class="sr-only">공개여부</span>
+                                            <i class="svg-icon ico-public"></i>
+                                          </button>
+                                        </td>
+                                        <td>취업지원</td>
+                                        <td class="detail">상세메뉴</td>
+                                        <td class="tlt">
+                                          <div class="ellip">
+                                            청년활동지원센터 공간 제공
+                                            <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical" data-tooltip="미리보기">
+                                              <span class="sr-only">미리보기</span>                                            
+                                              <i class="ico-preview"></i>
+                                            </button>
+                                          </div>                                          
+                                        </td>
+                                        <td>2025-01-20</td>
+                                        <td>2,354</td>
+                                        <td>
+                                          <button type="button" class="krds-btn icon medium">
+                                            <span class="sr-only">삭제</span>
+                                            <i class="svg-icon ico-del02"></i>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">535</td>
+                                        <td>
+                                          <button type="button" class="krds-btn icon medium">
+                                            <span class="sr-only">공개여부</span>
+                                            <i class="svg-icon ico-public"></i>
+                                          </button>
+                                        </td>
+                                        <td>취업지원</td>
+                                        <td class="detail">상세메뉴</td>
+                                        <td class="tlt">
+                                          <div class="ellip">
+                                            청년활동지원센터 공간 제공 
+                                            <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical" data-tooltip="미리보기">
+                                              <span class="sr-only">미리보기</span>                                            
+                                              <i class="ico-preview"></i>
+                                            </button>
+                                          </div>                                          
+                                        </td>
+                                        <td>2025-01-20</td>
+                                        <td>2,354</td>
+                                        <td>
+                                          <button type="button" class="krds-btn icon medium">
+                                            <span class="sr-only">삭제</span>
+                                            <i class="svg-icon ico-del02"></i>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td scope="row">535</td>
+                                        <td>
+                                          <button type="button" class="krds-btn icon medium">
+                                            <span class="sr-only">공개여부</span>
+                                            <i class="svg-icon ico-public"></i>
+                                          </button>
+                                        </td>
+                                        <td>취업지원</td>
+                                        <td class="detail">상세메뉴</td>
+                                        <td class="tlt">
+                                          <div class="ellip">
+                                            청년활동지원센터 공간 제공
+                                            <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical" data-tooltip="미리보기">
+                                              <span class="sr-only">미리보기</span>                                            
+                                              <i class="ico-preview"></i>
+                                            </button>
+                                          </div>                                          
+                                        </td>
+                                        <td>2025-01-20</td>
+                                        <td>2,354</td>
+                                        <td>
+                                          <button type="button" class="krds-btn icon medium">
+                                            <span class="sr-only">삭제</span>
+                                            <i class="svg-icon ico-del02"></i>
+                                          </button>
+                                        </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                          <!-- //table -->
+                        </div>
+                       
+                        <style>
+                            
+                        </style>
+                        <div class="pagination">
+                            <a href="javscript:void(0);" class="page-navi prev-start"><span class="sr-only">처음으로</span></a>
+                            <a href="javscript:void(0);" class="page-navi prev"><span class="sr-only">이전</span></a>
+                            <div class="page-links">
+                                <a href="javscript:void(0);" class="page-link current">1</a>
+                                <a href="javscript:void(0);" class="page-link">2</a>
+                                <a href="javscript:void(0);" class="page-link">3</a>
+                                <a href="javscript:void(0);" class="page-link">4</a>
+                                <a href="javscript:void(0);" class="page-link">5</a>
+                            </div>
+                            <a href="javscript:void(0);" class="page-navi next"><span class="sr-only">다음</span></a>
+                            <a href="javscript:void(0);" class="page-navi next-end"><span class="sr-only">마지막으로</span></a>
+                        </div>
+
+                        <div class="m-pagination">
+                            <a href="javscript:void(0);">이전</a>
+                            <span>1</span> / 15
+                            <a href="javscript:void(0);">다음</a>
+                        </div>
+                    </div>
+                </section>                
+            </div>
+        </div>
+        <footer id="jc-footer">
+            <p>Copyright ⓒ 2025. JOBCloud . All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script>        
+        $(document).ready(function(){
+            $(".all").on("click",function(){
+                $("#mobile-nav").addClass("is-open");
+                $("html").css('overflow' , 'hidden')
+            });
+            $("#close-nav").on("click",function(){
+                $("#mobile-nav").removeClass("active");
+                $("html").css('overflow' , 'revert-layer')
+            });
+
+            const $btnGnb = $("#jc-header .header-top .btn-gnb");
+            function toggleMenuState() {
+                
+                $("#jc-header").toggleClass("header-small")
+                $("#container").toggleClass("container-small");
+                $("#jc-footer").toggleClass("footer-small");
+                $btnGnb.toggleClass("open");
+            }
+            $btnGnb.on("click", toggleMenuState);
+            $(".gnb-list").on("click", "li .btn-op", function () {
+                $(this).parent().addClass("active").siblings().removeClass("active");
+            });
+
+            function removeClassesOnResize() {
+                if ($(window).width() <= 1024) {
+                    $("#jc-header").removeClass("header-small");
+                    $("#container").removeClass("container-small");
+                    $("#jc-footer").removeClass("footer-small");
+                    $btnGnb.removeClass("open");
+                }
+            }
+            
+            $(window).on("resize", removeClassesOnResize);
+            removeClassesOnResize();
+
+            // 테이블 정렬 버튼
+            $(".sort-btn").on("click", function () {
+                $(this).toggleClass("active");
+                $(this).closest(".input-group").next(".sort-group").stop(true, true).slideToggle();
+            });
+            
+            // 테이블 상세 버튼
+            $('.switch-group input[type="radio"]').change(function() {
+                var $tableGroup = $(this).closest('.table-group');
+                var $table = $tableGroup.find('.krds-table-wrap.tbl-type table');
+                if ($tableGroup.find('#radio-one').is(':checked')) {
+                    $table.find('.detail').hide();
+                } else {
+                    $table.find('.detail').show();
+                }
+            });
+          
+          
+        });
+    </script>
+</body>
+</html>
