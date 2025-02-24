@@ -635,6 +635,19 @@ body {
   gap: 5px;
 }
 
+.table-group {
+  margin-top: 6rem;
+}
+
+.table-group .table-top {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.table-group .krds-table-wrap {
+  margin-top: 2.5rem;
+}
+
 #jc-footer {
   display: flex;
   height: 60px;
@@ -773,12 +786,6 @@ body {
 
 .krds-btn.filter.active .ico-filter02 {
   mask-image: url(../../resources/img/component/icon/ico_filter02_off.svg);
-}
-
-.krds-btn.preview {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .krds-tooltip.preview .svg-icon.ico-preview {
@@ -1017,4 +1024,97 @@ body {
 
 .switch-group label:last-of-type {
   border-radius: 0 5px 5px 0;
+}
+
+.krds-table-wrap.tbl-type {
+  border-radius: 10px 10px 0 0;
+  overflow-x: auto;
+}
+
+.krds-table-wrap.tbl-type table {
+  min-width: 1024px;
+  width: 100%;
+}
+
+.krds-table-wrap.tbl-type .tbl.data thead th {
+  padding: 1.6rem 1rem;
+  background-color: #f4f4f4;
+  color: #1e2326;
+  font-weight: 500;
+  border-bottom: 0;
+  text-align: center;
+}
+
+.krds-table-wrap.tbl-type .tbl.data tbody td,
+.krds-table-wrap.tbl-type .tbl.data tbody th {
+  text-align: center;
+}
+
+.krds-table-wrap.tbl-type .detail {
+  display: none;
+}
+
+.krds-table-wrap.tbl-type .ellip {
+  display: flex;
+  align-items: center;
+}
+
+.krds-table-wrap.tbl-type .ellip a {
+  display: inline-block;
+  margin-right: 0.5rem;
+  position: relative;
+  white-space: nowrap;
+  max-width: calc(100% - 50px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.krds-table-wrap.tbl-type .krds-tooltip.preview + .krds-tooltip-popover::before {
+  background-color: #6c6d72;
+}
+
+.krds-table-wrap.tbl-type .krds-tooltip.preview + .krds-tooltip-popover {
+  background-color: #6c6d72;
+}
+
+.krds-table-wrap.tbl-type .krds-tooltip.preview:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.krds-table-wrap.tbl-type button {
+  vertical-align: sub;
+}
+
+.sort-controls {
+  position: relative;
+}
+
+.sort-options {
+  display: none;
+  min-width: 29rem;
+  padding: 1.2rem;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+.sort-options .sort-list ul {
+  margin-bottom: 2rem;
+}
+
+.sort-options .sort-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sort-options .sort-list li + li {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #d9d9d9;
 }/*# sourceMappingURL=main.css.map */

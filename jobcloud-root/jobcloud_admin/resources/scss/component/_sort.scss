@@ -1,0 +1,5 @@
+.sort-controls { position: relative; } 
+.sort-options { display: none; min-width: 29rem; padding: 1.2rem; position: absolute; top: 5rem; left: 0; background: #fff; border: 1px solid #d9d9d9; border-radius: 10px; z-index: 10; } 
+.sort-options .sort-list ul { margin-bottom: 2rem; } 
+.sort-options .sort-list li { display: flex; align-items: center; gap: 0.5rem; } 
+.sort-options .sort-list li + li { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #d9d9d9;; } 
