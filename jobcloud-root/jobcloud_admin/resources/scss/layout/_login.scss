@@ -4,7 +4,17 @@
 .sign-wrap .sign-top h2 { padding: 30px; } 
 .sign-wrap .sign-top h2 img { display: block; margin: 0 auto; } 
 .sign-wrap .sign-mid { background-color: #fff; border: 1px solid #ddd; border-radius: 0 0 10px 10px; overflow: hidden;} 
-.sign-wrap .sign-mid .sign-cont {padding: 50px;}
+.sign-wrap .sign-mid .sign-link ul { display: flex; } 
+.sign-wrap .sign-mid .sign-link li { width: 100%; } 
+.sign-wrap .sign-mid .sign-link li .btn-link { display: block; padding: 1.6rem 0; position: relative; color: #464C53; font-size: 1.8rem; font-weight: 700; text-align: center; border-bottom: 1px solid #b1b8be; } 
+.sign-wrap .sign-mid .sign-link li.active .btn-link { color: #4158D1; } 
+.sign-wrap .sign-mid .sign-link li .btn-link::before { position: absolute; bottom: 0; left: 50%; content: ""; width: 0; height: 0.4rem; background-color: #4158D1; } 
+.sign-wrap .sign-mid .sign-link li.active .btn-link::before { width: 100%; left: 0; bottom: -0.1rem; } 
+.sign-wrap .sign-mid .sign-cont {padding: 30px 50px;}
+.sign-wrap .sign-mid .tab li .btn-tab { color: #cdcdcd; font-size: 1.8rem; font-weight: 400; } 
+.sign-wrap .sign-mid .tab li .btn-tab .svg-icon { background-color: #cdcdcd; } 
+.sign-wrap .sign-mid .tab li.active .btn-tab { color: #4158D1; } 
+.sign-wrap .sign-mid .tab li.active .btn-tab .svg-icon { background-color: #4158D1; } 
 .sign-wrap .sign-mid .input-area {margin-top: 20px;}
 .sign-wrap .sign-mid .input-area .krds-form-check.medium>input[type=checkbox]~label:before { border-radius: 50%; } 
 .sign-wrap .sign-mid .krds-btn.sign { background-color: #4158D1; }        
