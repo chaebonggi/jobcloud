@@ -4,8 +4,8 @@
     height: 20px;
 }
 .krds-btn.small .ico-plus02 {
-    width: 13px;
-    height: 13px;
+    width: 1.2rem;
+    height: 1.2rem;
 }
 .krds-btn .svg-icon.right {
     margin-right: 0.5rem;
@@ -18,44 +18,76 @@
     height: 14px;
     margin-left: 1rem;
 }
-.krds-btn.type02 {
+.krds-btn.search {
+    width: 9rem;
     background-color: #4158d1;
     border-color: #4158d1;
     color: #fff;
 }
-.krds-btn.type03 {
+.krds-btn.filter {
+    width: 12rem;
     background-color: #1e2326;
     border-color: #1e2326;
     color: #fff;
 }
-.krds-btn.type04 {
-    background-color: #ececec;
-    border-color: #ececec;
-    color: #000;
+.krds-btn.filter.active .ico-filter02 {
+    mask-image: url(../../resources/img/component/icon/ico_filter02_off.svg);
 }
-.krds-btn.type04 .svg-icon {
-    background-color: #000;
+.krds-btn.preview {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
-.krds-btn.type05 {
+.krds-tooltip.preview .svg-icon.ico-preview {
+    width: 1.6rem;
+    height: 1.6rem;                                  
+}
+.krds-btn.nomal {
     background-color: #fff;
     border-color: #d9d9d9;
     color: #000;
 }
-.krds-btn.type05 .svg-icon {
+.krds-btn.nomal .svg-icon {
     background-color: #000;
 }
-.krds-btn.sort-btn.active {
-    background-color: #f4f4f4;
+.krds-btn.type02 {
+    padding: 0 1.6rem;
+    background-color: #99B2F9;
+    border-color: #99B2F9;
+    color: #fff;
+}
+.krds-btn.type03 {
+    background-color: #ececec;
+    border-color: #ececec;
+    color: #000;
+}
+.krds-btn.type03 .svg-icon {
+    background-color: #000;
+}
+.krds-btn.type04 {
+    background-color: #fff;
+    border-color: #99B2F9;
+    color: #99B2F9;
+}
+.krds-btn.type04 .svg-icon {
+    background-color: #99B2F9;
+}
+.krds-btn.type05 {
+    background-color: transparent;
+    border-color: transparent;
+    color: #4158D1;
+}
+.krds-btn.type05 .svg-icon {
+    background-color: #4158D1;
 }
 
-.krds-btn.sort-btn.active .ico-angle02 {
-    transform: rotate(-180deg);
-}
-.krds-btn .svg-icon.ico-public {
-    background-color: #dcdcdd;
+
+.krds-btn.sort-btn.active .ico-sort {
+    mask-image: url(../../resources/img/component/icon/ico_sort_off.svg);
 }
 .krds-btn.active .svg-icon.ico-public {
-    background-color: #23282b;
+    background-color: #d7d8d9;
+    mask-image: url(../../resources/img/component/icon/ico_public_off.svg);
 }
 .krds-btn .svg-icon.ico-angle02 {
     background-color: #6c6e72;
