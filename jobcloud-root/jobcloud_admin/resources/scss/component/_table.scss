@@ -1,5 +1,7 @@
-.krds-table-wrap.tbl-type { border-radius: 10px 10px 0 0; overflow-x: auto; } 
-.krds-table-wrap.tbl-type table { min-width: 1024px; width: 100%; } 
+
+.table-group .total {padding-left: 1rem; font-size: 1.8rem;}
+.krds-table-wrap.tbl-type { border-radius: 10px 10px 0 0; overflow-x: auto;} 
+.krds-table-wrap.tbl-type table {white-space: nowrap;} 
 .krds-table-wrap.tbl-type .tbl.data thead th { padding: 1.6rem 1rem; background-color: #f4f4f4; color: #1e2326; font-weight: 500; border-bottom: 0; text-align: center; } 
 .krds-table-wrap.tbl-type .tbl.data tbody td, 
 .krds-table-wrap.tbl-type .tbl.data tbody th { text-align: center;} 

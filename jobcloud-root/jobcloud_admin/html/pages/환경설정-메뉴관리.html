@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>환경설정-메뉴관리</title>
+    <link rel="stylesheet" href="../../resources/cdn/krds.min.css">
+    <link href="../../resources/css/main.css" type="text/css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../../resources/js/plugin/jquery-sortable-lists.js"></script>
+    <script src="../../resources/cdn/krds.min.js"></script>
+</head>
+
+<body>
+    <div id="jc-wrap">
+        <!-- 건너뛰기 링크 -->
+        <div id="krds-skip-link">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!-- //건너뛰기 링크 -->
+
+        <!-- header -->
+        <header id="jc-header">
+            <div class="header-top">
+                <button type="button" class="krds-btn icon btn-gnb">
+                    <span class="sr-only">메뉴</span>
+                    <i class="svg-icon ico-hd-menu"></i>
+                </button>
+                <h2 class="ht-logo"><a href="#!"><img src="../../resources/img/common/logo_img.png"
+                            alt="jobcloud admin"></a></h2>
+                <div class="ht-util">
+                    <ul class="util-list">
+                        <li>
+                            <a href="#!" class="krds-btn util-button"><span>사이트 바로가기</span></a>
+                        </li>
+                        <li>
+                            <div class="krds-drop-wrap">
+                                <button type="button" class="krds-btn drop-btn util-button"><span>홍길동</span> 님<i
+                                        class="svg-icon ico-toggle-type02"></i></button>
+                                <div class="drop-menu">
+                                    <div class="drop-in">
+                                        <ul class="drop-list">
+                                            <li><a href="#" class="item-link active">정보 변경</a></li>
+                                            <li><a href="#" class="item-link">로그 아웃</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn-navi all" aria-controls="mobile-nav">전체메뉴</button>
+            </div>
+            <nav class="main-menu">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="제공정보 관리">
+                            <span class="sr-only">제공정보 관리</span>
+                            <i class="svg-icon ico-nav ico-nav-menu01"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <div class="krds-side-navigation">
+                                <h3 class="lnb-tit">제공정보 관리</h3>
+                                <!-- lnb-list -->
+                                <ul class="lnb-list" role="menubar">
+                                    <li class="lnb-item">
+                                        <a href="#!" class="lnb-btn lnb-toggle" role="menuitem">지원정책</a>
+                                        <!-- lnb-submenu -->
+                                        <div class="lnb-submenu">
+                                            <ul role="menu">
+                                                <li class="lnb-subitem">
+                                                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">지원정책-1</a>
+                                                </li>
+                                                <li class="lnb-subitem">
+                                                    <a href="#" class="lnb-btn lnb-link" role="menuitem">지원정책-2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- //lnb-submenu -->
+                                    </li>
+                                    <li class="lnb-item">
+                                        <a href="#!" class="lnb-btn lnb-toggle" role="menuitem">기업지원</a>
+                                        <!-- lnb-submenu -->
+                                        <div class="lnb-submenu">
+                                            <ul role="menu">
+                                                <li class="lnb-subitem">
+                                                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">기업지원-1</a>
+                                                </li>
+                                                <li class="lnb-subitem">
+                                                    <a href="#" class="lnb-btn lnb-link" role="menuitem">기업지원-2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- //lnb-submenu -->
+                                    </li>
+                                    <li class="lnb-item">
+                                        <a href="#!" class="lnb-btn lnb-link" role="menuitem">교육훈련</a>
+                                    </li>
+                                    <li class="lnb-item">
+                                        <a href="#!" class="lnb-btn lnb-link" role="menuitem">대외활동</a>
+                                    </li>
+                                    <li class="lnb-item">
+                                        <a href="#!" class="lnb-btn lnb-link" role="menuitem">카테고리 관리</a>
+                                    </li>
+                                </ul>
+                                <!-- //lnb-list -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu02"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴2</h3>
+                            <ul>
+                                <li><a href="#!">메뉴2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu03"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴3</h3>
+                            <ul>
+                                <li><a href="#!">메뉴3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu04"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴4</h3>
+                            <ul>
+                                <li><a href="#!">메뉴4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu05"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴5</h3>
+                            <ul>
+                                <li><a href="#!">메뉴5</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu06"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴6</h3>
+                            <ul>
+                                <li><a href="#!">메뉴6</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu07"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴7</h3>
+                            <ul>
+                                <li><a href="#!">메뉴7</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu08"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴8</h3>
+                            <ul>
+                                <li><a href="#!">메뉴8</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item active">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="환경설정">
+                            <span class="sr-only">환경설정</span>
+                            <i class="svg-icon ico-nav ico-nav-menu09"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <div class="krds-side-navigation">
+                                <h3 class="lnb-tit">환경설정</h3>
+                                <!-- lnb-list -->
+                                <ul class="lnb-list" role="menubar">
+                                    <li class="lnb-item">
+                                        <a href="#!" class="lnb-btn lnb-link" role="menuitem">관리자</a>
+                                    </li>
+                                    <li class="lnb-item">
+                                        <a href="#!" class="lnb-btn lnb-link" role="menuitem">정보</a>
+                                    </li>
+                                    <li class="lnb-item">
+                                        <a href="#!" class="lnb-btn lnb-link" role="menuitem">권한 관리</a>
+                                    </li>
+                                    <li class="lnb-item">
+                                        <a href="#!" class="lnb-btn lnb-link" role="menuitem">메뉴 관리</a>
+                                    </li>
+                                    <li class="lnb-item">
+                                        <a href="#!" class="lnb-btn lnb-link" role="menuitem">공통코드</a>
+                                    </li>
+                                    <li class="lnb-item">
+                                        <a href="#!" class="lnb-btn lnb-link" role="menuitem">관리</a>
+                                    </li>
+                                </ul>
+                                <!-- //lnb-list -->
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="container">
+            <h1 class="contain-title">메뉴관리</h1>
+            <div class="container_wr">
+                <style>
+                   .tree-container li > div, 
+                    #s-l-base li > div {
+                        display: flex;
+                        margin-bottom: 1rem;
+                        padding: 1rem;
+                        padding-left: 4rem;
+                        background-color: #fff;
+                        border: 1px solid #dddddd;
+                        position: relative;
+                        font-size: 1.4rem;                        
+                        align-items: center;                       
+                    }
+                    .tree-container ul li, #s-l-base ul li {
+                        margin-left: 30px;
+                        position: relative;
+                    }
+                    .tree-container > ul > li,
+                    #s-l-base > ul > li{
+                        margin-left: 0;
+                    }
+                    .tree-container li > div:only-child .tree-cont button, 
+                    #s-l-base li > div:only-child .tree-cont button {
+                        display: none;
+                    }
+                    .tree-container li > div:not(:only-child) .tree-cont .tree-line,
+                    #s-l-base li > div:not(:only-child) .tree-cont .tree-line {
+                        display: none;
+                    }
+                    .tree-container .tree-cont,
+                    #s-l-base .tree-cont {
+                        display: flex;
+                        position: absolute;
+                        width: 3rem;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        background-color: #EFEFEF;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .tree-container .tree-cont .svg-icon.ico-angle02,
+                    #s-l-base .tree-cont .svg-icon.ico-angle02 {
+                        width: 1.4rem;
+                        background-color: #999999;
+                        transform: rotate(-90deg);
+                    }
+                    .tree-container .tree-cont .svg-icon.ico-line,
+                    #s-l-base .tree-cont .svg-icon.ico-line {
+                        width: 1.4rem;
+                        background-color: #999999;
+                    }
+                    .tree-container li.s-l-open .tree-cont .svg-icon.ico-angle02,
+                    #s-l-base li.s-l-open .tree-cont .svg-icon.ico-angle02 {
+                        transform: rotate(0);
+                    }
+                    
+                    .tree-container .s-l-open > ul {
+                        display: block;
+                    }
+                    /* .treeview li > div .right .arrow, #s-l-base li > div .right .arrow {
+                        background: url(https://mark2.job-cloud.kr/html/images/arrow.png) no-repeat center;
+                        width: 10px;
+                        height: 10px;
+                        text-indent: -9999px;
+                    } */
+                </style>
+                <section>
+                    <div class="inner-section">
+                        <div class="tree-container">
+                            <ul class="sTree" id="sTree2">
+                                <li class="s-l-open">
+                                    <div>
+                                        <div class="left">
+                                            <div class="tree-cont">
+                                                <!-- <a href="javascript:;" class="arrow clickable tree-btn">펼침</a> -->
+                                                <button type="button" class="krds-btn icon tree-btn clickable">
+                                                    <span class="sr-only">토글 버튼</span>
+                                                    <i class="svg-icon ico-angle02"></i>
+                                                </button>
+                                                <p class="tree-line"><i class="svg-icon ico-line"></i></p>
+                                            </div>
+                                            <p class="tree-tit flex alc"><i class="svg-icon ico-drag right"></i>정책정보</p>
+                                        </div>            
+                                        <div class="right mla">
+                                            <div class="tree-menu">
+                                                <button type="button" class="krds-btn small">미리보기</button>
+                                                <button type="button" class="krds-btn small">수정</button>
+                                                <button type="button" class="krds-btn small">추가</button>
+                                                <button type="button" class="krds-btn small">삭제</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li class="bgC4">
+                                            <div>
+                                                <div class="left">
+                                                    <div class="tree-cont">
+                                                        <button type="button" class="krds-btn icon tree-btn">
+                                                            <span class="sr-only">토글 버튼</span>
+                                                            <i class="svg-icon ico-angle02"></i>
+                                                        </button>
+                                                        <p class="tree-line"><i class="svg-icon ico-line"></i></p>
+                                                    </div>
+                                                    <p class="tree-tit flex alc"><i class="svg-icon ico-drag right"></i>정책정보</p>
+                                                </div>            
+                                                <div class="right mla">
+                                                    <div class="tree-menu">
+                                                        <button type="button" class="krds-btn small">미리보기</button>
+                                                        <button type="button" class="krds-btn small">수정</button>
+                                                        <button type="button" class="krds-btn small">추가</button>
+                                                        <button type="button" class="krds-btn small">삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul>
+                                                <li class="bgC4">
+                                                    <div>
+                                                        <div class="left">
+                                                            <div class="tree-cont">
+                                                                <button type="button" class="krds-btn icon tree-btn">
+                                                                    <span class="sr-only">토글 버튼</span>
+                                                                    <i class="svg-icon ico-angle02"></i>
+                                                                </button>
+                                                                <p class="tree-line"><i class="svg-icon ico-line"></i></p>
+                                                            </div>
+                                                            <p class="tree-tit flex alc"><i class="svg-icon ico-drag right"></i>정책정보</p>
+                                                        </div>            
+                                                        <div class="right mla">
+                                                            <div class="tree-menu">
+                                                                <button type="button" class="krds-btn small">미리보기</button>
+                                                                <button type="button" class="krds-btn small">수정</button>
+                                                                <button type="button" class="krds-btn small">추가</button>
+                                                                <button type="button" class="krds-btn small">삭제</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="bgC4">
+                                            <div>
+                                                <div class="left">
+                                                    <div class="tree-cont">
+                                                        <button type="button" class="krds-btn icon tree-btn">
+                                                            <span class="sr-only">토글 버튼</span>
+                                                            <i class="svg-icon ico-angle02"></i>
+                                                        </button>
+                                                        <p class="tree-line"><i class="svg-icon ico-line"></i></p>
+                                                    </div>
+                                                    <p class="tree-tit flex alc"><i class="svg-icon ico-drag right"></i>정책정보</p>
+                                                </div>            
+                                                <div class="right mla">
+                                                    <div class="tree-menu">
+                                                        <button type="button" class="krds-btn small">미리보기</button>
+                                                        <button type="button" class="krds-btn small">수정</button>
+                                                        <button type="button" class="krds-btn small">추가</button>
+                                                        <button type="button" class="krds-btn small">삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                       
+                         
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer id="jc-footer">
+            <p>Copyright ⓒ 2025. JOBCloud . All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".all").on("click", function () {
+                $("#mobile-nav").addClass("is-open");
+                $("html").css('overflow', 'hidden')
+            });
+            $("#close-nav").on("click", function () {
+                $("#mobile-nav").removeClass("active");
+                $("html").css('overflow', 'revert-layer')
+            });
+
+            const $btnGnb = $("#jc-header .header-top .btn-gnb");
+            function toggleMenuState() {
+                $("#jc-header").toggleClass("header-small")
+                $("#container").toggleClass("container-small");
+                $("#jc-footer").toggleClass("footer-small");
+                $btnGnb.toggleClass("open");
+            }
+            $btnGnb.on("click", toggleMenuState);
+            $(".gnb-list").on("click", "li .btn-op", function () {
+                $(this).parent().addClass("active").siblings().removeClass("active");
+            });
+
+            function removeClassesOnResize() {
+                if ($(window).width() <= 1024) {
+                    $("#jc-header").removeClass("header-small");
+                    $("#container").removeClass("container-small");
+                    $("#jc-footer").removeClass("footer-small");
+                    $btnGnb.removeClass("open");
+                }
+            }
+
+            $(window).on("resize", removeClassesOnResize);
+            removeClassesOnResize();
+
+            // 테이블 정렬 버튼
+            $(".sort-btn").on("click", function () {
+                $(this).toggleClass("active");
+                $(this).closest(".input-group").next(".sort-group").stop(true, true).slideToggle();
+            });
+            // 토글 버튼
+            $(".toggle-btn").on("click", function () {
+                $(this).toggleClass("active");
+            });
+            //필터 버튼
+            $('.filter-btn').on('click', function () {
+                $(this).toggleClass('active');
+                $(this).closest('.items-group').find('.filter-item').slideToggle();
+            });
+            // 정렬 추가
+            $(".sort-add-btn").on("click", function () {
+                let $wrap = $(this).closest(".sort-controls").find(".sort-options");
+                $(this).toggleClass("active");
+                $wrap.slideToggle();
+            });
+
+            $(".sort-cancel-btn").on("click", function () {
+                let $wrap = $(this).closest(".sort-options");
+                let $btn = $wrap.siblings(".sort-add-btn");
+                $btn.removeClass("active");
+                $wrap.slideUp();
+            });
+
+            // 테이블 상세 버튼
+            $('.switch-group input[type="radio"]').change(function () {
+                var $tableGroup = $(this).closest('.table-group');
+                var $table = $tableGroup.find('.krds-table-wrap.tbl-type table');
+                if ($tableGroup.find('#radio-one').is(':checked')) {
+                    $table.find('.detail').hide();
+                } else {
+                    $table.find('.detail').show();
+                }
+            });
+            // tree 메뉴
+            var options = {
+                placeholderCss: {
+                    'background-color': '#eee'
+                },
+                hintCss: {
+                    'background-color': '#ddd'
+                },
+                onChange: function (cEl) {
+                    console.log('onChange');
+                },
+                complete: function (cEl) {
+                    console.log('complete');
+                },
+                isAllowed: function (cEl, hint, target) {
+                    if (target.data('module') === 'c' && cEl.data('module') !== 'c') {
+                        hint.css('background-color', '#ddd');
+                        return false;
+                    } else {
+                        hint.css('background-color', '#ddd');
+                        return true;
+                    }
+                },
+                ignoreClass: 'clickable',
+                isAllowed: function (cEl, hint, target) {
+                    // Be carefull if you test some ul/ol elements here.
+                    // Sometimes ul/ols are dynamically generated and so they have not some attributes as natural ul/ols.
+                    // Be careful also if the hint is not visible. It has only display none so it is at the previous place where it was before(excluding first moves before showing).
+                    if (target.data('module') === 'view' && cEl.data('module') !== 'view' || target.data('module') === 'view02' && cEl.data('module') !== 'view02' || target.data('module') === 'view03' && cEl.data('module') !== 'view03' || target.data('module') === 'view04' && cEl.data('module') !== 'view04' || target.data('module') === 'view05' && cEl.data('module') !== 'view05' || target.data('module') === 'view06' && cEl.data('module') !== 'view06') {
+                        hint.css('background-color', '#ff9999');
+                        return false;
+                    } else {
+                        hint.css('background-color', '#ddd');
+                        return true;
+                    }
+                },
+
+
+            };
+            $('#sTree2').sortableLists(options);
+            $('.sTree .tree-btn').click(function () {
+                $(this).parent().parent().parent().parent().toggleClass('s-l-open');
+                if ($(this).parent().parent().parent().hasClass("s-l-open")) {
+                    $(this).parent().parent().parent().parent().children('ul').show();
+                } else if (!$(this).parent().parent().parent().parent().hasClass("s-l-open")) {
+                    $(this).parent().parent().parent().parent().children('ul').hide();
+                }
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

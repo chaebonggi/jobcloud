@@ -70,3 +70,15 @@
     mask-size: contain;
     mask-image: url(../../resources/img/component/icon/ico_phone.svg);
 }
+.svg-icon.ico-drag {
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: contain;
+    mask-image: url(../../resources/img/component/icon/ico_drag.svg);
+}
+.svg-icon.ico-line {
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: contain;
+    mask-image: url(../../resources/img/component/icon/ico_line.svg);
+}
