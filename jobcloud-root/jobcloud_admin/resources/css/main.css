@@ -466,7 +466,7 @@ body {
   color: #ff2e2e;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1140px) {
   .inner-section.in-between {
     flex-direction: column;
   }
