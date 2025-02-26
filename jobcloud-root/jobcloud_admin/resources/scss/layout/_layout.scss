@@ -1,11 +1,18 @@
 .w100 {width: 10rem;}
 .flex {display: flex;}
 .alc {align-items: center;}
+.flex-w {flex-wrap: wrap;}
 .flex-1 {flex: 1;}
 .gap-10 {gap: 10px;}
 .mla {margin-left: auto;}
+.mt20 {margin-top: 2rem;}
 .tlt {text-align: left !important;}
+.jcc {justify-content: center;}
 .btn-group.jcs {justify-content: space-between;}
+.btn-group.jcc {justify-content: center;}
+.btn-group.jce {justify-content: flex-end;}
+.fw700 {font-weight: 700;}
+p.small {font-size: 1.4rem;}
 .items-group {
     margin-top: 3rem;
     padding: 1.6rem;
@@ -20,6 +27,35 @@
     padding-top: 1.6rem;
     border-top: 1px solid #d9d9d9;
   }
+  .item-d-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;                                    
+  }
+  .item-d-group dl {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    gap: 1rem;
+  }
+  .item-d-group dl dt {
+    width: 10rem;
+  }
+.input-group dl {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.input-group dl dt {
+    width: 10rem;    
+}
+.input-group dl dd {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 .input-group.cal {
     flex-wrap: wrap;
 }

@@ -236,9 +236,9 @@
                    .tree-container li > div, 
                     #s-l-base li > div {
                         display: flex;
+                        min-height: 5.4rem;
                         margin-bottom: 1rem;
-                        padding: 1rem;
-                        padding-left: 4rem;
+                        padding: 1rem 2rem 1rem 4rem;
                         background-color: #fff;
                         border: 1px solid #dddddd;
                         position: relative;
@@ -284,30 +284,65 @@
                         width: 1.4rem;
                         background-color: #999999;
                     }
-                    .tree-container li.s-l-open .tree-cont .svg-icon.ico-angle02,
-                    #s-l-base li.s-l-open .tree-cont .svg-icon.ico-angle02 {
+                    .tree-container .s-l-open > div .tree-cont .svg-icon.ico-angle02,
+                    #s-l-base .s-l-open > div .tree-cont .svg-icon.ico-angle02 {
                         transform: rotate(0);
                     }
                     
                     .tree-container .s-l-open > ul {
                         display: block;
                     }
-                    /* .treeview li > div .right .arrow, #s-l-base li > div .right .arrow {
-                        background: url(https://mark2.job-cloud.kr/html/images/arrow.png) no-repeat center;
-                        width: 10px;
-                        height: 10px;
-                        text-indent: -9999px;
-                    } */
+                    .tree-container ul li ul {
+                        display: none;
+                    }
+                    .tree-container .right,
+                    #s-l-base .right {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                    }
+                    .tree-container .tree-menu {
+                        display: none;
+                    }
+                    .tree-container ul > li > div:hover .tree-menu {
+                        display: block;
+                    }
                 </style>
                 <section>
                     <div class="inner-section">
                         <div class="tree-container">
                             <ul class="sTree" id="sTree2">
-                                <li class="s-l-open">
+                                <li>
                                     <div>
                                         <div class="left">
                                             <div class="tree-cont">
-                                                <!-- <a href="javascript:;" class="arrow clickable tree-btn">펼침</a> -->
+                                                <button type="button" class="krds-btn icon tree-btn clickable">
+                                                    <span class="sr-only">토글 버튼</span>
+                                                    <i class="svg-icon ico-angle02"></i>
+                                                </button>
+                                                <p class="tree-line"><i class="svg-icon ico-line"></i></p>
+                                            </div>
+                                            <p class="tree-tit flex alc"><i class="svg-icon ico-drag right"></i>정책정보</p>
+                                        </div>
+                                        <div class="right mla">
+                                            <div class="krds-tag-wrap">
+                                                <span class="krds-btn-tag">
+                                                  미사용
+                                                </span>
+                                            </div>
+                                            <div class="tree-menu">                                                
+                                                <button type="button" class="krds-btn xsmall clickable">미리보기</button>
+                                                <button type="button" class="krds-btn xsmall clickable">수정</button>
+                                                <button type="button" class="krds-btn xsmall clickable">추가</button>
+                                                <button type="button" class="krds-btn xsmall clickable">삭제</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="left">
+                                            <div class="tree-cont">
                                                 <button type="button" class="krds-btn icon tree-btn clickable">
                                                     <span class="sr-only">토글 버튼</span>
                                                     <i class="svg-icon ico-angle02"></i>
@@ -318,19 +353,19 @@
                                         </div>            
                                         <div class="right mla">
                                             <div class="tree-menu">
-                                                <button type="button" class="krds-btn small">미리보기</button>
-                                                <button type="button" class="krds-btn small">수정</button>
-                                                <button type="button" class="krds-btn small">추가</button>
-                                                <button type="button" class="krds-btn small">삭제</button>
+                                                <button type="button" class="krds-btn xsmall">미리보기</button>
+                                                <button type="button" class="krds-btn xsmall">수정</button>
+                                                <button type="button" class="krds-btn xsmall">추가</button>
+                                                <button type="button" class="krds-btn xsmall">삭제</button>
                                             </div>
                                         </div>
                                     </div>
                                     <ul>
-                                        <li class="bgC4">
+                                        <li>
                                             <div>
                                                 <div class="left">
                                                     <div class="tree-cont">
-                                                        <button type="button" class="krds-btn icon tree-btn">
+                                                        <button type="button" class="krds-btn icon tree-btn clickable">
                                                             <span class="sr-only">토글 버튼</span>
                                                             <i class="svg-icon ico-angle02"></i>
                                                         </button>
@@ -340,19 +375,19 @@
                                                 </div>            
                                                 <div class="right mla">
                                                     <div class="tree-menu">
-                                                        <button type="button" class="krds-btn small">미리보기</button>
-                                                        <button type="button" class="krds-btn small">수정</button>
-                                                        <button type="button" class="krds-btn small">추가</button>
-                                                        <button type="button" class="krds-btn small">삭제</button>
+                                                        <button type="button" class="krds-btn xsmall">미리보기</button>
+                                                        <button type="button" class="krds-btn xsmall">수정</button>
+                                                        <button type="button" class="krds-btn xsmall">추가</button>
+                                                        <button type="button" class="krds-btn xsmall">삭제</button>
                                                     </div>
                                                 </div>
                                             </div>
                                             <ul>
-                                                <li class="bgC4">
+                                                <li>
                                                     <div>
                                                         <div class="left">
                                                             <div class="tree-cont">
-                                                                <button type="button" class="krds-btn icon tree-btn">
+                                                                <button type="button" class="krds-btn icon tree-btn clickable">
                                                                     <span class="sr-only">토글 버튼</span>
                                                                     <i class="svg-icon ico-angle02"></i>
                                                                 </button>
@@ -362,37 +397,37 @@
                                                         </div>            
                                                         <div class="right mla">
                                                             <div class="tree-menu">
-                                                                <button type="button" class="krds-btn small">미리보기</button>
-                                                                <button type="button" class="krds-btn small">수정</button>
-                                                                <button type="button" class="krds-btn small">추가</button>
-                                                                <button type="button" class="krds-btn small">삭제</button>
+                                                                <button type="button" class="krds-btn xsmall">미리보기</button>
+                                                                <button type="button" class="krds-btn xsmall">수정</button>
+                                                                <button type="button" class="krds-btn xsmall">추가</button>
+                                                                <button type="button" class="krds-btn xsmall">삭제</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <div class="left">
+                                                            <div class="tree-cont">
+                                                                <button type="button" class="krds-btn icon tree-btn clickable">
+                                                                    <span class="sr-only">토글 버튼</span>
+                                                                    <i class="svg-icon ico-angle02"></i>
+                                                                </button>
+                                                                <p class="tree-line"><i class="svg-icon ico-line"></i></p>
+                                                            </div>
+                                                            <p class="tree-tit flex alc"><i class="svg-icon ico-drag right"></i>정책정보</p>
+                                                        </div>            
+                                                        <div class="right mla">
+                                                            <div class="tree-menu">
+                                                                <button type="button" class="krds-btn xsmall">미리보기</button>
+                                                                <button type="button" class="krds-btn xsmall">수정</button>
+                                                                <button type="button" class="krds-btn xsmall">추가</button>
+                                                                <button type="button" class="krds-btn xsmall">삭제</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </li>
                                             </ul>
-                                        </li>
-                                        <li class="bgC4">
-                                            <div>
-                                                <div class="left">
-                                                    <div class="tree-cont">
-                                                        <button type="button" class="krds-btn icon tree-btn">
-                                                            <span class="sr-only">토글 버튼</span>
-                                                            <i class="svg-icon ico-angle02"></i>
-                                                        </button>
-                                                        <p class="tree-line"><i class="svg-icon ico-line"></i></p>
-                                                    </div>
-                                                    <p class="tree-tit flex alc"><i class="svg-icon ico-drag right"></i>정책정보</p>
-                                                </div>            
-                                                <div class="right mla">
-                                                    <div class="tree-menu">
-                                                        <button type="button" class="krds-btn small">미리보기</button>
-                                                        <button type="button" class="krds-btn small">수정</button>
-                                                        <button type="button" class="krds-btn small">추가</button>
-                                                        <button type="button" class="krds-btn small">삭제</button>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </li>
                                     </ul>
                                 </li>
@@ -491,6 +526,7 @@
                 hintCss: {
                     'background-color': '#ddd'
                 },
+                ignoreClass: 'clickable',
                 onChange: function (cEl) {
                     console.log('onChange');
                 },
@@ -498,34 +534,22 @@
                     console.log('complete');
                 },
                 isAllowed: function (cEl, hint, target) {
-                    if (target.data('module') === 'c' && cEl.data('module') !== 'c') {
-                        hint.css('background-color', '#ddd');
+                    var currentParent = cEl.parent();
+                    var targetParent = target.parent();
+                    
+                    if (currentParent[0] !== targetParent[0]) {                        
                         return false;
-                    } else {
-                        hint.css('background-color', '#ddd');
-                        return true;
                     }
-                },
-                ignoreClass: 'clickable',
-                isAllowed: function (cEl, hint, target) {
-                    // Be carefull if you test some ul/ol elements here.
-                    // Sometimes ul/ols are dynamically generated and so they have not some attributes as natural ul/ols.
-                    // Be careful also if the hint is not visible. It has only display none so it is at the previous place where it was before(excluding first moves before showing).
-                    if (target.data('module') === 'view' && cEl.data('module') !== 'view' || target.data('module') === 'view02' && cEl.data('module') !== 'view02' || target.data('module') === 'view03' && cEl.data('module') !== 'view03' || target.data('module') === 'view04' && cEl.data('module') !== 'view04' || target.data('module') === 'view05' && cEl.data('module') !== 'view05' || target.data('module') === 'view06' && cEl.data('module') !== 'view06') {
-                        hint.css('background-color', '#ff9999');
-                        return false;
-                    } else {
-                        hint.css('background-color', '#ddd');
-                        return true;
-                    }
-                },
-
+                    hint.css('background-color', '#ddd');
+                    return true;
+                }
+                
 
             };
             $('#sTree2').sortableLists(options);
             $('.sTree .tree-btn').click(function () {
                 $(this).parent().parent().parent().parent().toggleClass('s-l-open');
-                if ($(this).parent().parent().parent().hasClass("s-l-open")) {
+                if ($(this).parent().parent().parent().parent().hasClass("s-l-open")) {
                     $(this).parent().parent().parent().parent().children('ul').show();
                 } else if (!$(this).parent().parent().parent().parent().hasClass("s-l-open")) {
                     $(this).parent().parent().parent().parent().children('ul').hide();
