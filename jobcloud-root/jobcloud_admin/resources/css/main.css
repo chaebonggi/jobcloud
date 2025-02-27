@@ -981,10 +981,6 @@ p.small {
   color: #fff;
 }
 
-.krds-btn.filter.active .ico-filter02 {
-  mask-image: url(../../resources/img/component/icon/ico_filter02_off.svg);
-}
-
 .krds-tooltip.preview .svg-icon.ico-preview {
   width: 1.6rem;
   height: 1.6rem;
