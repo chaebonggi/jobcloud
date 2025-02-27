@@ -112,7 +112,7 @@ body {
   height: 8px;
   margin-left: 10px;
   background-color: #6c6e72;
-  mask-image: url(../../resources/img/component/icon/ico-toggle-type02.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico-toggle-type02.svg);
   mask-repeat: no-repeat;
 }
 
@@ -125,14 +125,14 @@ body {
 }
 
 #jc-header .header-top .btn-gnb.open .ico-hd-menu {
-  mask-image: url(../../resources/img/component/icon/ico_head_menu_op.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_head_menu_op.svg);
 }
 
 #jc-header .header-top .ico-hd-menu {
   width: 24px;
   height: 24px;
   background-color: #fff;
-  mask-image: url(../../resources/img/component/icon/ico_head_menu_cl.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_head_menu_cl.svg);
   mask-repeat: no-repeat;
 }
 
@@ -182,39 +182,39 @@ body {
 }
 
 #jc-header .main-menu .ico-nav-menu01 {
-  mask-image: url(../../resources/img/component/icon/ico-nav-menu01.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu01.svg);
 }
 
 #jc-header .main-menu .ico-nav-menu02 {
-  mask-image: url(../../resources/img/component/icon/ico-nav-menu02.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu02.svg);
 }
 
 #jc-header .main-menu .ico-nav-menu03 {
-  mask-image: url(../../resources/img/component/icon/ico-nav-menu03.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu03.svg);
 }
 
 #jc-header .main-menu .ico-nav-menu04 {
-  mask-image: url(../../resources/img/component/icon/ico-nav-menu04.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu04.svg);
 }
 
 #jc-header .main-menu .ico-nav-menu05 {
-  mask-image: url(../../resources/img/component/icon/ico-nav-menu05.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu05.svg);
 }
 
 #jc-header .main-menu .ico-nav-menu06 {
-  mask-image: url(../../resources/img/component/icon/ico-nav-menu06.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu06.svg);
 }
 
 #jc-header .main-menu .ico-nav-menu07 {
-  mask-image: url(../../resources/img/component/icon/ico-nav-menu07.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu07.svg);
 }
 
 #jc-header .main-menu .ico-nav-menu08 {
-  mask-image: url(../../resources/img/component/icon/ico-nav-menu08.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu08.svg);
 }
 
 #jc-header .main-menu .ico-nav-menu09 {
-  mask-image: url(../../resources/img/component/icon/ico-nav-menu09.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu09.svg);
 }
 
 #jc-header .main-menu .gnb-item.active .gnb-depth {
@@ -311,7 +311,7 @@ body {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_all.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_all.svg);
   forced-color-adjust: none;
 }
 
@@ -1035,7 +1035,7 @@ p.small {
 
 .krds-btn.active .svg-icon.ico-public {
   background-color: #d7d8d9;
-  mask-image: url(../../resources/img/component/icon/ico_public_off.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_public_off.svg);
 }
 
 .krds-btn .svg-icon.ico-angle02 {
@@ -1052,112 +1052,117 @@ p.small {
 
 .krds-form-select.type02 {
   background-size: 1.4rem !important;
-  background-image: url(../../resources/img/component/icon/ico_angle02.svg);
+  background-image: url(../../images/jobcloud/component/icon/ico_angle02.svg);
+}
+
+.krds-btn-tag.unused {
+  background-color: #afafaf;
+  color: #fff;
 }
 
 .svg-icon.ico-download {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_download.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_download.svg);
 }
 
 .svg-icon.ico-plus02 {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_plus02.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_plus02.svg);
 }
 
 .svg-icon.ico-angle02 {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_angle02.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_angle02.svg);
 }
 
 .svg-icon.ico-public {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_public.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_public.svg);
 }
 
 .svg-icon.ico-del02 {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_del.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_del.svg);
 }
 
 .svg-icon.ico-filter02 {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_filter02.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_filter02.svg);
 }
 
 .svg-icon.ico-preview {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_preview.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_preview.svg);
 }
 
 .svg-icon.ico-sort {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_sort.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_sort.svg);
 }
 
 .svg-icon.ico-sort-up {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_sort_up.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_sort_up.svg);
 }
 
 .svg-icon.ico-sort-down {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_sort_down.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_sort_down.svg);
 }
 
 .svg-icon.ico-delete02 {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_delete02.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_delete02.svg);
 }
 
 .svg-icon.ico-phone {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_phone.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_phone.svg);
 }
 
 .svg-icon.ico-drag {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_drag.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_drag.svg);
 }
 
 .svg-icon.ico-line {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_line.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_line.svg);
 }
 
 .svg-icon.ico-password {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
-  mask-image: url(../../resources/img/component/icon/ico_password.svg);
+  mask-image: url(../../images/jobcloud/component/icon/ico_password.svg);
 }
 
 .category-group dl {

@@ -83,7 +83,7 @@
 }
 .krds-btn.active .svg-icon.ico-public {
     background-color: #d7d8d9;
-    mask-image: url(../../resources/img/component/icon/ico_public_off.svg);
+    mask-image: url(../../images/jobcloud/component/icon/ico_public_off.svg);
 }
 .krds-btn .svg-icon.ico-angle02 {
     background-color: #6c6e72;
@@ -96,5 +96,10 @@
 }
 .krds-form-select.type02 {
     background-size: 1.4rem !important;
-    background-image: url(../../resources/img/component/icon/ico_angle02.svg);
+    background-image: url(../../images/jobcloud/component/icon/ico_angle02.svg);
+}
+
+.krds-btn-tag.unused {
+    background-color: #afafaf;
+    color: #fff;
 }

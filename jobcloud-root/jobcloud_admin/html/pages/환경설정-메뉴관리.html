@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>환경설정-메뉴관리</title>
     <link rel="stylesheet" href="../../resources/cdn/krds.min.css">
-    <link href="../../resources/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="../../css/jobcloud/main.css" type="text/css" rel="stylesheet" />
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../../resources/js/plugin/jquery-sortable-lists.js"></script>
@@ -28,7 +28,7 @@
                     <span class="sr-only">메뉴</span>
                     <i class="svg-icon ico-hd-menu"></i>
                 </button>
-                <h2 class="ht-logo"><a href="#!"><img src="../../resources/img/common/logo_img.png"
+                <h2 class="ht-logo"><a href="#!"><img src="../../images/jobcloud/common/logo_img.png"
                             alt="jobcloud admin"></a></h2>
                 <div class="ht-util">
                     <ul class="util-list">
@@ -232,85 +232,98 @@
         <div id="container">
             <h1 class="contain-title">메뉴관리</h1>
             <div class="container_wr">
-                <style>
-                   .tree-container li > div, 
-                    #s-l-base li > div {
-                        display: flex;
-                        min-height: 5.4rem;
-                        margin-bottom: 1rem;
-                        padding: 1rem 2rem 1rem 4rem;
-                        background-color: #fff;
-                        border: 1px solid #dddddd;
-                        position: relative;
-                        font-size: 1.4rem;                        
-                        align-items: center;                       
-                    }
-                    .tree-container ul li, #s-l-base ul li {
-                        margin-left: 30px;
-                        position: relative;
-                    }
-                    .tree-container > ul > li,
-                    #s-l-base > ul > li{
-                        margin-left: 0;
-                    }
-                    .tree-container li > div:only-child .tree-cont button, 
-                    #s-l-base li > div:only-child .tree-cont button {
-                        display: none;
-                    }
-                    .tree-container li > div:not(:only-child) .tree-cont .tree-line,
-                    #s-l-base li > div:not(:only-child) .tree-cont .tree-line {
-                        display: none;
-                    }
-                    .tree-container .tree-cont,
-                    #s-l-base .tree-cont {
-                        display: flex;
-                        position: absolute;
-                        width: 3rem;
-                        left: 0;
-                        top: 0;
-                        height: 100%;
-                        background-color: #EFEFEF;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    .tree-container .tree-cont .svg-icon.ico-angle02,
-                    #s-l-base .tree-cont .svg-icon.ico-angle02 {
-                        width: 1.4rem;
-                        background-color: #999999;
-                        transform: rotate(-90deg);
-                    }
-                    .tree-container .tree-cont .svg-icon.ico-line,
-                    #s-l-base .tree-cont .svg-icon.ico-line {
-                        width: 1.4rem;
-                        background-color: #999999;
-                    }
-                    .tree-container .s-l-open > div .tree-cont .svg-icon.ico-angle02,
-                    #s-l-base .s-l-open > div .tree-cont .svg-icon.ico-angle02 {
-                        transform: rotate(0);
-                    }
-                    
-                    .tree-container .s-l-open > ul {
-                        display: block;
-                    }
-                    .tree-container ul li ul {
-                        display: none;
-                    }
-                    .tree-container .right,
-                    #s-l-base .right {
-                        display: flex;
-                        align-items: center;
-                        gap: 1rem;
-                    }
-                    .tree-container .tree-menu {
-                        display: none;
-                    }
-                    .tree-container ul > li > div:hover .tree-menu {
-                        display: block;
-                    }
-                </style>
+                
                 <section>
+                    <style>
+                        .tree-container li > div, 
+                         #s-l-base li > div {
+                             display: flex;
+                             min-height: 5.4rem;
+                             margin-bottom: 1rem;
+                             padding: 1rem 2rem 1rem 4rem;
+                             background-color: #fff;
+                             border: 1px solid #dddddd;
+                             position: relative;
+                             font-size: 1.4rem;                        
+                             align-items: center;                       
+                         }
+                         .tree-container ul li, #s-l-base ul li {
+                             margin-left: 30px;
+                             position: relative;
+                         }
+                         .tree-container > ul > li,
+                         #s-l-base > ul > li{
+                             margin-left: 0;
+                         }
+                         .tree-container li > div:only-child .tree-cont button, 
+                         #s-l-base li > div:only-child .tree-cont button {
+                             display: none;
+                         }
+                         .tree-container li > div:not(:only-child) .tree-cont .tree-line,
+                         #s-l-base li > div:not(:only-child) .tree-cont .tree-line {
+                             display: none;
+                         }
+                         .tree-container .tree-cont,
+                         #s-l-base .tree-cont {
+                             display: flex;
+                             position: absolute;
+                             width: 3rem;
+                             left: 0;
+                             top: 0;
+                             height: 100%;
+                             background-color: #EFEFEF;
+                             align-items: center;
+                             justify-content: center;
+                         }
+                         .tree-container .tree-cont .svg-icon.ico-angle02,
+                         #s-l-base .tree-cont .svg-icon.ico-angle02 {
+                             width: 1.4rem;
+                             background-color: #999999;
+                             transform: rotate(-90deg);
+                         }
+                         .tree-container .tree-cont .svg-icon.ico-line,
+                         #s-l-base .tree-cont .svg-icon.ico-line {
+                             width: 1.4rem;
+                             background-color: #999999;
+                         }
+                         .tree-container .s-l-open > div .tree-cont .svg-icon.ico-angle02,
+                         #s-l-base .s-l-open > div .tree-cont .svg-icon.ico-angle02 {
+                             transform: rotate(0);
+                         }                         
+                         .tree-container .s-l-open > ul {
+                             display: block;
+                         }
+                         .tree-container ul li ul {
+                             display: none;
+                         }
+                         .tree-container .right,
+                         #s-l-base .right {
+                             display: flex;
+                             align-items: center;
+                             gap: 1rem;
+                         }
+                         .tree-container .tree-menu {
+                             display: none;
+                         }
+                         .tree-container ul > li > div:hover .tree-menu {
+                             display: block;
+                         }
+
+                         .tree-container .btn-group {
+                            padding-bottom: 2rem;
+                            margin-bottom: 2rem;
+                            border-bottom: 1px solid #cdd1d5;
+                         }
+
+                     </style>
                     <div class="inner-section">
                         <div class="tree-container">
+                            <div class="btn-group jce">
+                                <button type="button" class="krds-btn xsmall">대메뉴 추가</button>
+                                <button type="button" class="krds-btn xsmall all-view">전체 메뉴 펼치기</button>
+                                <button type="button" class="krds-btn xsmall all-fold">전체 메뉴 접기</button>
+                                <button type="button" class="krds-btn xsmall">저장</button>
+                            </div>
                             <ul class="sTree" id="sTree2">
                                 <li>
                                     <div>
@@ -325,8 +338,8 @@
                                             <p class="tree-tit flex alc"><i class="svg-icon ico-drag right"></i>정책정보</p>
                                         </div>
                                         <div class="right mla">
-                                            <div class="krds-tag-wrap">
-                                                <span class="krds-btn-tag">
+                                            <div class="krds-tag-wrap small">
+                                                <span class="krds-btn-tag unused">
                                                   미사용
                                                 </span>
                                             </div>
@@ -432,10 +445,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                        </div>
-
-                       
-                         
+                        </div>                         
                     </div>
                 </section>
             </div>
@@ -444,121 +454,7 @@
             <p>Copyright ⓒ 2025. JOBCloud . All rights reserved.</p>
         </footer>
     </div>
-
-    <script>
-        $(document).ready(function () {
-            $(".all").on("click", function () {
-                $("#mobile-nav").addClass("is-open");
-                $("html").css('overflow', 'hidden')
-            });
-            $("#close-nav").on("click", function () {
-                $("#mobile-nav").removeClass("active");
-                $("html").css('overflow', 'revert-layer')
-            });
-
-            const $btnGnb = $("#jc-header .header-top .btn-gnb");
-            function toggleMenuState() {
-                $("#jc-header").toggleClass("header-small")
-                $("#container").toggleClass("container-small");
-                $("#jc-footer").toggleClass("footer-small");
-                $btnGnb.toggleClass("open");
-            }
-            $btnGnb.on("click", toggleMenuState);
-            $(".gnb-list").on("click", "li .btn-op", function () {
-                $(this).parent().addClass("active").siblings().removeClass("active");
-            });
-
-            function removeClassesOnResize() {
-                if ($(window).width() <= 1024) {
-                    $("#jc-header").removeClass("header-small");
-                    $("#container").removeClass("container-small");
-                    $("#jc-footer").removeClass("footer-small");
-                    $btnGnb.removeClass("open");
-                }
-            }
-
-            $(window).on("resize", removeClassesOnResize);
-            removeClassesOnResize();
-
-            // 테이블 정렬 버튼
-            $(".sort-btn").on("click", function () {
-                $(this).toggleClass("active");
-                $(this).closest(".input-group").next(".sort-group").stop(true, true).slideToggle();
-            });
-            // 토글 버튼
-            $(".toggle-btn").on("click", function () {
-                $(this).toggleClass("active");
-            });
-            //필터 버튼
-            $('.filter-btn').on('click', function () {
-                $(this).toggleClass('active');
-                $(this).closest('.items-group').find('.filter-item').slideToggle();
-            });
-            // 정렬 추가
-            $(".sort-add-btn").on("click", function () {
-                let $wrap = $(this).closest(".sort-controls").find(".sort-options");
-                $(this).toggleClass("active");
-                $wrap.slideToggle();
-            });
-
-            $(".sort-cancel-btn").on("click", function () {
-                let $wrap = $(this).closest(".sort-options");
-                let $btn = $wrap.siblings(".sort-add-btn");
-                $btn.removeClass("active");
-                $wrap.slideUp();
-            });
-
-            // 테이블 상세 버튼
-            $('.switch-group input[type="radio"]').change(function () {
-                var $tableGroup = $(this).closest('.table-group');
-                var $table = $tableGroup.find('.krds-table-wrap.tbl-type table');
-                if ($tableGroup.find('#radio-one').is(':checked')) {
-                    $table.find('.detail').hide();
-                } else {
-                    $table.find('.detail').show();
-                }
-            });
-            // tree 메뉴
-            var options = {
-                placeholderCss: {
-                    'background-color': '#eee'
-                },
-                hintCss: {
-                    'background-color': '#ddd'
-                },
-                ignoreClass: 'clickable',
-                onChange: function (cEl) {
-                    console.log('onChange');
-                },
-                complete: function (cEl) {
-                    console.log('complete');
-                },
-                isAllowed: function (cEl, hint, target) {
-                    var currentParent = cEl.parent();
-                    var targetParent = target.parent();
-                    
-                    if (currentParent[0] !== targetParent[0]) {                        
-                        return false;
-                    }
-                    hint.css('background-color', '#ddd');
-                    return true;
-                }
-                
-
-            };
-            $('#sTree2').sortableLists(options);
-            $('.sTree .tree-btn').click(function () {
-                $(this).parent().parent().parent().parent().toggleClass('s-l-open');
-                if ($(this).parent().parent().parent().parent().hasClass("s-l-open")) {
-                    $(this).parent().parent().parent().parent().children('ul').show();
-                } else if (!$(this).parent().parent().parent().parent().hasClass("s-l-open")) {
-                    $(this).parent().parent().parent().parent().children('ul').hide();
-                }
-            });
-
-
-        });
-    </script>
+    <script src="../../js/jobcloud/component/run.js"></script>        
 </body>
 
 </html>
