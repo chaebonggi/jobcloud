@@ -22,6 +22,12 @@
 .krds-btn.link.small {
     font-size: 1.6rem;
 }
+.krds-btn.full {
+    width: 100%;
+}
+.krds-btn.md {
+    min-width: 10rem;
+}
 .krds-btn.small .ico-angle02 {
     width: 14px;
     height: 14px;
@@ -79,6 +85,14 @@
     color: #4158D1;
 }
 .krds-btn.type05 .svg-icon {
+    background-color: #4158D1;
+}
+.krds-btn.type06 {
+    background-color: #fff;
+    border-color: #4158D1;
+    color: #4158D1;
+}
+.krds-btn.type06 .svg-icon {
     background-color: #4158D1;
 }
 .krds-btn.active .svg-icon.ico-public {

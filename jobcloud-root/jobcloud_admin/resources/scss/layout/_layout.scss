@@ -32,6 +32,7 @@ p.small {font-size: 1.4rem;}
     align-items: center;
     flex-wrap: wrap;                                    
   }
+  
   .item-d-group dl {
     display: flex;
     align-items: center;
@@ -41,6 +42,13 @@ p.small {font-size: 1.4rem;}
   .item-d-group dl dt {
     width: 10rem;
   }
+.input-group.select-group {
+    gap: 1rem;
+}
+.input-group.select-group > select {
+    width: 10rem;
+    
+}
 .input-group dl {
     display: flex;
     align-items: center;
@@ -101,3 +109,6 @@ p.small {font-size: 1.4rem;}
 .table-group .table-top {padding-bottom: 2rem;border-bottom: 1px solid #d9d9d9; } 
 .table-group .krds-table-wrap {margin-top: 2.5rem; } 
 
+.input-group.range>li.mark {
+    height: 4rem;
+}

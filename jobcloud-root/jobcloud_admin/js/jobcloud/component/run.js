@@ -115,6 +115,18 @@ $(document).ready(function () {
         $('.sTree  li').removeClass('s-l-open');
     });
 
+    // radio target toggle
+    $('input[type="radio"]').on('change', function () {
+        let $container = $(this).closest('.item');
+        let $target = $container.find('.radio-target-item');
+
+        if ($container.find('.radio-target').is(':checked')) {
+          $target.slideDown();
+        } else {
+          $target.slideUp();
+        }
+      });
+
 
 
 
