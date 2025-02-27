@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>제공정보관리-지원정책목록</title>
     <link rel="stylesheet" href="../../resources/cdn/krds.min.css">
-    <link href="../../resources/css/main.css" type="text/css" rel="stylesheet" />
+    <link href="../../css/jobcloud/main.css" type="text/css" rel="stylesheet" />
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../../js/jobcloud/plugin/jquery-sortable-lists.js"></script>
     <script src="../../resources/cdn/krds.min.js"></script>
 </head>
 <body>
@@ -941,82 +942,6 @@
         </footer>
     </div>
     
-    <script>        
-        $(document).ready(function(){
-            $(".all").on("click",function(){
-                $("#mobile-nav").addClass("is-open");
-                $("html").css('overflow' , 'hidden')
-            });
-            $("#close-nav").on("click",function(){
-                $("#mobile-nav").removeClass("active");
-                $("html").css('overflow' , 'revert-layer')
-            });
-
-            const $btnGnb = $("#jc-header .header-top .btn-gnb");
-            function toggleMenuState() {                
-                $("#jc-header").toggleClass("header-small")
-                $("#container").toggleClass("container-small");
-                $("#jc-footer").toggleClass("footer-small");
-                $btnGnb.toggleClass("open");
-            }
-            $btnGnb.on("click", toggleMenuState);
-            $(".gnb-list").on("click", "li .btn-op", function () {
-                $(this).parent().addClass("active").siblings().removeClass("active");
-            });
-
-            function removeClassesOnResize() {
-                if ($(window).width() <= 1024) {
-                    $("#jc-header").removeClass("header-small");
-                    $("#container").removeClass("container-small");
-                    $("#jc-footer").removeClass("footer-small");
-                    $btnGnb.removeClass("open");
-                }
-            }
-            
-            $(window).on("resize", removeClassesOnResize);
-            removeClassesOnResize();
-
-            // 테이블 정렬 버튼
-            $(".sort-btn").on("click", function () {
-                $(this).toggleClass("active");
-                $(this).closest(".input-group").next(".sort-group").stop(true, true).slideToggle();
-            });
-            // 토글 버튼
-            $(".toggle-btn").on("click", function () {
-                $(this).toggleClass("active");
-            });
-            //필터 버튼
-            $('.filter-btn').on('click', function() {
-                $(this).toggleClass('active'); 
-                $(this).closest('.items-group').find('.filter-item').slideToggle();
-            });
-            // 정렬 추가
-            $(".sort-add-btn").on("click", function () {
-                let $wrap = $(this).closest(".sort-controls").find(".sort-options");
-                $(this).toggleClass("active");
-                $wrap.slideToggle();
-            });
-
-            $(".sort-cancel-btn").on("click", function () {
-                let $wrap = $(this).closest(".sort-options");
-                let $btn = $wrap.siblings(".sort-add-btn");
-                $btn.removeClass("active");
-                $wrap.slideUp();
-            });
-            
-            // 테이블 상세 버튼
-            $('.switch-group input[type="radio"]').change(function() {
-                var $tableGroup = $(this).closest('.table-group');
-                var $table = $tableGroup.find('.krds-table-wrap.tbl-type table');
-                if ($tableGroup.find('#radio-one').is(':checked')) {
-                    $table.find('.detail').hide();
-                } else {
-                    $table.find('.detail').show();
-                }
-            });
-          
-          
-        });
-    </script>
+    <script src="../../js/jobcloud/component/run.js"></script>  
 </body>
 </html>
