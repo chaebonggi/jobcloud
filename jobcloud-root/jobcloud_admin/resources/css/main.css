@@ -949,6 +949,18 @@ p.small {
   margin-left: 0.5rem;
 }
 
+.krds-btn.link {
+  color: #464c53;
+}
+
+.krds-btn.link:visited {
+  color: #464c53;
+}
+
+.krds-btn.link.small {
+  font-size: 1.6rem;
+}
+
 .krds-btn.small .ico-angle02 {
   width: 14px;
   height: 14px;
