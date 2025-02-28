@@ -7,6 +7,7 @@
 .mla {margin-left: auto;}
 .mt20 {margin-top: 2rem;}
 .tlt {text-align: left !important;}
+.tct {text-align: center;}
 .jcc {justify-content: center;}
 .btn-group.jcs {justify-content: space-between;}
 .btn-group.jcc {justify-content: center;}
@@ -40,14 +41,14 @@ p.small {font-size: 1.4rem;}
     gap: 1rem;
   }
   .item-d-group dl dt {
-    width: 10rem;
+    width: 12rem;
   }
 .input-group.select-group {
     gap: 1rem;
 }
 .input-group.select-group > select {
-    width: 10rem;
-    
+    width: 12rem;
+    flex-shrink: 0;
 }
 .input-group dl {
     display: flex;
@@ -56,7 +57,7 @@ p.small {font-size: 1.4rem;}
     gap: 1rem;
 }
 .input-group dl dt {
-    width: 10rem;    
+    width: 12rem;    
 }
 .input-group dl dd {
     display: flex;

@@ -32,6 +32,7 @@
  .board-cont .item .tit { width: 12rem; font-weight: 500; flex-shrink: 0;} 
  .board-cont .item .b-item.form-group .cont { flex: none;}
  .board-cont .item .cont { width: calc(100% - 12rem); } 
+ .board-cont .item .cont.full {width: 100%;}
  .board-cont .item .cont.half {width: 50%;}
  .board-cont .item .b-item { display: flex; align-items: center; flex: 1 1 auto; gap: 1rem;} 
  .board-cont .marking { color: #ff2e2e; } 

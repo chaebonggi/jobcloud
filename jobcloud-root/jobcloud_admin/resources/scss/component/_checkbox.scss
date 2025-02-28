@@ -1,0 +1,15 @@
+.krds-form-check.small>input[type=checkbox]~label, 
+.krds-form-check.small>input[type=radio]~label {
+    font-size: 1.4rem;
+}
+.krds-form-check.small>input[type=checkbox]~label:before, 
+.krds-form-check.small>input[type=radio]~label:before {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+.krds-form-check.small>input[type=checkbox]~label:after {
+    width: 1rem;
+    height: 1rem;
+    left: 0.3rem;
+    top: 0.6rem;
+}

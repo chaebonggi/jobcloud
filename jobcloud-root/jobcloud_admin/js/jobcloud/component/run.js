@@ -79,24 +79,7 @@ $(document).ready(function () {
             'background-color': '#ddd'
         },
         ignoreClass: 'clickable',
-        isAllowed: function (cEl, hint, target) {
-            var currentDepth = cEl.parents('ul').length;  // 드래그하는 요소(현재)의 깊이
-            var targetDepth = target.parents('ul').length; // 이동 대상 위치(목표)의 깊이
-
-            // 같은 단계(Depth)에서만 이동 가능
-            if (currentDepth !== targetDepth) {
-                return false;
-            }
-
-            // 대메뉴(1단계)가 다른 대메뉴의 자식이 되는 것을 방지
-            if (currentDepth === 1 && target.closest('ul').length > 1) {
-                return false;
-            }
-
-            hint.css('background-color', '#ddd');
-            return true;
-        }
-    };
+    };    
     $('#sTree2').sortableLists(options);
     $('.sTree .tree-btn').click(function () {
         $(this).parent().parent().parent().parent().toggleClass('s-l-open');
@@ -126,8 +109,22 @@ $(document).ready(function () {
           $target.slideUp();
         }
       });
+    // 사이드 메뉴
+    $(".side-open-btn").on("click", function () {
+        $(".side-menu").addClass("is-open");
+    });
+    $(".side-close-btn").on("click", function () {
+        $(".side-menu").removeClass("is-open");
+    });
 
-
+    // 탭메뉴
+    $(".tabs li a").click(function () {
+        $(this).parent().siblings("li").removeClass("active");
+        $(this).parent().addClass("active");
+        $(this).parent().parent().parent().parent().find(".tab_content").hide();
+        var activeTab = $(this).attr("rel");
+        $("#" + activeTab).fadeIn();
+    });
 
 
 });

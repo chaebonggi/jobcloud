@@ -6,11 +6,11 @@
     padding: 1rem 2rem;
   }
   .krds-modal.modal-type02 .conts-area .cont {
-    display: flex;
-    min-height: 6rem;
+    padding: 2rem;
     background-color: #f3f3f3;
     border: 1px solid #ddd;
     border-radius: 0.5rem;
-    align-items: center;
+  }
+  .krds-modal .modal-dialog .modal-btn.jcc {
     justify-content: center;
   }
