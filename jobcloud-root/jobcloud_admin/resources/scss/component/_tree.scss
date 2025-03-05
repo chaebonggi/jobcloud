@@ -1,0 +1,76 @@
+.tree-container li > div, 
+                         #s-l-base li > div {
+                             display: flex;
+                             min-height: 5.4rem;
+                             margin-bottom: 1rem;
+                             padding: 1rem 2rem 1rem 4rem;
+                             background-color: #fff;
+                             border: 1px solid #dddddd;
+                             position: relative;
+                             font-size: 1.4rem;                        
+                             align-items: center;                       
+                         }
+                         .tree-container ul li, #s-l-base ul li {
+                             margin-left: 30px;
+                             position: relative;
+                         }
+                         .tree-container > ul > li,
+                         #s-l-base > ul > li{
+                             margin-left: 0;
+                         }
+                         .tree-container li > div:only-child .tree-cont button, 
+                         #s-l-base li > div:only-child .tree-cont button {
+                             display: none;
+                         }
+                         .tree-container li > div:not(:only-child) .tree-cont .tree-line,
+                         #s-l-base li > div:not(:only-child) .tree-cont .tree-line {
+                             display: none;
+                         }
+                         .tree-container .tree-cont,
+                         #s-l-base .tree-cont {
+                             display: flex;
+                             position: absolute;
+                             width: 3rem;
+                             left: 0;
+                             top: 0;
+                             height: 100%;
+                             background-color: #EFEFEF;
+                             align-items: center;
+                             justify-content: center;
+                         }
+                         .tree-container .tree-cont .svg-icon.ico-angle02,
+                         #s-l-base .tree-cont .svg-icon.ico-angle02 {
+                             width: 1.4rem;
+                             background-color: #999999;
+                             transform: rotate(-90deg);
+                         }
+                         .tree-container .tree-cont .svg-icon.ico-line,
+                         #s-l-base .tree-cont .svg-icon.ico-line {
+                             width: 1.4rem;
+                             background-color: #999999;
+                         }
+                         .tree-container .s-l-open > div .tree-cont .svg-icon.ico-angle02,
+                         #s-l-base .s-l-open > div .tree-cont .svg-icon.ico-angle02 {
+                             transform: rotate(0);
+                         }                         
+                         .tree-container .s-l-open > ul {
+                             display: block;
+                         }
+                         .tree-container ul li ul {
+                             display: none;
+                         }
+                         .tree-container .right,
+                         #s-l-base .right {
+                             display: flex;
+                             align-items: center;
+                             gap: 1rem;
+                         }
+                         .tree-container .tree-menu {
+                             display: none;
+                         }
+                         .tree-container ul > li > div:hover .tree-menu {
+                             display: block;
+                         }
+                         .tree-container .disabled {
+                            opacity: 0.5;
+                         }

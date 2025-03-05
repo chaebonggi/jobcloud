@@ -234,126 +234,13 @@
             <div class="container_wr">
                 
                 <section>
-                    <style>
-                        .b-line {
-                            padding-bottom: 2rem;
-                            margin-bottom: 2rem;
-                            border-bottom: 1px solid #cdd1d5;
-                         }
-                        .tabs {
-                            display: flex;
-                            margin-bottom: 2rem;
-                            border-bottom: 1px solid #ddd;
-                        }
-                        .tabs li a {
-                            display: block;
-                            padding: 1rem;
-                            border-radius: 10px 10px 0 0;
-                            font-size: 16px;
-                            width: 120px;
-                            position: relative;
-                            text-align: center;
-                            background-color: #99B2F9;
-                            border: 1px solid #89a8fe;
-                            border-bottom: 0;
-                            color: #fff;
-                        }
-                        .tabs li a::before {
-                            content: '';
-                            position: absolute;
-                            width: 100%;
-                            left: 0;
-                            bottom: -1px;
-                            border-bottom: 1px solid #fff;
-                        }
-                        .tabs li.active a {
-                            background-color: #fff;
-                            color: #256EF4;
-                        }
-                        .tree-container li > div, 
-                         #s-l-base li > div {
-                             display: flex;
-                             min-height: 5.4rem;
-                             margin-bottom: 1rem;
-                             padding: 1rem 2rem 1rem 4rem;
-                             background-color: #fff;
-                             border: 1px solid #dddddd;
-                             position: relative;
-                             font-size: 1.4rem;                        
-                             align-items: center;                       
-                         }
-                         .tree-container ul li, #s-l-base ul li {
-                             margin-left: 30px;
-                             position: relative;
-                         }
-                         .tree-container > ul > li,
-                         #s-l-base > ul > li{
-                             margin-left: 0;
-                         }
-                         .tree-container li > div:only-child .tree-cont button, 
-                         #s-l-base li > div:only-child .tree-cont button {
-                             display: none;
-                         }
-                         .tree-container li > div:not(:only-child) .tree-cont .tree-line,
-                         #s-l-base li > div:not(:only-child) .tree-cont .tree-line {
-                             display: none;
-                         }
-                         .tree-container .tree-cont,
-                         #s-l-base .tree-cont {
-                             display: flex;
-                             position: absolute;
-                             width: 3rem;
-                             left: 0;
-                             top: 0;
-                             height: 100%;
-                             background-color: #EFEFEF;
-                             align-items: center;
-                             justify-content: center;
-                         }
-                         .tree-container .tree-cont .svg-icon.ico-angle02,
-                         #s-l-base .tree-cont .svg-icon.ico-angle02 {
-                             width: 1.4rem;
-                             background-color: #999999;
-                             transform: rotate(-90deg);
-                         }
-                         .tree-container .tree-cont .svg-icon.ico-line,
-                         #s-l-base .tree-cont .svg-icon.ico-line {
-                             width: 1.4rem;
-                             background-color: #999999;
-                         }
-                         .tree-container .s-l-open > div .tree-cont .svg-icon.ico-angle02,
-                         #s-l-base .s-l-open > div .tree-cont .svg-icon.ico-angle02 {
-                             transform: rotate(0);
-                         }                         
-                         .tree-container .s-l-open > ul {
-                             display: block;
-                         }
-                         .tree-container ul li ul {
-                             display: none;
-                         }
-                         .tree-container .right,
-                         #s-l-base .right {
-                             display: flex;
-                             align-items: center;
-                             gap: 1rem;
-                         }
-                         .tree-container .tree-menu {
-                             display: none;
-                         }
-                         .tree-container ul > li > div:hover .tree-menu {
-                             display: block;
-                         }
-                         .tree-container .disabled {
-                            opacity: 0.5;
-                         }
-                         
-
-                     </style>
                     <div class="inner-section">
-                        <ul class="tabs">
-                            <li class="active"><a href="javascript:;">사용자</a></li>
-                            <li><a href="javascript:;">관리자</a></li>
-                        </ul>
+                        <div class="tab-group">
+                            <ul class="tabs">
+                                <li class="active"><a href="javascript:;">사용자</a></li>
+                                <li><a href="javascript:;">관리자</a></li>
+                            </ul>
+                        </div>
                         <div class="tree-container">
                             <div class="btn-group jce b-line">
                                 <button type="button" class="krds-btn small type05"><i class="svg-icon ico-plus02 right"></i> 대분류 추가</button>

@@ -1,13 +1,22 @@
 
 .table-group .total {padding-left: 1rem; font-size: 1.8rem;}
 .krds-table-wrap.tbl-type { border-radius: 10px 10px 0 0; overflow-x: auto;} 
-.krds-table-wrap.tbl-type table {white-space: nowrap;} 
+.krds-table-wrap.tbl-type table {min-width: 1400px; width: 100%;}
 .krds-table-wrap.tbl-type .tbl.data thead th { padding: 1.6rem 1rem; background-color: #f4f4f4; color: #1e2326; font-weight: 500; border-bottom: 0; text-align: center; } 
 .krds-table-wrap.tbl-type .tbl.data tbody td, 
 .krds-table-wrap.tbl-type .tbl.data tbody th { text-align: center;} 
 .krds-table-wrap.tbl-type .detail { display: none; } 
-.krds-table-wrap.tbl-type .ellip {display: flex; align-items: center;}
-.krds-table-wrap.tbl-type .ellip a { display: inline-block; margin-right: 0.5rem; position: relative; white-space: nowrap; max-width: calc(100% - 50px); overflow: hidden; text-overflow: ellipsis;} 
+.krds-table-wrap.tbl-type .ellip {
+    display: flex;
+}
+.krds-table-wrap.tbl-type .ellip a {
+    max-width: calc(100% - 50px);
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
 .krds-table-wrap.tbl-type .krds-tooltip.preview + .krds-tooltip-popover::before { background-color: #6c6d72; } 
 .krds-table-wrap.tbl-type .krds-tooltip.preview + .krds-tooltip-popover { background-color: #6c6d72; } 
 .krds-table-wrap.tbl-type .krds-tooltip.preview:focus { outline: none; box-shadow: none; } 

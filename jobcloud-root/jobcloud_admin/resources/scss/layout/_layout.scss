@@ -12,6 +12,11 @@
 .btn-group.jcs {justify-content: space-between;}
 .btn-group.jcc {justify-content: center;}
 .btn-group.jce {justify-content: flex-end;}
+.b-line {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #cdd1d5;
+ }
 .fw700 {font-weight: 700;}
 p.small {font-size: 1.4rem;}
 .items-group {
@@ -32,8 +37,7 @@ p.small {font-size: 1.4rem;}
     display: flex;
     align-items: center;
     flex-wrap: wrap;                                    
-  }
-  
+  }  
   .item-d-group dl {
     display: flex;
     align-items: center;
@@ -43,40 +47,50 @@ p.small {font-size: 1.4rem;}
   .item-d-group dl dt {
     width: 12rem;
   }
-.input-group.select-group {
-    gap: 1rem;
-}
-.input-group.select-group > select {
+.input-group.search select:first-child {
     width: 12rem;
-    flex-shrink: 0;
 }
-.input-group dl {
+
+.flex-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: var(--krds-gap-5);
+    width: 100%;
+}
+.input-group dl,
+.form-group dl {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
-.input-group dl dt {
+.input-group dl dt,
+.form-group dl dt {
     width: 12rem;    
 }
-.input-group dl dd {
+.input-group dl dd,
+.form-group dl dd {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     gap: 1rem;
 }
-.input-group.cal {
-    flex-wrap: wrap;
-}
-.input-group.cal .krds-form-select {
-    width: 10rem;
-}
-.input-group.cal .form-group.cal {
-    width: 40rem;
-}
-.input-group.cal .input-group.range {
-    align-items: center;
-}
+
+
+
+// .input-group.cal {
+//     flex-wrap: wrap;
+// }
+// .input-group.cal .krds-form-select {
+//     width: 10rem;
+// }
+// .input-group.cal .form-group.cal {
+//     width: 40rem;
+// }
+// .input-group.cal .input-group.range {
+//     align-items: center;
+// }
 .input-group.range > li:not(.mark) {    
     flex: 1 1 0px;
 }
