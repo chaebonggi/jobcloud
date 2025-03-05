@@ -1,0 +1,655 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>환경설정-권한관리-신규등록</title>
+    <link rel="stylesheet" href="../../resources/cdn/krds.min.css">
+    <link href="../../css/jobcloud/main.css" type="text/css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../../js/jobcloud/plugin/jquery-sortable-lists.js"></script>
+    <script src="../../resources/cdn/krds.min.js"></script>
+</head>
+<body>
+    <div id="jc-wrap">
+        <!-- 건너뛰기 링크 -->
+        <div id="krds-skip-link">
+            <a href="#container">본문 바로가기</a>
+        </div>
+        <!-- //건너뛰기 링크 -->
+
+        <!-- header -->
+        <header id="jc-header">
+            <div class="header-top">
+                <button type="button" class="krds-btn icon btn-gnb">
+                    <span class="sr-only">메뉴</span>
+                    <i class="svg-icon ico-hd-menu"></i>
+                </button>      
+                <h2 class="ht-logo"><a href="#!"><img src="../../images/jobcloud/common/logo_img.png" alt="jobcloud admin"></a></h2>
+                <div class="ht-util">
+                    <ul class="util-list">
+                        <li>
+                            <a href="#!" class="krds-btn util-button"><span>사이트 바로가기</span></a>
+                        </li>
+                        <li>
+                            <div class="krds-drop-wrap">
+                                <button type="button" class="krds-btn drop-btn util-button"><span>홍길동</span> 님<i class="svg-icon ico-toggle-type02"></i></button>
+                                <div class="drop-menu">
+                                <div class="drop-in">
+                                    <ul class="drop-list">
+                                        <li><a href="#" class="item-link active">정보 변경</a></li>
+                                        <li><a href="#" class="item-link">로그 아웃</a></li>
+                                    </ul>
+                                </div>
+                                </div>
+                            </div>
+                        </li>               
+                    </ul>
+                </div>
+                <button type="button" class="btn-navi all" aria-controls="mobile-nav">전체메뉴</button>
+            </div>
+            <nav class="main-menu">
+                <ul class="gnb-list">
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="제공정보 관리">
+                            <span class="sr-only">제공정보 관리</span>
+                            <i class="svg-icon ico-nav ico-nav-menu01"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <div class="krds-side-navigation">
+                                <h3 class="lnb-tit">제공정보 관리</h3>
+                                <!-- lnb-list -->
+                                <ul class="lnb-list" role="menubar">
+                                  <li class="lnb-item">
+                                    <a href="#!" class="lnb-btn lnb-toggle" role="menuitem">지원정책</a>
+                                    <!-- lnb-submenu -->
+                                    <div class="lnb-submenu">
+                                      <ul role="menu">
+                                        <li class="lnb-subitem">
+                                            <a href="#!" class="lnb-btn lnb-link" role="menuitem">지원정책-1</a>                                            
+                                        </li>
+                                        <li class="lnb-subitem">
+                                            <a href="#" class="lnb-btn lnb-link" role="menuitem">지원정책-2</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <!-- //lnb-submenu -->
+                                  </li>
+                                  <li class="lnb-item">
+                                    <a href="#!" class="lnb-btn lnb-toggle" role="menuitem">기업지원</a>
+                                    <!-- lnb-submenu -->
+                                    <div class="lnb-submenu">
+                                        <ul role="menu">
+                                          <li class="lnb-subitem">
+                                              <a href="#!" class="lnb-btn lnb-link" role="menuitem">기업지원-1</a>                                            
+                                          </li>
+                                          <li class="lnb-subitem">
+                                              <a href="#" class="lnb-btn lnb-link" role="menuitem">기업지원-2</a>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                      <!-- //lnb-submenu -->
+                                  </li>
+                                  <li class="lnb-item">
+                                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">교육훈련</a>
+                                  </li>
+                                  <li class="lnb-item">
+                                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">대외활동</a>
+                                  </li>
+                                  <li class="lnb-item">
+                                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">카테고리 관리</a>
+                                  </li>
+                                </ul>
+                                <!-- //lnb-list -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu02"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴2</h3>
+                            <ul>
+                                <li><a href="#!">메뉴2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu03"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴3</h3>
+                            <ul>
+                                <li><a href="#!">메뉴3</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu04"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴4</h3>
+                            <ul>
+                                <li><a href="#!">메뉴4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu05"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴5</h3>
+                            <ul>
+                                <li><a href="#!">메뉴5</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu06"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴6</h3>
+                            <ul>
+                                <li><a href="#!">메뉴6</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu07"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴7</h3>
+                            <ul>
+                                <li><a href="#!">메뉴7</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item">
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+                            <span class="sr-only">채용공고</span>
+                            <i class="svg-icon ico-nav ico-nav-menu08"></i>
+                        </button>
+                        <div class="gnb-depth">
+                            <h3>메뉴8</h3>
+                            <ul>
+                                <li><a href="#!">메뉴8</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="gnb-item active">
+                      <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="환경설정">
+                          <span class="sr-only">환경설정</span>
+                          <i class="svg-icon ico-nav ico-nav-menu09"></i>
+                      </button>
+                      <div class="gnb-depth">
+                          <div class="krds-side-navigation">
+                              <h3 class="lnb-tit">환경설정</h3>
+                              <!-- lnb-list -->
+                              <ul class="lnb-list" role="menubar">
+                                <li class="lnb-item">
+                                  <a href="#!" class="lnb-btn lnb-link" role="menuitem">관리자</a>
+                                </li>
+                                <li class="lnb-item">
+                                  <a href="#!" class="lnb-btn lnb-link" role="menuitem">정보</a>
+                                </li>
+                                <li class="lnb-item">
+                                  <a href="#!" class="lnb-btn lnb-link" role="menuitem">권한 관리</a>
+                                </li>
+                                <li class="lnb-item">
+                                  <a href="#!" class="lnb-btn lnb-link" role="menuitem">메뉴 관리</a>
+                                </li>
+                                <li class="lnb-item">
+                                  <a href="#!" class="lnb-btn lnb-link" role="menuitem">공통코드</a>
+                                </li>
+                                <li class="lnb-item">
+                                  <a href="#!" class="lnb-btn lnb-link" role="menuitem">관리</a>
+                                </li>
+                              </ul>
+                              <!-- //lnb-list -->
+                          </div>
+                      </div>
+                  </li>
+                </ul>
+            </nav>            
+        </header>
+        <div id="container">
+            <h1 class="contain-title">권한 신규등록 / 권한 상세</h1>
+            <div class="container_wr">
+                <section>
+                    <div class="inner-section">
+                        <div class="items-group">
+                            <div class="item">
+                                <div class="item-d-group">
+                                    <dl>
+                                        <dt><p class="fw700">권한명</p></dt>
+                                        <dd>
+                                            <select class="krds-form-select small type02" title="권한명">
+                                            <option value="">전체</option>
+                                            <option value="">슈퍼관리자</option>
+                                            <option value="">운영관리자</option>
+                                            <option value="">운영자</option>
+                                            </select>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><p class="fw700">사용여부</p></dt>
+                                        <dd>
+                                            <div class="krds-check-area">
+                                              <div class="krds-form-check">
+                                                <input type="radio" name="rdo_1" id="rdo_1">
+                                                <label for="rdo_1">사용</label>
+                                              </div>
+                                              <div class="krds-form-check">
+                                                <input type="radio" name="rdo_1" id="rdo_2">
+                                                <label for="rdo_2">미사용</label>
+                                              </div>
+                                            </div>
+                                          </dd>
+                                    </dl>
+                                </div>
+                            </div>                           
+                        </div>
+                        <div class="table-group">                            
+                            <div class="flex-group">                     
+                                <div class="btn-group mla">
+                                    <button type="button" class="krds-btn small type04">목록</button>
+                                    <button type="button" class="krds-btn small type02 delete open-modal" data-target="modal_01">저장</button>
+                                </div>
+                            </div>
+                             <!-- table -->
+                             <div class="table-container">
+                              <div class="krds-table-wrap tbl-type scroll">
+                                <table class="tbl col data min-full">
+                                    <caption>관리자 정보</caption>
+                                    <colgroup>
+                                        <col style="width: 80px;">
+                                        <col>
+                                        <col style="width: 120px;">
+                                        <col style="width: 120px;">
+                                        <col style="width: 120px;">
+                                        <col style="width: 120px;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">메뉴</th>
+                                            <th scope="col">읽기</th>
+                                            <th scope="col">쓰기</th>
+                                            <th scope="col">수정</th>
+                                            <th scope="col">삭제</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                          <td scope="row">1</td>
+                                          <td class="tlt">제공정보 관리</td>
+                                          <td>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" name="chk_a1" id="chk_a1">
+                                                <label for="chk_a1"><span class="sr-only">읽기</span></label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" name="chk_a2" id="chk_a2">
+                                                <label for="chk_a2"><span class="sr-only">쓰기</span></label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" name="chk_a3" id="chk_a3">
+                                                <label for="chk_a3"><span class="sr-only">수정</span></label>
+                                            </div>
+                                          </td>
+                                          <td>
+                                            <div class="krds-form-check">
+                                                <input type="checkbox" name="chk_a4" id="chk_a4">
+                                                <label for="chk_a4"><span class="sr-only">삭제</span></label>
+                                            </div>
+                                          </td>
+                                        </tr> 
+                                        <tr>
+                                            <td scope="row">2</td>
+                                            <td class="tlt"><i class="svg-icon small ico-sub-directory right"></i>지원정책</td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a1" id="chk_a1">
+                                                  <label for="chk_a1"><span class="sr-only">읽기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a2" id="chk_a2">
+                                                  <label for="chk_a2"><span class="sr-only">쓰기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a3" id="chk_a3">
+                                                  <label for="chk_a3"><span class="sr-only">수정</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a4" id="chk_a4">
+                                                  <label for="chk_a4"><span class="sr-only">삭제</span></label>
+                                              </div>
+                                            </td>
+                                          </tr> 
+                                          <tr>
+                                            <td scope="row">3</td>
+                                            <td class="tlt"><i class="svg-icon small ico-sub-directory right"></i>기업지원</td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a1" id="chk_a1">
+                                                  <label for="chk_a1"><span class="sr-only">읽기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a2" id="chk_a2">
+                                                  <label for="chk_a2"><span class="sr-only">쓰기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a3" id="chk_a3">
+                                                  <label for="chk_a3"><span class="sr-only">수정</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a4" id="chk_a4">
+                                                  <label for="chk_a4"><span class="sr-only">삭제</span></label>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td scope="row">4</td>
+                                            <td class="tlt"><i class="svg-icon small ico-sub-directory right"></i>교육훈련</td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a1" id="chk_a1">
+                                                  <label for="chk_a1"><span class="sr-only">읽기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a2" id="chk_a2">
+                                                  <label for="chk_a2"><span class="sr-only">쓰기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a3" id="chk_a3">
+                                                  <label for="chk_a3"><span class="sr-only">수정</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a4" id="chk_a4">
+                                                  <label for="chk_a4"><span class="sr-only">삭제</span></label>
+                                              </div>
+                                            </td>
+                                          </tr> 
+                                          <tr>
+                                            <td scope="row">5</td>
+                                            <td class="tlt"><i class="svg-icon small ico-sub-directory right"></i>대외활동</td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a1" id="chk_a1">
+                                                  <label for="chk_a1"><span class="sr-only">읽기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a2" id="chk_a2">
+                                                  <label for="chk_a2"><span class="sr-only">쓰기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a3" id="chk_a3">
+                                                  <label for="chk_a3"><span class="sr-only">수정</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a4" id="chk_a4">
+                                                  <label for="chk_a4"><span class="sr-only">삭제</span></label>
+                                              </div>
+                                            </td>
+                                          </tr> 
+                                          <tr>
+                                            <td scope="row">6</td>
+                                            <td class="tlt"><i class="svg-icon small ico-sub-directory right"></i>분류관리</td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a1" id="chk_a1">
+                                                  <label for="chk_a1"><span class="sr-only">읽기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a2" id="chk_a2">
+                                                  <label for="chk_a2"><span class="sr-only">쓰기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a3" id="chk_a3">
+                                                  <label for="chk_a3"><span class="sr-only">수정</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a4" id="chk_a4">
+                                                  <label for="chk_a4"><span class="sr-only">삭제</span></label>
+                                              </div>
+                                            </td>
+                                          </tr> 
+                                          <tr>
+                                            <td scope="row">7</td>
+                                            <td class="tlt">채용정보 관리</td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a1" id="chk_a1">
+                                                  <label for="chk_a1"><span class="sr-only">읽기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a2" id="chk_a2">
+                                                  <label for="chk_a2"><span class="sr-only">쓰기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a3" id="chk_a3">
+                                                  <label for="chk_a3"><span class="sr-only">수정</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a4" id="chk_a4">
+                                                  <label for="chk_a4"><span class="sr-only">삭제</span></label>
+                                              </div>
+                                            </td>
+                                          </tr> 
+                                          <tr>
+                                            <td scope="row">8</td>
+                                            <td class="tlt"><i class="svg-icon small ico-sub-directory right"></i>채용공고</td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a1" id="chk_a1">
+                                                  <label for="chk_a1"><span class="sr-only">읽기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a2" id="chk_a2">
+                                                  <label for="chk_a2"><span class="sr-only">쓰기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a3" id="chk_a3">
+                                                  <label for="chk_a3"><span class="sr-only">수정</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a4" id="chk_a4">
+                                                  <label for="chk_a4"><span class="sr-only">삭제</span></label>
+                                              </div>
+                                            </td>
+                                          </tr> 
+                                          <tr>
+                                            <td scope="row">9</td>
+                                            <td class="tlt">환경 설정</td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a1" id="chk_a1">
+                                                  <label for="chk_a1"><span class="sr-only">읽기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a2" id="chk_a2">
+                                                  <label for="chk_a2"><span class="sr-only">쓰기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a3" id="chk_a3">
+                                                  <label for="chk_a3"><span class="sr-only">수정</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a4" id="chk_a4">
+                                                  <label for="chk_a4"><span class="sr-only">삭제</span></label>
+                                              </div>
+                                            </td>
+                                          </tr> 
+                                          <tr>
+                                            <td scope="row">10</td>
+                                            <td class="tlt"><i class="svg-icon small ico-sub-directory right"></i>관리자 관리</td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a1" id="chk_a1">
+                                                  <label for="chk_a1"><span class="sr-only">읽기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a2" id="chk_a2">
+                                                  <label for="chk_a2"><span class="sr-only">쓰기</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a3" id="chk_a3">
+                                                  <label for="chk_a3"><span class="sr-only">수정</span></label>
+                                              </div>
+                                            </td>
+                                            <td>
+                                              <div class="krds-form-check">
+                                                  <input type="checkbox" name="chk_a4" id="chk_a4">
+                                                  <label for="chk_a4"><span class="sr-only">삭제</span></label>
+                                              </div>
+                                            </td>
+                                          </tr> 
+                                    </tbody>
+                                </table>
+                              </div>
+                            </div>
+
+                            <!-- //table -->
+                        </div>
+                       
+                        <!-- pagination -->
+                        <div class="krds-pagination type02">
+                            <a href="javscript:void(0);" class="page-navi prev-start"><span class="sr-only">처음으로</span></a>
+                            <a href="javscript:void(0);" class="page-navi prev"><span class="sr-only">이전</span></a>
+                            <div class="page-links">
+                              <a class="page-link" href="#">1</a>
+                              <a class="page-link" href="#">2</a>
+                              <a class="page-link" href="#">3</a>
+                              <a class="page-link active" href="#"><span class="sr-only">현재페이지 </span>4</a>
+                              <a class="page-link" href="#">5</a>
+                              <a class="page-link" href="#">6</a>
+                              <a class="page-link" href="#">7</a>
+                              <a class="page-link" href="#">8</a>
+                              <span class="page-link link-dot"></span>
+                              <a class="page-link" href="#">99</a>
+                            </div>
+                            <a href="javscript:void(0);" class="page-navi next"><span class="sr-only">다음</span></a>
+                            <a href="javscript:void(0);" class="page-navi next-end"><span class="sr-only">마지막으로</span></a>
+                          </div>
+                          <!-- //pagination -->
+                    </div>
+                </section>                
+            </div>            
+        </div>
+        <footer id="jc-footer">
+            <p>Copyright ⓒ 2025. JOBCloud . All rights reserved.</p>
+        </footer>
+
+         <!-- modal 수정 -->
+         <section id="modal_01" class="krds-modal modal-type02 fade" role="dialog" aria-labelledby="modal_01">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <!-- modal title -->
+                <div class="modal-header">
+                  <h2 id="tit_modal" class="modal-title">
+                    권한 수정
+                  </h2>
+                </div>
+                <!-- //modal title -->
+                <!-- modal contents -->
+                <div class="modal-conts">
+                  <div class="conts-area">                  
+                    <div class="cont tct">
+                      <p>수정 내용이 있습니다.</p>
+                      <p>목록 복귀 시 수정된 내용은 저장되지 않습니다.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- //modal contents -->
+                <!-- modal btn -->
+                <div class="modal-btn btn-wrap jcc">
+                  <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+                  <button type="button" class="krds-btn medium primary close-modal">목록이동</button>
+                </div>
+                <!-- //modal btn -->
+                <!-- close button -->
+                <button type="button" class="krds-btn medium icon btn-close close-modal">
+                  <span class="sr-only">닫기</span>
+                  <i class="svg-icon ico-popup-close"></i>
+                </button>
+                <!-- //close button -->
+              </div>
+            </div>
+            <div class="modal-back"></div>
+          </section>
+           <!-- //modal 수정 -->
+    </div>
+    
+    <script src="../../js/jobcloud/component/run.js"></script>  
+</body>
+</html>

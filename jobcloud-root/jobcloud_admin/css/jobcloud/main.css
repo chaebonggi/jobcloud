@@ -355,6 +355,7 @@ body {
 #container .container_wr {
   position: relative;
   background-color: #fff;
+  overflow: hidden;
 }
 
 #container .container_wr section:first-child {
@@ -765,26 +766,32 @@ p.small {
   display: none;
 }
 
-.items-group .filter-item .item {
+.items-group > .item:first-child {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.items-group .item {
   margin-top: 1.6rem;
   padding-top: 1.6rem;
   border-top: 1px solid #d9d9d9;
 }
 
-.item-d-group {
+.items-group .item-d-group {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.item-d-group dl {
+.items-group .item-d-group dl {
   display: flex;
   align-items: center;
   flex: 1 1 auto;
   gap: 1rem;
 }
 
-.item-d-group dl dt {
+.items-group .item-d-group dl dt {
   width: 12rem;
 }
 
@@ -845,6 +852,11 @@ p.small {
 .input-group.sort-group .sort-container .svg-icon.ico-sort-down {
   width: 1.4rem;
   height: 1.4rem;
+}
+
+.svg-icon.small {
+  width: 2rem;
+  height: 2rem;
 }
 
 .btn-group {
@@ -1317,6 +1329,14 @@ p.small {
   mask-image: url(../../images/jobcloud/component/icon/ico_close_box.svg);
 }
 
+.svg-icon.ico-sub-directory {
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  mask-image: url(../../images/jobcloud/component/icon/ico_sub_directory.svg);
+  background-color: #999999;
+}
+
 .category-group dl {
   display: flex;
   align-items: center;
@@ -1412,6 +1432,10 @@ p.small {
   width: 100%;
 }
 
+.krds-table-wrap.tbl-type table.min-full {
+  min-width: 100%;
+}
+
 .krds-table-wrap.tbl-type .tbl.data thead th {
   padding: 1.6rem 1rem;
   background-color: #f4f4f4;
@@ -1458,6 +1482,30 @@ p.small {
 
 .krds-table-wrap.tbl-type button {
   vertical-align: sub;
+}
+
+.krds-table-wrap.scroll {
+  height: 420px;
+  overflow: auto;
+}
+
+.krds-table-wrap.scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.krds-table-wrap.scroll::-webkit-scrollbar-thumb {
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+
+.krds-table-wrap.scroll table {
+  border-collapse: collapse;
+}
+
+.krds-table-wrap.scroll table > thead > tr {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 
 .sort-controls {
@@ -1511,6 +1559,27 @@ p.small {
 
 .krds-modal .modal-dialog .modal-btn.jcc {
   justify-content: center;
+}
+
+.krds-modal .form-pop-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.krds-modal .form-pop-group .item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.krds-modal .form-pop-group .item .form-tit {
+  width: 10rem;
+  font-weight: 500;
+}
+
+.krds-modal .form-pop-group .item .form-conts {
+  width: 100%;
 }
 
 .krds-form-check.small > input[type=checkbox] ~ label,
