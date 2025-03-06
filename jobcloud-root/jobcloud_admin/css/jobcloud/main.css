@@ -355,7 +355,6 @@ body {
 #container .container_wr {
   position: relative;
   background-color: #fff;
-  overflow: hidden;
 }
 
 #container .container_wr section:first-child {
