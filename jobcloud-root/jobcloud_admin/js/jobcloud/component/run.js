@@ -32,11 +32,6 @@ $(document).ready(function () {
     $(window).on("resize", removeClassesOnResize);
     removeClassesOnResize();
 
-    // 테이블 정렬 버튼
-    $(".sort-btn").on("click", function () {
-        $(this).toggleClass("active");
-        $(this).closest(".input-group").next(".sort-group").stop(true, true).slideToggle();
-    });
     // 토글 버튼
     $(".toggle-btn").on("click", function () {
         $(this).toggleClass("active");
@@ -45,12 +40,6 @@ $(document).ready(function () {
     $('.filter-btn').on('click', function () {
         $(this).toggleClass('active');
         $(this).closest('.items-group').find('.filter-item').slideToggle();
-    });
-    // 정렬 추가
-    $(".sort-add-btn").on("click", function () {
-        let $wrap = $(this).closest(".sort-controls").find(".sort-options");
-        $(this).toggleClass("active");
-        $wrap.slideToggle();
     });
 
     $(".sort-cancel-btn").on("click", function () {
@@ -126,6 +115,12 @@ $(document).ready(function () {
         $("#" + activeTab).fadeIn();
     });
 
+    // drop-menu slide-toggle
+    $(".drop-menu").on("click", function () {
+        const target = $(this).data("target");
+        const $targetDropdown = $(`.drop-cont[data-target="${target}"]`);
+        $targetDropdown.slideToggle(300);
+    });
       
 
 

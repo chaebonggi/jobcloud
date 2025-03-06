@@ -536,7 +536,7 @@
                                     <label for="radio-two">상세 목록</label>
                                 </div>
                                <div class="btn-group">
-                                  <button type="button" class="krds-btn small type04 sort-btn">정렬 <i class="svg-icon ico-sort left"></i></button>
+                                  <button type="button" class="krds-btn small type04 drop-menu" data-target="sort-menu">정렬 <i class="svg-icon ico-sort left"></i></button>
                                   <select class="krds-form-select small type02" title="20개">
                                       <option value="">20개</option>
                                       <option value="">30개</option>
@@ -550,7 +550,7 @@
                                 </div>
                             </div>
                             
-                            <div class="input-group sort-group">
+                            <div class="input-group sort-group drop-cont" data-target="sort-menu">
                               <div class="sort-container">
                                 <div class="krds-tag-wrap large">
                                   <span class="krds-btn-tag">
@@ -569,8 +569,8 @@
                                   </span>
                                 </div>                            
                                 <div class="sort-controls">
-                                  <button type="button" class="krds-btn small type05 sort-add-btn"><i class="svg-icon ico-plus02 right"></i> 정렬 추가</button>
-                                  <div class="sort-options">
+                                  <button type="button" class="krds-btn small type05 drop-menu" data-target="sort-add"><i class="svg-icon ico-plus02 right"></i> 정렬 추가</button>
+                                  <div class="sort-options drop-cont" data-target="sort-add">
                                     <div class="sort-list">
                                       <ul>
                                         <li>
