@@ -107,3 +107,15 @@
     mask-image: url(../../images/jobcloud/component/icon/ico_sub_directory.svg);
     background-color: #999999;
 }
+.svg-icon.ico-minus {
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: contain;
+    mask-image: url(../../images/jobcloud/component/icon/ico_minus.svg);
+}
+.svg-icon.ico-menu {
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: contain;
+    mask-image: url(../../images/jobcloud/component/icon/ico_menu.svg);
+}

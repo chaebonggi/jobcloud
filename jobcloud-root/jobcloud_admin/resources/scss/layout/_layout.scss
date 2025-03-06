@@ -103,24 +103,7 @@ p.small {font-size: 1.4rem;}
 .input-group.range > li:not(.mark) {    
     flex: 1 1 0px;
 }
-.input-group.sort-group {
-    display: none;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    border-top: 1px solid #d9d9d9;   
-}
-.input-group.sort-group .sort-container {
-    display: flex;
-    gap: 0.5rem;    
-}
-.input-group.sort-group .sort-container .svg-icon.ico-sort-up {
-    width: 1.4rem;
-    height: 1.4rem;
-}
-.input-group.sort-group .sort-container .svg-icon.ico-sort-down {
-    width: 1.4rem;
-    height: 1.4rem;
-}
+
 .svg-icon.small {
     width: 2rem;
     height: 2rem;
@@ -140,3 +123,7 @@ p.small {font-size: 1.4rem;}
 .input-group.range>li.mark {
     height: 4rem;
 }
+
+.btn-gruop {
+    position: relative;
+  }

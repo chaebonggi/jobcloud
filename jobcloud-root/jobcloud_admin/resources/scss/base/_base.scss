@@ -1,5 +1,6 @@
 :root {
     --krds-pc-font-size-body-medium: 1.6rem;
+    --krds-pc-font-size-body-large: 1.6rem;
     --krds-pc-font-size-label-medium: 1.6rem;
     --krds-pc-font-size-label-small: 1.6rem;
     --krds-pc-font-size-heading-xxsmall: 1.6rem;
@@ -9,3 +10,4 @@
 }
 html {overflow: hidden;}
 body { max-width: 1920px;  font-size: 1.6rem;}
+textarea.krds-input {font-size: 1.6rem;}

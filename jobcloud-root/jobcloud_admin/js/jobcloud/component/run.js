@@ -115,13 +115,23 @@ $(document).ready(function () {
         $("#" + activeTab).fadeIn();
     });
 
-    // drop-menu slide-toggle
+    // 드랍 토글 메뉴
     $(".drop-menu").on("click", function () {
         const target = $(this).data("target");
         const $targetDropdown = $(`.drop-cont[data-target="${target}"]`);
         $targetDropdown.slideToggle(300);
     });
-      
+    // 드랍 메뉴2
+    $(".dropdown-btn").on("click", function (event) {
+        event.stopPropagation();
+        const target = $(this).data("target");
+        const targetDropdown = $(`.dropdown-cont[data-target="${target}"]`);
+        $(".dropdown-cont").not(targetDropdown).removeClass("show");
+        targetDropdown.toggleClass("show");
+      });
+    $(document).on("click", function () {
+        $(".dropdown-cont").removeClass("show");
+    });
 
 
 });
