@@ -357,6 +357,10 @@ body {
   background-color: #fff;
 }
 
+#container .container_wr.ov-hidden {
+  overflow: hidden;
+}
+
 #container .container_wr section:first-child {
   margin-top: 30px;
 }
