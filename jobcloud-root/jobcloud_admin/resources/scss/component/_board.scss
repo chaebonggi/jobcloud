@@ -5,6 +5,22 @@
  .board-container > div + div { margin-top: 2rem; } 
  .sub-menu { width: 360px; flex-shrink: 0;} 
  .sub-menu .sticky-box { position: sticky; top: 100px; } 
+ .sub-menu .krds-file-upload {
+  gap: 1rem;
+ }
+ .sub-menu .krds-file-upload .file-upload { 
+  padding: 2rem 1rem;
+  gap: 1rem;
+ }
+ .sub-menu .krds-file-upload .file-upload .txt {
+  font-size: 1.4rem;
+ }
+ .sub-menu .krds-file-upload .file-list .upload-list>li {
+  padding: 1rem;
+ }
+ .sub-menu .board-cont .krds-file-upload .file-list .upload-list .file-info .file-name {
+  font-size: 1.4rem;
+ }
  .board-cont { display: flex; padding: 3rem 3rem 1rem; flex-direction: column; border: 1px solid #ddd; border-radius: 1rem; box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px; } 
  .board-cont .board-tit { display: flex; padding-bottom: 2rem; justify-content: space-between; align-content: center; border-bottom: 1px solid #b1b1b1; } 
  .board-cont .board-tit .tit { font-size: 1.8rem; font-weight: 700; } 
@@ -31,6 +47,8 @@
 .board-cont .krds-file-upload .file-list .upload-list .file-info .file-name {
     color: #8a949e;
   }
+
+
 
   .show {
     visibility: visible !important;

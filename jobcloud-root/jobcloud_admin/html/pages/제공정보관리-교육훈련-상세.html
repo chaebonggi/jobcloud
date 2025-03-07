@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>제공정보관리-지원정책-상세</title>
+    <title>제공정보관리-기업지원-상세</title>
     <link rel="stylesheet" href="../../resources/cdn/krds.min.css">
     <link href="../../css/jobcloud/main.css" type="text/css" rel="stylesheet" />
 
@@ -233,7 +233,7 @@
             </nav>            
         </header>
         <div id="container">
-            <h1 class="contain-title">지원정책</h1>
+            <h1 class="contain-title">교육훈련</h1>
             <div class="container_wr">
                 <section>
                     <div class="inner-section in-between">
@@ -246,7 +246,7 @@
                           <div class="item">
                             <div class="b-item">
                               <div class="tit">
-                                <label for="consult_name1">직책명<span class="marking">*</span></label>                                
+                                <label for="consult_name1">교육명<span class="marking">*</span></label>                                
                               </div>
                               <div class="cont">
                                 <input type="text" id="consult_name1" class="krds-input small" placeholder="직책명을 입력해주세요.">
@@ -293,33 +293,112 @@
                           <div class="item">
                             <div class="b-item">
                               <div class="tit">
-                                <label for="consult_name3">지원 대상<span class="marking">*</span></label>
+                                <label for="rdo_a1">교육유형<span class="marking">*</span></label>
                               </div>
                               <div class="cont">
-                                <input type="text" id="consult_name3" class="krds-input small" placeholder="지원대상을 입력해주세요.">
+                                <div class="krds-check-area flex-w">
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_a" id="rdo_a1">
+                                    <label for="rdo_a1">온라인</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_a" id="rdo_a2">
+                                    <label for="rdo_a2">오프라인</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_a" id="rdo_a3">
+                                    <label for="rdo_a3">온+오프라인 혼합</label>
+                                  </div>                                  
+                                </div>
                               </div>
                             </div>                                                      
                           </div>
                           <div class="item">
                             <div class="b-item">
                               <div class="tit">
-                                <label for="consult_name4">지원 방법<span class="marking">*</span></label>
+                                <label for="rdo_b1">교육비용<span class="marking">*</span></label>
                               </div>
                               <div class="cont">
-                                <input type="text" id="consult_name4" class="krds-input small" placeholder="지원방법을 입력해주세요">
+                                <div class="krds-check-area flex-w">
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_b" id="rdo_b1">
+                                    <label for="rdo_b1">유료</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_b" id="rdo_b2">
+                                    <label for="rdo_b2">무료</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_b" id="rdo_b3">
+                                    <label for="rdo_b3">국비지원</label>
+                                  </div>                                  
+                                </div>
                               </div>
-                            </div>                            
-                          </div> 
+                            </div>                                                      
+                          </div>
                           <div class="item">
                             <div class="b-item">
                               <div class="tit">
-                                <label for="consult_name5">선정 기준<span class="marking">*</span></label>
+                                <label for="rdo_c1">교육시간<span class="marking">*</span></label>
                               </div>
                               <div class="cont">
-                                <input type="text" id="consult_name5" class="krds-input small" placeholder="선정기준을 입력해주세요">
+                                <div class="krds-check-area flex-w">
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_c" id="rdo_c1">
+                                    <label for="rdo_c1">주중</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_c" id="rdo_c2">
+                                    <label for="rdo_c2">주말</label>
+                                  </div>                               
+                                </div>
+                              </div>
+                            </div>                                                      
+                          </div>
+                          <div class="item">
+                            <div class="b-item">
+                              <div class="tit">
+                                <label for="rdo_d1">상세시간</label>
+                              </div>
+                              <div class="cont">
+                                <div class="krds-check-area flex-w">
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_d" id="rdo_d1">
+                                    <label for="rdo_d1">전일</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_d" id="rdo_d2">
+                                    <label for="rdo_d2">새벽(00~08시)</label>
+                                  </div>      
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_d" id="rdo_d3">
+                                    <label for="rdo_d3">오전(08~12시)</label>
+                                  </div>   
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_d" id="rdo_d4">
+                                    <label for="rdo_d4">오후(12~18시)</label>
+                                  </div>   
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_d" id="rdo_d5">
+                                    <label for="rdo_d5">저녁(18~00시)</label>
+                                  </div>                            
+                                </div>
+                              </div>
+                            </div>                                                      
+                          </div>
+                          <div class="item">
+                            <div class="b-item">
+                              <div class="tit">
+                                <label for="consult_name3">교육장소<span class="marking">*</span></label>
+                              </div>
+                              <div class="cont">
+                                <div class="c-item">
+                                  <input type="text" id="consult_name3" class="krds-input small" placeholder="교육장소" readonly>
+                                  <button type="button" class="krds-btn small">주소검색</button>
+                                </div>                                
                               </div>
                             </div>                            
-                          </div>                          
+                          </div>                         
                           <div class="item">
                             <div class="b-item">
                               <div class="tit">
@@ -355,10 +434,10 @@
                           <div class="item">
                             <div class="b-item">
                               <div class="tit">
-                                <p>신청 기간<span class="marking">*</span></p>
+                                <p>모집기간<span class="marking">*</span></p>
                               </div>
                               <div class="cont">
-                                <div class="flex-group">
+                                <div class="c-item">
                                   <div class="form-conts calendar-conts">
                                     <div class="calendar-input">
                                       <ul class="input-group range set">
@@ -378,18 +457,114 @@
                                   </div>
                                   <div class="krds-check-area">
                                     <div class="krds-form-check">
-                                      <input type="radio" name="rdo_a" id="rdo_a1">
-                                      <label for="rdo_a1">상시</label>
+                                      <input type="radio" name="rdo_e" id="rdo_e1">
+                                      <label for="rdo_e1">상시</label>
                                     </div>
                                     <div class="krds-form-check">
-                                      <input type="radio" name="rdo_a" id="rdo_a2">
-                                      <label for="rdo_a2">모집완료 시</label>
+                                      <input type="radio" name="rdo_e" id="rdo_e2">
+                                      <label for="rdo_e2">모집완료 시</label>
                                     </div>
                                   </div>
                                 </div>                                
                               </div>
                             </div> 
                           </div> 
+                          <div class="item">
+                            <div class="b-item">
+                              <div class="tit">
+                                <p>교육기간<span class="marking">*</span></p>
+                              </div>
+                              <div class="cont">
+                                <div class="c-item">
+                                  <div class="form-conts calendar-conts">
+                                    <div class="calendar-input">
+                                      <ul class="input-group range set">
+                                        <li>
+                                          <input type="number" class="krds-input datepicker small" placeholder="시작날짜" title="시작날짜 입력">
+                                        </li>
+                                        <li class="mark">-</li>
+                                        <li>
+                                          <input type="number" class="krds-input datepicker small" placeholder="종료날짜" title="종료날짜 입력">
+                                        </li>
+                                      </ul>
+                                      <button type="button" class="krds-btn small icon form-btn-datepicker">
+                                        <span class="sr-only">달력 열기</span>
+                                        <i class="svg-icon ico-calendar"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div class="krds-check-area flex-w">
+                                    <div class="krds-form-check medium">
+                                      <input type="checkbox" id="chk_4-1">
+                                      <label for="chk_4-1">다중회차</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="board-cont">
+                          <div class="board-tit">
+                            <p class="tit">교육회차 정보</p>
+                          </div>
+                          <div class="item">
+                            <div class="b-item">
+                              <div class="tit">1회차</div>
+                              <div class="cont half">
+                                <div class="c-item">
+                                  <div class="form-conts calendar-conts">
+                                    <div class="calendar-input">
+                                      <ul class="input-group range set">
+                                        <li>
+                                          <input type="number" class="krds-input datepicker small" placeholder="시작날짜" title="시작날짜 입력">
+                                        </li>
+                                        <li class="mark">-</li>
+                                        <li>
+                                          <input type="number" class="krds-input datepicker small" placeholder="종료날짜" title="종료날짜 입력">
+                                        </li>
+                                      </ul>
+                                      <button type="button" class="krds-btn small icon form-btn-datepicker">
+                                        <span class="sr-only">달력 열기</span>
+                                        <i class="svg-icon ico-calendar"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <button type="button" class="krds-btn small type04"><i class="svg-icon ico-plus"></i>추가</button>
+                                </div>
+                              </div>
+                            </div>
+                                                        
+                          </div>
+                          <div class="item">
+                            <div class="b-item">
+                              <div class="tit">2회차</div>
+                              <div class="cont half">
+                                <div class="c-item">
+                                  <div class="form-conts calendar-conts">
+                                    <div class="calendar-input">
+                                      <ul class="input-group range set">
+                                        <li>
+                                          <input type="number" class="krds-input datepicker small" placeholder="시작날짜" title="시작날짜 입력">
+                                        </li>
+                                        <li class="mark">-</li>
+                                        <li>
+                                          <input type="number" class="krds-input datepicker small" placeholder="종료날짜" title="종료날짜 입력">
+                                        </li>
+                                      </ul>
+                                      <button type="button" class="krds-btn small icon form-btn-datepicker">
+                                        <span class="sr-only">달력 열기</span>
+                                        <i class="svg-icon ico-calendar"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <button type="button" class="krds-btn small delete"><i class="svg-icon ico-minus"></i>삭제</button>
+                                </div>
+                              </div>
+                            </div>                                                        
+                          </div> 
+
                         </div>
 
                         <div class="board-cont">
@@ -485,27 +660,15 @@
 
                         <div class="board-cont">
                           <div class="board-tit">
-                            <p class="tit">지원 대상 상세 정보</p>
+                            <p class="tit">교육 대상 상세 정보</p>
                           </div>
                           <div class="item">
                             <div class="b-item">
-                              <div class="tit"><label for="rdo_b1">성별</label></div>
+                              <div class="tit"><label for="chk_3-1">지원대상</label></div>
                               <div class="cont">
-                                <div class="krds-check-area">
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_b" id="rdo_b1">
-                                    <label for="rdo_b1">구분 없음</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_b" id="rdo_b2">
-                                    <label for="rdo_b2">남성</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_b" id="rdo_b3">
-                                    <label for="rdo_b3">여성</label>
-                                  </div>
+                                <div class="krds-check-area flex-w">
+                                  
                                 </div>
-                              </div>
                             </div>
                           </div>
                           <div class="item">
@@ -570,35 +733,6 @@
                                     <input type="radio" name="rdo_c" id="rdo_c8">
                                     <label for="rdo_c8">전역군인</label>
                                   </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item">
-                            <div class="b-item">
-                              <div class="tit"><label for="rdo_d1">취업상태</label></div>
-                              <div class="cont">
-                                <div class="krds-check-area">
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_d" id="rdo_d1">
-                                    <label for="rdo_d1">해당 없음</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_d" id="rdo_d2">
-                                    <label for="rdo_d2">구직자</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_d" id="rdo_d3">
-                                    <label for="rdo_d3">재직자</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_d" id="rdo_d4">
-                                    <label for="rdo_d4">사업주</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_d" id="rdo_d5">
-                                    <label for="rdo_d5">예비창업자</label>
-                                  </div>                                  
                                 </div>
                               </div>
                             </div>

@@ -1,5 +1,5 @@
 .category-group dl {display: flex;align-items: center;justify-content: flex-start; gap: 1rem;} 
-.category-group dt {display: flex;width: 10rem;align-items: center;justify-content: flex-start;font-weight: 700; } 
+.category-group dt {display: flex;width: 12rem;align-items: center;justify-content: flex-start;font-weight: 700; flex-shrink: 0;} 
 .category-group dd .krds-check-area {flex-wrap: wrap;gap: 1rem 2rem; } 
 .category-group .krds-form-check input[type=checkbox]~label,
 .category-group .krds-form-check input[type=radio]~label {font-size: 1.4rem; } 
