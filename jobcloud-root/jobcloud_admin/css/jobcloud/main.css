@@ -645,47 +645,7 @@ p.small {
   background-color: #f3f3f3;
 }
 
-.items-group {
-  margin-top: 3rem;
-  padding: 1.6rem;
-  border-radius: 10px;
-  border: 1px solid #d9d9d9;
-}
-
-.items-group .filter-item {
-  display: none;
-}
-
-.items-group > .item:first-child {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-.items-group .item {
-  margin-top: 1.6rem;
-  padding-top: 1.6rem;
-  border-top: 1px solid #d9d9d9;
-}
-
-.items-group .item-d-group {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.items-group .item-d-group dl {
-  display: flex;
-  align-items: center;
-  flex: 1 1 auto;
-  gap: 1rem;
-}
-
-.items-group .item-d-group dl dt {
-  width: 12rem;
-}
-
-.input-group.search select:first-child {
+.sel-group select:first-child {
   width: 12rem;
 }
 
@@ -696,6 +656,10 @@ p.small {
   flex-direction: row;
   gap: var(--krds-gap-5);
   width: 100%;
+}
+
+.input-group {
+  gap: 1rem;
 }
 
 .input-group dl,
@@ -1227,44 +1191,60 @@ p.small {
   mask-image: url(../../images/jobcloud/component/icon/ico_menu.svg);
 }
 
-.category-group dl {
+.items-group {
+  margin-top: 3rem;
+  padding: 1.6rem;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+}
+
+.items-group .filter-item {
+  display: none;
+}
+
+.items-group > .item:first-child {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.items-group .item {
+  margin-top: 1.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid #d9d9d9;
+}
+
+.items-group .item-d-group {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
-.category-group dt {
+.items-group .item-d-group dl {
   display: flex;
-  width: 12rem;
   align-items: center;
-  justify-content: flex-start;
-  font-weight: 700;
+  flex: 1 1 0;
+  gap: 1rem;
+}
+
+.items-group dl dt {
+  width: 12rem;
   flex-shrink: 0;
+  font-weight: 700;
 }
 
-.category-group dd .krds-check-area {
-  flex-wrap: wrap;
-  gap: 1rem 2rem;
-}
-
-.category-group .krds-form-check input[type=checkbox] ~ label,
-.category-group .krds-form-check input[type=radio] ~ label {
-  font-size: 1.4rem;
-}
-
-.category-group .krds-form-check.medium > input[type=checkbox] ~ label:before,
-.category-group .krds-form-check.medium > input[type=radio] ~ label:before {
-  margin-top: 0;
-}
-
-.category-group .krds-form-check.medium > input[type=checkbox] ~ label:after {
-  top: 0.5rem;
-}
-
-.category-group .krds-form-check input[type=checkbox]:checked ~ label:before {
+.items-group .krds-form-check input[type=checkbox]:checked ~ label:before {
   background-color: #1e2326;
   border-color: #1e2326;
+}
+
+.items-group .krds-form-check input[type=radio]:checked ~ label:before {
+  border-color: #1e2326;
+}
+
+.items-group .krds-form-check input[type=radio]:checked ~ label:after {
+  background-color: #1e2326;
 }
 
 .switch-group {
@@ -1856,5 +1836,9 @@ p.small {
   }
 }
 .drop-cont {
+  display: none;
+}
+
+.drop-sel-cont {
   display: none;
 }/*# sourceMappingURL=main.css.map */

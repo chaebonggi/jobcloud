@@ -87,17 +87,6 @@ $(document).ready(function () {
         $('.sTree  li').removeClass('s-l-open');
     });
 
-    // radio target toggle
-    // $('input[type="radio"]').on('change', function () {
-    //     let $container = $(this).closest('.item');
-    //     let $target = $container.find('.radio-target-item');
-
-    //     if ($container.find('.radio-target').is(':checked')) {
-    //       $target.slideDown();
-    //     } else {
-    //       $target.slideUp();
-    //     }
-    //   });
     // 사이드 메뉴
     $(".side-open-btn").on("click", function () {
         $(".side-menu").addClass("is-open");
@@ -132,6 +121,24 @@ $(document).ready(function () {
     $(document).on("click", function () {
         $(".dropdown-cont").removeClass("show");
     });
+
+    // drop select cont
+    const $select = $(".drop-sel");
+    const $selbox = $(".drop-sel-cont");
+    $select.on("change", function () {
+        const $selectedOption = $(this).find(":selected");
+        if ($selectedOption.hasClass("drop-sel-btn")) {
+            $selbox.show();
+        } else {
+            $selbox.hide();
+        }
+    });
+    // 초기 상태 설정
+    if ($select.find(":selected").hasClass("drop-sel-btn")) {
+        $selbox.show();
+    } else {
+        $selbox.hide();
+    }
 
 
 });
