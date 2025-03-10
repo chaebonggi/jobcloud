@@ -246,7 +246,7 @@
                           <div class="item">
                             <div class="b-item">
                               <div class="tit">
-                                <label for="consult_name1">직책명<span class="marking">*</span></label>                                
+                                <label for="consult_name1">활동명<span class="marking">*</span></label>                                
                               </div>
                               <div class="cont">
                                 <input type="text" id="consult_name1" class="krds-input small" placeholder="직책명을 입력해주세요.">
@@ -293,33 +293,78 @@
                           <div class="item">
                             <div class="b-item">
                               <div class="tit">
-                                <label for="consult_name3">지원 대상<span class="marking">*</span></label>
+                                <label for="rdo_a1">활동유형<span class="marking">*</span></label>
                               </div>
                               <div class="cont">
-                                <input type="text" id="consult_name3" class="krds-input small" placeholder="지원대상을 입력해주세요.">
+                                <div class="krds-check-area flex-w">
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_a" id="rdo_a1">
+                                    <label for="rdo_a1">강연/세미나</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_a" id="rdo_a2">
+                                    <label for="rdo_a2">박람회/전시회</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_a" id="rdo_a3">
+                                    <label for="rdo_a3">공모전/대회</label>
+                                  </div>   
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_a" id="rdo_a4">
+                                    <label for="rdo_a4">축제/체험</label>
+                                  </div>   
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_a" id="rdo_a5">
+                                    <label for="rdo_a5">소모임/동호회</label>
+                                  </div>   
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_a" id="rdo_a6">
+                                    <label for="rdo_a6">자선행사/봉사활동</label>
+                                  </div>   
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_a" id="rdo_a7">
+                                    <label for="rdo_a7">데모데이</label>
+                                  </div>   
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_a" id="rdo_a8">
+                                    <label for="rdo_a8">기타</label>
+                                  </div>                                  
+                                </div>
                               </div>
                             </div>                                                      
                           </div>
                           <div class="item">
                             <div class="b-item">
                               <div class="tit">
-                                <label for="consult_name4">지원 방법<span class="marking">*</span></label>
+                                <label for="rdo_b1">참가비용<span class="marking">*</span></label>
                               </div>
                               <div class="cont">
-                                <input type="text" id="consult_name4" class="krds-input small" placeholder="지원방법을 입력해주세요">
+                                <div class="krds-check-area flex-w">
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_b" id="rdo_b1">
+                                    <label for="rdo_b1">유료</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_b" id="rdo_b2">
+                                    <label for="rdo_b2">무료</label>
+                                  </div>                                 
+                                </div>                                
                               </div>
-                            </div>                            
-                          </div> 
+                            </div>                                                      
+                          </div>
                           <div class="item">
                             <div class="b-item">
                               <div class="tit">
-                                <label for="consult_name5">선정 기준<span class="marking">*</span></label>
+                                <label for="consult_name3">활동장소<span class="marking">*</span></label>
                               </div>
                               <div class="cont">
-                                <input type="text" id="consult_name5" class="krds-input small" placeholder="선정기준을 입력해주세요">
+                                <div class="c-item">
+                                  <input type="text" id="consult_name3" class="krds-input small" placeholder="교육장소" readonly>
+                                  <button type="button" class="krds-btn small">주소검색</button>
+                                </div>                                
                               </div>
                             </div>                            
-                          </div>                          
+                          </div>                         
                           <div class="item">
                             <div class="b-item">
                               <div class="tit">
@@ -355,10 +400,10 @@
                           <div class="item">
                             <div class="b-item">
                               <div class="tit">
-                                <p>신청 기간<span class="marking">*</span></p>
+                                <p>모집기간<span class="marking">*</span></p>
                               </div>
                               <div class="cont">
-                                <div class="flex-group">
+                                <div class="c-item">
                                   <div class="form-conts calendar-conts">
                                     <div class="calendar-input">
                                       <ul class="input-group range set">
@@ -378,18 +423,46 @@
                                   </div>
                                   <div class="krds-check-area">
                                     <div class="krds-form-check">
-                                      <input type="radio" name="rdo_a" id="rdo_a1">
-                                      <label for="rdo_a1">상시</label>
+                                      <input type="radio" name="rdo_e" id="rdo_e1">
+                                      <label for="rdo_e1">상시</label>
                                     </div>
                                     <div class="krds-form-check">
-                                      <input type="radio" name="rdo_a" id="rdo_a2">
-                                      <label for="rdo_a2">모집완료 시</label>
+                                      <input type="radio" name="rdo_e" id="rdo_e2">
+                                      <label for="rdo_e2">모집완료 시</label>
                                     </div>
                                   </div>
                                 </div>                                
                               </div>
                             </div> 
                           </div> 
+                          <div class="item">
+                            <div class="b-item">
+                              <div class="tit">
+                                <p>활동기간<span class="marking">*</span></p>
+                              </div>
+                              <div class="cont">
+                                <div class="c-item">
+                                  <div class="form-conts calendar-conts">
+                                    <div class="calendar-input">
+                                      <ul class="input-group range set">
+                                        <li>
+                                          <input type="number" class="krds-input datepicker small" placeholder="시작날짜" title="시작날짜 입력">
+                                        </li>
+                                        <li class="mark">-</li>
+                                        <li>
+                                          <input type="number" class="krds-input datepicker small" placeholder="종료날짜" title="종료날짜 입력">
+                                        </li>
+                                      </ul>
+                                      <button type="button" class="krds-btn small icon form-btn-datepicker">
+                                        <span class="sr-only">달력 열기</span>
+                                        <i class="svg-icon ico-calendar"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
 
                         <div class="board-cont">
@@ -485,24 +558,24 @@
 
                         <div class="board-cont">
                           <div class="board-tit">
-                            <p class="tit">지원 대상 상세 정보</p>
+                            <p class="tit">활동 대상 상세 정보</p>
                           </div>
                           <div class="item">
                             <div class="b-item">
-                              <div class="tit"><label for="rdo_b1">성별</label></div>
+                              <div class="tit"><label for="rdo_f1">성별</label></div>
                               <div class="cont">
-                                <div class="krds-check-area">
+                                <div class="krds-check-area flex-w">
                                   <div class="krds-form-check">
-                                    <input type="radio" name="rdo_b" id="rdo_b1">
-                                    <label for="rdo_b1">구분 없음</label>
+                                    <input type="radio" name="rdo_f" id="rdo_f1">
+                                    <label for="rdo_f1">구분 없음</label>
                                   </div>
                                   <div class="krds-form-check">
-                                    <input type="radio" name="rdo_b" id="rdo_b2">
-                                    <label for="rdo_b2">남성</label>
+                                    <input type="radio" name="rdo_f" id="rdo_f2">
+                                    <label for="rdo_f2">남성</label>
                                   </div>
                                   <div class="krds-form-check">
-                                    <input type="radio" name="rdo_b" id="rdo_b3">
-                                    <label for="rdo_b3">여성</label>
+                                    <input type="radio" name="rdo_f" id="rdo_f3">
+                                    <label for="rdo_f3">여성</label>
                                   </div>
                                 </div>
                               </div>
@@ -535,70 +608,41 @@
                           </div>
                           <div class="item">
                             <div class="b-item">
-                              <div class="tit"><label for="rdo_c1">특화대상</label></div>
+                              <div class="tit"><label for="rdo_g1">특화대상</label></div>
                               <div class="cont">
                                 <div class="krds-check-area flex-w">
                                   <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c1">
-                                    <label for="rdo_c1">해당 없음</label>
+                                    <input type="radio" name="rdo_g" id="rdo_g1">
+                                    <label for="rdo_g1">해당 없음</label>
                                   </div>
                                   <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c2">
-                                    <label for="rdo_c2">경력단절여성</label>
+                                    <input type="radio" name="rdo_g" id="rdo_g2">
+                                    <label for="rdo_g2">경력단절여성</label>
                                   </div>
                                   <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c3">
-                                    <label for="rdo_c3">장애인</label>
+                                    <input type="radio" name="rdo_g" id="rdo_g13">
+                                    <label for="rdo_g13">장애인</label>
                                   </div>
                                   <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c4">
-                                    <label for="rdo_c4">다문화, 새터민</label>
+                                    <input type="radio" name="rdo_g" id="rdo_g14">
+                                    <label for="rdo_g14">다문화, 새터민</label>
                                   </div>
                                   <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c5">
-                                    <label for="rdo_c5">저소득층</label>
+                                    <input type="radio" name="rdo_g" id="rdo_g15">
+                                    <label for="rdo_g15">저소득층</label>
                                   </div>
                                   <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c6">
-                                    <label for="rdo_c6">다자녀</label>
+                                    <input type="radio" name="rdo_g" id="rdo_g16">
+                                    <label for="rdo_g16">다자녀</label>
                                   </div>
                                   <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c7">
-                                    <label for="rdo_c7">외국인(재외국인)</label>
+                                    <input type="radio" name="rdo_g" id="rdo_g17">
+                                    <label for="rdo_g17">외국인(재외국인)</label>
                                   </div>
                                   <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c8">
-                                    <label for="rdo_c8">전역군인</label>
+                                    <input type="radio" name="rdo_g" id="rdo_g17">
+                                    <label for="rdo_g17">전역군인</label>
                                   </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item">
-                            <div class="b-item">
-                              <div class="tit"><label for="rdo_d1">취업상태</label></div>
-                              <div class="cont">
-                                <div class="krds-check-area">
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_d" id="rdo_d1">
-                                    <label for="rdo_d1">해당 없음</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_d" id="rdo_d2">
-                                    <label for="rdo_d2">구직자</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_d" id="rdo_d3">
-                                    <label for="rdo_d3">재직자</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_d" id="rdo_d4">
-                                    <label for="rdo_d4">사업주</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_d" id="rdo_d5">
-                                    <label for="rdo_d5">예비창업자</label>
-                                  </div>                                  
                                 </div>
                               </div>
                             </div>
@@ -681,6 +725,26 @@
                               </div>
                             </div>
                           </div>
+                          <div class="item">
+                            <div class="b-item">
+                              <div class="tit">
+                                <label for="consult_name10">신청인원</label>                                
+                              </div>
+                              <div class="cont half">
+                                <input type="text" id="consult_name10" class="krds-input small" placeholder="신청 인원을 입력해주세요.">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="b-item">
+                              <div class="tit">
+                                <label for="consult_name11">신청비용</label>                                
+                              </div>
+                              <div class="cont half">
+                                <input type="text" id="consult_name11" class="krds-input small" placeholder="신청비용을 입력해주세요.">
+                              </div>
+                            </div>
+                          </div> 
                         </div>
 
                         <div class="board-cont">
