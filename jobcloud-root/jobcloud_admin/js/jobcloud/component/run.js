@@ -88,16 +88,16 @@ $(document).ready(function () {
     });
 
     // radio target toggle
-    $('input[type="radio"]').on('change', function () {
-        let $container = $(this).closest('.item');
-        let $target = $container.find('.radio-target-item');
+    // $('input[type="radio"]').on('change', function () {
+    //     let $container = $(this).closest('.item');
+    //     let $target = $container.find('.radio-target-item');
 
-        if ($container.find('.radio-target').is(':checked')) {
-          $target.slideDown();
-        } else {
-          $target.slideUp();
-        }
-      });
+    //     if ($container.find('.radio-target').is(':checked')) {
+    //       $target.slideDown();
+    //     } else {
+    //       $target.slideUp();
+    //     }
+    //   });
     // 사이드 메뉴
     $(".side-open-btn").on("click", function () {
         $(".side-menu").addClass("is-open");

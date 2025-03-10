@@ -1433,7 +1433,6 @@ p.small {
 }
 
 .sort-group {
-  display: none;
   padding-top: 2rem;
   margin-top: 2rem;
   border-top: 1px solid #d9d9d9;
@@ -1855,4 +1854,7 @@ p.small {
   .sub-menu {
     width: 100%;
   }
+}
+.drop-cont {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

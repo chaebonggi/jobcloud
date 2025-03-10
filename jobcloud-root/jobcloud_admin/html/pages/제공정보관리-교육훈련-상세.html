@@ -319,20 +319,24 @@
                                 <label for="rdo_b1">교육비용<span class="marking">*</span></label>
                               </div>
                               <div class="cont">
-                                <div class="krds-check-area flex-w">
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_b" id="rdo_b1">
-                                    <label for="rdo_b1">유료</label>
+                                <div class="flex-group">
+                                  <div class="krds-check-area flex-w">
+                                    <div class="krds-form-check">
+                                      <input type="radio" name="rdo_b" id="rdo_b1">
+                                      <label for="rdo_b1">유료</label>
+                                    </div>
+                                    <div class="krds-form-check">
+                                      <input type="radio" name="rdo_b" id="rdo_b2">
+                                      <label for="rdo_b2">무료</label>
+                                    </div>                                 
                                   </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_b" id="rdo_b2">
-                                    <label for="rdo_b2">무료</label>
+                                  <div class="krds-check-area flex-w">
+                                    <div class="krds-form-check medium">
+                                      <input type="checkbox" id="chk_4-1" class="drop-menu" data-target="edu-target">
+                                      <label for="chk_4-1">다중회차</label>
+                                    </div>
                                   </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_b" id="rdo_b3">
-                                    <label for="rdo_b3">국비지원</label>
-                                  </div>                                  
-                                </div>
+                                </div>                                
                               </div>
                             </div>                                                      
                           </div>
@@ -495,7 +499,7 @@
                                   </div>
                                   <div class="krds-check-area flex-w">
                                     <div class="krds-form-check medium">
-                                      <input type="checkbox" id="chk_4-1">
+                                      <input type="checkbox" id="chk_4-1" class="drop-menu" data-target="edu-target">
                                       <label for="chk_4-1">다중회차</label>
                                     </div>
                                   </div>
@@ -505,7 +509,7 @@
                           </div>
                         </div>
 
-                        <div class="board-cont">
+                        <div class="board-cont drop-cont" data-target="edu-target">
                           <div class="board-tit">
                             <p class="tit">교육회차 정보</p>
                           </div>
@@ -664,9 +668,22 @@
                           </div>
                           <div class="item">
                             <div class="b-item">
-                              <div class="tit"><label for="chk_3-1">지원대상</label></div>
+                              <div class="tit"><label for="rdo_f1">지원대상</label></div>
                               <div class="cont">
-                                
+                                <div class="krds-check-area flex-w">
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_f" id="rdo_f1">
+                                    <label for="rdo_f1">구분 없음</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_f" id="rdo_f2">
+                                    <label for="rdo_f2">남성</label>
+                                  </div>
+                                  <div class="krds-form-check">
+                                    <input type="radio" name="rdo_f" id="rdo_f3">
+                                    <label for="rdo_f3">여성</label>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -697,48 +714,7 @@
                           </div>
                           <div class="item">
                             <div class="b-item">
-                              <div class="tit"><label for="rdo_c1">특화대상</label></div>
-                              <div class="cont">
-                                <div class="krds-check-area flex-w">
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c1">
-                                    <label for="rdo_c1">해당 없음</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c2">
-                                    <label for="rdo_c2">경력단절여성</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c3">
-                                    <label for="rdo_c3">장애인</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c4">
-                                    <label for="rdo_c4">다문화, 새터민</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c5">
-                                    <label for="rdo_c5">저소득층</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c6">
-                                    <label for="rdo_c6">다자녀</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c7">
-                                    <label for="rdo_c7">외국인(재외국인)</label>
-                                  </div>
-                                  <div class="krds-form-check">
-                                    <input type="radio" name="rdo_c" id="rdo_c8">
-                                    <label for="rdo_c8">전역군인</label>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="item">
-                            <div class="b-item">
-                              <div class="tit"><label for="chk_2-1">지역</label></div>
+                              <div class="tit"><label for="chk_2-1">교육 지역</label></div>
                               <div class="cont">
                                 <div class="krds-check-area flex-w">
                                     <div class="krds-form-check medium">
@@ -814,6 +790,26 @@
                               </div>
                             </div>
                           </div>
+                          <div class="item">
+                            <div class="b-item">
+                              <div class="tit">
+                                <label for="consult_name10">신청인원</label>                                
+                              </div>
+                              <div class="cont half">
+                                <input type="text" id="consult_name10" class="krds-input small" placeholder="신청 인원을 입력해주세요.">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="b-item">
+                              <div class="tit">
+                                <label for="consult_name11">신청비용</label>                                
+                              </div>
+                              <div class="cont half">
+                                <input type="text" id="consult_name11" class="krds-input small" placeholder="신청비용을 입력해주세요.">
+                              </div>
+                            </div>
+                          </div> 
                         </div>
 
                         <div class="board-cont">
