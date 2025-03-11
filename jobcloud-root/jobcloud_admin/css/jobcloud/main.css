@@ -600,11 +600,11 @@ textarea.krds-input {
 }
 
 .mt10 {
-  margin-top: 1rem;
+  margin-top: 1rem !important;
 }
 
 .mt20 {
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 
 .tlt {
@@ -1195,6 +1195,13 @@ p.small {
   mask-image: url(../../images/jobcloud/component/icon/ico_menu.svg);
 }
 
+.svg-icon.ico-click {
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  mask-image: url(../../images/jobcloud/component/icon/ico_click.svg);
+}
+
 .items-group {
   margin-top: 3rem;
   padding: 1.6rem;
@@ -1297,14 +1304,13 @@ p.small {
   font-size: 1.8rem;
 }
 
-.krds-table-wrap.tbl-type {
-  border-radius: 10px 10px 0 0;
+.krds-table-wrap {
   overflow-x: auto;
 }
 
-.krds-table-wrap.tbl-type table.full {
-  min-width: 100%;
-  width: 100%;
+.krds-table-wrap.full table {
+  min-width: 100% !important;
+  width: 100% !important;
 }
 
 .krds-table-wrap.tbl-type table {
@@ -1328,6 +1334,35 @@ p.small {
 .krds-table-wrap.tbl-type .tbl.data tbody td,
 .krds-table-wrap.tbl-type .tbl.data tbody th {
   text-align: center;
+}
+
+.krds-table-wrap .tbl.data thead th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.krds-table-wrap .tbl.data thead th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.krds-table-wrap.tbl-type02 .tbl.data thead th,
+.krds-table-wrap.tbl-type02 .tbl.data tbody td {
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.krds-table-wrap.tbl-type02 .tbl.data thead th {
+  color: #fff;
+  background: #70747b;
+}
+
+.krds-table-wrap.tbl-type02 tbody tr:nth-child(odd) td {
+  background: #fff;
+}
+
+.krds-table-wrap.tbl-type02 tbody tr:nth-child(even) td {
+  background: #f6f7f8;
 }
 
 .krds-table-wrap.tbl-type .detail {
@@ -1481,6 +1516,10 @@ p.small {
 
 .krds-modal .form-pop-group .item .form-conts {
   width: 100%;
+}
+
+.krds-modal .table-container {
+  overflow-x: scroll;
 }
 
 .krds-form-check.small > input[type=checkbox] ~ label,
