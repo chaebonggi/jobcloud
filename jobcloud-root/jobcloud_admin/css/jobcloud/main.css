@@ -599,6 +599,10 @@ textarea.krds-input {
   margin-left: auto;
 }
 
+.mt10 {
+  margin-top: 1rem;
+}
+
 .mt20 {
   margin-top: 2rem;
 }
@@ -1298,6 +1302,11 @@ p.small {
   overflow-x: auto;
 }
 
+.krds-table-wrap.tbl-type table.full {
+  min-width: 100%;
+  width: 100%;
+}
+
 .krds-table-wrap.tbl-type table {
   min-width: 1400px;
   width: 100%;
@@ -1439,7 +1448,7 @@ p.small {
 }
 
 .krds-modal.modal-type02 .modal-dialog .modal-conts {
-  padding: 1rem 2rem;
+  padding: 2rem;
 }
 
 .krds-modal.modal-type02 .conts-area .cont {
@@ -1641,7 +1650,7 @@ p.small {
 
 .sub-menu .sticky-box {
   position: sticky;
-  top: 100px;
+  top: 8rem;
 }
 
 .sub-menu .krds-file-upload {
@@ -1727,7 +1736,10 @@ p.small {
 }
 
 .board-cont .item .cont {
+  display: flex;
   width: 100%;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .board-cont .item .cont.full {
@@ -1744,14 +1756,10 @@ p.small {
   gap: 1rem;
 }
 
-.board-cont .item .cont .c-item + .c-item {
-  margin-top: 1rem;
-}
-
 .board-cont .item .b-item {
   display: flex;
-  align-items: center;
-  flex: 1 1 auto;
+  align-items: baseline;
+  flex: 1 1 0;
   gap: 1rem;
 }
 
