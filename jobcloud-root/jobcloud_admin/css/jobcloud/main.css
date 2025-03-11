@@ -1519,7 +1519,7 @@ p.small {
 }
 
 .krds-modal .table-container {
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .krds-form-check.small > input[type=checkbox] ~ label,
