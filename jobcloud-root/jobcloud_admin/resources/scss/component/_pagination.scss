@@ -40,6 +40,30 @@
 .krds-pagination.type02 .page-navi.next {order: 4;}
 .krds-pagination.type02 .page-navi.next-end {order: 5;}
 
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.pagination .page-navi {
+    display: flex;
+}
+.pagination .page-navi.prev::before,
+.pagination .page-navi.next::after {
+    content: "";
+    display: inline-flex;
+    width: var(--krds-icon--size-medium);
+    height: var(--krds-icon--size-medium);
+    align-items: center;
+    justify-content: center;    
+}
+.pagination .page-navi.prev::before {
+    background-color: #b5b6b8; mask-repeat: no-repeat; mask-position: center center; mask-size: contain; mask-image: url(../../images/jobcloud/component/icon/ico_pagination.svg); transform: rotate(180deg);
+}
+.pagination .page-navi.next::after {
+    background-color: #b5b6b8; mask-repeat: no-repeat; mask-position: center center; mask-size: contain; mask-image: url(../../images/jobcloud/component/icon/ico_pagination.svg); transform: rotate(0);
+}
+
 @media (max-width: 767px) {
     .krds-pagination.type02 .page-navi.prev-start { order: 1;}
     .krds-pagination.type02 .page-navi.prev {order: 2;}    

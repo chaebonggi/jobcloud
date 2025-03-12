@@ -141,4 +141,26 @@ $(document).ready(function () {
     }
 
 
+    // order-btn 태그 순서 이동
+    $(document).on('click', '.c-item-list .order-btn', function() {
+        const button = $(this);
+        const curRow = button.closest('li');
+        const list = button.closest('.c-item-list').find('ul'); 
+        const listCnt = list.children('li').length;
+        const curRowIdx = curRow.index();    
+        if (button.hasClass('order-up') && curRowIdx > 0) {
+            curRow.fadeOut(100, function() {
+                $(this).prev().before(this);
+                $(this).fadeIn();
+            });
+        } else if (button.hasClass('order-down') && curRowIdx < listCnt - 1) {
+            curRow.fadeOut(100, function() {
+                $(this).next().after(this);
+                $(this).fadeIn();
+            });
+        }
+    });
+    
+
+
 });
