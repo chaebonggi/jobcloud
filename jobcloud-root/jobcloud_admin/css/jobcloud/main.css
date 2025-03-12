@@ -575,6 +575,14 @@ textarea.krds-input {
   width: 10rem;
 }
 
+.w140 {
+  width: 14rem;
+}
+
+.w180 {
+  width: 18rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1848,6 +1856,11 @@ p.small {
   flex: none;
 }
 
+.board-cont .item .b-item.full {
+  width: 100%;
+  flex: auto;
+}
+
 .board-cont .item .cont {
   display: flex;
   width: 100%;
@@ -2010,12 +2023,20 @@ p.small {
   gap: 1rem;
 }
 
+.c-item-list ul li:not(:first-child) {
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.c-item-list ul li.list-col {
+  flex-direction: column;
+}
+
 .c-item-list .c-item select {
   width: auto;
 }
 
 .c-item-list .btn-wrap {
-  width: auto;
   display: flex;
   align-items: center;
   gap: 0 0.5rem;

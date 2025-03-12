@@ -32,6 +32,7 @@
  .board-cont .item .b-item.form-group {flex-direction: row;}
  .board-cont .item .tit { width: 12rem; font-weight: 500; flex-shrink: 0; letter-spacing: -1px;} 
  .board-cont .item .b-item.form-group .cont { flex: none;}
+ .board-cont .item .b-item.full {width: 100%; flex: auto;}
  .board-cont .item .cont {display: flex; width: 100%; flex-direction: column; gap: 1rem;} 
  .board-cont .item .cont.full {width: 100%;}
  .board-cont .item .cont.half {width: 50%;}
@@ -140,11 +141,17 @@
   display: flex;
   gap: 1rem;
 }
+.c-item-list ul li:not(:first-child) {
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+.c-item-list ul li.list-col {
+  flex-direction: column;
+}
 .c-item-list .c-item select {
   width: auto;
 }
 .c-item-list .btn-wrap {
-  width: auto;
   display: flex;
   align-items: center;
   gap: 0 0.5rem;
