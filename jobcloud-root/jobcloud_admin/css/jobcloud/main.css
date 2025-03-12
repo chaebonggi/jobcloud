@@ -1978,6 +1978,18 @@ p.small {
   font-weight: 500;
 }
 
+.krds-file-upload .file-list .upload-list {
+  gap: 1rem;
+}
+
+.krds-file-upload .file-list .upload-list > li {
+  padding: 0 1.6rem;
+}
+
+.krds-file-upload .file-list .upload-list .file-info {
+  height: 4rem;
+}
+
 .file-group {
   display: flex;
   gap: 1rem;
