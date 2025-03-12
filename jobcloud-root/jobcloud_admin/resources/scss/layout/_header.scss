@@ -2,7 +2,7 @@
 #jc-header .gnb-item.active .krds-tooltip-popover.active {display: none;}
 #jc-header .main-menu .krds-btn {font-size: 2rem;}
 #jc-header .main-menu .krds-btn:focus { outline: auto; outline-color: #3679F4; box-shadow: none; } 
-#jc-header .header-top { display: flex; max-width: 1920px; width: 100%; height: 70px; position: fixed; top: 0; left: 0; background-color: #efefef; flex-wrap: wrap; align-items: center; z-index: 200;box-shadow:rgba(0, 0, 0, 0.45) 0 0px 6px -2px;} 
+#jc-header .header-top { display: flex; width: 100%; height: 70px; position: fixed; top: 0; left: 0; background-color: #efefef; flex-wrap: wrap; align-items: center; z-index: 200;box-shadow:rgba(0, 0, 0, 0.45) 0 0px 6px -2px;} 
 #jc-header .header-top .ht-logo { display: flex; width: 180px; align-items: center; justify-content: center; } 
 #jc-header .header-top .ht-logo img { vertical-align: baseline; } 
 #jc-header .header-top .ht-util { margin-left: auto; margin-right: 10px;} 
