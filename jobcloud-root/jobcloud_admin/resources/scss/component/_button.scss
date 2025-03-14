@@ -1,4 +1,8 @@
-
+.krds-btn.active {
+    transition: 0.4s ease-in-out !important;
+}
+.krds-btn.xsmall {font-size: 1.4rem;}
+.krds-btn.link.xsmall {font-size: 1.4rem;}
 .krds-btn.small .ico-all {
     width: 20px;
     height: 20px;
@@ -82,10 +86,17 @@
 .krds-btn.type04 {
     background-color: #fff;
     border-color: #99B2F9;
-    color: #99B2F9;
+    color: #99B2F9;    
 }
 .krds-btn.type04 .svg-icon {
     background-color: #99B2F9;
+}
+.krds-btn.type04.active {
+    background-color: #99B2F9;
+    color: #fff;
+}
+.krds-btn.type04.active .svg-icon {
+    background-color: #fff;
 }
 .krds-btn.type05 {
     background-color: transparent;
@@ -130,4 +141,7 @@
 .krds-btn-tag.unused {
     background-color: #afafaf;
     color: #fff;
+}
+.krds-btn.link:visited .svg-icon {
+    background-color: initial;
 }

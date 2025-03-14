@@ -14,12 +14,14 @@
     border-radius: 0 10px 0 0;
 }
 
+.krds-table-wrap.tbl-type02 .tbl.data thead th {
+    font-weight: 500;
+}
 .krds-table-wrap.tbl-type02 .tbl.data thead th,
 .krds-table-wrap.tbl-type02 .tbl.data tbody td {
     padding: 1rem; 
     font-size: 1.4rem;
-    text-align: center;
-    font-weight: 500;
+    text-align: center;    
 }
 .krds-table-wrap.tbl-type02 .tbl.data thead th {       
     color: #fff;    
@@ -32,9 +34,9 @@
     background: #f6f7f8;
 }
 
-.krds-table-wrap.tbl-type .detail { display: none; } 
-.krds-table-wrap.tbl-type .ellip {display: flex;}
-.krds-table-wrap.tbl-type .ellip a {
+.krds-table-wrap .detail { display: none; } 
+.krds-table-wrap .ellip {display: flex;}
+.krds-table-wrap .ellip a {
     max-width: calc(100% - 50px);
     display: -webkit-box;
     overflow: hidden;
@@ -42,6 +44,14 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
 }
+.krds-table-wrap .ellip p {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
 .krds-table-wrap.tbl-type .krds-tooltip.preview + .krds-tooltip-popover::before { background-color: #6c6d72; } 
 .krds-table-wrap.tbl-type .krds-tooltip.preview + .krds-tooltip-popover { background-color: #6c6d72; } 
 .krds-table-wrap.tbl-type .krds-tooltip.preview:focus { outline: none; box-shadow: none; } 
@@ -66,3 +76,33 @@
     top: 0px;
     z-index: 10;
 }
+
+.tab.type02 ul {
+    border: 1px solid #99B2F9;
+    border-radius: 1rem;
+  }
+  .tab.type02.full ul li {
+    position: relative;
+  }
+  .tab.type02.full ul li:not(:first-child)::before {
+    content: '';
+    width: 0.1rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #99B2F9;
+    z-index: 1;
+  }
+  .tab.type02.full ul li .btn-tab {
+    height: 5rem;
+    color: #99B2F9;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .tab.type02 ul li .btn-tab {
+    background-color: #fff;
+  }
+  .tab.type02 ul li.active .btn-tab {
+    color: #fff;
+    background-color: #99B2F9;
+  }

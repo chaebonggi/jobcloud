@@ -109,6 +109,8 @@ $(document).ready(function () {
         const target = $(this).data("target");
         const $targetDropdown = $(`.drop-cont[data-target="${target}"]`);
         $targetDropdown.slideToggle(300);
+        $(this).toggleClass("active");
+        $targetDropdown.toggleClass("active");
     });
     // 드랍 메뉴2
     $(".dropdown-btn").on("click", function (event) {
@@ -161,6 +163,4 @@ $(document).ready(function () {
         }
     });
     
-
-
 });

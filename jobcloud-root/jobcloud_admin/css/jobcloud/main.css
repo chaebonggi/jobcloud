@@ -364,11 +364,11 @@ textarea.krds-input {
   overflow: hidden;
 }
 
-#container .container_wr section:first-child {
+#container .container_wr > section:first-child {
   margin-top: 30px;
 }
 
-#container .container_wr section + section {
+#container .container_wr > section + section {
   margin-top: 60px;
 }
 
@@ -581,8 +581,17 @@ textarea.krds-input {
   width: 18rem;
 }
 
+.mxw320 {
+  max-width: 32rem;
+}
+
 .flex {
   display: flex;
+}
+
+.flex.flex-col {
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .alc {
@@ -637,6 +646,14 @@ textarea.krds-input {
   justify-content: flex-end;
 }
 
+.input-group.als {
+  align-items: flex-start;
+}
+
+.full {
+  width: 100%;
+}
+
 .t-line {
   padding-top: 2rem;
   margin-top: 2rem;
@@ -663,6 +680,7 @@ p.small {
 
 .sel-group select:first-child {
   width: 12rem;
+  flex: none;
 }
 
 .flex-group {
@@ -734,6 +752,20 @@ p.small {
 
 .btn-gruop {
   position: relative;
+}
+
+.krds-form-select.type02[disabled] {
+  background-color: #f3f3f3 !important;
+  opacity: 1;
+}
+
+.krds-input[readonly].datepicker {
+  background-color: #f3f3f3 !important;
+}
+
+.ov-scroll {
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 
 #jc-footer {
@@ -947,6 +979,18 @@ p.small {
     order: 5;
   }
 }
+.krds-btn.active {
+  transition: 0.4s ease-in-out !important;
+}
+
+.krds-btn.xsmall {
+  font-size: 1.4rem;
+}
+
+.krds-btn.link.xsmall {
+  font-size: 1.4rem;
+}
+
 .krds-btn.small .ico-all {
   width: 20px;
   height: 20px;
@@ -1057,6 +1101,15 @@ p.small {
   background-color: #99B2F9;
 }
 
+.krds-btn.type04.active {
+  background-color: #99B2F9;
+  color: #fff;
+}
+
+.krds-btn.type04.active .svg-icon {
+  background-color: #fff;
+}
+
 .krds-btn.type05 {
   background-color: transparent;
   border-color: transparent;
@@ -1110,6 +1163,10 @@ p.small {
 .krds-btn-tag.unused {
   background-color: #afafaf;
   color: #fff;
+}
+
+.krds-btn.link:visited .svg-icon {
+  background-color: initial;
 }
 
 .svg-icon.ico-download {
@@ -1281,6 +1338,27 @@ p.small {
   mask-image: url(../../images/jobcloud/component/icon/ico_arrow_down.svg);
 }
 
+.svg-icon.ico-man {
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  mask-image: url(../../images/jobcloud/component/icon/ico_man.svg);
+}
+
+.svg-icon.ico-woman {
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  mask-image: url(../../images/jobcloud/component/icon/ico_woman.svg);
+}
+
+.svg-icon.ico-link {
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  mask-image: url(../../images/jobcloud/component/icon/ico_link.svg);
+}
+
 .items-group {
   margin-top: 3rem;
   padding: 1.6rem;
@@ -1304,14 +1382,14 @@ p.small {
   border-top: 1px solid #d9d9d9;
 }
 
-.items-group .item-d-group {
+.items-group .dl-group {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-.items-group .item-d-group dl {
+.items-group .dl-group dl {
   display: flex;
   align-items: center;
   flex: 1 1 0;
@@ -1423,12 +1501,15 @@ p.small {
   border-radius: 0 10px 0 0;
 }
 
+.krds-table-wrap.tbl-type02 .tbl.data thead th {
+  font-weight: 500;
+}
+
 .krds-table-wrap.tbl-type02 .tbl.data thead th,
 .krds-table-wrap.tbl-type02 .tbl.data tbody td {
   padding: 1rem;
   font-size: 1.4rem;
   text-align: center;
-  font-weight: 500;
 }
 
 .krds-table-wrap.tbl-type02 .tbl.data thead th {
@@ -1444,16 +1525,24 @@ p.small {
   background: #f6f7f8;
 }
 
-.krds-table-wrap.tbl-type .detail {
+.krds-table-wrap .detail {
   display: none;
 }
 
-.krds-table-wrap.tbl-type .ellip {
+.krds-table-wrap .ellip {
   display: flex;
 }
 
-.krds-table-wrap.tbl-type .ellip a {
+.krds-table-wrap .ellip a {
   max-width: calc(100% - 50px);
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.krds-table-wrap .ellip p {
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1500,6 +1589,41 @@ p.small {
   position: sticky;
   top: 0px;
   z-index: 10;
+}
+
+.tab.type02 ul {
+  border: 1px solid #99B2F9;
+  border-radius: 1rem;
+}
+
+.tab.type02.full ul li {
+  position: relative;
+}
+
+.tab.type02.full ul li:not(:first-child)::before {
+  content: "";
+  width: 0.1rem;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: #99B2F9;
+  z-index: 1;
+}
+
+.tab.type02.full ul li .btn-tab {
+  height: 5rem;
+  color: #99B2F9;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.tab.type02 ul li .btn-tab {
+  background-color: #fff;
+}
+
+.tab.type02 ul li.active .btn-tab {
+  color: #fff;
+  background-color: #99B2F9;
 }
 
 .sort-controls {
@@ -1767,8 +1891,11 @@ p.small {
 }
 
 .sub-menu .sticky-box {
+  display: flex;
+  flex-direction: column;
   position: sticky;
   top: 8rem;
+  gap: 2rem;
 }
 
 .sub-menu .krds-file-upload {
@@ -1817,7 +1944,7 @@ p.small {
 .board-cont .item {
   display: flex;
   padding: 1.6rem 0;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem 2rem;
   border-bottom: 1px solid #ddd;
 }
@@ -1870,8 +1997,12 @@ p.small {
   width: 100%;
 }
 
-.board-cont .item .cont.half {
-  width: 50%;
+.board-cont .half {
+  flex-wrap: wrap;
+}
+
+.board-cont .half > * {
+  flex: 1 1 40%;
 }
 
 .board-cont .item .cont .c-item {
@@ -2050,6 +2181,11 @@ p.small {
   display: flex;
   align-items: center;
   gap: 0 0.5rem;
+}
+
+.cal-group .calendar-conts {
+  width: 16rem;
+  flex: none;
 }
 
 @media (max-width: 1140px) {
