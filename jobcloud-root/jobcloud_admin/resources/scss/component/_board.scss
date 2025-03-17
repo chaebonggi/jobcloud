@@ -8,23 +8,25 @@
  .sub-menu .krds-file-upload {
   gap: 1rem;
  }
- .sub-menu .krds-file-upload .file-upload { 
+.krds-file-upload.small .file-upload { 
   padding: 2rem 1rem;
   gap: 1rem;
  }
- .sub-menu .krds-file-upload .file-upload .txt {
+.krds-file-upload.small .file-upload .txt {
   font-size: 1.4rem;
  }
- .sub-menu .krds-file-upload .file-list .upload-list>li {
+.krds-file-upload.small .file-list .upload-list>li {
   padding: 1rem;
  }
- .sub-menu .board-cont .krds-file-upload .file-list .upload-list .file-info .file-name {
+.krds-file-upload.small .file-list .upload-list .file-info .file-name {
   font-size: 1.4rem;
  }
  .board-cont { display: flex; padding: 3rem 3rem 1rem; flex-direction: column; border: 1px solid #ddd; border-radius: 1rem; box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px; } 
  .board-cont .board-tit { display: flex; padding-bottom: 2rem; justify-content: space-between; align-items: center; border-bottom: 1px solid #b1b1b1; } 
  .board-cont .board-tit .tit { font-size: 1.8rem; font-weight: 700; } 
  .board-cont .item { display: flex; padding: 1.6rem 0; align-items: center; gap: 1rem 2rem; border-bottom: 1px solid #ddd; } 
+ .board-cont .item.half {flex-wrap: wrap;}
+ .board-cont .item.half .b-item {width: calc(50% - 1rem); flex: initial;}
  .board-cont .item:last-child { border-bottom: 0; } 
  .board-cont .item.item-col .b-item { flex-direction: column; gap: 1rem; } 
  .board-cont .item.item-col .tit { width: 100%; } 
@@ -35,15 +37,12 @@
  .board-cont .item .b-item.full {width: 100%; flex: auto;}
  .board-cont .item .cont {display: flex; width: 100%; flex-direction: column; gap: 1rem;} 
  .board-cont .item .cont.full {width: 100%;}
-//  .board-cont .item .cont.half {width: 50%;}
- .board-cont .half {flex-wrap: wrap;}
- .board-cont .half > * {flex: 1 1 40%;}
  .board-cont .item .cont .c-item {display: flex; align-items: center; gap: 1rem;}
  .board-cont .item .cont .c-item.full {width: 100%;}
- .board-cont .item .b-item { display: flex; align-items: baseline; flex: 1 1 0; gap: 1rem;} 
- .board-cont .item.half .b-item.full {flex-basis: 100%;}
- .board-cont .item.half {flex-wrap: wrap;}
- .board-cont .item.half .b-item {flex: initial; flex-basis: calc(50% - 1rem);}
+//  .board-cont .item .b-item { display: flex; align-items: baseline; flex: 1 1 0; gap: 1rem;} 
+.board-cont .item .b-item { display: flex; width: 100%; align-items: baseline; gap: 1rem;}
+.board-cont .item .b-item.wfc {width: fit-content;}
+
  .board-cont .marking { color: #ff2e2e; } 
 .radio-target-item {display: none;}
 .form-group [class^=form-hint-]::before {
@@ -170,6 +169,80 @@
 .cal-group .calendar-conts {
   width: 16rem;
   flex: none;
+}
+
+.counsel-list {
+  display: flex;                      
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;                                          
+}
+.counsel-list li {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.counsel-list .cs-info {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 0.5rem;
+  width: 15rem;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-right: 1px solid #ddd;
+  font-size: 1.4rem;
+}
+.counsel-list .cs-text {
+  height: 10rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #ddd;
+  overflow-y: auto;
+}
+.counsel-list .cs-file {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.business-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.business-list li {
+  width: calc(100% / 3 - 0.7rem);
+}
+.business-list .business-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+}
+.business-list .business-img img {
+  height: 4rem;
+  object-fit: scale-down;
+}
+.business-list .business-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+.business-list .business-cont .business-tit {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
 }
 
  @media (max-width: 1140px){

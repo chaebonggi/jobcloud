@@ -104,6 +104,19 @@ $(document).ready(function () {
         $("#" + activeTab).fadeIn();
     });
 
+    // 라디오 버튼 드랍 메뉴
+    $('input[type="radio"]').on('change', function () {
+        const $dropRadio = $(".drop-radio-menu:checked");
+        const target = $dropRadio.data("target");
+        const $targetDropdown = $(`.drop-cont[data-target="${target}"]`);
+    
+        $(".drop-cont").not($targetDropdown).slideUp(300);
+    
+        if ($dropRadio.length) {
+            $targetDropdown.slideDown(300);
+        }
+    });
+    
     // 드랍 토글 메뉴
     $(".drop-menu").on("click", function () {
         const target = $(this).data("target");

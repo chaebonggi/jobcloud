@@ -1226,7 +1226,7 @@
             </div>
             <div class="item">
               <div class="cont">
-                <div class="c-item sel-group">
+                <div class="b-item sel-group">
                   <select class="krds-form-select small type02" title="상담매체">
                     <option value="">채팅상담</option>
                     <option value="">유선상담</option>
@@ -1251,30 +1251,147 @@
                     </li>
                   </ul>
                 </div>
-                <div class="btn-group mla">
-                  <button type="button" class="krds-btn small type04 drop-menu" data-target="link-menu"><i class="svg-icon ico-link"></i>링크</button>
-                  <button type="button" class="krds-btn small type04"><i class="svg-icon ico-file"></i>파일</button>
-                  <button type="button" class="krds-btn small">상담카드 작성</button>
-                </div>
-                <div class="b-item drop-cont" data-target="link-menu">
-                  <div class="c-item">
-                    <input type="text" class="krds-input small" placeholder="링크">
-                    <button type="button" class="krds-btn small delete"><i class="svg-icon ico-minus"></i>삭제</button>
-                  </div>
-                  <div class="c-item">
-                    <input type="text" class="krds-input small" placeholder="링크">
-                    <button type="button" class="krds-btn small delete"><i class="svg-icon ico-minus"></i>삭제</button>
+                <div class="b-item">
+                  <div class="btn-group mla">
+                    <button type="button" class="krds-btn small type04 drop-menu" data-target="link-menu"><i class="svg-icon ico-link"></i>링크</button>
+                    <button type="button" class="krds-btn small type04 drop-menu" data-target="file-menu"><i class="svg-icon ico-file"></i>파일</button>
+                    <button type="button" class="krds-btn small">상담카드 작성</button>
                   </div>
                 </div>
+                <div class="b-item">
+                  <div class="drop-cont" data-target="link-menu">
+                    <ul class="flex-list">
+                      <li>
+                        <input type="text" class="krds-input small" placeholder="링크">
+                        <button type="button" class="krds-btn small type04"><i class="svg-icon ico-plus"></i>추가</button>
+                      </li>
+                      <li>
+                        <input type="text" class="krds-input small" placeholder="링크">
+                        <button type="button" class="krds-btn small delete"><i class="svg-icon ico-minus"></i>삭제</button>
+                      </li>
+                    </ul>
+                  </div>                  
+                </div>
+                <div class="b-item">
+                  <div class="drop-cont" data-target="file-menu">
+                    <div class="krds-file-upload small">
+                      <!-- 파일 업로드 영역 -->
+                      <div class="file-upload">
+                        <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
+                        <div class="file-upload-btn-wrap">
+                          <input type="file" name="myFile" id="fileu-upload" hidden="">
+                          <label for="fileu-upload">
+                            <button type="button" class="krds-btn xsmall"><i class="svg-icon ico-upload"></i>파일선택</button>
+                          </label>
+                        </div>
+                      </div>
+                      <!-- //파일 업로드 영역 -->
+                      <!-- 파일 리스트 영역 -->
+                      <!-- <div class="file-list">
+                                  <ul class="upload-list">
+                                    <li>
+                                      <div class="file-info">
+                                        <div class="file-name">전입재등록신고서 [hwp, 17KB]</div>
+                                        <div class="btn-wrap">
+                                          <button type="button" class="krds-btn small text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div> -->
+                      <!-- //파일 리스트 영역 -->
+                    </div>
+                  </div>                  
+                </div>
+                
               </div>
             </div>
-            
-          </div>
-          <div class="btn-group">
-            <button type="button" class="krds-btn medium delete open-modal" data-target="modal_02">삭제</button>
-            <div class="mla">
-              <button type="button" class="krds-btn medium type04 side-close-btn">닫기</button>
-              <button type="button" class="krds-btn medium md">수정</button>
+            <div class="item">
+              <div class="cont">
+                <div class="b-item">
+                  <div class="c-item">
+                    <p>총 3회</p>
+                  </div>
+                  <div class="c-item mla">
+                    <select class="krds-form-select small type02 w120" title="전체 매체">
+                      <option value="">전체 매체</option>
+                    </select>
+                    <select class="krds-form-select small type02 w120" title="전체 기간">
+                      <option value="">전체</option>
+                    </select>
+                    <div class="sch-input">
+                      <input type="text" class="krds-input small" id="search-total-input-id" placeholder="검색어를 입력해주세요.">
+                      <button type="button" class="krds-btn icon small ico-search">
+                        <span class="sr-only">검색</span>
+                        <i class="svg-icon ico-sch"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-item">
+                  <ul class="counsel-list">
+                    <li>
+                      <div class="cs-info">
+                        <p><i class="svg-icon ico-faq xsmall right"></i>유선 상담</p>
+                        <p><i class="svg-icon ico-calendar xsmall right"></i>2025-02-25</p>
+                        <p><i class="svg-icon ico-time xsmall right"></i>14:10 ~ 14:25</p>
+                        <p><i class="svg-icon ico-my xsmall right"></i>홍길동 상담사</p>
+                      </div>
+                      <div class="cs-cont">
+                        <div class="cs-text">
+                          <p>상담 내용이 표시됩니다. 상담 내용은 상담사별 중요 내용만 간략 요약할 수 있도록 하며, 링크/첨부
+                            기능을 통해 유선 녹음 내용이나, 채팅 캡쳐화면, 대면상담 카드 스캔본 등을 첨부하거나 역량강화용
+                            자료 링크, 추천한 공고 링크 등을 추가할 수 있습니다.</p>
+                        </div>
+                        <div class="cs-file">
+                          <p><i class="svg-icon ico-link xsmall right"></i>www.naver.com</p>
+                          <p><i class="svg-icon ico-file xsmall right"></i>첨부된 파일 명.jpg(27kb)</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="cs-info">
+                        <p><i class="svg-icon ico-faq xsmall right"></i>유선 상담</p>
+                        <p><i class="svg-icon ico-calendar xsmall right"></i>2025-02-25</p>
+                        <p><i class="svg-icon ico-time xsmall right"></i>14:10 ~ 14:25</p>
+                        <p><i class="svg-icon ico-my xsmall right"></i>홍길동 상담사</p>
+                      </div>
+                      <div class="cs-cont">
+                        <div class="cs-text">
+                          <p>상담 내용이 표시됩니다. 상담 내용은 상담사별 중요 내용만 간략 요약할 수 있도록 하며, 링크/첨부
+                            기능을 통해 유선 녹음 내용이나, 채팅 캡쳐화면, 대면상담 카드 스캔본 등을 첨부하거나 역량강화용
+                            자료 링크, 추천한 공고 링크 등을 추가할 수 있습니다.</p>
+                        </div>
+                        <div class="cs-file">
+                          <p><i class="svg-icon ico-link xsmall right"></i>www.naver.com</p>
+                          <p><i class="svg-icon ico-file xsmall right"></i>첨부된 파일 명.jpg(27kb)</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="cs-info">
+                        <p><i class="svg-icon ico-faq xsmall right"></i>유선 상담</p>
+                        <p><i class="svg-icon ico-calendar xsmall right"></i>2025-02-25</p>
+                        <p><i class="svg-icon ico-time xsmall right"></i>14:10 ~ 14:25</p>
+                        <p><i class="svg-icon ico-my xsmall right"></i>홍길동 상담사</p>
+                      </div>
+                      <div class="cs-cont">
+                        <div class="cs-text">
+                          <p>상담 내용이 표시됩니다. 상담 내용은 상담사별 중요 내용만 간략 요약할 수 있도록 하며, 링크/첨부
+                            기능을 통해 유선 녹음 내용이나, 채팅 캡쳐화면, 대면상담 카드 스캔본 등을 첨부하거나 역량강화용
+                            자료 링크, 추천한 공고 링크 등을 추가할 수 있습니다.</p>
+                        </div>
+                        <div class="cs-file">
+                          <p><i class="svg-icon ico-link xsmall right"></i>www.naver.com</p>
+                          <p><i class="svg-icon ico-file xsmall right"></i>첨부된 파일 명.jpg(27kb)</p>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                
+                
+              </div>
             </div>
           </div>
         </div>
