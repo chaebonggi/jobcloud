@@ -121,6 +121,9 @@ p.small {font-size: 1.4rem;}
   .krds-input[readonly].datepicker {
     background-color: #f3f3f3 !important;
   }
+  .krds-input[disabled] {
+    background-color: #f3f3f3 !important;
+  }
 
 .ov-scroll {
     overflow-y: hidden;
