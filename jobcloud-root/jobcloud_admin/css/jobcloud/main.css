@@ -1769,6 +1769,10 @@ p.small {
   overflow-x: auto;
 }
 
+.krds-form-check {
+  position: relative;
+}
+
 .krds-form-check.small > input[type=checkbox] ~ label,
 .krds-form-check.small > input[type=radio] ~ label {
   font-size: 1.4rem;
@@ -1997,13 +2001,17 @@ p.small {
   flex-wrap: wrap;
 }
 
-.board-cont .item.half .b-item {
+.board-cont .item.half .cont {
   width: calc(50% - 1rem);
   flex: initial;
 }
 
 .board-cont .item:last-child {
   border-bottom: 0;
+}
+
+.board-cont .item .b-item.half {
+  flex-basis: calc(50% - 1rem);
 }
 
 .board-cont .item.item-col .b-item {

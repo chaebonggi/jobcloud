@@ -26,8 +26,9 @@
  .board-cont .board-tit .tit { font-size: 1.8rem; font-weight: 700; } 
  .board-cont .item { display: flex; padding: 1.6rem 0; align-items: center; gap: 1rem 2rem; border-bottom: 1px solid #ddd; } 
  .board-cont .item.half {flex-wrap: wrap;}
- .board-cont .item.half .b-item {width: calc(50% - 1rem); flex: initial;}
+ .board-cont .item.half .cont {width: calc(50% - 1rem); flex: initial;}
  .board-cont .item:last-child { border-bottom: 0; } 
+ .board-cont .item .b-item.half {flex-basis: calc(50% - 1rem);}
  .board-cont .item.item-col .b-item { flex-direction: column; gap: 1rem; } 
  .board-cont .item.item-col .tit { width: 100%; } 
  .board-cont .item.item-col .cont { width: 100%; } 
