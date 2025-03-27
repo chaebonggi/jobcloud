@@ -36,6 +36,9 @@
     border-bottom: 1px solid #cdd1d5;
  }
  .bt-1 {border-top: 1px solid #ddd;}
+ .bt-0 {
+    border-top: 0 !important;
+ }
  .bb-0 {
     border-bottom: 0 !important;
  }
@@ -50,7 +53,9 @@ p.small {font-size: 1.4rem;}
     height: 3.2rem;
     font-size: 1.4rem;
 }
-.ico-group {display: flex; align-items: center; gap: 0.2rem; margin-left: 0.5rem; font-size: 1.4rem;}
+.ico-group {display: flex; align-items: center; gap: 0.5rem; font-size: 1.6rem;}
+.ico-group.small {gap: 0.2rem; font-size: 1.4rem;}
+.ico-group .svg-icon {vertical-align: bottom;}
 .sel-group select:first-child {
     width: 12rem;
     flex: none;

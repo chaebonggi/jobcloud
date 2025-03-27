@@ -708,6 +708,10 @@ textarea.krds-input {
   border-top: 1px solid #ddd;
 }
 
+.bt-0 {
+  border-top: 0 !important;
+}
+
 .bb-0 {
   border-bottom: 0 !important;
 }
@@ -732,9 +736,17 @@ p.small {
 .ico-group {
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.ico-group.small {
   gap: 0.2rem;
-  margin-left: 0.5rem;
   font-size: 1.4rem;
+}
+
+.ico-group .svg-icon {
+  vertical-align: bottom;
 }
 
 .sel-group select:first-child {
@@ -1468,6 +1480,20 @@ a.krds-btn:hover {
   mask-image: url(../../images/jobcloud/component/icon/ico_lock.svg);
 }
 
+.svg-icon.ico-comment {
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  mask-image: url(../../images/jobcloud/component/icon/ico_comment.svg);
+}
+
+.svg-icon.ico-view {
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  mask-image: url(../../images/jobcloud/component/icon/ico_view.svg);
+}
+
 .items-group {
   margin-top: 3rem;
   padding: 1.6rem;
@@ -2056,8 +2082,19 @@ a.krds-btn:hover {
   border-bottom: 1px solid #b1b1b1;
 }
 
+.board-cont .board-tit.col-tit {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .board-cont .board-tit .tit {
-  font-size: 1.8rem;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-all;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -2423,6 +2460,38 @@ a.krds-btn:hover {
 
 .rank-group input {
   padding: 0 1.6rem 0 6rem;
+}
+
+.reveiw-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reveiw-group li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reveiw-group li.none-data {
+  padding: 2rem 0;
+  justify-content: center;
+}
+
+.reveiw-group li:not(:last-child) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.reveiw-group li .review-info .rv-txt {
+  color: #222;
+  font-size: 1.4rem;
+}
+
+.reveiw-group li .review-info .rv-date {
+  color: #adadad;
+  font-size: 1.4rem;
 }
 
 @media (max-width: 1140px) {
