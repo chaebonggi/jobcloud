@@ -105,17 +105,22 @@ $(document).ready(function () {
     });
 
     // 라디오 버튼 드랍 메뉴
+    let previousTarget = null;
     $('input[type="radio"]').on('change', function () {
         const $dropRadio = $(".drop-radio-menu:checked");
-        const target = $dropRadio.data("target");
-        const $targetDropdown = $(`.drop-cont[data-target="${target}"]`);
-    
-        $(".drop-cont").not($targetDropdown).slideUp(300);
-    
-        if ($dropRadio.length) {
-            $targetDropdown.slideDown(300);
+        const currentTarget = $dropRadio.data("target");
+        const $currentTargetDropdown = $(`.drop-cont[data-target="${currentTarget}"]`);
+
+        if (previousTarget && previousTarget !== currentTarget) {
+            const $previousTargetDropdown = $(`.drop-cont[data-target="${previousTarget}"]`);
+            $previousTargetDropdown.slideUp(300);
         }
+        if ($dropRadio.length) {
+            $currentTargetDropdown.slideDown(300);
+        }
+        previousTarget = currentTarget;
     });
+    $(".drop-cont").hide();
     
     // 드랍 토글 메뉴
     $(".drop-menu").on("click", function () {

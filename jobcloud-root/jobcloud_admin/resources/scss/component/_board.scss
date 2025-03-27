@@ -1,13 +1,14 @@
 .inner-section.in-between { display: flex; gap: 2rem; } 
  
-//  .board-container { width: calc(100% - 320px); } 
+ .board-container { display: flex; flex-direction: column; gap: 2rem; } 
  .board-container.full {width: 100%;}
- .board-container > div + div { margin-top: 2rem; } 
+//  .board-container > div + div { margin-top: 2rem; } 
  .sub-menu { width: 360px; flex-shrink: 0;} 
  .sub-menu .sticky-box { display: flex; flex-direction: column; position: sticky; top: 8rem; gap: 2rem;} 
  .sub-menu .krds-file-upload {
   gap: 1rem;
  }
+ .sub-menu .board-cont .item .tit { width: 10rem;} 
 .krds-file-upload.small .file-upload { 
   padding: 2rem 1rem;
   gap: 1rem;
@@ -22,7 +23,7 @@
   font-size: 1.4rem;
  }
  .board-cont { display: flex; padding: 3rem 3rem 1rem; flex-direction: column; border: 1px solid #ddd; border-radius: 1rem; box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px; } 
- .board-cont .board-tit { display: flex; padding-bottom: 2rem; justify-content: space-between; align-items: center; border-bottom: 1px solid #b1b1b1; } 
+ .board-cont .board-tit { display: flex; padding-bottom: 2rem; justify-content: space-between; gap: 1rem; align-items: center; border-bottom: 1px solid #b1b1b1; } 
  .board-cont .board-tit .tit { font-size: 1.8rem; font-weight: 700; } 
  .board-cont .item { display: flex; padding: 1.6rem 0; align-items: center; gap: 1rem 2rem; border-bottom: 1px solid #ddd; } 
  .board-cont .item.half {flex-wrap: wrap;}
@@ -40,7 +41,6 @@
  .board-cont .item .cont.full {width: 100%;}
  .board-cont .item .cont .c-item {display: flex; align-items: center; gap: 1rem;}
  .board-cont .item .cont .c-item.full {width: 100%;}
-//  .board-cont .item .b-item { display: flex; align-items: baseline; flex: 1 1 0; gap: 1rem;} 
 .board-cont .item .b-item { display: flex; width: 100%; align-items: baseline; gap: 1rem;}
 .board-cont .item .b-item.wfc {width: fit-content;}
 
@@ -244,6 +244,38 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   word-break: break-all;
+}
+.rank-group ul {
+  display: flex;
+  gap: 1rem;
+}
+.rank-group ul.half {
+  flex-wrap: wrap;
+}
+.rank-group ul.half li {
+  flex-basis: calc(50% - 1rem);
+}
+.rank-group li {
+  width: 100%;
+  position: relative;
+}
+.rank-group .rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #595959;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1.4rem;
+  z-index: 1;
+}
+.rank-group input {
+padding: 0 1.6rem 0 6rem;
 }
 
  @media (max-width: 1140px){

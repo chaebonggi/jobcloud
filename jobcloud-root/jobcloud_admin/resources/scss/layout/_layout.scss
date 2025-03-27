@@ -7,12 +7,14 @@
 .flex {display: flex;}
 .flex {flex: content;}
 .flex.flex-col {flex-direction: column; gap: 1rem;}
+.fd-c {flex-direction: column;}
 .flex-list {display: flex; flex-direction: column; gap: 1rem;}
 .flex-list li {display: flex; gap: 1rem;}
 .alc {align-items: center;}
 .flex-w {flex-wrap: wrap;}
 .flex-1 {flex: 1;}
 .gap-10 {gap: 10px;}
+.mra {margin-right: auto;}
 .mla {margin-left: auto;}
 .mt10 {margin-top: 1rem !important;}
 .mt20 {margin-top: 2rem !important;}
@@ -33,6 +35,11 @@
     margin-bottom: 2rem;
     border-bottom: 1px solid #cdd1d5;
  }
+ .bt-1 {border-top: 1px solid #ddd;}
+ .bb-0 {
+    border-bottom: 0 !important;
+ }
+
 .fw700 {font-weight: 700;}
 p.small {font-size: 1.4rem;}
 
@@ -43,7 +50,7 @@ p.small {font-size: 1.4rem;}
     height: 3.2rem;
     font-size: 1.4rem;
 }
-
+.ico-group {display: flex; align-items: center; gap: 0.2rem; margin-left: 0.5rem; font-size: 1.4rem;}
 .sel-group select:first-child {
     width: 12rem;
     flex: none;
@@ -124,7 +131,17 @@ p.small {font-size: 1.4rem;}
   .krds-input[disabled] {
     background-color: #f3f3f3 !important;
   }
-
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    background-image: none;
+  }
+  input[type="time"] {
+      background-image: url(../../images/jobcloud/component/icon/ico_time.svg);
+      background-size: 1.6rem 1.6rem;
+      background-position: center right 1.6rem;
+      background-repeat: no-repeat;
+  }
+  .krds-form-select.wfc {width: fit-content;}
+  .krds-input.wfc {width: fit-content;}
 .ov-scroll {
     overflow-y: hidden;
     overflow-x: auto;

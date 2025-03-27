@@ -1,6 +1,9 @@
 // .krds-btn.active {
 //     transition: 0.4s ease-in-out !important;
 // }
+a.krds-btn:hover {
+    color: #fff;
+}
 .krds-btn .svg-icon {
     vertical-align: baseline;
 }
@@ -140,7 +143,7 @@
     background-size: 2rem !important;
     background-image: url(../../images/jobcloud/component/icon/ico_angle03.svg);
 }
-.krds-form-select.wfc {width: fit-content;}
+
 
 .krds-btn-tag.unused {
     background-color: #afafaf;

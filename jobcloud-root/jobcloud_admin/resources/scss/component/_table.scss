@@ -37,12 +37,12 @@
 .krds-table-wrap .detail { display: none; } 
 .krds-table-wrap .ellip {display: flex;}
 .krds-table-wrap .ellip a {
-    max-width: calc(100% - 50px);
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    word-break: break-all;
 }
 .krds-table-wrap .ellip p {
     display: -webkit-box;

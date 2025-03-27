@@ -341,9 +341,16 @@ textarea.krds-input {
   padding: 0 2rem;
 }
 
+#jc-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 #container {
   margin-top: 70px;
   padding-left: 250px;
+  flex: 1;
 }
 
 #container .contain-title {
@@ -606,6 +613,10 @@ textarea.krds-input {
   gap: 1rem;
 }
 
+.fd-c {
+  flex-direction: column;
+}
+
 .flex-list {
   display: flex;
   flex-direction: column;
@@ -631,6 +642,10 @@ textarea.krds-input {
 
 .gap-10 {
   gap: 10px;
+}
+
+.mra {
+  margin-right: auto;
 }
 
 .mla {
@@ -689,6 +704,14 @@ textarea.krds-input {
   border-bottom: 1px solid #cdd1d5;
 }
 
+.bt-1 {
+  border-top: 1px solid #ddd;
+}
+
+.bb-0 {
+  border-bottom: 0 !important;
+}
+
 .fw700 {
   font-weight: 700;
 }
@@ -703,6 +726,14 @@ p.small {
 
 .krds-form-select.xsmall {
   height: 3.2rem;
+  font-size: 1.4rem;
+}
+
+.ico-group {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-left: 0.5rem;
   font-size: 1.4rem;
 }
 
@@ -804,6 +835,25 @@ p.small {
   background-color: #f3f3f3 !important;
 }
 
+input[type=time]::-webkit-calendar-picker-indicator {
+  background-image: none;
+}
+
+input[type=time] {
+  background-image: url(../../images/jobcloud/component/icon/ico_time.svg);
+  background-size: 1.6rem 1.6rem;
+  background-position: center right 1.6rem;
+  background-repeat: no-repeat;
+}
+
+.krds-form-select.wfc {
+  width: fit-content;
+}
+
+.krds-input.wfc {
+  width: fit-content;
+}
+
 .ov-scroll {
   overflow-y: hidden;
   overflow-x: auto;
@@ -811,7 +861,7 @@ p.small {
 
 #jc-footer {
   display: flex;
-  height: 60px;
+  min-height: 60px;
   margin-top: 6rem;
   padding-left: 60px;
   background-color: #fff;
@@ -1020,6 +1070,10 @@ p.small {
     order: 5;
   }
 }
+a.krds-btn:hover {
+  color: #fff;
+}
+
 .krds-btn .svg-icon {
   vertical-align: baseline;
 }
@@ -1199,10 +1253,6 @@ p.small {
 .krds-form-select.type02 {
   background-size: 2rem !important;
   background-image: url(../../images/jobcloud/component/icon/ico_angle03.svg);
-}
-
-.krds-form-select.wfc {
-  width: fit-content;
 }
 
 .krds-btn-tag.unused {
@@ -1411,6 +1461,13 @@ p.small {
   mask-image: url(../../images/jobcloud/component/icon/ico_time.svg);
 }
 
+.svg-icon.ico-lock {
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  mask-image: url(../../images/jobcloud/component/icon/ico_lock.svg);
+}
+
 .items-group {
   margin-top: 3rem;
   padding: 1.6rem;
@@ -1451,7 +1508,7 @@ p.small {
 .items-group dl dt {
   width: 12rem;
   flex-shrink: 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .items-group .krds-form-check input[type=checkbox]:checked ~ label:before {
@@ -1586,12 +1643,12 @@ p.small {
 }
 
 .krds-table-wrap .ellip a {
-  max-width: calc(100% - 50px);
   display: -webkit-box;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  word-break: break-all;
 }
 
 .krds-table-wrap .ellip p {
@@ -1933,12 +1990,14 @@ p.small {
   gap: 2rem;
 }
 
-.board-container.full {
-  width: 100%;
+.board-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.board-container > div + div {
-  margin-top: 2rem;
+.board-container.full {
+  width: 100%;
 }
 
 .sub-menu {
@@ -1956,6 +2015,10 @@ p.small {
 
 .sub-menu .krds-file-upload {
   gap: 1rem;
+}
+
+.sub-menu .board-cont .item .tit {
+  width: 10rem;
 }
 
 .krds-file-upload.small .file-upload {
@@ -1988,6 +2051,7 @@ p.small {
   display: flex;
   padding-bottom: 2rem;
   justify-content: space-between;
+  gap: 1rem;
   align-items: center;
   border-bottom: 1px solid #b1b1b1;
 }
@@ -2321,6 +2385,44 @@ p.small {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   word-break: break-all;
+}
+
+.rank-group ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.rank-group ul.half {
+  flex-wrap: wrap;
+}
+
+.rank-group ul.half li {
+  flex-basis: calc(50% - 1rem);
+}
+
+.rank-group li {
+  width: 100%;
+  position: relative;
+}
+
+.rank-group .rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #595959;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1.4rem;
+  z-index: 1;
+}
+
+.rank-group input {
+  padding: 0 1.6rem 0 6rem;
 }
 
 @media (max-width: 1140px) {

@@ -32,14 +32,9 @@
   .items-group dl dt {
     width: 12rem;
     flex-shrink: 0;
-    font-weight: 700;
+    font-weight: 500;
   }
-
-// .items-group .krds-form-check input[type=checkbox]~label,
-// .items-group .krds-form-check input[type=radio]~label {font-size: 1.4rem; } 
-// .items-group .krds-form-check.medium>input[type=checkbox]~label:before,
-// .items-group .krds-form-check.medium>input[type=radio]~label:before {margin-top: 0; } 
-// .items-group .krds-form-check.medium>input[type=checkbox]~label:after {top: 0.5rem; } 
+  
 .items-group .krds-form-check input[type=checkbox]:checked~label:before {background-color: #1e2326;border-color: #1e2326; } 
 .items-group .krds-form-check input[type=radio]:checked~label:before {border-color: #1e2326;}
 .items-group .krds-form-check input[type=radio]:checked~label:after {background-color: #1e2326;}
