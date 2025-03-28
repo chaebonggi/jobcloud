@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>커뮤니티관리-게시판관리(게시판목록)-게시물 상세</title>
+  <title>커뮤니티관리-게시판관리(게시판목록)-등록</title>
   <link rel="stylesheet" href="../../resources/cdn/krds.min.css">
   <link href="../../css/jobcloud/main.css" type="text/css" rel="stylesheet" />
 
@@ -272,135 +272,96 @@
       </nav>
     </header>
     <div id="container">
-      <h1 class="contain-title">게시물 상세</h1>
+      <h1 class="contain-title">FAQ 등록</h1>
       <div class="container_wr">
         <section>
           <div class="inner-section in-between">
             <div class="board-container full">
               <div class="board-cont">
-                <div class="board-tit col-tit">
-                  <p class="tit"><span class="krds-badge large outline-primary">질문</span> 게시물 제목이 노출 됩니다.</p>
-                  <div class="ico-group">
-                    <p><i class="svg-icon ico-my small right"></i>홍길동</p>
-                    <span>/</span>
-                    <p><i class="svg-icon ico-calendar small right"></i>2025-01-22</p>
-                    <span>/</span>
-                    <p><i class="svg-icon ico-view small right"></i>543</p>
-                    <span>/</span>
-                    <p><i class="svg-icon ico-comment small right"></i>2</p>
-                  </div>
+                <div class="board-tit">
+                  <p class="tit">FAQ 등록/수정</p>
                 </div>
                 <div class="item">
                   <div class="b-item">
                     <div class="tit">
-                      #링크1
+                      <label for="consult_select1">분류</label>
                     </div>
                     <div class="cont">
-                      <p>https://www.naver.com</p>
+                      <select id="consult_select1" class="krds-form-select small type02 wfc" title="분류">
+                        <option value="">회원관련</option>
+                      </select>
                     </div>
                   </div>
                 </div>   
                 <div class="item">
                   <div class="b-item">
                     <div class="tit">
-                      #링크2
+                      <label for="consult_select1">제목</label>
                     </div>
                     <div class="cont">
-                      <p>https://www.kakao.com</p>
+                      <input type="text" id="consult_select1" class="krds-input small" placeholder="제목">
                     </div>
                   </div>
-                </div> 
+                </div>      
                 <div class="item">
                   <div class="b-item">
-                    <div class="tit">
-                      #파일1
-                    </div>
                     <div class="cont">
-                      <div class="c-item">
-                        <p>첨부파일명(hwp, 187kb)</p>
-                        <button type="button" class="krds-btn xsmall type03 mla"><i class="svg-icon ico-download right"></i> 다운로드</button>
-                      </div>
-                    </div>
-                  </div>
-                </div> 
-                <div class="item">
-                  <div class="b-item">
-                    <div class="tit">
-                      #파일2
-                    </div>
-                    <div class="cont">
-                      <div class="c-item">
-                        <p>첨부파일명(hwp, 187kb)</p>
-                        <button type="button" class="krds-btn xsmall type03 mla"><i class="svg-icon ico-download right"></i> 다운로드</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>    
-                <div class="item item-col">
-                  <div class="b-item">
-                    <div class="cont">
-                      <p>작성된 게시물 내용이 노출됩니다.<br><br>
-                        제2항의 재판관중 3인은 국회에서 선출하는 자를, 3인은 대법원장이 지명하는 자를 임명한다.<br> 교육의 자주성·전문성·정치적 중립성 및 대학의 자율성은 법률이 정하는 바에 의하여 보장된다. 
-                        모든 국민은 법률이 정하는 바에 의하여 공무담임권을 가진다.<br><br> 모든 국민은 법 앞에 평등하다.<br> 누구든지 성별·종교 또는 사회적 신분에 의하여 정치적·경제적·
-                        사회적·문화적 생활의 모든 영역에 있어서 차별을 받지 아니한다.</p>
-                    </div>
-                    <div class="btn-group full t-line">
-                      <button type="button" class="krds-btn small">수정</button>
-                      <button type="button" class="krds-btn small type04 mla">목록</button>
+                      에디터 영역
                     </div>
                   </div>
                 </div>
+                <div class="item">
+                  <div class="b-item">
+                    <div class="cont">
+                      <div class="krds-file-upload">                                
+                        <!-- 파일 업로드 영역 -->
+                        <div class="file-upload">
+                          <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
+                          <div class="file-upload-btn-wrap">
+                            <input type="file" name="myFile" id="fileu-upload" hidden="">
+                            <label for="fileu-upload">
+                              <button type="button" class="krds-btn medium"><i class="svg-icon ico-upload"></i>파일선택</button>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- //파일 업로드 영역 -->
+                        <!-- 파일 리스트 영역 -->
+                        <div class="file-list">
+                          <div class="total"><span class="current">2개</span> / 10개</div>
+                          <ul class="upload-list">
+                            <li>
+                              <div class="file-info">
+                                <div class="file-name">전입재등록신고서 [hwp, 17KB] </div>
+                                <div class="btn-wrap">
+                                  <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="file-info">
+                                <div class="file-name">전입신고서 [hwp, 17KB] </div>
+                                <div class="btn-wrap">
+                                  <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                          <div class="upload-delete-btn">
+                            <button type="button" class="krds-btn xsmall delete"><i class="svg-icon ico-delete02 right"></i>전체 파일 삭제</button>
+                          </div>
+                        </div>
+                        <!-- //파일 리스트 영역 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>  
               </div>
-              <div class="board-cont">
-                <div class="board-tit">
-                  <p class="tit">댓글 2</p>
-                </div> 
-                <div class="item">
-                  <div class="b-item">
-                    <div class="cont">
-                      <div class="textarea-wrap small">
-                        <textarea class="krds-input" placeholder="입력 필드 영역" id="textarea"></textarea>
-                      </div>
-                      <div class="btn-group mla">
-                        <button type="button" class="krds-btn small type04">취소</button>
-                        <button type="button" class="krds-btn small">작성</button>
-                      </div>
-                    </div>
-                  </div>
+              <div class="btn-group">
+                <button type="button" class="krds-btn medium delete" data-target="modal_02">삭제</button>
+                <div class="mla">
+                  <button type="button" class="krds-btn medium type04">취소</button>
+                  <button type="button" class="krds-btn medium md">수정</button>
                 </div>
-                <div class="item">
-                  <div class="b-item">
-                    <div class="cont">
-                      <div class="reveiw-group">
-                        <ul>
-                          <!-- <li class="none-data">
-                            <p>첫 댓글을 작성해 주세요.</p>
-                          </li> -->
-                          <li>
-                            <div class="review-info">
-                              <p class="rv-txt">댓글이 있을 경우 댓글 내용이 노출 됩니다.</p>
-                              <span class="rv-date">이순신 / 2025-01-27</span>
-                            </div>
-                            <div class="btn-group">
-                              <button type="button" class="krds-btn xsmall">수정</button>
-                              <button type="button" class="krds-btn xsmall delete">삭제</button>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="review-info">
-                              <p class="rv-txt">댓글이 있을 경우 댓글 내용이 노출 됩니다.</p>
-                              <span class="rv-date">이순신 / 2025-01-27</span>
-                            </div>
-                            <div class="btn-group">
-                              <button type="button" class="krds-btn xsmall">수정</button>
-                              <button type="button" class="krds-btn xsmall delete">삭제</button>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>                      
-                    </div>
-                  </div>
-                </div> 
               </div>
 
             </div>

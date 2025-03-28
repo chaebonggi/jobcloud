@@ -2470,8 +2470,9 @@ a.krds-btn:hover {
 
 .reveiw-group li {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .reveiw-group li.none-data {
@@ -2482,6 +2483,10 @@ a.krds-btn:hover {
 .reveiw-group li:not(:last-child) {
   padding-bottom: 1rem;
   border-bottom: 1px solid #eee;
+}
+
+.reveiw-group li .review-info {
+  width: 100%;
 }
 
 .reveiw-group li .review-info .rv-txt {
@@ -2580,4 +2585,9 @@ a.krds-btn:hover {
 .star-menu .options li {
   padding: 0.5rem 0;
   cursor: pointer;
+}
+
+.textarea-wrap.small textarea.krds-input {
+  font-size: 1.4rem;
+  height: 12rem;
 }/*# sourceMappingURL=main.css.map */
