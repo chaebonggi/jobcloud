@@ -10,7 +10,8 @@
     width: 1.6rem;
     height: 1.6rem;
 }
-.krds-form-check.small>input[type=checkbox]~label:after {
+.krds-form-check.small>input[type=checkbox]~label:after,
+.krds-form-check.small>input[type=radio]~label:after {
     width: 1rem;
     height: 1rem;
     left: 0.3rem;

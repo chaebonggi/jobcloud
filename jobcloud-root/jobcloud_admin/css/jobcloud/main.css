@@ -576,6 +576,10 @@ textarea.krds-input {
   border: 1px solid #ddd;
 }
 
+.w80 {
+  width: 8rem;
+}
+
 .w100 {
   width: 10rem;
 }
@@ -666,6 +670,10 @@ textarea.krds-input {
 
 .tct {
   text-align: center;
+}
+
+.trt {
+  text-align: right;
 }
 
 .jcc {
@@ -1875,7 +1883,8 @@ a.krds-btn:hover {
   height: 1.6rem;
 }
 
-.krds-form-check.small > input[type=checkbox] ~ label:after {
+.krds-form-check.small > input[type=checkbox] ~ label:after,
+.krds-form-check.small > input[type=radio] ~ label:after {
   width: 1rem;
   height: 1rem;
   left: 0.3rem;
@@ -2026,6 +2035,11 @@ a.krds-btn:hover {
   width: 100%;
 }
 
+.board-container.board-col {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
 .sub-menu {
   width: 360px;
   flex-shrink: 0;
@@ -2096,6 +2110,7 @@ a.krds-btn:hover {
   word-break: break-all;
   font-size: 2rem;
   font-weight: 700;
+  line-height: 4rem;
 }
 
 .board-cont .item {
@@ -2145,10 +2160,6 @@ a.krds-btn:hover {
   font-weight: 500;
   flex-shrink: 0;
   letter-spacing: -1px;
-}
-
-.board-cont .item .b-item.form-group .cont {
-  flex: none;
 }
 
 .board-cont .item .b-item.full {
