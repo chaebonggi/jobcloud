@@ -65,7 +65,33 @@ a.krds-btn:hover {
 }
 .krds-tooltip.preview .svg-icon.ico-preview {
     width: 1.6rem;
-    height: 1.6rem;                                  
+    height: 1.6rem;
+    margin-top: 0.4rem;
+}
+.krds-tooltip.preview + .krds-tooltip-popover::before { background-color: #6c6d72; } 
+.krds-tooltip.preview + .krds-tooltip-popover { background-color: #6c6d72; } 
+.krds-tooltip:focus { outline: none; box-shadow: none; } 
+
+.krds-tooltip.info + .krds-tooltip-popover {
+    padding: 1.5rem;
+}
+.krds-tooltip.info + .krds-tooltip-popover li {
+    padding-left: 0.5rem;
+    position: relative;
+    color: #848484;
+    font-size: 1.4rem;
+    text-align: left;
+}
+.krds-tooltip.info + .krds-tooltip-popover li::before {
+    content: '';
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 0.9rem;
+    left: 0;
+    background-color: #848484;
+    border-radius: 50%;
+
 }
 .krds-btn.nomal {
     background-color: #fff;

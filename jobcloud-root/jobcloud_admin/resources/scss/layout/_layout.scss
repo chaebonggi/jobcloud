@@ -153,3 +153,12 @@ p.small {font-size: 1.4rem;}
     overflow-y: hidden;
     overflow-x: auto;
 }
+.ct-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .ct-group li {
+    display: flex;
+    gap: 1rem;
+  }

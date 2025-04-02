@@ -52,9 +52,7 @@
     -webkit-line-clamp: 1;
 }
 
-.krds-table-wrap.tbl-type .krds-tooltip.preview + .krds-tooltip-popover::before { background-color: #6c6d72; } 
-.krds-table-wrap.tbl-type .krds-tooltip.preview + .krds-tooltip-popover { background-color: #6c6d72; } 
-.krds-table-wrap.tbl-type .krds-tooltip.preview:focus { outline: none; box-shadow: none; } 
+
 .krds-table-wrap.tbl-type button {vertical-align: sub;}
 
 .krds-table-wrap.scroll {

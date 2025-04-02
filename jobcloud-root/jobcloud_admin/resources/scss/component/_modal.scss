@@ -1,8 +1,10 @@
-.krds-modal.modal-type02 .modal-dialog .modal-header {
+.krds-modal.modal-type02 .modal-dialog .modal-header,
+.krds-modal.modal-type03 .modal-dialog .modal-header {
     padding: 2rem;
     border-bottom: 1px solid #ddd;
   }
-  .krds-modal.modal-type02 .modal-dialog .modal-conts {
+  .krds-modal.modal-type02 .modal-dialog .modal-conts,
+  .krds-modal.modal-type03 .modal-dialog .modal-conts {
     padding: 2rem;
   }
   .krds-modal.modal-type02 .conts-area .cont {

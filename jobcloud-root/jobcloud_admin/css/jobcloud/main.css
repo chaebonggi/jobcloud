@@ -879,6 +879,17 @@ input[type=time] {
   overflow-x: auto;
 }
 
+.ct-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ct-group li {
+  display: flex;
+  gap: 1rem;
+}
+
 #jc-footer {
   display: flex;
   min-height: 60px;
@@ -1177,6 +1188,43 @@ a.krds-btn:hover {
 .krds-tooltip.preview .svg-icon.ico-preview {
   width: 1.6rem;
   height: 1.6rem;
+  margin-top: 0.4rem;
+}
+
+.krds-tooltip.preview + .krds-tooltip-popover::before {
+  background-color: #6c6d72;
+}
+
+.krds-tooltip.preview + .krds-tooltip-popover {
+  background-color: #6c6d72;
+}
+
+.krds-tooltip:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.krds-tooltip.info + .krds-tooltip-popover {
+  padding: 1.5rem;
+}
+
+.krds-tooltip.info + .krds-tooltip-popover li {
+  padding-left: 0.5rem;
+  position: relative;
+  color: #848484;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.krds-tooltip.info + .krds-tooltip-popover li::before {
+  content: "";
+  width: 0.2rem;
+  height: 0.2rem;
+  position: absolute;
+  top: 0.9rem;
+  left: 0;
+  background-color: #848484;
+  border-radius: 50%;
 }
 
 .krds-btn.nomal {
@@ -1502,6 +1550,13 @@ a.krds-btn:hover {
   mask-image: url(../../images/jobcloud/component/icon/ico_view.svg);
 }
 
+.svg-icon.ico-info {
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: contain;
+  mask-image: url(../../images/jobcloud/component/icon/ico_information.svg);
+}
+
 .items-group {
   margin-top: 3rem;
   padding: 1.6rem;
@@ -1693,19 +1748,6 @@ a.krds-btn:hover {
   -webkit-line-clamp: 1;
 }
 
-.krds-table-wrap.tbl-type .krds-tooltip.preview + .krds-tooltip-popover::before {
-  background-color: #6c6d72;
-}
-
-.krds-table-wrap.tbl-type .krds-tooltip.preview + .krds-tooltip-popover {
-  background-color: #6c6d72;
-}
-
-.krds-table-wrap.tbl-type .krds-tooltip.preview:focus {
-  outline: none;
-  box-shadow: none;
-}
-
 .krds-table-wrap.tbl-type button {
   vertical-align: sub;
 }
@@ -1823,12 +1865,14 @@ a.krds-btn:hover {
   height: 1.4rem;
 }
 
-.krds-modal.modal-type02 .modal-dialog .modal-header {
+.krds-modal.modal-type02 .modal-dialog .modal-header,
+.krds-modal.modal-type03 .modal-dialog .modal-header {
   padding: 2rem;
   border-bottom: 1px solid #ddd;
 }
 
-.krds-modal.modal-type02 .modal-dialog .modal-conts {
+.krds-modal.modal-type02 .modal-dialog .modal-conts,
+.krds-modal.modal-type03 .modal-dialog .modal-conts {
   padding: 2rem;
 }
 
