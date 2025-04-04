@@ -40,7 +40,7 @@
  .board-cont .item .b-item.form-group {flex-direction: row;}
  .board-cont .item .tit { width: 12rem; font-weight: 500; flex-shrink: 0; letter-spacing: -1px;} 
  .board-cont .item .b-item.full {width: 100%; flex: auto;}
- .board-cont .item .cont {display: flex; width: 100%; flex-direction: column; gap: 1rem;} 
+ .board-cont .item .cont {display: flex; width: 100%; flex-direction: column; gap: 1rem; overflow: hidden;} 
  .board-cont .item .cont.full {width: 100%;}
  .board-cont .item .cont .c-item {display: flex; align-items: center; gap: 1rem;}
  .board-cont .item .cont .c-item.full {width: 100%;}
@@ -309,6 +309,62 @@ font-size: 1.4rem;
 .reveiw-group li .review-info .rv-date {
 color: #adadad;
 font-size: 1.4rem;
+}
+
+.krds-modal .tip-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #ddd;
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+}
+.krds-modal .tip-box p {
+  padding-left: 1.6rem;
+  position: relative;
+  font-size: 1.2rem;
+}
+.krds-modal .tip-box p .svg-icon {
+  position: absolute;
+  top: 0.2rem;
+  left: 0;
+}
+
+.form-mail {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+}
+.sel-list-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sel-list-wrap .sel-list {
+  width: 18rem;
+}
+.sel-list-wrap .sel-item {
+  display: flex;
+  gap: 1rem;
+}
+.sel-list-wrap .sel-item:not(:last-child) {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+.sel-list-wrap .list-option {
+  height: inherit;
+}
+.sel-list-wrap .list-option li {
+    display: none;
+    height: 100%;
+}
+.sel-list-wrap .krds-check-area {
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
  @media (max-width: 1140px){
