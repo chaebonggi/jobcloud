@@ -2666,7 +2666,7 @@ a.krds-btn:hover {
   height: inherit;
 }
 
-.sel-list-wrap .list-option li {
+.sel-list-wrap .list-option > li {
   display: none;
   height: 100%;
 }

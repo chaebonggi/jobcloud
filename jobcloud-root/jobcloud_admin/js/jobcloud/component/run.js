@@ -196,8 +196,8 @@ $(document).ready(function () {
         var selectedValue = $(this).val();
         var $parent = $(this).closest(".sel-item");
 
-        $parent.find(".list-option li").hide();
-        $parent.find(".list-option li[data-value='" + selectedValue + "']").show();
+        $parent.find(".list-option > li").hide();
+        $parent.find(".list-option > li[data-value='" + selectedValue + "']").show();
     });
 
 });

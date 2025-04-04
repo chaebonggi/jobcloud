@@ -357,7 +357,7 @@ font-size: 1.4rem;
 .sel-list-wrap .list-option {
   height: inherit;
 }
-.sel-list-wrap .list-option li {
+.sel-list-wrap .list-option > li {
     display: none;
     height: 100%;
 }
