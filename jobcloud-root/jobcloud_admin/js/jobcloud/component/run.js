@@ -192,12 +192,42 @@ $(document).ready(function () {
     });
     
     // 신규메일 select list
+    $(".sel-list-wrap .sel-item[data-value='option6'] .list-option > li").hide();
+    $(".date-single-container").hide();
+    $(".date-range-container").hide();
+
     $(".sel-list-wrap .sel-list").change(function() {
         var selectedValue = $(this).val();
         var $parent = $(this).closest(".sel-item");
 
         $parent.find(".list-option > li").hide();
+
         $parent.find(".list-option > li[data-value='" + selectedValue + "']").show();
+
+        if (selectedValue === 'option6') {
+            var $dateSelect = $parent.find(".list-option > li[data-value='option6'] .date-type-select");
+            var $singleDateDiv = $parent.find(".date-single-container");
+            var $rangeDateDiv = $parent.find(".date-range-container");
+
+            $singleDateDiv.hide();
+            $rangeDateDiv.hide();
+
+            $dateSelect.change(function() {
+                var dateSelectValue = $(this).val();
+
+                if (dateSelectValue === 'type01' || dateSelectValue === 'type02') {
+                    $singleDateDiv.show();
+                    $rangeDateDiv.hide();
+                } else if (dateSelectValue === 'type03') {
+                    $singleDateDiv.hide();
+                    $rangeDateDiv.show();
+                } else {
+                    $singleDateDiv.hide();
+                    $rangeDateDiv.hide();
+                }
+            });
+        }
     });
+
 
 });

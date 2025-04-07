@@ -429,12 +429,13 @@
                                 </li>
                                 <li data-value="option6">
                                   <div class="input-group">
-                                    <select class="krds-form-select small type02 wfc" title="가입일">
-                                      <option value="">이전</option>
-                                      <option value="">이후</option>
-                                      <option value="">범위</option>
+                                    <select class="krds-form-select small type02 wfc date-type-select" title="가입일">
+                                      <option value="">선택</option>
+                                      <option value="type01">이전</option>
+                                      <option value="type02">이후</option>
+                                      <option value="type03">범위</option>
                                     </select>
-                                    <!-- <div>
+                                    <div class="date-single-container">
                                       <div class="calendar-conts">
                                         <div class="calendar-input">
                                           <input type="number" class="krds-input datepicker cal small" placeholder="2025-12-12" id="cal">
@@ -444,8 +445,8 @@
                                           </button>
                                         </div>
                                       </div>
-                                    </div> -->
-                                    <div>
+                                    </div>
+                                    <div class="date-range-container">
                                       <div class="calendar-conts">
                                         <div class="calendar-input">
                                           <ul class="input-group range set">
@@ -541,19 +542,43 @@
                                 </li>
                                 <li data-value="option6">
                                   <div class="input-group">
-                                    <select class="krds-form-select small type02 wfc" title="가입일">
-                                      <option value="">이전</option>
-                                      <option value="">이후</option>
+                                    <select class="krds-form-select small type02 wfc date-type-select" title="가입일">
+                                      <option value="">선택</option>
+                                      <option value="type01">이전</option>
+                                      <option value="type02">이후</option>
+                                      <option value="type03">범위</option>
                                     </select>
-                                    <div class="calendar-conts">
-                                      <div class="calendar-input">
-                                        <input type="number" class="krds-input datepicker cal small" placeholder="2025-12-12" id="cal">
-                                        <button type="button" class="krds-btn small icon form-btn-datepicker">
-                                          <span class="sr-only">달력 열기</span>
-                                          <i class="svg-icon ico-calendar"></i>
-                                        </button>
+                                    <div class="date-single-container">
+                                      <div class="calendar-conts">
+                                        <div class="calendar-input">
+                                          <input type="number" class="krds-input datepicker cal small" placeholder="2025-12-12" id="cal">
+                                          <button type="button" class="krds-btn small icon form-btn-datepicker">
+                                            <span class="sr-only">달력 열기</span>
+                                            <i class="svg-icon ico-calendar"></i>
+                                          </button>
+                                        </div>
                                       </div>
                                     </div>
+                                    <div class="date-range-container">
+                                      <div class="calendar-conts">
+                                        <div class="calendar-input">
+                                          <ul class="input-group range set">
+                                            <li>
+                                              <input type="number" class="krds-input datepicker small" placeholder="시작날짜" title="시작날짜 입력">
+                                            </li>
+                                            <li class="mark">~</li>
+                                            <li>
+                                              <input type="number" class="krds-input datepicker small" placeholder="종료날짜" title="종료날짜 입력">
+                                            </li>
+                                          </ul>
+                                          <button type="button" class="krds-btn small icon form-btn-datepicker" aria-expanded="false">
+                                            <span class="sr-only">달력 열기</span>
+                                            <i class="svg-icon ico-calendar"></i>
+                                          </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
                                   </div>
                                 </li>
                             </ul>
