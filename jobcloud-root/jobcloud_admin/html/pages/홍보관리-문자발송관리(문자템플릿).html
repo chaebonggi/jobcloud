@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>홍보관리-메일발송관리(메일템플릿)</title>
+    <title>홍보관리-문자발송관리(문자템플릿)</title>
     <link rel="stylesheet" href="../../resources/cdn/krds.min.css">
     <link href="../../css/jobcloud/main.css" type="text/css" rel="stylesheet" />
 
@@ -272,7 +272,7 @@
             </nav>
         </header>
         <div id="container">
-            <h1 class="contain-title">메일 템플릿</h1>
+            <h1 class="contain-title">문자 템플릿</h1>
             <div class="container_wr">
                 <section>
                     <div class="inner-section">
@@ -306,61 +306,151 @@
                                     <button type="button" class="krds-btn small type02"><i class="svg-icon ico-plus02 right"></i> 신규 등록</button>
                                 </div>
                             </div>
+                            <style>
+                                .krds-badge.small {
+                                    font-size: 1.4rem;
+                                }
+                                .card-list {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    gap: 2rem;
+                                    margin-top: 2rem;
+                                }
+                                .card-list .card-item {
+                                    width: calc(100% / 4 - 1.5rem);
+                                    border: 1px solid #ddd;
+                                    border-radius: 1rem;
+                                }
+                                .card-list .card-item a {
+                                    display: block;
+                                }
+                                .card-list .card-top {               
+                                    padding: 1rem;                                  
+                                    border-bottom: 1px solid #ddd;
+                                    border-radius: 0.9rem 0.9rem 0 0;
+                                }
+                                .card-list .card-item:nth-child(3n+1) .card-top {
+                                    background-color: #e7f1fd;
+                                }
+                                .card-list .card-item:nth-child(3n+2) .card-top {
+                                    background-color: #e7e8fd;
+                                }
+                                .card-list .card-item:nth-child(3n+3) .card-top {
+                                    background-color: #f5e6fd;
+                                }
+                                .card-list .card-text {
+                                    height: 16rem;                                    
+                                    overflow-y: auto;
+                                }
+                                .card-list .card-text::-webkit-scrollbar {
+                                    width: 8px; 
+                                }
+                                .card-list .card-text::-webkit-scrollbar-thumb {              
+                                    background-color: #eee;                      
+                                    border-radius: 4px; 
+                                }
 
-                            <!-- table -->
-                            <div class="table-container">
-                                <div class="krds-table-wrap tbl-type">
-                                    <table class="tbl col data min-full">
-                                        <caption>메일 정보</caption>
-                                        <colgroup>
-                                            <col style="width: 80px;">                      
-                                            <col style="min-width: 400px;">
-                                            <col style="width: 400px;">
-                                            <col style="width: 200px;">
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">No.</th>
-                                                <th scope="col">템플릿 제목</th>
-                                                <th scope="col">조건</th>
-                                                <th scope="col">사용 여부</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td class="tlt">
-                                                  <div class="ellip">
-                                                    <a href="#" class="krds-btn link small" title="상세페이지 이동">[잡클라우드] #이름#님의 회원 가입을 환영합니다.</a>
-                                                    <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical" data-tooltip="미리보기">
-                                                      <span class="sr-only">미리보기</span>                                            
-                                                      <i class="svg-icon ico-preview"></i>
-                                                    </button>
-                                                  </div>                                          
-                                                </td>
-                                                <td>[자동] 회원가입 시</td>
-                                                <td>사용</td>
-                                              </tr>
-                                              <tr>
-                                                <td>1</td>
-                                                <td class="tlt">
-                                                  <div class="ellip">
-                                                    <a href="#" class="krds-btn link small" title="상세페이지 이동">템플릿을 구분할 수 있는 조건의 제목을 작성/표기합니다.</a>
-                                                    <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical" data-tooltip="미리보기">
-                                                      <span class="sr-only">미리보기</span>                                            
-                                                      <i class="svg-icon ico-preview"></i>
-                                                    </button>
-                                                  </div>                                          
-                                                </td>
-                                                <td>[수동] 사용자 지정 수기 발송</td>
-                                                <td>미사용</td>
-                                              </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                                .card-list .card-text::-webkit-scrollbar-track {
+                                    background-color: transparent;
+                                }
+                                .card-list .card-bottom {
+                                    padding: 1rem;
+                                    background-color: #f3f3f3;
+                                }
+                                
+                            </style>
+                            <div>
+                                <ul class="card-list">
+                                    <li class="card-item">
+                                        <a href="">
+                                            <div class="card-top">
+                                                <div class="card-text">
+                                                    <p class="small">
+                                                        [잡클라우드] 회원가입을 환영합니다.<br><br>
+                                                        #이름#님의 가입을 환영합니다.<br>
+                                                        아이디: #아이디#<br><br>
+                                                        관심 정보를 설정하시면 정책 및 채용정보<br>
+                                                        등 유용한 정보를 받아보실 수 있습니다.
+                                                    </p>
+                                                </div>                                               
+                                            </div>
+                                            <div class="card-bottom">
+                                                <p class="small">회원가입 시</p>
+                                                <div class="krds-badge-wrap mt10">
+                                                    <span class="krds-badge small bg-primary">자동</span>
+                                                    <span class="krds-badge small bg-point">사용</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="card-item">
+                                        <a href="">
+                                            <div class="card-top">
+                                                <div class="card-text">
+                                                    <p class="small">
+                                                        [잡클라우드] 회원가입을 환영합니다.<br><br>
+                                                        #이름#님의 가입을 환영합니다.<br>
+                                                        아이디: #아이디#<br><br>
+                                                        관심 정보를 설정하시면 정책 및 채용정보<br>
+                                                        등 유용한 정보를 받아보실 수 있습니다.
+                                                    </p>
+                                                </div>                                               
+                                            </div>
+                                            <div class="card-bottom">
+                                                <p class="small">회원가입 시</p>
+                                                <div class="krds-badge-wrap mt10">
+                                                    <span class="krds-badge small bg-success">수동</span>
+                                                    <span class="krds-badge small bg-gray">미사용</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="card-item">
+                                        <a href="">
+                                            <div class="card-top">
+                                                <div class="card-text">
+                                                    <p class="small">
+                                                        [잡클라우드] 회원가입을 환영합니다.<br><br>
+                                                        #이름#님의 가입을 환영합니다.<br>
+                                                        아이디: #아이디#<br><br>
+                                                        관심 정보를 설정하시면 정책 및 채용정보<br>
+                                                        등 유용한 정보를 받아보실 수 있습니다.
+                                                    </p>
+                                                </div>                                               
+                                            </div>
+                                            <div class="card-bottom">
+                                                <p class="small">사용자 지정 수기 발송</p>
+                                                <div class="krds-badge-wrap mt10">
+                                                    <span class="krds-badge small bg-success">수동</span>
+                                                    <span class="krds-badge small bg-gray">미사용</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="card-item">
+                                        <a href="">
+                                            <div class="card-top">
+                                                <div class="card-text">
+                                                    <p class="small">
+                                                        [잡클라우드] 회원가입을 환영합니다.<br><br>
+                                                        #이름#님의 가입을 환영합니다.<br>
+                                                        아이디: #아이디#<br><br>
+                                                        관심 정보를 설정하시면 정책 및 채용정보<br>
+                                                        등 유용한 정보를 받아보실 수 있습니다.
+                                                    </p>
+                                                </div>                                               
+                                            </div>
+                                            <div class="card-bottom">
+                                                <p class="small">사용자 지정 수기 발송</p>
+                                                <div class="krds-badge-wrap mt10">
+                                                    <span class="krds-badge small bg-primary">자동</span>
+                                                    <span class="krds-badge small bg-point">사용</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
-
-                            <!-- //table -->
                         </div>
 
                         <!-- pagination -->

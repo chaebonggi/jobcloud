@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홍보관리-문자발송관리(문자발송목록)-상세</title>
+  <link rel="stylesheet" href="../../resources/cdn/krds.min.css">
+  <link href="../../css/jobcloud/main.css" type="text/css" rel="stylesheet" />
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="../../js/jobcloud/plugin/jquery-sortable-lists.js"></script>
+  <script src="../../resources/cdn/krds.min.js"></script>
+</head>
+
+<body>
+  <div id="jc-wrap">
+    <!-- 건너뛰기 링크 -->
+    <div id="krds-skip-link">
+      <a href="#container">본문 바로가기</a>
+    </div>
+    <!-- //건너뛰기 링크 -->
+
+    <!-- header -->
+    <header id="jc-header">
+      <div class="header-top">
+        <button type="button" class="krds-btn icon btn-gnb">
+          <span class="sr-only">메뉴</span>
+          <i class="svg-icon ico-hd-menu"></i>
+        </button>
+        <h2 class="ht-logo"><a href="#!"><img src="../../images/jobcloud/common/logo_img.png" alt="jobcloud admin"></a>
+        </h2>
+        <div class="ht-util">
+          <ul class="util-list">
+            <li>
+              <a href="#!" class="krds-btn util-button"><span>사이트 바로가기</span></a>
+            </li>
+            <li>
+              <div class="krds-drop-wrap">
+                <button type="button" class="krds-btn drop-btn util-button"><span>홍길동</span> 님<i
+                    class="svg-icon ico-toggle-type02"></i></button>
+                <div class="drop-menu">
+                  <div class="drop-in">
+                    <ul class="drop-list">
+                      <li><a href="#" class="item-link active">정보 변경</a></li>
+                      <li><a href="#" class="item-link">로그 아웃</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="btn-navi all" aria-controls="mobile-nav">전체메뉴</button>
+      </div>
+      <nav class="main-menu">
+        <ul class="gnb-list">
+          <li class="gnb-item">
+            <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="제공정보">
+              <span class="sr-only">제공정보</span>
+              <i class="svg-icon ico-nav ico-nav-menu01"></i>
+            </button>
+            <div class="gnb-depth">
+              <div class="krds-side-navigation">
+                <h3 class="lnb-tit">제공정보 관리</h3>
+                <!-- lnb-list -->
+                <ul class="lnb-list" role="menubar">
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">지원정책</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">기업지원</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">교육훈련</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">대외활동</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">카테고리 관리</a>
+                  </li>
+                </ul>
+                <!-- //lnb-list -->
+              </div>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용정보">
+              <span class="sr-only">채용정보</span>
+              <i class="svg-icon ico-nav ico-nav-menu02"></i>
+            </button>
+            <div class="gnb-depth">
+              <div class="krds-side-navigation">
+                <h3 class="lnb-tit">채용정보 관리</h3>
+                <!-- lnb-list -->
+                <ul class="lnb-list" role="menubar">
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">채용공고</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">기업목록</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">인재정보</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">박람회 관리</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">분류관리</a>
+                  </li>
+                </ul>
+                <!-- //lnb-list -->
+              </div>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="취업역량">
+              <span class="sr-only">취업역량</span>
+              <i class="svg-icon ico-nav ico-nav-menu03"></i>
+            </button>
+            <div class="gnb-depth">
+              <div class="krds-side-navigation">
+                <h3 class="lnb-tit">취업역량 관리</h3>
+                <!-- lnb-list -->
+                <ul class="lnb-list" role="menubar">
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">진단 서비스</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">자기소개서 컨설팅</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">AI역량진단</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">취업상담</a>
+                  </li>
+                </ul>
+                <!-- //lnb-list -->
+              </div>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+              <span class="sr-only">채용공고</span>
+              <i class="svg-icon ico-nav ico-nav-menu04"></i>
+            </button>
+            <div class="gnb-depth">
+              <h3>메뉴4</h3>
+              <ul>
+                <li><a href="#!">메뉴4</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="gnb-item active">
+            <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="회원 관리">
+              <span class="sr-only">회원 관리</span>
+              <i class="svg-icon ico-nav ico-nav-menu05"></i>
+            </button>
+            <div class="gnb-depth">
+              <div class="krds-side-navigation">
+                <h3 class="lnb-tit">회원 관리</h3>
+                <!-- lnb-list -->
+                <ul class="lnb-list" role="menubar">
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">회원 목록</a>
+                  </li>
+                </ul>
+                <!-- //lnb-list -->
+              </div>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="커뮤니티">
+              <span class="sr-only">커뮤니티</span>
+              <i class="svg-icon ico-nav ico-nav-menu06"></i>
+            </button>
+            <div class="gnb-depth">
+              <div class="krds-side-navigation">
+                <h3 class="lnb-tit">커뮤니티 관리</h3>
+                <!-- lnb-list -->
+                <ul class="lnb-list" role="menubar">
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-toggle" role="menuitem">게시판 관리</a>
+                    <!-- lnb-submenu -->
+                    <div class="lnb-submenu">
+                      <ul role="menu">
+                        <li class="lnb-subitem">
+                          <a href="#!" class="lnb-btn lnb-link" role="menuitem">게시판 목록</a>
+                        </li>
+                        <li class="lnb-subitem">
+                          <a href="#" class="lnb-btn lnb-link" role="menuitem">1:1문의</a>
+                        </li>
+                        <li class="lnb-subitem">
+                          <a href="#" class="lnb-btn lnb-link" role="menuitem">FAQ관리</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- //lnb-submenu -->
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">이용약관 관리</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">개인정보처리방침</a>
+                  </li>
+                </ul>
+                <!-- //lnb-list -->
+              </div>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+              <span class="sr-only">채용공고</span>
+              <i class="svg-icon ico-nav ico-nav-menu07"></i>
+            </button>
+            <div class="gnb-depth">
+              <h3>메뉴7</h3>
+              <ul>
+                <li><a href="#!">메뉴7</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="채용공고">
+              <span class="sr-only">채용공고</span>
+              <i class="svg-icon ico-nav ico-nav-menu08"></i>
+            </button>
+            <div class="gnb-depth">
+              <h3>메뉴8</h3>
+              <ul>
+                <li><a href="#!">메뉴8</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="gnb-item">
+            <button type="button" class="krds-btn icon krds-tooltip btn-op" data-tooltip="환경설정">
+              <span class="sr-only">환경설정</span>
+              <i class="svg-icon ico-nav ico-nav-menu09"></i>
+            </button>
+            <div class="gnb-depth">
+              <div class="krds-side-navigation">
+                <h3 class="lnb-tit">환경설정</h3>
+                <!-- lnb-list -->
+                <ul class="lnb-list" role="menubar">
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">관리자</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">정보</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">권한 관리</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">메뉴 관리</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">공통코드</a>
+                  </li>
+                  <li class="lnb-item">
+                    <a href="#!" class="lnb-btn lnb-link" role="menuitem">관리</a>
+                  </li>
+                </ul>
+                <!-- //lnb-list -->
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div id="container">
+      <h1 class="contain-title">신규 문자 등록/문자 상세(수정)</h1>
+      <div class="container_wr">
+        <section>
+          <div class="inner-section in-between">
+            <div class="board-container full">
+              <div class="board-cont">
+                <div class="board-tit">
+                  <p class="tit">신규 문자 등록/문자 상세</p>
+                </div>
+                <div class="item">
+                  <div class="b-item">
+                    <div class="tit">
+                      <label for="consult_1">템플릿 제목</label>
+                    </div>
+                    <div class="cont">
+                      <input type="text" id="consult_1" class="krds-input small" placeholder="문자 템플릿 제목">
+                    </div>
+                  </div>
+                </div>   
+                <div class="item">
+                  <div class="b-item">
+                    <div class="tit">
+                      <label for="consult_select1">발송 구분</label>
+                    </div>
+                    <div class="cont">
+                      <div class="krds-check-area alc">
+                        <div class="krds-form-check medium">
+                          <input type="radio" name="rdo_a" id="rdo_a1" class="drop-radio-menu" data-target="radio-target">
+                          <label for="rdo_a1">자동</label>                          
+                        </div>
+                        <div class="drop-cont wfc" data-target="radio-target" style="display: block;">
+                          <select id="consult_select2" class="krds-form-select small type02" title="발송구분">
+                            <option value="">회원가입</option>
+                            <option value="">아이디 찾기</option>
+                            <option value="" disabled="">비밀번호 찾기</option>
+                            <option value="">1:1문의 답변 등록</option>
+                            <option value="" disabled="">관심기업 채용공고 등록</option>
+                            <option value="">관심 정보 신청 마감 1일전</option>
+                          </select>
+                        </div>
+                        <div class="krds-form-check">
+                          <input type="radio" name="rdo_a" id="rdo_a2">
+                          <label for="rdo_a2">수동</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="item item-col alfs">
+                  <div class="b-item">
+                    <div class="tit">
+                      문자 내용
+                    </div>
+                    <div class="cont">
+                      에디터 영역
+                    </div>
+                  </div>
+                  <div class="b-item item-col">
+                    <div class="tit">
+                      문자 상태
+                    </div>
+                    <div class="cont">                      
+                      <ol class="krds-step-wrap type02">
+                        <li class="done">
+                          <span>
+                            <span class="step-tit">SMS</span>
+                          </span>
+                        </li>
+                        <li class="active">
+                          <span>
+                            <em class="sr-only">현재단계</em>
+                            <span class="step-tit">LMS</span>
+                          </span>
+                        </li>
+                        <li>
+                          <span>
+                            <span class="step-tit">MMS</span>
+                          </span>
+                        </li>
+                      </ol>
+                      
+                      <div class="krds-file-upload small">
+                        <!-- 파일 업로드 영역 -->
+                        <div class="file-upload">
+                          <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
+                          <div class="file-upload-btn-wrap">
+                            <input type="file" name="myFile" id="fileu-upload" hidden="">
+                            <label for="fileu-upload">
+                              <button type="button" class="krds-btn xsmall"><i class="svg-icon ico-upload"></i>파일선택</button>
+                            </label>
+                          </div>
+                        </div>
+                        <!-- //파일 업로드 영역 -->
+                        <!-- 파일 리스트 영역 -->
+                        <!-- <div class="file-list">
+                                    <ul class="upload-list">
+                                      <li>
+                                        <div class="file-info">
+                                          <div class="file-name">전입재등록신고서 [hwp, 17KB]</div>
+                                          <div class="btn-wrap">
+                                            <button type="button" class="krds-btn small text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                                          </div>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div> -->
+                        <!-- //파일 리스트 영역 -->
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="btn-group">
+                <button type="button" class="krds-btn medium delete">삭제</button>
+                <div class="mla">
+                  <button type="button" class="krds-btn medium type04">목록</button>
+                  <button type="button" class="krds-btn medium type02">복제</button>
+                  <button type="button" class="krds-btn medium md">수정</button>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer id="jc-footer">
+      <p>Copyright ⓒ 2025. JOBCloud . All rights reserved.</p>
+    </footer>
+    <!-- modal -->
+    <section id="modal_01" class="krds-modal modal-type02 fade" role="dialog" aria-labelledby="modal_01">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <!-- modal title -->
+          <div class="modal-header">
+            <h2 id="tit_modal" class="modal-title">회원 검색</h2>
+          </div>
+          <!-- //modal title -->
+          <!-- modal contents -->
+          <div class="modal-conts">
+            <div class="conts-area">
+              <div class="input-group">
+                <input type="text" class="krds-input small" placeholder="이름 혹은 아이디, 전화번호를 입력해주세요.">
+                <button type="button" class="krds-btn small">회원 검색</button>
+              </div>
+              <div class="table-group mt20">
+                <p class="small">총 3개</p>
+                <div class="table-container">
+                  <div class="krds-table-wrap tbl-type02 mt10 full">
+                    <table class="tbl col data">
+                      <caption>기업 정보</caption>
+                      <colgroup>
+                        <col style="width: 60px;">
+                        <col style="width: 80px;">
+                        <col>
+                        <col style="width: 120px;">
+                        <col style="width: 80px;">
+                        
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th scope="col">선택</th>
+                          <th scope="col">이름</th>
+                          <th scope="col">아이디</th>
+                          <th scope="col">연락처</th>
+                          <th scope="col">추가</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="krds-form-check small">
+                              <input type="checkbox" id="chk_a-1">
+                              <label for="chk_a-1"><span class="sr-only">선택</span></label>
+                            </div>
+                          </td>
+                          <td>홍길동</td>
+                          <td>kildong@naver.com</td>
+                          <td>010-1234-5678</td>
+                          <td>
+                            <button type="button" class="krds-btn xsmall">추가</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="krds-form-check small">
+                              <input type="checkbox" id="chk_a-2">
+                              <label for="chk_a-2"><span class="sr-only">선택</span></label>
+                            </div>
+                          </td>
+                          <td>이순신</td>
+                          <td>kildong@naver.com</td>
+                          <td>010-1234-5678</td>
+                          <td>
+                            <button type="button" class="krds-btn xsmall">추가</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="btn-group mt10">
+                  <button type="button" class="krds-btn xsmall">선택 추가</button>
+                </div>
+              </div>
+
+              <div class="krds-pagination type02">
+                <a href="javscript:void(0);" class="page-navi prev-start"><span class="sr-only">처음으로</span></a>
+                <a href="javscript:void(0);" class="page-navi prev"><span class="sr-only">이전</span></a>
+                <div class="page-links">
+                  <a class="page-link" href="#">1</a>
+                  <a class="page-link" href="#">2</a>
+                  <a class="page-link" href="#">3</a>
+                  <a class="page-link active" href="#"><span class="sr-only">현재페이지 </span>4</a>
+                  <a class="page-link" href="#">5</a>
+                  <span class="page-link link-dot"></span>
+                  <a class="page-link" href="#">13</a>
+                </div>
+                <a href="javscript:void(0);" class="page-navi next"><span class="sr-only">다음</span></a>
+                <a href="javscript:void(0);" class="page-navi next-end"><span class="sr-only">마지막으로</span></a>
+              </div>
+
+            </div>
+          </div>
+          <!-- //modal contents -->
+          <!-- close button -->
+          <button type="button" class="krds-btn medium icon btn-close close-modal">
+            <span class="sr-only">닫기</span>
+            <i class="svg-icon ico-popup-close"></i>
+          </button>
+          <!-- //close button -->
+        </div>
+      </div>
+      <div class="modal-back"></div>
+    </section>
+    <!-- //modal -->
+     <!-- modal -->
+    <section id="modal_02" class="krds-modal modal-type02 fade" role="dialog" aria-labelledby="modal_02">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <!-- modal title -->
+          <div class="modal-header">
+            <h2 id="tit_modal" class="modal-title">다중 등록하기</h2>
+          </div>
+          <!-- //modal title -->
+          <!-- modal contents -->
+          <div class="modal-conts">
+            <div class="conts-area">
+              <div class="file-group">
+                <div class="file-info small">
+                  <p>회원정보 파일을 업로드 해주세요.</p>
+                  <!-- <div class="file-name">회원 정보 [xlsx, 17KB]</div>
+                  <div class="btn-wrap">
+                    <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                  </div> -->
+                </div>
+                <div class="file-upload">
+                  <input type="file" name="myFile" id="fileu-upload" hidden>
+                  <label for="fileu-upload">
+                    <button type="button" class="krds-btn small">찾아보기</button>
+                  </label>
+                </div>
+              </div>
+              <div class="tip-box">
+                <p><i class="svg-icon xsmall ico-info"></i>엑셀 양식에 맞춰 회원 목록을 정리하여 업로드 해주세요.<br>
+                  양식에 맞지 않을 경우 등록이 되지 않을 수 있습니다.</p>
+                  <button type="button" class="krds-btn xsmall type03 mla"><i class="svg-icon ico-download right"></i> 엑셀다운로드</button>
+              </div>
+
+            </div>
+          </div>
+          <!-- //modal contents -->
+          <!-- close button -->
+          <button type="button" class="krds-btn medium icon btn-close close-modal">
+            <span class="sr-only">닫기</span>
+            <i class="svg-icon ico-popup-close"></i>
+          </button>
+          <!-- //close button -->
+        </div>
+      </div>
+      <div class="modal-back"></div>
+    </section>
+    <!-- //modal -->
+  </div>
+
+  <script src="../../js/jobcloud/component/run.js"></script>
+</body>
+
+</html>
