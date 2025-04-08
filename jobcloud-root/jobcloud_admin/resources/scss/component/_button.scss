@@ -169,6 +169,9 @@ a.krds-btn:hover {
     background-size: 2rem !important;
     background-image: url(../../images/jobcloud/component/icon/ico_angle03.svg);
 }
+.krds-form-select option:disabled {
+    color: #ddd;
+}
 
 
 .krds-btn-tag.unused {

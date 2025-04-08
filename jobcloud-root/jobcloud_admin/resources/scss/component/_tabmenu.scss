@@ -15,6 +15,7 @@
     border: 1px solid #89a8fe;
     border-bottom: 0;
     color: #fff;
+    z-index: 1;
 }
 .tabs li a::before {
     content: '';
@@ -27,4 +28,37 @@
 .tabs li.active a {
     background-color: #fff;
     color: #256EF4;
+    z-index: 2;
+}
+
+.tabs.type02 {
+    margin-bottom: 0;
+    border: 0;
+}
+.tabs.type02 li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 4rem;
+    margin-left: -0.1rem;
+    padding: 0 1rem;
+    background-color: #fff;
+    color: #b4b4b4;
+    font-size: 1.6rem;
+    border-radius: 0;
+    border: 1px solid #d9d9d9;
+}
+.tabs.type02 li a::before {
+    content: none;
+}
+.tabs.type02 li.active a {
+    background-color: #1e2326;
+    color: #fff;
+}
+.tabs.type02 li:first-of-type a {
+    border-radius: 5px 0 0 5px;
+}
+.tabs.type02 li:last-of-type a {
+    border-radius: 0 5px 5px 0;
 }
