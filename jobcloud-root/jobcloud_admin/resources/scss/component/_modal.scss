@@ -37,3 +37,19 @@
 .krds-modal .table-container {
   overflow-x: auto;
 }
+
+.krds-modal .cert-wrap .cert-item {
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+}
+.krds-modal .cert-wrap .cert-txt {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  border-top: 1px solid #ddd;
+}
+.krds-modal .cert-wrap .cert-txt p {
+  text-align: center;
+}

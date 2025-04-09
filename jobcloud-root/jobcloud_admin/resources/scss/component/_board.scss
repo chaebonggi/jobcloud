@@ -45,7 +45,6 @@
  .board-cont .item .cont .c-item {display: flex; align-items: center; gap: 1rem;}
  .board-cont .item .cont .c-item.full {width: 100%;}
 .board-cont .item .b-item { display: flex; width: 100%; align-items: baseline; gap: 1rem;}
-.board-cont .item .b-item.wfc {width: fit-content;}
 
  .board-cont .marking { color: #ff2e2e; } 
 .radio-target-item {display: none;}
@@ -123,9 +122,10 @@
   .file-group .file-info {
     display: flex;
     width: 100%;
-    padding: 0 1.6rem;
     align-items: center;
     gap: 1.6rem;
+    padding: 0 1.6rem;
+    background-color: #fff;
     color: #8a949e;
     border: 1px solid #d9d9d9; 
   }

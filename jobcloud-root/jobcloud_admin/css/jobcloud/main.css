@@ -1973,6 +1973,24 @@ a.krds-btn:hover {
   overflow-x: auto;
 }
 
+.krds-modal .cert-wrap .cert-item {
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+}
+
+.krds-modal .cert-wrap .cert-txt {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  border-top: 1px solid #ddd;
+}
+
+.krds-modal .cert-wrap .cert-txt p {
+  text-align: center;
+}
+
 .krds-form-check {
   position: relative;
 }
@@ -2341,10 +2359,6 @@ a.krds-btn:hover {
   gap: 1rem;
 }
 
-.board-cont .item .b-item.wfc {
-  width: fit-content;
-}
-
 .board-cont .marking {
   color: #ff2e2e;
 }
@@ -2437,9 +2451,10 @@ a.krds-btn:hover {
 .file-group .file-info {
   display: flex;
   width: 100%;
-  padding: 0 1.6rem;
   align-items: center;
   gap: 1.6rem;
+  padding: 0 1.6rem;
+  background-color: #fff;
   color: #8a949e;
   border: 1px solid #d9d9d9;
 }
