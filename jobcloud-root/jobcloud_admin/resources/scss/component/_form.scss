@@ -1,4 +1,8 @@
+// .textarea-wrap.small textarea.krds-input {
+//     font-size: 1.4rem;
+//     height: 12rem;
+// }
 .textarea-wrap.small textarea.krds-input {
-    font-size: 1.4rem;
-    height: 12rem;
+    font-size: $font-size-textarea-small;
+    height: $height-textarea-small;
 }

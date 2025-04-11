@@ -113,23 +113,46 @@ $(document).ready(function () {
 
         if (previousTarget && previousTarget !== currentTarget) {
             const $previousTargetDropdown = $(`.drop-cont[data-target="${previousTarget}"]`);
-            $previousTargetDropdown.slideUp(300);
+            $previousTargetDropdown.removeClass('is-open');
         }
         if ($dropRadio.length) {
-            $currentTargetDropdown.slideDown(300);
+            $currentTargetDropdown.addClass('is-open');
         }
         previousTarget = currentTarget;
     });
-    $(".drop-cont").hide();
+    $(".drop-cont").removeClass('is-open');
+    // let previousTarget = null;
+    // $('input[type="radio"]').on('change', function () {
+    //     const $dropRadio = $(".drop-radio-menu:checked");
+    //     const currentTarget = $dropRadio.data("target");
+    //     const $currentTargetDropdown = $(`.drop-cont[data-target="${currentTarget}"]`);
+
+    //     if (previousTarget && previousTarget !== currentTarget) {
+    //         const $previousTargetDropdown = $(`.drop-cont[data-target="${previousTarget}"]`);
+    //         $previousTargetDropdown.slideUp(300);
+    //     }
+    //     if ($dropRadio.length) {
+    //         $currentTargetDropdown.slideDown(300);
+    //     }
+    //     previousTarget = currentTarget;
+    // });
+    // $(".drop-cont").hide();
     
     // 드랍 토글 메뉴
     $(".drop-menu").on("click", function () {
         const target = $(this).data("target");
         const $targetDropdown = $(`.drop-cont[data-target="${target}"]`);
-        $targetDropdown.slideToggle(300);
+        $targetDropdown.toggleClass('is-open');
         $(this).toggleClass("active");
         $targetDropdown.toggleClass("active");
     });
+    // $(".drop-menu").on("click", function () {
+    //     const target = $(this).data("target");
+    //     const $targetDropdown = $(`.drop-cont[data-target="${target}"]`);
+    //     $targetDropdown.slideToggle(300);
+    //     $(this).toggleClass("active");
+    //     $targetDropdown.toggleClass("active");
+    // });
     // 드랍 메뉴2
     $(".dropdown-btn").on("click", function (event) {
         event.stopPropagation();
