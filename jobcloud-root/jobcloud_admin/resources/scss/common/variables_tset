@@ -1,0 +1,297 @@
+// scss/common/_variables.scss
+
+// 폰트 관련 변수
+$font-size-base: 1.6rem;
+$font-size-small: 1.4rem;
+$font-size-xsmall: 1.2rem;
+$font-size-large: 2rem;
+
+// 색상 관련 변수
+$input-border-color: #d9d9d9;
+$white: #fff;
+
+// 체크박스 관련 변수
+$check-size-small: 1.6rem;
+$check-mark-size-small: 1rem;
+$check-mark-left-small: 0.3rem;
+$check-mark-top-small: 0.6rem;
+$check-area-gap-row: 1rem;
+$check-area-gap-col: 2rem;
+
+// 텍스트 영역 관련 변수
+$height-textarea-small: 12rem;
+
+// 아이템 그룹 관련 변수
+$items-group-margin-top: 3rem;
+$items-group-padding: 1.6rem;
+$items-group-border-radius: 10px;
+$items-group-border-color: #d9d9d9;
+$items-group-item-margin-top: 1.6rem;
+$items-group-item-padding-top: 1.6rem;
+$items-group-dl-group-gap: 1rem;
+$items-group-dl-dt-width: 12rem;
+$items-group-dl-dt-font-weight: 500;
+$items-group-check-color: #1e2326;
+
+// 모달 관련 변수
+$modal-padding: 2rem;
+$modal-border-color: #ddd;
+$modal-cont-bg-color: #f3f3f3;
+$modal-cont-border-radius: 0.5rem;
+$modal-form-pop-group-gap: 2rem;
+$modal-form-tit-width: 10rem;
+$modal-form-tit-font-weight: 500;
+$modal-cert-item-padding: 3rem 2rem;
+$modal-cert-item-margin-top: 2rem;
+$modal-cert-item-bg-color: #f4f4f4;
+$modal-cert-item-border-radius: 1rem;
+$modal-cert-txt-margin-top: 2rem;
+$modal-cert-txt-padding: 2rem 0;
+
+// 페이지네이션 관련 변수
+$pagination-border-color: #d9d9d9;
+$pagination-icon-color: #b5b6b8;
+$pagination-active-bg-color: #4158d1;
+$pagination-button-size: 3.4rem;
+$pagination-gap: 1rem;
+$pagination-border: 1px solid $pagination-border-color;
+$pagination-icon-path: "../../images/jobcloud/component/icon/ico_pagination.svg";
+$pagination-active-color: #fff;
+$pagination-active-border-color: #4158d1;
+$breakpoint-mobile: 767px;
+
+// 정렬 관련 변수
+$sort-options-min-width: 29rem;
+$sort-options-padding: 1.2rem;
+$sort-options-top: 5rem;
+$sort-options-border-color: #d9d9d9;
+$sort-options-border-radius: 10px;
+$sort-list-margin-bottom: 2rem;
+$sort-list-item-gap: 0.5rem;
+$sort-list-item-margin-top: 1rem;
+$sort-group-padding-top: 2rem;
+$sort-group-margin-top: 2rem;
+$sort-container-gap: 0.5rem;
+$sort-icon-size: 1.4rem;
+
+// 별점 메뉴 관련 변수
+$star-menu-select-btn-height: 4rem;
+$star-menu-select-btn-padding: 0 4rem 0 1.6rem;
+$star-menu-select-btn-bg-color: #fff;
+$star-menu-select-btn-border-color: #d9d9d9;
+$star-menu-select-btn-border-radius: 0.8rem;
+$star-menu-select-btn-font-size: 1.6rem;
+$star-menu-select-btn-transition: 0.4s ease-in-out;
+$star-menu-rate-area-rv-rate-width: 8.6rem;
+$star-menu-rate-area-rv-rate-height: 1.4rem;
+$star-menu-options-padding: 1rem 4rem 1rem 1.6rem;
+$star-menu-options-top: 4.5rem;
+$star-menu-options-border-color: #d9d9d9;
+$star-menu-options-border-radius: 0.8rem;
+$star-menu-disabled-bg-color: #f3f3f3;
+$star-menu-disabled-border-color: #b1b8be;
+$star-menu-icon-angle: "../../images/jobcloud/component/icon/ico_angle03.svg";
+$star-menu-icon-star-bg: "../../images/jobcloud/component/icon/ico_star_bg.png";
+$star-menu-icon-star-on: "../../images/jobcloud/component/icon/ico_star_on.png";
+
+// 스텝 관련 변수
+$krds-step-type02-padding: 2rem 0;
+$krds-step-type02-border-color: #ddd;
+$krds-step-type02-border-radius: 1rem;
+$krds-step-type02-active-bg-color: #6d7882;
+$krds-step-type02-active-font-weight: 500;
+$krds-step-type02-default-font-weight: 300;
+$krds-step-type02-border-width: 0.1rem;
+
+// 스위치 관련 변수
+$switch-width: 10rem;
+$switch-height: 4rem;
+$switch-margin-left: -1px;
+$switch-bg-color: #fff;
+$switch-color: #b4b4b4;
+$switch-font-size: 1.6rem;
+$switch-border-color: #d9d9d9;
+$switch-border-radius: 5px;
+$switch-transition: all 0.1s ease-in-out;
+$switch-checked-bg-color: #1e2326;
+$switch-checked-color: #fff;
+
+// 테이블 관련 변수
+$table-total-padding-left: 1rem;
+$table-total-font-size: 1.8rem;
+$table-thead-th-padding: 1.6rem 1rem;
+$table-thead-th-bg-color: #f4f4f4;
+$table-thead-th-color: #1e2326;
+$table-thead-th-font-weight: 500;
+$table-thead-th-border-radius: 10px;
+$table-tbody-td-padding: 1rem;
+$table-tbody-td-font-size: 1.4rem;
+$table-type02-thead-th-bg-color: #70747b;
+$table-type02-thead-th-color: #fff;
+$table-type02-tbody-tr-odd-bg-color: #fff;
+$table-type02-tbody-tr-even-bg-color: #f6f7f8;
+$table-scroll-height: 420px;
+$table-scrollbar-width: 8px;
+$table-scrollbar-thumb-bg-color: #e5e5e5;
+$table-scrollbar-thumb-border-radius: 10px;
+$tab-type02-border-color: #99b2f9;
+$tab-type02-border-radius: 1rem;
+$tab-type02-full-li-border-width: 0.1rem;
+$tab-type02-btn-tab-height: 5rem;
+$tab-type02-btn-tab-color: #99b2f9;
+$tab-type02-btn-tab-font-size: 1.6rem;
+$tab-type02-btn-tab-font-weight: 500;
+$tab-type02-btn-tab-bg-color: #fff;
+$grid-table-min-width: 1024px;
+$grid-thead-bg-color: #f1f1f1;
+$grid-thead-gap: 1rem;
+$grid-thead-tr-padding: 1rem;
+$grid-thead-tr-font-size: 1.4rem;
+$grid-tbody-gap: 1rem;
+$grid-tbody-tr-border-color: #ccc;
+$grid-tbody-tr-border-radius: 0.5rem;
+
+// 탭 메뉴 관련 변수
+$tab-menu-margin-bottom: 2rem;
+$tab-menu-border-color: #ddd;
+$tab-menu-item-padding: 1rem;
+$tab-menu-item-border-radius: 10px 10px 0 0;
+$tab-menu-item-font-size: 16px;
+$tab-menu-item-width: 120px;
+$tab-menu-item-bg-color: #99b2f9;
+$tab-menu-item-border-color-active: #89a8fe;
+$tab-menu-item-color: #fff;
+$tab-menu-item-color-active: #256ef4;
+$tab-menu-type02-item-width: 10rem;
+$tab-menu-type02-item-height: 4rem;
+$tab-menu-type02-item-margin-left: -0.1rem;
+$tab-menu-type02-item-padding: 0 1rem;
+$tab-menu-type02-item-bg-color: #fff;
+$tab-menu-type02-item-color: #b4b4b4;
+$tab-menu-type02-item-border-color: #d9d9d9;
+$tab-menu-type02-item-active-bg-color: #1e2326;
+
+// 트리 메뉴 관련 변수
+$tree-item-min-height: 5.4rem;
+$tree-item-margin-bottom: 1rem;
+$tree-item-padding: 1rem 2rem 1rem 4rem;
+$tree-item-bg-color: #fff;
+$tree-item-border-color: #dddddd;
+$tree-item-font-size: 1.4rem;
+$tree-item-margin-left: 30px;
+$tree-cont-width: 3rem;
+$tree-cont-bg-color: #efefef;
+$tree-icon-color: #999999;
+$tree-right-gap: 1rem;
+
+// 버튼 관련 변수
+$krds-btn-hover-color: #fff;
+$krds-btn-xsmall-font-size: 1.4rem;
+$krds-btn-small-ico-all-size: 20px;
+$krds-btn-small-ico-plus02-size: 1.2rem;
+$krds-btn-svg-icon-right-margin: 0.5rem;
+$krds-btn-svg-icon-left-margin: 0.5rem;
+$krds-btn-link-color: #464c53;
+$krds-btn-link-small-font-size: 1.6rem;
+$krds-btn-md-min-width: 10rem;
+$krds-btn-small-ico-angle02-size: 14px;
+$krds-btn-search-width: 9rem;
+$krds-btn-search-bg-color: #4158d1;
+$krds-btn-delete-bg-color: #fff;
+$krds-btn-delete-border-color: #f63d2e;
+$krds-btn-delete-color: #f63d2e;
+$krds-btn-filter-width: 12rem;
+$krds-btn-filter-bg-color: #1e2326;
+$krds-tooltip-preview-ico-preview-size: 1.6rem;
+$krds-tooltip-popover-bg-color: #6c6d72;
+$krds-tooltip-info-popover-padding: 1.5rem;
+$krds-tooltip-info-popover-li-color: #848484;
+$krds-tooltip-info-popover-li-font-size: 1.4rem;
+$krds-tooltip-info-popover-li-before-size: 0.2rem;
+$krds-btn-nomal-bg-color: #fff;
+$krds-btn-nomal-border-color: #d9d9d9;
+$krds-btn-nomal-color: #000;
+$krds-btn-type02-bg-color: #4158d1;
+$krds-btn-type03-bg-color: #ececec;
+$krds-btn-type04-bg-color: #fff;
+$krds-btn-type04-border-color: #99b2f9;
+$krds-btn-type04-color: #99b2f9;
+$krds-btn-type05-color: #4158d1;
+$krds-btn-type06-border-color: #4158d1;
+$krds-btn-type06-color: #4158d1;
+$krds-btn-i-type01-svg-icon-bg-color: #ff4040;
+$krds-btn-i-type02-svg-icon-bg-color: #4786fb;
+$krds-btn-active-ico-public-bg-color: #d7d8d9;
+$krds-btn-ico-angle02-bg-color: #6c6e72;
+$krds-btn-ico-del02-bg-color: #d7d8d9;
+$krds-btn-ico-del02-hover-bg-color: #ff3d42;
+$krds-form-select-type02-background-size: 2rem;
+$krds-form-select-option-disabled-color: #ddd;
+$krds-btn-tag-unused-bg-color: #afafaf;
+$krds-btn-tag-unused-color: #fff;
+
+// 게시판 관련 변수
+$board-container-gap: 2rem;
+$board-cont-padding: 3rem 3rem 1rem;
+$board-cont-border: 1px solid #ddd;
+$board-cont-border-radius: 1rem;
+$board-cont-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+$board-tit-padding-bottom: 2rem;
+$board-tit-border-bottom: 1px solid #b1b1b1;
+$board-item-padding: 1.6rem 0;
+$board-item-border-bottom: 1px solid #ddd;
+$board-item-gap: 1rem 2rem;
+$board-tit-font-size: 2rem;
+$board-tit-font-weight: 700;
+$board-tit-line-height: 4rem;
+$board-item-tit-width: 12rem;
+$board-item-tit-font-weight: 500;
+$template-cont-width: 25rem;
+$template-cont-margin-top: 1rem;
+$template-cont-padding: 1rem;
+$template-cont-border: 1px solid #d9d9d9;
+$template-cont-border-radius: 0.5rem;
+$template-list-gap: 0.5rem;
+$template-img-width: 6rem;
+$template-img-height: 6rem;
+$template-img-border: 1px solid #d9d9d9;
+$template-text-font-size: 1.4rem;
+$template-tit-font-size: 1.6rem;
+$template-tit-font-weight: 500;
+$file-info-gap: 1.6rem;
+$file-info-padding: 0 1.6rem;
+$file-info-border: 1px solid #d9d9d9;
+$file-info-small-height: 4rem;
+$file-info-small-border-radius: 0.6rem;
+$file-info-small-font-size: 1.6rem;
+$c-item-list-gap: 1rem;
+$counsel-list-gap: 1rem;
+$counsel-list-info-width: 15rem;
+$counsel-list-info-padding: 1rem;
+$counsel-list-info-bg-color: #f4f4f4;
+$counsel-list-info-border-right: 1px solid #ddd;
+$counsel-list-info-font-size: 1.4rem;
+$counsel-list-text-height: 10rem;
+$counsel-list-text-padding: 1rem;
+$business-list-gap: 1rem;
+$business-img-height: 8rem;
+$business-img-padding: 1rem;
+$business-img-border: 1px solid #ddd;
+$business-img-border-radius: 1rem;
+$business-img-img-height: 4rem;
+$business-cont-padding: 0.5rem;
+$rank-width: 5rem;
+$rank-bg-color: #595959;
+$rank-border-radius: 0.5rem;
+$rank-font-size: 1.4rem;
+$review-list-gap: 1rem;
+$review-info-font-size: 1.4rem;
+$review-border-bottom: 1px solid #eee;
+$form-mail-padding: 2rem;
+$form-mail-bg-color: #f9f9f9;
+$form-mail-border: 1px solid #ddd;
+$form-mail-border-radius: 1rem;
+$sel-list-gap: 1rem;
+$sub-menu-width: 360px;
+$sticky-box-gap: 2rem;
+$sub-menu-item-tit-width: 10rem;

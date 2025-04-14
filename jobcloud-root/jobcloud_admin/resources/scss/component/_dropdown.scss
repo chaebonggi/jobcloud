@@ -1,18 +1,16 @@
-// .drop-cont {display: none; width: 100%;}
-// .drop-sel-cont {display: none;}
 .drop-cont {
-    @include hidden;
-    @include fullWidth;
-}
-
-.drop-cont.is-open {
+    display: none;
+    width: 100%;
+  }
+  
+  .drop-cont.is-open {
     display: block;
-}
-
-.drop-sel-cont {
-    @include hidden;
-}
-
-.drop-sel-cont.is-open {
+  }
+  
+  .drop-sel-cont {
+    display: none;
+  }
+  
+  .drop-sel-cont.is-open {
     display: block;
-}
+  }

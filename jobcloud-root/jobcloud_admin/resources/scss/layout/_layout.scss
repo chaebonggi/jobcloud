@@ -162,3 +162,12 @@ p.small {font-size: 1.4rem;}
     display: flex;
     gap: 1rem;
   }
+  .inner-section {padding: 0 2rem}
+  .inner-section.in-between {
+    display: flex;
+    gap: 2rem;
+  
+    @media (max-width: 1140px) {
+      flex-direction: column;
+    }
+  }

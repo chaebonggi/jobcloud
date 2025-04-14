@@ -1,52 +1,56 @@
 .side-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    z-index: 100;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    transition: 0.4s ease-in-out;
-    z-index: 1000;
-  }
-  .side-menu.is-open {                
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
+
+  &.is-open {
     visibility: visible;
     right: 0;
+
+    &::after {
+      display: block;
+      opacity: 1;
+    }
   }
-  .side-menu.is-open::after {
-    display: block;
-    opacity: 1;
+
+  &::after {
+    display: none;
+    opacity: 0;
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    transition: opacity 0.5s 0.1s;
   }
-  .side-menu::after {
-      display: none;
-      opacity: 0;
-      content: "";
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #000000bf;
-      transition: opacity 0.5s 0.1s;
+
+  .side-wrap {
+    display: flex;
+    align-items: normal;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    background-color: #fff;
   }
-  .side-menu .side-wrap {
-      display: flex;
-      align-items: normal;
-      justify-content: flex-start;
-      flex-direction: column;
-      width: 40%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 5;                  
-      background-color: #fff;
-  }
-  .side-menu .board-container {
+
+  .board-container {
     padding: 2rem;
     overflow-y: scroll;
   }
-  .side-menu .top-btn {
+
+  .top-btn {
     padding: 1rem;
     position: absolute;
     top: 6rem;
@@ -54,3 +58,4 @@
     background-color: #fff;
     font-size: 0;
   }
+}

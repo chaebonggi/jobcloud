@@ -1,51 +1,28 @@
-// .krds-form-check {
-//     position: relative;
-// }
-// .krds-form-check.small>input[type=checkbox]~label, 
-// .krds-form-check.small>input[type=radio]~label {
-//     font-size: 1.4rem;
-// }
-// .krds-form-check.small>input[type=checkbox]~label:before, 
-// .krds-form-check.small>input[type=radio]~label:before {
-//     width: 1.6rem;
-//     height: 1.6rem;
-// }
-// .krds-form-check.small>input[type=checkbox]~label:after,
-// .krds-form-check.small>input[type=radio]~label:after {
-//     width: 1rem;
-//     height: 1rem;
-//     left: 0.3rem;
-//     top: 0.6rem;
-// }
-
-// .krds-check-area {
-//     gap: 1rem 2rem;
-// }
 .krds-check-area {
-    gap: $check-area-gap-row $check-area-gap-col;
-
+    gap: 1rem 2rem;
+  
     .krds-form-check {
-        position: relative;
-
-        &.small {
-            > input[type="checkbox"],
-            > input[type="radio"] {
-                ~ label {
-                    font-size: $font-size-check-label-small;
-
-                    &:before {
-                        width: $check-size-small;
-                        height: $check-size-small;
-                    }
-
-                    &:after {
-                        width: $check-mark-size-small;
-                        height: $check-mark-size-small;
-                        left: $check-mark-left-small;
-                        top: $check-mark-top-small;
-                    }
-                }
+      position: relative;
+  
+      &.small {
+        > input[type="checkbox"],
+        > input[type="radio"] {
+          ~ label {
+            font-size: 1.4rem;
+  
+            &:before {
+              width: 1.6rem;
+              height: 1.6rem;
             }
+  
+            &:after {
+              width: 0.8rem;
+              height: 0.8rem;
+              left: 0.4rem;
+              top: 0.4rem;
+            }
+          }
         }
+      }
     }
-}
+  }

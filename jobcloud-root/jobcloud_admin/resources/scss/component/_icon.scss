@@ -1,193 +1,167 @@
-.svg-icon.ico-download {
+.svg-icon {
+  &.ico-download,
+  &.ico-plus02,
+  &.ico-angle02,
+  &.ico-public,
+  &.ico-del02,
+  &.ico-filter02,
+  &.ico-preview,
+  &.ico-sort,
+  &.ico-sort-up,
+  &.ico-sort-down,
+  &.ico-delete02,
+  &.ico-phone,
+  &.ico-drag,
+  &.ico-line,
+  &.ico-password,
+  &.ico-open-box,
+  &.ico-close-box,
+  &.ico-sub-directory,
+  &.ico-minus,
+  &.ico-menu,
+  &.ico-click,
+  &.ico-group-add,
+  &.ico-arrow-up,
+  &.ico-arrow-down,
+  &.ico-man,
+  &.ico-woman,
+  &.ico-link,
+  &.ico-time,
+  &.ico-lock,
+  &.ico-comment,
+  &.ico-view,
+  &.ico-info {
     mask-repeat: no-repeat;
     mask-position: center center;
     mask-size: contain;
+  }
+
+  &.ico-download {
     mask-image: url(../../images/jobcloud/component/icon/ico_download.svg);
-}
-.svg-icon.ico-plus02 {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-plus02 {
     mask-image: url(../../images/jobcloud/component/icon/ico_plus02.svg);
-}
-.svg-icon.ico-angle02 {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-angle02 {
     mask-image: url(../../images/jobcloud/component/icon/ico_angle02.svg);
-}
-.svg-icon.ico-public {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-public {
     mask-image: url(../../images/jobcloud/component/icon/ico_public.svg);
-}
-.svg-icon.ico-del02 {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-del02 {
     mask-image: url(../../images/jobcloud/component/icon/ico_del.svg);
-}
-.svg-icon.ico-filter02 {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-filter02 {
     mask-image: url(../../images/jobcloud/component/icon/ico_filter02.svg);
-}
-.svg-icon.ico-preview {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-preview {
     mask-image: url(../../images/jobcloud/component/icon/ico_preview.svg);
-}
-.svg-icon.ico-sort {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-sort {
     mask-image: url(../../images/jobcloud/component/icon/ico_sort.svg);
-}
-.svg-icon.ico-sort-up {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-sort-up {
     mask-image: url(../../images/jobcloud/component/icon/ico_sort_up.svg);
-}
-.svg-icon.ico-sort-down {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-sort-down {
     mask-image: url(../../images/jobcloud/component/icon/ico_sort_down.svg);
-}
-.svg-icon.ico-delete02 {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-delete02 {
     mask-image: url(../../images/jobcloud/component/icon/ico_delete02.svg);
-}
-.svg-icon.ico-phone {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-phone {
     mask-image: url(../../images/jobcloud/component/icon/ico_phone.svg);
-}
-.svg-icon.ico-drag {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-drag {
     mask-image: url(../../images/jobcloud/component/icon/ico_drag.svg);
-}
-.svg-icon.ico-line {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-line {
     mask-image: url(../../images/jobcloud/component/icon/ico_line.svg);
-}
-.svg-icon.ico-password {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-password {
     mask-image: url(../../images/jobcloud/component/icon/ico_password.svg);
-}
-.svg-icon.ico-open-box {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-open-box {
     mask-image: url(../../images/jobcloud/component/icon/ico_open_box.svg);
-}
-.svg-icon.ico-close-box {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-close-box {
     mask-image: url(../../images/jobcloud/component/icon/ico_close_box.svg);
-}
-.svg-icon.ico-sub-directory {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-sub-directory {
     mask-image: url(../../images/jobcloud/component/icon/ico_sub_directory.svg);
     background-color: #999999;
-}
-.svg-icon.ico-minus {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-minus {
     mask-image: url(../../images/jobcloud/component/icon/ico_minus.svg);
-}
-.svg-icon.ico-menu {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-menu {
     mask-image: url(../../images/jobcloud/component/icon/ico_menu.svg);
-}
-.svg-icon.ico-click {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-click {
     mask-image: url(../../images/jobcloud/component/icon/ico_click.svg);
-}
-.svg-icon.ico-group-add {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-group-add {
     mask-image: url(../../images/jobcloud/component/icon/ico_group_add.svg);
-}
-.svg-icon.ico-arrow-up {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-arrow-up {
     mask-image: url(../../images/jobcloud/component/icon/ico_arrow_up.svg);
-}
-.svg-icon.ico-arrow-down {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-arrow-down {
     mask-image: url(../../images/jobcloud/component/icon/ico_arrow_down.svg);
-}
-.svg-icon.ico-man {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-man {
     mask-image: url(../../images/jobcloud/component/icon/ico_man.svg);
-}
-.svg-icon.ico-woman {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-woman {
     mask-image: url(../../images/jobcloud/component/icon/ico_woman.svg);
-}
-.svg-icon.ico-link {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-link {
     mask-image: url(../../images/jobcloud/component/icon/ico_link.svg);
-}
-.svg-icon.ico-time {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-time {
     mask-image: url(../../images/jobcloud/component/icon/ico_time.svg);
-}
-.svg-icon.ico-lock {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-lock {
     mask-image: url(../../images/jobcloud/component/icon/ico_lock.svg);
-}
-.svg-icon.ico-comment {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-comment {
     mask-image: url(../../images/jobcloud/component/icon/ico_comment.svg);
-}
-.svg-icon.ico-view {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-view {
     mask-image: url(../../images/jobcloud/component/icon/ico_view.svg);
-}
-.svg-icon.ico-info {
-    mask-repeat: no-repeat;
-    mask-position: center center;
-    mask-size: contain;
+  }
+
+  &.ico-info {
     mask-image: url(../../images/jobcloud/component/icon/ico_information.svg);
+  }
 }

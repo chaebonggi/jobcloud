@@ -1,8 +1,27 @@
-// .textarea-wrap.small textarea.krds-input {
-//     font-size: 1.4rem;
-//     height: 12rem;
-// }
-.textarea-wrap.small textarea.krds-input {
-    font-size: $font-size-textarea-small;
-    height: $height-textarea-small;
+.textarea-wrap.small {
+  textarea.krds-input {
+    font-size: 1.4rem;
+    height: 10rem;
+  }
+}
+
+.krds-file-upload.small {
+  .file-upload {
+    padding: 2rem 1rem;
+    gap: 1rem;
+
+    .txt {
+      font-size: 1.4rem;
+    }
+  }
+
+  .file-list {
+    .upload-list > li {
+      padding: 1rem;
+    }
+
+    .upload-list .file-info .file-name {
+      font-size: 1.4rem;
+    }
+  }
 }
