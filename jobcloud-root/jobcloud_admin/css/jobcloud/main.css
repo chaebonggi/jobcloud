@@ -1468,50 +1468,59 @@ a.krds-btn:hover {
 }
 
 .items-group {
-  margin-top: 2rem;
-  padding: 2rem;
-  border-radius: 1rem;
-  border: 1px solid #ddd;
+  margin-top: 3rem;
+  padding: 1.6rem;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
 }
+
 .items-group .filter-item {
   display: none;
 }
+
 .items-group > .item:first-child {
   padding: 0;
   margin: 0;
   border: 0;
 }
+
 .items-group .item {
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #ddd;
+  margin-top: 1.6rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid #d9d9d9;
 }
+
 .items-group .dl-group {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
+
 .items-group .dl-group dl {
   display: flex;
   align-items: center;
   flex: 1 1 0;
   gap: 1rem;
 }
-.items-group .dl-group dl dt {
+
+.items-group dl dt {
   width: 12rem;
   flex-shrink: 0;
   font-weight: 500;
 }
+
 .items-group .krds-form-check input[type=checkbox]:checked ~ label:before {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #1e2326;
+  border-color: #1e2326;
 }
+
 .items-group .krds-form-check input[type=radio]:checked ~ label:before {
-  border-color: #007bff;
+  border-color: #1e2326;
 }
+
 .items-group .krds-form-check input[type=radio]:checked ~ label:after {
-  background-color: #007bff;
+  background-color: #1e2326;
 }
 
 .switch-group {

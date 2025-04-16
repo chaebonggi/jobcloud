@@ -1,9 +1,6 @@
+
 $(document).ready(function () {
-    includehtml();
-    // setTimeout(function() {
-    //     includehtml();
-        
-    //   }, 10000); 
+//    includehtml();
     $(".all").on("click", function () {
         $("#mobile-nav").addClass("is-open");
         $("html").css('overflow', 'hidden')
@@ -233,25 +230,22 @@ $(document).ready(function () {
         }
     });
     
-     
+   
 });
-
-
-function includehtml() {
-    console.log("10초 후 실행!");
-	var allElements = $(".include_wrap");
-	Array.prototype.forEach.call(allElements, function (el) {
-		var includePath = el.dataset.includePath;
-		console.log(includePath);
-		if (includePath) {
-			var xhttp = new XMLHttpRequest();
-			xhttp.onreadystatechange = function () {
-				if (this.readyState == 4 && this.status == 200) {
-					el.outerHTML = this.responseText;
-				}
-			};
-			xhttp.open('GET', includePath, false);
-			xhttp.send();
-		}
-	});
-}
+// function includehtml() {
+//     var allElements = $(".include_wrap");
+//     Array.prototype.forEach.call(allElements, function (el) {
+//       var includePath = el.dataset.includePath;
+//       console.log(includePath);
+//       if (includePath) {
+//         var xhttp = new XMLHttpRequest();
+//         xhttp.onreadystatechange = function () {
+//           if (this.readyState == 4 && this.status == 200) {
+//             el.outerHTML = this.responseText;
+//           }
+//         };
+//         xhttp.open('GET', includePath, false);
+//         xhttp.send();
+//       }
+//     });
+//   }
