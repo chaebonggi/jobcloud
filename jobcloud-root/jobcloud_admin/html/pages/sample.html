@@ -69,13 +69,13 @@
                                 <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/제공정보관리-기업지원.html">기업지원</a>
                               </li>
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/제공정보관리-지원정책목록.html">교육훈련</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/제공정보관리-교육훈련.html">교육훈련</a>
                               </li>
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/제공정보관리-지원정책목록.html">대외활동</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/제공정보관리-대외활동.html">대외활동</a>
                               </li>
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/제공정보관리-지원정책목록.html">카테고리 관리</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/제공정보관리-분류관리.html">분류 관리</a>
                               </li>
                             </ul>
                             <!-- //lnb-list -->
@@ -269,7 +269,6 @@
           </nav>            
         </header>
         <main>
-
         </main>
         
         <footer id="jc-footer">
@@ -361,6 +360,15 @@
                     let $wrap = $(this).closest(".sort-options");
                     $wrap.removeClass("active is-open");
                 });
+                // 탭메뉴
+                $(".tabs li a").click(function () {
+                    $(this).parent().siblings("li").removeClass("active");
+                    $(this).parent().addClass("active");
+                    $(this).parent().parent().parent().parent().find(".tab_content").hide();
+                    var activeTab = $(this).attr("rel");
+                    $("#" + activeTab).fadeIn();
+                });
+                
 
             });
         }
@@ -381,7 +389,7 @@
                 loadPage(url);
             }
         });
-        
+        loadPage('sample/제공정보관리-지원정책목록.html');
     });
     </script>
 </body>
