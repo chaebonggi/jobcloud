@@ -1,148 +1,73 @@
-.krds-pagination.type02 {
-  .page-navi {
-    &.prev-start,
-    &.next-end,
-    &.prev,
-    &.next {
-      width: 3rem;
-      height: 3rem;
-      padding: 0;
-      border: 1px solid #ddd;
-    }
-
-    &.prev-start::before,
-    &.next-end::after {
-      content: "";
-      display: inline-flex;
-      width: 1.6rem;
-      height: 1.6rem;
-      background-color: #333;
-      mask-repeat: no-repeat;
-      mask-position: center center;
-      mask-size: contain;
-    }
-
-    &.prev::before {
-      background-color: #333;
-      mask-repeat: no-repeat;
-      mask-position: center center;
-      mask-size: contain;
-      mask-image: url(../../images/jobcloud/component/icon/ico_angle02.svg);
-      transform: rotate(180deg);
-    }
-
-    &.next::after {
-      background-color: #333;
-      mask-repeat: no-repeat;
-      mask-position: center center;
-      mask-size: contain;
-      mask-image: url(../../images/jobcloud/component/icon/ico_angle02.svg);
-      transform: rotate(0);
-    }
-
-    &.prev-start::before {
-      mask-image: url(../../images/jobcloud/component/icon/ico_pagination02.svg);
-      transform: rotate(180deg);
-    }
-
-    &.next-end::after {
-      mask-image: url(../../images/jobcloud/component/icon/ico_pagination02.svg);
-    }
-
-    &.prev-start {
-      order: 1;
-    }
-
-    &.prev {
-      order: 2;
-    }
-
-    &.next {
-      order: 4;
-    }
-
-    &.next-end {
-      order: 5;
-    }
-  }
-
-  .page-links {
-    order: 3;
-
-    .page-link {
-      width: 3rem;
-      height: 3rem;
-      border: 1px solid #ddd;
-
-      &.active {
-        background-color: #007bff;
-        color: #fff;
-        border-color: #007bff;
-      }
-    }
-  }
+.krds-pagination.type02 .page-navi.prev-start,
+.krds-pagination.type02 .page-navi.next-end,
+.krds-pagination.type02 .page-navi.prev,
+.krds-pagination.type02 .page-navi.next {
+    width: 3.4rem;
+    height: 3.4rem;
+    padding: 0;
+    border: 1px solid #d9d9d9;
 }
+.krds-pagination.type02 .page-navi.prev-start::before,
+.krds-pagination.type02 .page-navi.next-end::after {
+    content: "";
+    display: inline-flex;
+    width: var(--krds-icon--size-medium);
+    height: var(--krds-icon--size-medium);
+    background-color: #b5b6b8;
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: contain;
+}
+
+.krds-pagination.type02 .page-navi.prev::before {
+    background-color: #b5b6b8; mask-repeat: no-repeat; mask-position: center center; mask-size: contain; mask-image: url(../../images/jobcloud/component/icon/ico_pagination.svg); transform: rotate(180deg);
+}
+.krds-pagination.type02 .page-navi.next::after {
+    background-color: #b5b6b8; mask-repeat: no-repeat; mask-position: center center; mask-size: contain; mask-image: url(../../images/jobcloud/component/icon/ico_pagination.svg); transform: rotate(0);
+}
+.krds-pagination.type02 .page-navi.prev-start::before { mask-image: url(../../images/jobcloud/component/icon/ico_pagination02.svg); transform: rotate(180deg); }
+.krds-pagination.type02 .page-navi.next-end::after { mask-image: url(../../images/jobcloud/component/icon/ico_pagination02.svg); }
+.krds-pagination.type02 .page-links .page-link { width: 3.4rem; height: 3.4rem; border: 1px solid #d9d9d9;}
+.krds-pagination.type02 .page-links .page-link.active {
+    background-color: #4158d1;
+    color: #fff;
+    border-color: #4158d1;
+}
+
+.krds-pagination.type02 .page-navi.prev-start { order: 1;}
+.krds-pagination.type02 .page-navi.prev {order: 2;}
+.krds-pagination.type02 .page-links {order: 3;}
+.krds-pagination.type02 .page-navi.next {order: 4;}
+.krds-pagination.type02 .page-navi.next-end {order: 5;}
 
 .pagination {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  .page-navi {
     display: flex;
-
-    &.prev::before,
-    &.next::after {
-      content: "";
-      display: inline-flex;
-      width: 1.6rem;
-      height: 1.6rem;
-      align-items: center;
-      justify-content: center;
-    }
-
-    &.prev::before {
-      background-color: #333;
-      mask-repeat: no-repeat;
-      mask-position: center center;
-      mask-size: contain;
-      mask-image: url(../../images/jobcloud/component/icon/ico_angle02.svg);
-      transform: rotate(180deg);
-    }
-
-    &.next::after {
-      background-color: #333;
-      mask-repeat: no-repeat;
-      mask-position: center center;
-      mask-size: contain;
-      mask-image: url(../../images/jobcloud/component/icon/ico_angle02.svg);
-      transform: rotate(0);
-    }
-  }
+    align-items: center;
+    gap: 1rem;
+}
+.pagination .page-navi {
+    display: flex;
+}
+.pagination .page-navi.prev::before,
+.pagination .page-navi.next::after {
+    content: "";
+    display: inline-flex;
+    width: var(--krds-icon--size-medium);
+    height: var(--krds-icon--size-medium);
+    align-items: center;
+    justify-content: center;    
+}
+.pagination .page-navi.prev::before {
+    background-color: #b5b6b8; mask-repeat: no-repeat; mask-position: center center; mask-size: contain; mask-image: url(../../images/jobcloud/component/icon/ico_pagination.svg); transform: rotate(180deg);
+}
+.pagination .page-navi.next::after {
+    background-color: #b5b6b8; mask-repeat: no-repeat; mask-position: center center; mask-size: contain; mask-image: url(../../images/jobcloud/component/icon/ico_pagination.svg); transform: rotate(0);
 }
 
-@media (max-width: 768px) {
-  .krds-pagination.type02 {
-    .page-navi {
-      &.prev-start {
-        order: 1;
-      }
-
-      &.prev {
-        order: 2;
-      }
-
-      &.next {
-        order: 3;
-      }
-
-      &.next-end {
-        order: 4;
-      }
-    }
-
-    .page-links {
-      order: 5;
-    }
-  }
+@media (max-width: 767px) {
+    .krds-pagination.type02 .page-navi.prev-start { order: 1;}
+    .krds-pagination.type02 .page-navi.prev {order: 2;}    
+    .krds-pagination.type02 .page-navi.next {order: 3;}
+    .krds-pagination.type02 .page-navi.next-end {order: 4;}
+    .krds-pagination.type02 .page-links {order: 5;}
 }

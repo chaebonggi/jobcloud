@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --krds-pc-font-size-body-medium: 1.6rem;
   --krds-pc-font-size-body-large: 1.6rem;
@@ -890,6 +891,20 @@ input[type=time] {
   gap: 1rem;
 }
 
+.inner-section {
+  padding: 0 2rem;
+}
+
+.inner-section.in-between {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 1140px) {
+  .inner-section.in-between {
+    flex-direction: column;
+  }
+}
+
 #jc-footer {
   display: flex;
   min-height: 60px;
@@ -965,6 +980,19 @@ input[type=time] {
   font-size: 0;
 }
 
+/* 폰트 관련 변수 */
+/* 색상 관련 변수 */
+/* 간격 관련 변수 */
+/* 체크박스 관련 변수 */
+/* 텍스트 영역 관련 변수 */
+/* 아이템 그룹 관련 변수 */
+/* 모달 관련 변수 */
+/* 페이지네이션 관련 변수 */
+/* 반응형 관련 변수 */
+/* 정렬 관련 변수 */
+/* 별점 메뉴 관련 변수 */
+/* 스텝 관련 변수 */
+/* 스위치 관련 변수 */
 .krds-pagination.type02 .page-navi.prev-start,
 .krds-pagination.type02 .page-navi.next-end,
 .krds-pagination.type02 .page-navi.prev,
@@ -1336,285 +1364,154 @@ a.krds-btn:hover {
   background-color: initial;
 }
 
-.svg-icon.ico-download {
+.svg-icon.ico-download, .svg-icon.ico-plus02, .svg-icon.ico-angle02, .svg-icon.ico-public, .svg-icon.ico-del02, .svg-icon.ico-filter02, .svg-icon.ico-preview, .svg-icon.ico-sort, .svg-icon.ico-sort-up, .svg-icon.ico-sort-down, .svg-icon.ico-delete02, .svg-icon.ico-phone, .svg-icon.ico-drag, .svg-icon.ico-line, .svg-icon.ico-password, .svg-icon.ico-open-box, .svg-icon.ico-close-box, .svg-icon.ico-sub-directory, .svg-icon.ico-minus, .svg-icon.ico-menu, .svg-icon.ico-click, .svg-icon.ico-group-add, .svg-icon.ico-arrow-up, .svg-icon.ico-arrow-down, .svg-icon.ico-man, .svg-icon.ico-woman, .svg-icon.ico-link, .svg-icon.ico-time, .svg-icon.ico-lock, .svg-icon.ico-comment, .svg-icon.ico-view, .svg-icon.ico-info {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
+}
+.svg-icon.ico-download {
   mask-image: url(../../images/jobcloud/component/icon/ico_download.svg);
 }
-
 .svg-icon.ico-plus02 {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_plus02.svg);
 }
-
 .svg-icon.ico-angle02 {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_angle02.svg);
 }
-
 .svg-icon.ico-public {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_public.svg);
 }
-
 .svg-icon.ico-del02 {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_del.svg);
 }
-
 .svg-icon.ico-filter02 {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_filter02.svg);
 }
-
 .svg-icon.ico-preview {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_preview.svg);
 }
-
 .svg-icon.ico-sort {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_sort.svg);
 }
-
 .svg-icon.ico-sort-up {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_sort_up.svg);
 }
-
 .svg-icon.ico-sort-down {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_sort_down.svg);
 }
-
 .svg-icon.ico-delete02 {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_delete02.svg);
 }
-
 .svg-icon.ico-phone {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_phone.svg);
 }
-
 .svg-icon.ico-drag {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_drag.svg);
 }
-
 .svg-icon.ico-line {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_line.svg);
 }
-
 .svg-icon.ico-password {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_password.svg);
 }
-
 .svg-icon.ico-open-box {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_open_box.svg);
 }
-
 .svg-icon.ico-close-box {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_close_box.svg);
 }
-
 .svg-icon.ico-sub-directory {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_sub_directory.svg);
   background-color: #999999;
 }
-
 .svg-icon.ico-minus {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_minus.svg);
 }
-
 .svg-icon.ico-menu {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_menu.svg);
 }
-
 .svg-icon.ico-click {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_click.svg);
 }
-
 .svg-icon.ico-group-add {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_group_add.svg);
 }
-
 .svg-icon.ico-arrow-up {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_arrow_up.svg);
 }
-
 .svg-icon.ico-arrow-down {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_arrow_down.svg);
 }
-
 .svg-icon.ico-man {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_man.svg);
 }
-
 .svg-icon.ico-woman {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_woman.svg);
 }
-
 .svg-icon.ico-link {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_link.svg);
 }
-
 .svg-icon.ico-time {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_time.svg);
 }
-
 .svg-icon.ico-lock {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_lock.svg);
 }
-
 .svg-icon.ico-comment {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_comment.svg);
 }
-
 .svg-icon.ico-view {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_view.svg);
 }
-
 .svg-icon.ico-info {
-  mask-repeat: no-repeat;
-  mask-position: center center;
-  mask-size: contain;
   mask-image: url(../../images/jobcloud/component/icon/ico_information.svg);
 }
 
 .items-group {
-  margin-top: 3rem;
-  padding: 1.6rem;
-  border-radius: 10px;
-  border: 1px solid #d9d9d9;
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
 }
-
 .items-group .filter-item {
   display: none;
 }
-
 .items-group > .item:first-child {
   padding: 0;
   margin: 0;
   border: 0;
 }
-
 .items-group .item {
-  margin-top: 1.6rem;
-  padding-top: 1.6rem;
-  border-top: 1px solid #d9d9d9;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #ddd;
 }
-
 .items-group .dl-group {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
-
 .items-group .dl-group dl {
   display: flex;
   align-items: center;
   flex: 1 1 0;
   gap: 1rem;
 }
-
-.items-group dl dt {
+.items-group .dl-group dl dt {
   width: 12rem;
   flex-shrink: 0;
   font-weight: 500;
 }
-
 .items-group .krds-form-check input[type=checkbox]:checked ~ label:before {
-  background-color: #1e2326;
-  border-color: #1e2326;
+  background-color: #007bff;
+  border-color: #007bff;
 }
-
 .items-group .krds-form-check input[type=radio]:checked ~ label:before {
-  border-color: #1e2326;
+  border-color: #007bff;
 }
-
 .items-group .krds-form-check input[type=radio]:checked ~ label:after {
-  background-color: #1e2326;
+  background-color: #007bff;
 }
 
 .switch-group {
@@ -1878,7 +1775,7 @@ a.krds-btn:hover {
 
 .sort-options {
   display: none;
-  min-width: 29rem;
+  min-width: 30rem;
   padding: 1.2rem;
   position: absolute;
   top: 5rem;
@@ -2335,7 +2232,6 @@ a.krds-btn:hover {
   width: 100%;
   flex-direction: column;
   gap: 1rem;
-  overflow: hidden;
 }
 
 .board-cont .item .cont.full {
@@ -2748,77 +2644,75 @@ a.krds-btn:hover {
   display: none;
   width: 100%;
 }
+.drop-cont.is-open {
+  display: block;
+}
 
 .drop-sel-cont {
   display: none;
+}
+.drop-sel-cont.is-open {
+  display: block;
 }
 
 .star-menu {
   position: relative;
 }
-
 .star-menu.disabled .select-btn {
-  background-color: #f3f3f3;
-  border-color: #b1b8be;
+  background-color: #f2f2f2;
+  border-color: #ddd;
 }
-
 .star-menu .select-btn {
   display: flex;
   align-items: center;
   width: 100%;
   height: 4rem;
-  padding: 0 4rem 0 1.6rem;
+  padding: 0 1.6rem;
   position: relative;
   background-color: #fff;
   background-size: 2rem;
   background-image: url(../../images/jobcloud/component/icon/ico_angle03.svg);
   background-position: center right 1.6rem;
   background-repeat: no-repeat;
-  border: 1px solid #d9d9d9;
-  border-radius: 0.8rem;
-  font-size: 1.6rem;
-  transition: 0.4s ease-in-out;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
-
 .star-menu .rate-area {
   display: flex;
   align-items: center;
 }
-
 .star-menu .rate-area .rv-rate {
-  width: 8.6rem;
-  height: 1.4rem;
+  width: 8rem;
+  height: 1.6rem;
   position: relative;
-  background: url(../../images/jobcloud/component/icon/ico_star_bg.png) no-repeat;
+  background: url(../../images/jobcloud/component/icon/ico_star_bg.svg) no-repeat;
   z-index: 1;
 }
-
 .star-menu .rate-area .rv-rate span {
   display: block;
   width: auto;
-  height: 1.4rem;
+  height: 1.6rem;
   position: absolute;
-  background: url(../../images/jobcloud/component/icon/ico_star_on.png) no-repeat;
+  background: url(../../images/jobcloud/component/icon/ico_star_on.svg) no-repeat;
   z-index: 2;
 }
-
 .star-menu.active .options {
   display: block;
 }
-
 .star-menu .options {
   display: none;
-  padding: 1rem 4rem 1rem 1.6rem;
+  padding: 1rem;
   position: absolute;
-  top: 4.5rem;
+  top: 100%;
   left: 0;
   right: 0;
   background-color: #fff;
-  border: 1px solid #d9d9d9;
-  border-radius: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
 }
-
 .star-menu .options li {
   padding: 0.5rem 0;
   cursor: pointer;
@@ -2826,55 +2720,59 @@ a.krds-btn:hover {
 
 .textarea-wrap.small textarea.krds-input {
   font-size: 1.4rem;
-  height: 12rem;
+  height: 10rem;
+}
+
+.krds-file-upload.small .file-upload {
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+.krds-file-upload.small .file-upload .txt {
+  font-size: 1.4rem;
+}
+.krds-file-upload.small .file-list .upload-list > li {
+  padding: 1rem;
+}
+.krds-file-upload.small .file-list .upload-list .file-info .file-name {
+  font-size: 1.4rem;
 }
 
 .krds-step-wrap.type02 {
   margin: 0;
-  padding: 2rem 0;
-  border: 0.1rem solid #ddd;
-  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
 }
-
 .krds-step-wrap.type02 > li.active::after {
-  background-color: #6d7882;
+  background-color: #007bff;
 }
-
 .krds-step-wrap.type02 > li > span {
   padding-right: 0;
 }
-
 .krds-step-wrap.type02 > li > span::before {
   left: 50%;
   transform: translateX(-50%);
 }
-
 .krds-step-wrap.type02 > li.active > span::after {
   left: 50%;
   transform: translateX(-50%);
 }
-
 .krds-step-wrap.type02 > li::after {
   left: -50%;
 }
-
-.krds-step-wrap > li.done > span::after {
+.krds-step-wrap.type02 > li.done > span::after {
   content: none;
 }
-
 .krds-step-wrap.type02 > li:last-child::after {
   display: initial;
 }
-
 .krds-step-wrap.type02 > li:first-child::after {
   display: none;
 }
-
 .krds-step-wrap.type02 > li.active .step-tit {
-  font-weight: 500;
+  font-weight: 700;
 }
-
 .krds-step-wrap.type02 > li .step-tit {
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */

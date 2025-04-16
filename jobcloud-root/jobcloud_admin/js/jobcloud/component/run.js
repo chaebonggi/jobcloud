@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    includehtml();
+    // setTimeout(function() {
+    //     includehtml();
+        
+    //   }, 10000); 
     $(".all").on("click", function () {
         $("#mobile-nav").addClass("is-open");
         $("html").css('overflow', 'hidden')
@@ -44,9 +49,7 @@ $(document).ready(function () {
 
     $(".sort-cancel-btn").on("click", function () {
         let $wrap = $(this).closest(".sort-options");
-        let $btn = $wrap.siblings(".sort-add-btn");
-        $btn.removeClass("active");
-        $wrap.slideUp();
+        $wrap.removeClass("active is-open");
     });
 
     // 테이블 상세 버튼
@@ -121,22 +124,6 @@ $(document).ready(function () {
         previousTarget = currentTarget;
     });
     $(".drop-cont").removeClass('is-open');
-    // let previousTarget = null;
-    // $('input[type="radio"]').on('change', function () {
-    //     const $dropRadio = $(".drop-radio-menu:checked");
-    //     const currentTarget = $dropRadio.data("target");
-    //     const $currentTargetDropdown = $(`.drop-cont[data-target="${currentTarget}"]`);
-
-    //     if (previousTarget && previousTarget !== currentTarget) {
-    //         const $previousTargetDropdown = $(`.drop-cont[data-target="${previousTarget}"]`);
-    //         $previousTargetDropdown.slideUp(300);
-    //     }
-    //     if ($dropRadio.length) {
-    //         $currentTargetDropdown.slideDown(300);
-    //     }
-    //     previousTarget = currentTarget;
-    // });
-    // $(".drop-cont").hide();
     
     // 드랍 토글 메뉴
     $(".drop-menu").on("click", function () {
@@ -146,13 +133,7 @@ $(document).ready(function () {
         $(this).toggleClass("active");
         $targetDropdown.toggleClass("active");
     });
-    // $(".drop-menu").on("click", function () {
-    //     const target = $(this).data("target");
-    //     const $targetDropdown = $(`.drop-cont[data-target="${target}"]`);
-    //     $targetDropdown.slideToggle(300);
-    //     $(this).toggleClass("active");
-    //     $targetDropdown.toggleClass("active");
-    // });
+
     // 드랍 메뉴2
     $(".dropdown-btn").on("click", function (event) {
         event.stopPropagation();
@@ -251,6 +232,26 @@ $(document).ready(function () {
             });
         }
     });
-
-
+    
+     
 });
+
+
+function includehtml() {
+    console.log("10초 후 실행!");
+	var allElements = $(".include_wrap");
+	Array.prototype.forEach.call(allElements, function (el) {
+		var includePath = el.dataset.includePath;
+		console.log(includePath);
+		if (includePath) {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function () {
+				if (this.readyState == 4 && this.status == 200) {
+					el.outerHTML = this.responseText;
+				}
+			};
+			xhttp.open('GET', includePath, false);
+			xhttp.send();
+		}
+	});
+}
