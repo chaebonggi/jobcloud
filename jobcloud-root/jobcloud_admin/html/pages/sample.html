@@ -93,16 +93,16 @@
                             <!-- lnb-list -->
                             <ul class="lnb-list" role="menubar">
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">채용공고</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/채용정보관리-채용공고.html">채용공고</a>
                               </li>
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">기업목록</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/채용정보관리-기업목록.html">기업목록</a>
                               </li>
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">인재정보</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/채용정보관리-인재정보.html">인재정보</a>
                               </li>
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">박람회 관리</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/채용정보관리-박람회목록.html">박람회 관리</a>
                               </li>
                               <li class="lnb-item">
                                 <a href="#!" class="lnb-btn lnb-link" role="menuitem">분류관리</a>
@@ -162,7 +162,7 @@
                             <!-- lnb-list -->
                             <ul class="lnb-list" role="menubar">
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">회원 목록</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/회원관리-회원목록.html">회원 목록</a>
                               </li>
                             </ul>
                             <!-- //lnb-list -->
@@ -243,22 +243,16 @@
                             <!-- lnb-list -->
                             <ul class="lnb-list" role="menubar">
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">관리자</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/환경설정-관리자.html">관리자 정보</a>
                               </li>
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">정보</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/환경설정-권한관리.html">권한 관리</a>
                               </li>
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">권한 관리</a>
-                              </li>
-                              <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">메뉴 관리</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/환경설정-메뉴관리.html">메뉴 관리</a>
                               </li>
                               <li class="lnb-item">
                                 <a href="#!" class="lnb-btn lnb-link" role="menuitem">공통코드</a>
-                              </li>
-                              <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">관리</a>
                               </li>
                             </ul>
                             <!-- //lnb-list -->
@@ -368,6 +362,46 @@
                     var activeTab = $(this).attr("rel");
                     $("#" + activeTab).fadeIn();
                 });
+                // order-btn 태그 순서 이동
+                $(document).on('click', '.c-item-list .order-btn', function() {
+                    const button = $(this);
+                    const curRow = button.closest('li');
+                    const list = button.closest('.c-item-list').find('ul'); 
+                    const listCnt = list.children('li').length;
+                    const curRowIdx = curRow.index();    
+                    if (button.hasClass('order-up') && curRowIdx > 0) {
+                        curRow.fadeOut(100, function() {
+                            $(this).prev().before(this);
+                            $(this).fadeIn();
+                        });
+                    } else if (button.hasClass('order-down') && curRowIdx < listCnt - 1) {
+                        curRow.fadeOut(100, function() {
+                            $(this).next().after(this);
+                            $(this).fadeIn();
+                        });
+                    }
+                });
+
+
+                // 사이드 메뉴
+                $(".side-open-btn").on("click", function () {
+                    $(".side-menu").addClass("is-open");
+                });
+                $(".side-close-btn").on("click", function () {
+                    $(".side-menu").removeClass("is-open");
+                });
+                // 모달
+                $(".open-modal").click(function() {
+                  const targetModalId = $(this).data("target");
+                  const $targetModal = $("#" + targetModalId);
+                  $targetModal.addClass("in show");
+                  $targetModal.find(".modal-back").addClass("in");
+                });
+                $(".close-modal").click(function() {
+                  const $closestModal = $(this).closest(".krds-modal");
+                  $closestModal.removeClass("in show");
+                  $closestModal.next(".modal-back").removeClass("in");
+                });
                 
 
             });
@@ -382,7 +416,7 @@
         });
 
         // 이벤트 핸들러 바인딩 (초기 로딩 시 한 번만 실행)
-        $('main').on('click', 'a[data-url]', function(e) {
+        $('main').on('click', '.krds-btn[data-url]', function(e) {
             e.preventDefault();
             const url = $(this).data('url');
             if (url) {

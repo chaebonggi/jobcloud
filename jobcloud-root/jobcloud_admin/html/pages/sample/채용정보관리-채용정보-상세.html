@@ -1,0 +1,622 @@
+<div id="container">
+  <h1 class="contain-title">채용 공고 등록 / 상세</h1>
+  <div class="container_wr">
+    <section>
+      <div class="inner-section in-between">
+        <div class="board-container full">
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">기본정보</p>
+              <p><span class="marking">*</span> 필수 입력정보</p>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name1">공고명<span class="marking">*</span></label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name1" class="krds-input small" placeholder="직책명을 입력해주세요.">
+                </div>
+              </div>
+            </div>
+            <div class="item half">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="select01">직무 분류<span class="marking">*</span></label>
+                </div>
+                <div class="cont half">
+                  <div class="c-item">
+                    <select id="select01" class="krds-form-select small type02" title="1차분류">
+                      <option value="">1차분류</option>
+                    </select>
+                    <select class="krds-form-select small type02" title="2차분류">
+                      <option value="">2차분류</option>
+                    </select>
+                    <select class="krds-form-select small type02" title="3차분류">
+                      <option value="">3차분류</option>
+                    </select>
+                    <button type="button" class="krds-btn small type04"><i class="svg-icon ico-plus"></i>추가</button>
+                  </div>
+                  <div class="c-item">
+                    <select class="krds-form-select small type02" title="1차분류">
+                      <option value="">1차분류</option>
+                    </select>
+                    <select class="krds-form-select small type02" title="2차분류">
+                      <option value="">2차분류</option>
+                    </select>
+                    <select class="krds-form-select small type02" title="3차분류">
+                      <option value="">3차분류</option>
+                    </select>
+                    <button type="button" class="krds-btn small delete"><i
+                        class="svg-icon ico-minus"></i>삭제</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="chk_4-1">근무 형태<span class="marking">*</span></label>
+                </div>
+                <div class="cont">
+                  <div class="krds-check-area flex-w">
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_4-1">
+                      <label for="chk_4-1">정규직</label>
+                    </div>
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_4-2">
+                      <label for="chk_4-2">계약직</label>
+                    </div>
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_4-3">
+                      <label for="chk_4-3">인턴</label>
+                    </div>
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_4-4">
+                      <label for="chk_4-4">기타</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="chk_5-1">채용 구분<span class="marking">*</span></label>
+                </div>
+                <div class="cont">
+                  <div class="krds-check-area flex-w">
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_5-1">
+                      <label for="chk_5-1">신입</label>
+                    </div>
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_5-2">
+                      <label for="chk_5-2">경력</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name3">근무 장소<span class="marking">*</span></label>
+                </div>
+                <div class="cont">
+                  <div class="c-item">
+                    <input type="text" id="consult_name3" class="krds-input small" placeholder="교육장소" readonly>
+                    <button type="button" class="krds-btn small">주소검색</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="chk_6-1">지원 방법<span class="marking">*</span></label>
+                </div>
+                <div class="cont">
+                  <div class="krds-check-area flex-w">
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_6-1">
+                      <label for="chk_6-1">온라인 지원</label>
+                    </div>
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_6-2" class="drop-menu" data-target="addr-target">
+                      <label for="chk_6-2">자사 홈페이지</label>
+                    </div>
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_6-3" class="drop-menu" data-target="email-target">
+                      <label for="chk_6-3">이메일</label>
+                    </div>
+                  </div>
+                  <div class="drop-cont" data-target="addr-target">
+                    <input type="text" class="krds-input small" placeholder="지원가능한 채용 홈페이지 주소를 입력하세요.">
+                  </div>
+                  <div class="drop-cont" data-target="email-target">
+                    <input type="text" class="krds-input small" placeholder="채용서류를 제출할 이메일 주소를 입력하세요.">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <p>모집기간<span class="marking">*</span></p>
+                </div>
+                <div class="cont">
+                  <div class="c-item">
+                    <div class="form-conts calendar-conts">
+                      <div class="calendar-input">
+                        <ul class="input-group range set">
+                          <li>
+                            <input type="number" class="krds-input datepicker small" placeholder="시작날짜"
+                              title="시작날짜 입력">
+                          </li>
+                          <li class="mark">-</li>
+                          <li>
+                            <input type="number" class="krds-input datepicker small" placeholder="종료날짜"
+                              title="종료날짜 입력">
+                          </li>
+                        </ul>
+                        <button type="button" class="krds-btn small icon form-btn-datepicker">
+                          <span class="sr-only">달력 열기</span>
+                          <i class="svg-icon ico-calendar"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="krds-check-area">
+                      <div class="krds-form-check">
+                        <input type="radio" name="rdo_e" id="rdo_e1">
+                        <label for="rdo_e1">상시</label>
+                      </div>
+                      <div class="krds-form-check">
+                        <input type="radio" name="rdo_e" id="rdo_e2">
+                        <label for="rdo_e2">모집완료 시</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="chk_7-1">문의처<span class="marking">*</span></label>
+                </div>
+                <div class="cont">
+                  <div class="krds-check-area flex-w">
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_7-1">
+                      <label for="chk_7-1">이메일</label>
+                    </div>
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_7-2">
+                      <label for="chk_7-2">유선전화</label>
+                    </div>
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_7-3">
+                      <label for="chk_7-3">휴대전화</label>
+                    </div>
+                    <p>&#8251; 담당자 연락처 정보가 노출됩니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">상세 정보</p>
+              <p><span class="marking">*</span> 필수 입력정보</p>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="select02">학력<span class="marking">*</span></label>
+                </div>
+                <div class="cont">
+                  <select id="select02" class="krds-form-select small type02" title="학력">
+                    <option value="">무관</option>
+                  </select>
+                </div>
+              </div>
+              <div class="b-item">
+                <div class="tit">
+                  <label for="select03">경력<span class="marking">*</span></label>
+                </div>
+                <div class="cont">
+                  <select id="select03" class="krds-form-select small type02" title="경력">
+                    <option value="">무관</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="select04">급여 수준<span class="marking">*</span></label>
+                </div>
+                <div class="cont">
+                  <select id="select04" class="krds-form-select small type02" title="급여 수준">
+                    <option value="">면접시 협의</option>
+                  </select>
+                </div>
+              </div>
+              <div class="b-item">
+                <div class="tit">
+                  <label for="rdo_a-1">성별<span class="marking">*</span></label>
+                </div>
+                <div class="cont">
+                  <div class="krds-check-area">
+                    <div class="krds-form-check">
+                      <input type="radio" name="rdo_a" id="rdo_a-1">
+                      <label for="rdo_a-1">무관</label>
+                    </div>
+                    <div class="krds-form-check">
+                      <input type="radio" name="rdo_a" id="rdo_a-2">
+                      <label for="rdo_a-2">남성</label>
+                    </div>
+                    <div class="krds-form-check">
+                      <input type="radio" name="rdo_a" id="rdo_a-3">
+                      <label for="rdo_a-3">여성</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="chk_8-1">연령<span class="marking">*</span></label>
+                </div>
+                <div class="cont">
+                  <div class="krds-check-area flex-w">
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_8-1">
+                      <label for="chk_8-1">무관</label>
+                    </div>
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_8-2">
+                      <label for="chk_8-2">청년(18~34세)</label>
+                    </div>
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_8-3">
+                      <label for="chk_8-3">중년(35~49세)</label>
+                    </div>
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_8-4">
+                      <label for="chk_8-4">청년(50~64세)</label>
+                    </div>
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_8-5">
+                      <label for="chk_8-5">어르신(65세~)</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name11">복리후생</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name11" class="krds-input small" placeholder="복리후생을 입력하세요.">
+                  <p class="small">&#8251; 콤마(,)로 구분해 주세요.</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name12">우대사항</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name12" class="krds-input small" placeholder="우대사항을 입력하세요.">
+                  <p class="small">&#8251; 콤마(,)로 구분해 주세요.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">상세 내용</p>
+              <div class="btn-gruop">
+                <button type="button" class="krds-btn type04 xsmall dropdown-btn" data-target="dropdown-1"><i
+                    class="svg-icon ico-menu"></i>템플릿 선택</button>
+                <div class="template-cont dropdown-cont" data-target="dropdown-1">
+                  <ul>
+                    <!-- <li><p class="tct">템플릿이 없습니다</p></li> -->
+                    <li><a href="#!">
+                        <div class="tpl-img">
+                          <img src="../../images/jobcloud/component/assets/template_img.png" alt="템플릿">
+                        </div>
+                        <div class="tpl-text">
+                          <p class="tpl-tit">템플릿명 AAA</p>
+                          <p>(부가설명 함께 노출 가능)</p>
+                        </div>
+                      </a></li>
+                    <li><a href="#!">
+                        <div class="tpl-img">
+                          <img src="../../images/jobcloud/component/assets/template_img.png" alt="템플릿">
+                        </div>
+                        <div class="tpl-text">
+                          <p class="tpl-tit">템플릿명 BBB</p>
+                          <p>(부가설명 함께 노출 가능)</p>
+                        </div>
+                      </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="cont">
+                  <!-- 에디터 -->
+                  에디터 영역
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">첨부파일</p>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="cont">
+                  <div class="krds-file-upload">
+                    <!-- 파일 업로드 영역 -->
+                    <div class="file-upload">
+                      <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
+                      <div class="file-upload-btn-wrap">
+                        <input type="file" name="myFile" id="fileu-upload" hidden>
+                        <label for="fileu-upload">
+                          <button type="button" class="krds-btn medium"><i
+                              class="svg-icon ico-upload"></i>파일선택</button>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- //파일 업로드 영역 -->
+                    <!-- 파일 리스트 영역 -->
+                    <div class="file-list">
+                      <div class="total"><span class="current">2개</span> / 10개</div>
+                      <ul class="upload-list">
+                        <li>
+                          <div class="file-info">
+                            <div class="file-name">전입재등록신고서 [hwp, 17KB] </div>
+                            <div class="btn-wrap">
+                              <button type="button" class="krds-btn medium text">삭제 <i
+                                  class="svg-icon ico-delete-fill"></i></button>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="file-info">
+                            <div class="file-name">전입신고서 [hwp, 17KB] </div>
+                            <div class="btn-wrap">
+                              <button type="button" class="krds-btn medium text">삭제 <i
+                                  class="svg-icon ico-delete-fill"></i></button>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="upload-delete-btn">
+                        <button type="button" class="krds-btn xsmall delete"><i
+                            class="svg-icon ico-delete02 right"></i>전체 파일 삭제</button>
+                      </div>
+                    </div>
+                    <!-- //파일 리스트 영역 -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">부가정보</p>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name9">참고 페이지</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name9" class="krds-input small" placeholder="참고 페이지를 입력해주세요.">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name10">태그</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name10" class="krds-input small" placeholder="태그명을 입력해주세요.">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-menu">
+          <div class="sticky-box">
+            <div class="board-cont">
+              <div class="board-tit">
+                <p class="tit">기업 및 담당자 정보</p>
+              </div>
+              <div class="item item-col">
+                <div class="b-item">
+                  <div class="tit flex gap-10 flex-w">
+                    <label for="rdo_f-1"> 기업명<span class="marking">*</span></label>
+                    <div class="krds-check-area mla">
+                      <div class="krds-form-check">
+                        <input type="radio" name="rdo_f" id="rdo_f-1">
+                        <label for="rdo_f-1">기업 선택</label>
+                      </div>
+                      <div class="krds-form-check">
+                        <input type="radio" name="rdo_f" id="rdo_f-2">
+                        <label for="rdo_f-2">직접 입력</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cont">
+                    <div class="c-item">
+                      <input type="text" id="consult_name3" class="krds-input small" placeholder="기업검색" readonly>
+                      <button type="button" class="krds-btn small open-modal" data-target="modal_01">기업 검색</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item item-col">
+                <div class="b-item">
+                  <div class="tit">
+                    <label for="consult_name13">사업자등록번호<span class="marking">*</span></label>
+                  </div>
+                  <div class="cont">
+                    <input type="text" id="consult_name13" class="krds-input small" placeholder="사업자등록번호를 입력해주세요.">
+                  </div>
+                </div>
+              </div>
+              <div class="item item-col">
+                <div class="b-item">
+                  <div class="tit">
+                    <label for="consult_name14">담당자<span class="marking">*</span></label>
+                  </div>
+                  <div class="cont">
+                    <select class="krds-form-select small type02" title="담당자">
+                      <option value="">홍길동</option>
+                    </select>
+                    <input type="text" id="consult_name14" class="krds-input small"
+                      placeholder="직접 입력 선택시 담당자명 입력 폼">
+                  </div>
+                </div>
+              </div>
+              <div class="item item-col">
+                <div class="b-item">
+                  <div class="tit">
+                    <label for="consult_name15">연락처<span class="marking">*</span></label>
+                  </div>
+                  <div class="cont">
+                    <p class="small">&#8251; 연락처 중 하나는 필수</p>
+                    <input type="text" id="consult_name15" class="krds-input small" placeholder="이메일을 입력해주세요.">
+                    <input type="text" id="consult_name16" class="krds-input small" placeholder="유선전화를 입력해주세요.">
+                    <input type="text" id="consult_name17" class="krds-input small" placeholder="휴대전화를 입력해주세요.">
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="b-item">
+                  <div class="tit">노출 여부<span class="marking">*</span></div>
+                  <div class="cont">
+                    <select class="krds-form-select small type02" title="노출여부">
+                      <option value="">노출</option>
+                      <option value="">비노출</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group jcc">
+              <button type="button" class="krds-btn type04 medium">취소</button>
+              <button type="button" class="krds-btn medium flex-1">등록</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </div>
+</div>
+<!-- modal -->
+<section id="modal_01" class="krds-modal modal-type02 fade" role="dialog" aria-labelledby="modal_01">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <!-- modal title -->
+      <div class="modal-header">
+        <h2 id="tit_modal" class="modal-title">기업 검색</h2>
+      </div>
+      <!-- //modal title -->
+      <!-- modal contents -->
+      <div class="modal-conts">
+        <div class="conts-area">
+          <div class="input-group">
+            <input type="text" class="krds-input small" placeholder="기업명 혹은 사업자등록번호를 입력해주세요.">
+            <button type="button" class="krds-btn small">기업 검색</button>
+          </div>
+          <div class="table-group mt20">
+            <p class="small">총 3개</p>
+            <div class="table-container">
+              <div class="krds-table-wrap tbl-type02 mt10 full">
+                <table class="tbl col data">
+                  <caption>기업 정보</caption>
+                  <colgroup>
+                    <col>
+                    <col>
+                    <col style="width: 20%;">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">기업명</th>
+                      <th scope="col">사업자등록번호</th>
+                      <th scope="col">선택</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>기업명 A</td>
+                      <td>123-45-67890</td>
+                      <td>
+                        <button type="button" class="krds-btn xsmall">선택</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>기업명 BBB</td>
+                      <td>123-45-67890</td>
+                      <td>
+                        <button type="button" class="krds-btn xsmall">선택</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="krds-pagination type02">
+            <a href="javscript:void(0);" class="page-navi prev-start"><span class="sr-only">처음으로</span></a>
+            <a href="javscript:void(0);" class="page-navi prev"><span class="sr-only">이전</span></a>
+            <div class="page-links">
+              <a class="page-link" href="#">1</a>
+              <a class="page-link" href="#">2</a>
+              <a class="page-link" href="#">3</a>
+              <a class="page-link active" href="#"><span class="sr-only">현재페이지 </span>4</a>
+              <a class="page-link" href="#">5</a>
+              <span class="page-link link-dot"></span>
+              <a class="page-link" href="#">13</a>
+            </div>
+            <a href="javscript:void(0);" class="page-navi next"><span class="sr-only">다음</span></a>
+            <a href="javscript:void(0);" class="page-navi next-end"><span class="sr-only">마지막으로</span></a>
+          </div>
+
+        </div>
+      </div>
+      <!-- //modal contents -->
+      <!-- close button -->
+      <button type="button" class="krds-btn medium icon btn-close close-modal">
+        <span class="sr-only">닫기</span>
+        <i class="svg-icon ico-popup-close"></i>
+      </button>
+      <!-- //close button -->
+    </div>
+  </div>
+  <div class="modal-back"></div>
+</section>
+<!-- //modal -->

@@ -1,0 +1,598 @@
+<div id="container">
+  <h1 class="contain-title">박람회 등록/상세</h1>
+  <div class="container_wr">
+    <section>
+      <div class="inner-section in-between">
+        <div class="board-container full">
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">기본정보</p>
+              <p><span class="marking">*</span> 필수 입력정보</p>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name1">박람회명<span class="marking">*</span></label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name1" class="krds-input small" placeholder="박람회명을 입력해주세요.">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name2">박람회 요약</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name2" class="krds-input small" placeholder="박람회 요약내용을 입력해주세요.">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item wfc">
+                <div class="tit">
+                  <p>박람회 기간<span class="marking">*</span></p>
+                </div>
+                <div class="cont">
+                  <div class="calendar-conts">
+                    <div class="calendar-input">
+                      <ul class="input-group range set">
+                        <li>
+                          <input type="number" class="krds-input datepicker small" placeholder="시작날짜" title="시작날짜 입력">
+                        </li>
+                        <li class="mark">-</li>
+                        <li>
+                          <input type="number" class="krds-input datepicker small" placeholder="종료날짜" title="종료날짜 입력">
+                        </li>
+                      </ul>
+                      <button type="button" class="krds-btn small icon form-btn-datepicker">
+                        <span class="sr-only">달력 열기</span>
+                        <i class="svg-icon ico-calendar"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>      
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name3">주관 기관</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name3" class="krds-input small" placeholder="주관 기관을 입력해주세요.">
+                </div>
+              </div>
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name4">주최 기관</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name4" class="krds-input small" placeholder="주최 기관을 입력해주세요.">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name5">담당자</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name5" class="krds-input small" placeholder="담당자를 입력해주세요.">
+                </div>
+              </div>
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name6">담당부서</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name6" class="krds-input small" placeholder="담당부서를 입력해주세요.">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name7">문의 전화</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name7" class="krds-input small" placeholder="문의 전화 번호를 입력해주세요.">
+                </div>
+              </div>
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name8">이메일</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name8" class="krds-input small" placeholder="이메일을 입력해주세요.">
+                </div>
+              </div>
+            </div>                
+          </div>
+
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">박람회 내용</p>
+              <div class="btn-gruop">
+                <button type="button" class="krds-btn type04 xsmall dropdown-btn" data-target="dropdown-1"><i
+                    class="svg-icon ico-menu"></i>템플릿 선택</button>
+                <div class="template-cont dropdown-cont" data-target="dropdown-1">
+                  <ul>
+                    <!-- <li><p class="tct">템플릿이 없습니다</p></li> -->
+                    <li><a href="#!">
+                        <div class="tpl-img">
+                          <img src="../../images/jobcloud/component/assets/template_img.png" alt="템플릿">
+                        </div>
+                        <div class="tpl-text">
+                          <p class="tpl-tit">템플릿명 AAA</p>
+                          <p>(부가설명 함께 노출 가능)</p>
+                        </div>
+                      </a></li>
+                    <li><a href="#!">
+                        <div class="tpl-img">
+                          <img src="../../images/jobcloud/component/assets/template_img.png" alt="템플릿">
+                        </div>
+                        <div class="tpl-text">
+                          <p class="tpl-tit">템플릿명 BBB</p>
+                          <p>(부가설명 함께 노출 가능)</p>
+                        </div>
+                      </a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="cont">
+                  <!-- 에디터 -->
+                  에디터 영역
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">참여 기업</p>
+              <button type="button" class="krds-btn xsmall type04"><i class="svg-icon ico-plus"></i>기업 추가</button>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="cont">
+                  <ul class="business-list">
+                    <li>
+                      <div class="business-img">
+                        <img src="../../images/jobcloud/common/logo_img.png" alt="">
+                      </div>
+                      <div class="business-cont">
+                        <p class="business-tit">참여기업 AAAA</p>
+                        <button type="button" class="krds-btn medium text"><span class="sr-only">기업 삭제</span> <i class="svg-icon ico-delete-fill"></i></button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="business-img">
+                        <img src="https://www.ikea.com/global/assets/logos/brand/ikea.svg" alt="">
+                      </div>
+                      <div class="business-cont">
+                        <p class="business-tit">참여기업 bbb</p>
+                        <button type="button" class="krds-btn medium text"><span class="sr-only">기업 삭제</span> <i class="svg-icon ico-delete-fill"></i></button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="business-img">
+                        <img src="https://s.pstatic.net/static/www/mobile/edit/20250305_1095/upload_17411523843503Dvhr.png" alt="">
+                      </div>
+                      <div class="business-cont">
+                        <p class="business-tit">참여기업 ccc</p>
+                        <button type="button" class="krds-btn medium text"><span class="sr-only">기업 삭제</span> <i class="svg-icon ico-delete-fill"></i></button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="business-img">
+                        <img src="../../images/jobcloud/common/logo_img.png" alt="">
+                      </div>
+                      <div class="business-cont">
+                        <p class="business-tit">참여기업 AAAA</p>
+                        <button type="button" class="krds-btn medium text"><span class="sr-only">기업 삭제</span> <i class="svg-icon ico-delete-fill"></i></button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="business-img">
+                        <img src="https://www.ikea.com/global/assets/logos/brand/ikea.svg" alt="">
+                      </div>
+                      <div class="business-cont">
+                        <p class="business-tit">참여기업 bbb</p>
+                        <button type="button" class="krds-btn medium text"><span class="sr-only">기업 삭제</span> <i class="svg-icon ico-delete-fill"></i></button>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="business-img">
+                        <img src="https://s.pstatic.net/static/www/mobile/edit/20250305_1095/upload_17411523843503Dvhr.png" alt="">
+                      </div>
+                      <div class="business-cont">
+                        <p class="business-tit">참여기업 ccc</p>
+                        <button type="button" class="krds-btn medium text"><span class="sr-only">기업 삭제</span> <i class="svg-icon ico-delete-fill"></i></button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">채용 공고</p>
+              <div class="mla">
+                <select class="krds-form-select small type02" title="기업명">
+                  <option value="">기업명AAAA</option>
+                </select>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="cont">
+                  <div class="tab-conts-wrap">  
+                    <div class="table-group mt10">
+                      <div class="flex-group">
+                          <p class="total">총 5개</p>
+                          <div class="krds-form-check medium mla">
+                            <input type="checkbox" id="chk_a">
+                            <label for="chk_a">사용 중인 기업만</span></label>
+                          </div>
+                      </div>
+                      <!-- table -->
+                      <div class="table-container ov-scroll">
+                          <div class="krds-table-wrap tbl-type02">
+                              <table class="tbl col data min-full">
+                                  <caption>채용공고 기업 정보</caption>
+                                  <colgroup>
+                                      <col style="width: 80px;">
+                                      <col style="width: 200px;">
+                                      <col>
+                                      <col style="width: 100px;">
+                                  </colgroup>
+                                  <thead>
+                                      <tr>
+                                          <th scope="col">No.</th>
+                                          <th scope="col">기업명</th>
+                                          <th scope="col">공고명</th>
+                                          <th scope="col">사용</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                        <td>5</td>
+                                        <td>
+                                          <a href="#!" class="krds-btn xsmall link" title="상세 메뉴">(주)콘텐트리중앙</a>
+                                        </td>
+                                        <td>
+                                          <div class="ellip jcc">
+                                            <p>IT 부문(IT 기획 팀장/시스템 운영 관리) 채용</p>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="krds-form-check small">
+                                            <input type="checkbox" id="chk_a-1">
+                                            <label for="chk_a-1"><span class="sr-only">사용</span></label>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>4</td>
+                                        <td>
+                                          <a href="#!" class="krds-btn xsmall link" title="상세 메뉴">(주)팀씨</a>
+                                        </td>
+                                        <td>
+                                          <div class="ellip jcc">
+                                            <p>[다이어트식품 칼로바이] 기획운영팀 경력직 채용</p>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="krds-form-check small">
+                                            <input type="checkbox" id="chk_a-2">
+                                            <label for="chk_a-2"><span class="sr-only">사용</span></label>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>3</td>
+                                        <td>
+                                          <a href="#!" class="krds-btn xsmall link" title="상세 메뉴">(주)팀씨</a>
+                                        </td>
+                                        <td>
+                                          <div class="ellip jcc">
+                                            <p>[다이어트식품 칼로바이] 기획운영팀 경력직 채용</p>
+                                          </div>
+                                        </td>
+                                        <td>
+                                          <div class="krds-form-check small">
+                                            <input type="checkbox" id="chk_a-3">
+                                            <label for="chk_a-3"><span class="sr-only">사용</span></label>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                      <!-- //table -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">지원자 관리</p>
+              <div class="mla">
+                <select class="krds-form-select small type02" title="기업명">
+                  <option value="">기업명AAAA</option>
+                </select>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="cont">
+                  <div class="tab-conts-wrap">  
+                    <div class="table-group mt10">
+                      <div class="flex-group">
+                          <p class="total">총 5개</p>
+                      </div>
+                      <!-- table -->
+                      <div class="table-container ov-scroll">
+                          <div class="krds-table-wrap tbl-type02">
+                              <table class="tbl col data min-full">
+                                  <caption>지원자 정보</caption>
+                                  <colgroup>
+                                      <col style="width: 80px;">
+                                      <col style="width: 200px;">
+                                      <col style="width: 200px;">
+                                      <col>
+                                      <col style="width: 150px;">
+                                      <col style="width: 150px;">
+                                  </colgroup>
+                                  <thead>
+                                      <tr>
+                                          <th scope="col">No.</th>
+                                          <th scope="col">지원자</th>
+                                          <th scope="col">기업명</th>
+                                          <th scope="col">공고명</th>
+                                          <th scope="col">지원일</th>
+                                          <th scope="col">전형 단계</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                        <td>5</td>
+                                        <td><a href="#!" class="krds-btn xsmall link" title="상세 메뉴">홍길동</a></td>
+                                        <td>(주)콘텐트리중앙</td>
+                                        <td>
+                                          <div class="ellip jcc">
+                                            <p>IT 부문(IT 기획 팀장/시스템 운영 관리) 채용</p>
+                                          </div>
+                                        </td>
+                                        <td>2025-02-21</td>
+                                        <td>
+                                          <select class="krds-form-select xsmall type02" title="전형 단계">
+                                            <option value="">서류심사</option>
+                                          </select>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>4</td>
+                                        <td><a href="#!" class="krds-btn xsmall link" title="상세 메뉴">이순신</a></td>
+                                        <td>(주)팀씨</td>
+                                        <td>
+                                          <div class="ellip jcc">
+                                            <p>[다이어트식품 칼로바이] 기획운영팀 경력직 채용</p>
+                                          </div>
+                                        </td>
+                                        <td>2025-02-21</td>
+                                        <td>
+                                          <select class="krds-form-select xsmall type02" title="전형 단계">
+                                            <option value="">서류심사</option>
+                                          </select>
+                                        </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                      <!-- //table -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="sub-menu">
+          <div class="sticky-box">
+            <div class="board-cont">
+              <div class="board-tit">
+                <p class="tit">기타 정보</p>
+              </div>
+              <div class="item item-col">
+                <div class="b-item">
+                  <div class="tit">포스터</div>
+                  <div class="cont">
+                    <div class="krds-file-upload small">
+                      <!-- 파일 업로드 영역 -->
+                      <div class="file-upload">
+                        <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
+                        <div class="file-upload-btn-wrap">
+                          <input type="file" name="myFile" id="fileu-upload" hidden>
+                          <label for="fileu-upload">
+                            <button type="button" class="krds-btn xsmall"><i
+                                class="svg-icon ico-upload"></i>파일선택</button>
+                          </label>
+                        </div>
+                      </div>
+                      <!-- //파일 업로드 영역 -->
+                      <!-- 파일 리스트 영역 -->
+                      <!-- <div class="file-list">
+                                  <ul class="upload-list">
+                                    <li>
+                                      <div class="file-info">
+                                        <div class="file-name">전입재등록신고서 [hwp, 17KB]</div>
+                                        <div class="btn-wrap">
+                                          <button type="button" class="krds-btn small text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div> -->
+                      <!-- //파일 리스트 영역 -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item item-col">
+                <div class="b-item">
+                  <div class="tit">썸네일</div>
+                  <div class="cont">
+                    <div class="krds-file-upload small">
+                      <!-- 파일 업로드 영역 -->
+                      <div class="file-upload">
+                        <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
+                        <div class="file-upload-btn-wrap">
+                          <input type="file" name="myFile" id="fileu-upload" hidden>
+                          <label for="fileu-upload">
+                            <button type="button" class="krds-btn xsmall"><i
+                                class="svg-icon ico-upload"></i>파일선택</button>
+                          </label>
+                        </div>
+                      </div>
+                      <p class="small">상단 배너 사이즈(000x000px)</p>
+                      <!-- //파일 업로드 영역 -->
+                      <!-- 파일 리스트 영역 -->
+                      <!-- <div class="file-list">
+                                  <ul class="upload-list">
+                                    <li>
+                                      <div class="file-info">
+                                        <div class="file-name">전입재등록신고서 [hwp, 17KB]</div>
+                                        <div class="btn-wrap">
+                                          <button type="button" class="krds-btn small text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div> -->
+                      <!-- //파일 리스트 영역 -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item item-col">
+                <div class="b-item">
+                  <div class="tit">썸네일</div>
+                  <div class="cont">
+                    <div class="krds-file-upload small">
+                      <!-- 파일 업로드 영역 -->
+                      <div class="file-upload">
+                        <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
+                        <div class="file-upload-btn-wrap">
+                          <input type="file" name="myFile" id="fileu-upload" hidden>
+                          <label for="fileu-upload">
+                            <button type="button" class="krds-btn xsmall"><i
+                                class="svg-icon ico-upload"></i>파일선택</button>
+                          </label>
+                        </div>
+                      </div>
+                      <p class="small">썸네일 사이즈(000x000px)</p>
+                      <!-- //파일 업로드 영역 -->
+                      <!-- 파일 리스트 영역 -->
+                      <!-- <div class="file-list">
+                                  <ul class="upload-list">
+                                    <li>
+                                      <div class="file-info">
+                                        <div class="file-name">전입재등록신고서 [hwp, 17KB]</div>
+                                        <div class="btn-wrap">
+                                          <button type="button" class="krds-btn small text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div> -->
+                      <!-- //파일 리스트 영역 -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="b-item">
+                  <div class="tit">진행 상태<span class="marking">*</span></div>
+                  <div class="cont">
+                    <select class="krds-form-select small type02" title="진행상태">
+                      <option value="">오픈대기</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group jcc">
+              <button type="button" class="krds-btn type04 medium">취소</button>
+              <button type="button" class="krds-btn medium flex-1">등록</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </div>
+</div>
+<!-- modal -->
+<section id="modal_01" class="krds-modal modal-type02 fade" role="dialog" aria-labelledby="modal_01">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <!-- modal title -->
+      <div class="modal-header">
+        <h2 id="tit_modal" class="modal-title">
+          임시비밀번호 재발급
+        </h2>
+      </div>
+      <!-- //modal title -->
+      <!-- modal contents -->
+      <div class="modal-conts">
+        <div class="conts-area">
+          <p>임시비밀번호를 전송할 수단을 선택하세요.</p>
+          <div class="cont">
+            <div class="krds-check-area jcc">
+              <div class="krds-form-check">
+                <input type="checkbox" name="chk_1" id="chk_1">
+                <label for="chk_1">휴대전화</label>
+              </div>
+              <div class="krds-form-check">
+                <input type="checkbox" name="chk_1" id="chk_2">
+                <label for="chk_2">이메일</label>
+              </div>
+            </div>
+          </div>
+          <p class="small">임시비밀번호로 로그인 후 비밀번호 변경화면으로 자동 이동됩니다.</p>
+        </div>
+      </div>
+      <!-- //modal contents -->
+      <!-- modal btn -->
+      <div class="modal-btn btn-wrap">
+        <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+        <button type="button" class="krds-btn medium primary close-modal">재발급</button>
+      </div>
+      <!-- //modal btn -->
+      <!-- close button -->
+      <button type="button" class="krds-btn medium icon btn-close close-modal">
+        <span class="sr-only">닫기</span>
+        <i class="svg-icon ico-popup-close"></i>
+      </button>
+      <!-- //close button -->
+    </div>
+  </div>
+  <div class="modal-back"></div>
+</section>
+<!-- //modal -->

@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-//    includehtml();
+    // header menu
     $(".all").on("click", function () {
         $("#mobile-nav").addClass("is-open");
         $("html").css('overflow', 'hidden')

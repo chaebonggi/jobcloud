@@ -1,11 +1,11 @@
 <div id="container">
-  <h1 class="contain-title">기업 목록</h1>
+  <h1 class="contain-title">채용 공고</h1>
   <div class="container_wr">
     <section>
       <div class="inner-section">
         <div class="items-group">
           <div class="input-group">
-            <input type="text" class="krds-input small" placeholder="기업명 혹은 사업자등록번호를 입력하세요.">
+            <input type="text" class="krds-input small" placeholder="검색어 입력">
             <div class="btn-group">
               <button type="button" class="krds-btn small search"><i class="svg-icon ico-sch right"></i>검색</button>
               <button type="button" class="krds-btn small filter filter-btn"><i
@@ -307,19 +307,19 @@
             <div class="item">
               <div class="dl-group">
                 <dl>
-                  <dt>업종 분류</dt>
+                  <dt>직무 분류</dt>
                   <dd>
-                    <select class="krds-form-select small type02" title="업종 분류">
-                      <option value="">업종 분류</option>
-                    </select>
-                  </dd>
-                </dl>
-                <dl>
-                  <dt>소재지</dt>
-                  <dd>
-                    <select class="krds-form-select small type02" title="업종 분류">
-                      <option value="">업종 분류</option>
-                    </select>
+                    <div class="flex-group">
+                      <select class="krds-form-select small type02" title="1차 직무분류">
+                        <option value="">1차 직무분류</option>
+                      </select>
+                      <select class="krds-form-select small type02" title="2차 직무분류">
+                        <option value="">2차 직무분류</option>
+                      </select>
+                      <select class="krds-form-select small type02" title="3차 직무분류">
+                        <option value="">3차 직무분류</option>
+                      </select>
+                    </div>
                   </dd>
                 </dl>
               </div>
@@ -327,33 +327,92 @@
             <div class="item">
               <div class="dl-group">
                 <dl>
-                  <dt><label for="rdo_a-1">콘텐츠 사용 여부</label></dt>
+                  <dt>근무 지역</dt>
                   <dd>
-                    <div class="krds-check-area">
+                    <select class="krds-form-select small type02" title="근무지역">
+                      <option value="">전국</option>
+                    </select>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><label for="chk_2-1">근무 형태</label></dt>
+                  <dd>
+                    <div class="krds-check-area flex-w">
+                      <div class="krds-form-check medium">
+                        <input type="checkbox" id="chk_2-1">
+                        <label for="chk_2-1">정규직</label>
+                      </div>
+                      <div class="krds-form-check medium">
+                        <input type="checkbox" id="chk_2-2">
+                        <label for="chk_2-2">계약직</label>
+                      </div>
+                      <div class="krds-form-check medium">
+                        <input type="checkbox" id="chk_2-3">
+                        <label for="chk_2-3">인턴</label>
+                      </div>
+                      <div class="krds-form-check medium">
+                        <input type="checkbox" id="chk_2-4">
+                        <label for="chk_2-4">기타</label>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="item">
+              <div class="dl-group">
+                <dl>
+                  <dt><label for="rdo_a1">채용 구분</label></dt>
+                  <dd>
+                    <div class="krds-check-area flex-w">
                       <div class="krds-form-check">
-                        <input type="radio" name="rdo_a" id="rdo_a-1">
-                        <label for="rdo_a-1">Y</label>
+                        <input type="radio" name="rdo_a" id="rdo_a1">
+                        <label for="rdo_a1">신입</label>
                       </div>
                       <div class="krds-form-check">
-                        <input type="radio" name="rdo_a" id="rdo_a-2">
-                        <label for="rdo_a-2">N</label>
+                        <input type="radio" name="rdo_a" id="rdo_a2">
+                        <label for="rdo_a2">경력</label>
+                      </div>
+                      <div class="krds-form-check">
+                        <input type="radio" name="rdo_a" id="rdo_a3">
+                        <label for="rdo_a3">무관(신입/경력)</label>
                       </div>
                     </div>
                   </dd>
                 </dl>
                 <dl>
-                  <dt><label for="rdo_b-1">기업 검증 여부</label></dt>
+                  <dt><label for="rdo_b1">학력 수준</label></dt>
                   <dd>
-                    <div class="krds-check-area">
+                    <div class="krds-check-area flex-w">
                       <div class="krds-form-check">
-                        <input type="radio" name="rdo_b" id="rdo_b-1">
-                        <label for="rdo_b-1">Y</label>
+                        <input type="radio" name="rdo_b" id="rdo_b1">
+                        <label for="rdo_b1">무관</label>
                       </div>
                       <div class="krds-form-check">
-                        <input type="radio" name="rdo_b" id="rdo_b-2">
-                        <label for="rdo_b-2">N</label>
+                        <input type="radio" name="rdo_b" id="rdo_b2">
+                        <label for="rdo_b2">대졸 이상</label>
+                      </div>
+                      <div class="krds-form-check">
+                        <input type="radio" name="rdo_b" id="rdo_b3">
+                        <label for="rdo_b3">초대졸 이상</label>
+                      </div>
+                      <div class="krds-form-check">
+                        <input type="radio" name="rdo_b" id="rdo_b4">
+                        <label for="rdo_b4">고졸 이상</label>
                       </div>
                     </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="item">
+              <div class="dl-group">
+                <dl>
+                  <dt>급여 수준</dt>
+                  <dd>
+                    <select class="krds-form-select small type02" title="급여수준">
+                      <option value="">무관</option>
+                    </select>
                   </dd>
                 </dl>
               </div>
@@ -370,7 +429,8 @@
               <label for="radio-two">상세 목록</label>
             </div>
             <div class="btn-group">
-              <button type="button" class="krds-btn small type04 drop-menu" data-target="sort-menu">정렬 <i class="svg-icon ico-sort left"></i></button>
+              <button type="button" class="krds-btn small type04 drop-menu" data-target="sort-menu">정렬 <i
+                  class="svg-icon ico-sort left"></i></button>
               <select class="krds-form-select small type02" title="20개">
                 <option value="">20개</option>
                 <option value="">30개</option>
@@ -379,8 +439,9 @@
               </select>
             </div>
             <div class="btn-group mla">
-              <button type="button" class="krds-btn small type02" data-url="sample/채용정보관리-기업목록-상세.html"><i class="svg-icon ico-plus02 right"></i> 신규 작성</button>
-              <button type="button" class="krds-btn small type03"><i class="svg-icon ico-download right"></i> 엑셀다운로드</button>
+              <button type="button" class="krds-btn small type02" data-url="sample/채용정보관리-채용정보-상세.html"><i class="svg-icon ico-plus02 right"></i> 신규 작성</button>
+              <button type="button" class="krds-btn small type03"><i class="svg-icon ico-download right"></i> 엑셀
+                다운로드</button>
             </div>
           </div>
           <div class="input-group sort-group drop-cont" data-target="sort-menu">
@@ -388,7 +449,14 @@
               <div class="krds-tag-wrap large">
                 <span class="krds-btn-tag">
                   <i class="svg-icon ico-sort-up"></i>
-                  소재지
+                  근무지역
+                  <button type="button" class="btn-delete">
+                    <span class="sr-only">삭제</span>
+                  </button>
+                </span>
+                <span class="krds-btn-tag">
+                  <i class="svg-icon ico-sort-down"></i>
+                  근무지역
                   <button type="button" class="btn-delete">
                     <span class="sr-only">삭제</span>
                   </button>
@@ -416,7 +484,8 @@
                     </ul>
                   </div>
                   <div class="btn-group jcs">
-                    <button type="button" class="krds-btn small type05"><i class="svg-icon ico-plus02 right"></i> 정렬 추가</button>
+                    <button type="button" class="krds-btn small type05"><i class="svg-icon ico-plus02 right"></i> 정렬
+                      추가</button>
                     <button type="button" class="krds-btn small type03 sort-cancel-btn">취소</button>
                   </div>
                 </div>
@@ -431,52 +500,56 @@
                 <caption>지원정책 정보</caption>
                 <colgroup>
                   <col style="width: 80px;">
-                  <col style="min-width: 400px;">
-                  <col style="width: 200px;">
-                  <col style="width: 200px;">
-                  <col style="width: 150px;" class="detail">
-                  <col style="width: 150px;" class="detail">
-                  <col style="width: 150px;" class="detail">
-                  <col style="width: 150px;" class="detail">
+                  <col style="width: 100px;">
+                  <col style="width: 120px;">
+                  <col>
+                  <col style="width: 120px;" class="detail">
+                  <col style="width: 120px;">
+                  <col style="width: 120px;">
                   <col style="width: 150px;">
-                  <col style="width: 150px;">
-                  <col style="width: 150px;">
-                  <col style="width: 150px;">
+                  <col style="width: 110px;">
                   <col style="width: 80px;">
                 </colgroup>
                 <thead>
                   <tr>
                     <th scope="col">No.</th>
-                    <th scope="col">기업명</th>
-                    <th scope="col">사업자등록번호</th>
-                    <th scope="col">업종</th>
-                    <th scope="col" class="detail">담당자</th>
-                    <th scope="col" class="detail">등록자</th>
-                    <th scope="col" class="detail">수정자</th>
-                    <th scope="col" class="detail">수정일</th>
-                    <th scope="col">소재지</th>
-                    <th scope="col">콘텐츠</th>
-                    <th scope="col">등록일</th>
-                    <th scope="col">기업검증</th>
+                    <th scope="col">노출여부</th>
+                    <th scope="col">직무</th>
+                    <th scope="col">공고명(기업명)</th>
+                    <th scope="col" class="detail">상세메뉴</th>
+                    <th scope="col">근무형태</th>
+                    <th scope="col">근무지</th>
+                    <th scope="col">접수기간</th>
+                    <th scope="col">조회</th>
                     <th scope="col">삭제</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>535</td>
-                    <td><a href="#!" class="krds-btn small link" title="상세페이지 이동" data-url="sample/채용정보관리-기업목록-상세.html">주식회사 프라임종합관리</a></td>          
-                    <td>664-81-000462</td>              
-                    <td>부동산 관리업</td>
-                    <td class="detail">담당자</td>
-                    <td class="detail">등록자</td>
-                    <td class="detail">수정자</td>
-                    <td class="detail">2025-01-20</td>
-                    <td>경기 화성</td>
+                    <td scope="row">535</td>
                     <td>
-                        <a href="#!" class="krds-btn xsmall" title="미리보기">미리보기</a>
+                      <button type="button" class="krds-btn icon medium active toggle-btn">
+                        <span class="sr-only">공개여부</span>
+                        <i class="svg-icon ico-public"></i>
+                      </button>
                     </td>
-                    <td>2025-01-20</td>
-                    <td>Y</td>
+                    <td>기획&middot;전략</td>
+                    <td class="tlt">
+                      <div class="ellip">
+                        <a href="#!" class="krds-btn link small" title="상세페이지 이동" data-url="sample/채용정보관리-채용정보-상세.html">2024년 채용연계형 채용</a>
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical"
+                          data-tooltip="미리보기">
+                          <span class="sr-only">미리보기</span>
+                          <i class="svg-icon ico-preview"></i>
+                        </button>
+                      </div>
+                      <p class="small">한국제지(주)</p>
+                    </td>
+                    <td class="detail">상세메뉴</td>
+                    <td>인턴</td>
+                    <td>서울 강남</td>
+                    <td>2025-01-20 ~ 2025-02-10</td>
+                    <td>2,354</td>
                     <td>
                       <button type="button" class="krds-btn icon medium">
                         <span class="sr-only">삭제</span>
@@ -485,20 +558,30 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>533</td>
-                    <td><a href="#!" class="krds-btn small link" title="상세페이지 이동" data-url="sample/채용정보관리-기업목록-상세.html">(주)샤인테크놀로지</a></td>          
-                    <td>134-86-75429</td>              
-                    <td>유선 통신장비 제조업</td>
-                    <td class="detail">담당자</td>
-                    <td class="detail">등록자</td>
-                    <td class="detail">수정자</td>
-                    <td class="detail">2025-01-20</td>
-                    <td>경기 안산</td>
+                    <td scope="row">534</td>
                     <td>
-                      <a href="#!" class="krds-btn xsmall" title="미리보기">미리보기</a>
+                      <button type="button" class="krds-btn icon medium active toggle-btn">
+                        <span class="sr-only">공개여부</span>
+                        <i class="svg-icon ico-public"></i>
+                      </button>
                     </td>
-                    <td>2025-01-20</td>
-                    <td>N</td>
+                    <td>마케팅&middot;홍보</td>
+                    <td class="tlt">
+                      <div class="ellip">
+                        <a href="#!" class="krds-btn link small" title="상세페이지 이동" data-url="sample/채용정보관리-채용정보-상세.html">본사 마케팅팀 팀장 모집</a>
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical"
+                          data-tooltip="미리보기">
+                          <span class="sr-only">미리보기</span>
+                          <i class="svg-icon ico-preview"></i>
+                        </button>
+                      </div>
+                      <p class="small">(주)중독컴퍼니</p>
+                    </td>
+                    <td class="detail">상세메뉴</td>
+                    <td>정규직</td>
+                    <td>서울 강남</td>
+                    <td>모집완료 시</td>
+                    <td>2,354</td>
                     <td>
                       <button type="button" class="krds-btn icon medium">
                         <span class="sr-only">삭제</span>

@@ -1,0 +1,541 @@
+<div id="container">
+    <h1 class="contain-title">메뉴관리</h1>
+    <div class="container_wr">
+
+        <section>
+            <div class="inner-section">
+                <div class="tab-group">
+                    <ul class="tabs">
+                        <li class="active"><a href="javascript:;">사용자</a></li>
+                        <li><a href="javascript:;">관리자</a></li>
+                    </ul>
+                </div>
+                <div class="tree-container">
+                    <div class="btn-group jce b-line">
+                        <button type="button" class="krds-btn small type05"><i
+                                class="svg-icon ico-plus02 right"></i> 대분류 추가</button>
+                        <button type="button" class="krds-btn xsmall all-view type03"><i
+                                class="svg-icon ico-open-box right"></i>전체 메뉴 펼치기</button>
+                        <button type="button" class="krds-btn xsmall all-fold type03"><i
+                                class="svg-icon ico-close-box right"></i>전체 메뉴 접기</button>
+                        <button type="button" class="krds-btn xsmall">저장</button>
+                    </div>
+                    <ul class="sTree" id="sTree2">
+                        <li data-depth="1">
+                            <div>
+                                <div class="left">
+                                    <div class="tree-cont">
+                                        <button type="button" class="krds-btn icon tree-btn clickable">
+                                            <span class="sr-only">토글 버튼</span>
+                                            <i class="svg-icon ico-angle02"></i>
+                                        </button>
+                                        <p class="tree-line"><i class="svg-icon ico-line"></i></p>
+                                    </div>
+                                    <p class="tree-tit flex alc"><i class="svg-icon ico-drag right"></i>정책정보1
+                                    </p>
+                                </div>
+                                <div class="right mla">
+                                    <div class="krds-tag-wrap small">
+                                        <span class="krds-btn-tag unused">
+                                            미사용
+                                        </span>
+                                    </div>
+                                    <div class="tree-menu">
+                                        <button type="button" class="krds-btn xsmall clickable">미리보기</button>
+                                        <button type="button" class="krds-btn xsmall clickable open-modal"
+                                            data-target="modal_02">수정</button>
+                                        <button type="button" class="krds-btn xsmall clickable open-modal"
+                                            data-target="modal_02">추가</button>
+                                        <button type="button" class="krds-btn xsmall clickable open-modal"
+                                            data-target="modal_01">삭제</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-depth="1">
+                            <div>
+                                <div class="left">
+                                    <div class="tree-cont">
+                                        <button type="button" class="krds-btn icon tree-btn clickable">
+                                            <span class="sr-only">토글 버튼</span>
+                                            <i class="svg-icon ico-angle02"></i>
+                                        </button>
+                                        <p class="tree-line"><i class="svg-icon ico-line"></i></p>
+                                    </div>
+                                    <p class="tree-tit flex alc"><i class="svg-icon ico-drag right"></i>정책정보2
+                                    </p>
+                                </div>
+                                <div class="right mla">
+                                    <div class="tree-menu">
+                                        <button type="button" class="krds-btn xsmall clickable">미리보기</button>
+                                        <button type="button" class="krds-btn xsmall clickable open-modal"
+                                            data-target="modal_02">수정</button>
+                                        <button type="button" class="krds-btn xsmall clickable open-modal"
+                                            data-target="modal_02">추가</button>
+                                        <button type="button" class="krds-btn xsmall clickable open-modal"
+                                            data-target="modal_01">삭제</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul>
+                                <li data-depth="2">
+                                    <div>
+                                        <div class="left">
+                                            <div class="tree-cont">
+                                                <button type="button" class="krds-btn icon tree-btn clickable">
+                                                    <span class="sr-only">토글 버튼</span>
+                                                    <i class="svg-icon ico-angle02"></i>
+                                                </button>
+                                                <p class="tree-line"><i class="svg-icon ico-line"></i></p>
+                                            </div>
+                                            <p class="tree-tit flex alc"><i
+                                                    class="svg-icon ico-drag right"></i>정책정보2-1</p>
+                                        </div>
+                                        <div class="right mla">
+                                            <div class="tree-menu">
+                                                <button type="button"
+                                                    class="krds-btn xsmall clickable">미리보기</button>
+                                                <button type="button"
+                                                    class="krds-btn xsmall clickable open-modal"
+                                                    data-target="modal_02">수정</button>
+                                                <button type="button"
+                                                    class="krds-btn xsmall clickable open-modal"
+                                                    data-target="modal_02">추가</button>
+                                                <button type="button"
+                                                    class="krds-btn xsmall clickable open-modal"
+                                                    data-target="modal_01">삭제</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <div class="left">
+                                                    <div class="tree-cont">
+                                                        <button type="button"
+                                                            class="krds-btn icon tree-btn clickable">
+                                                            <span class="sr-only">토글 버튼</span>
+                                                            <i class="svg-icon ico-angle02"></i>
+                                                        </button>
+                                                        <p class="tree-line"><i class="svg-icon ico-line"></i>
+                                                        </p>
+                                                    </div>
+                                                    <p class="tree-tit flex alc"><i
+                                                            class="svg-icon ico-drag right"></i>정책정보</p>
+                                                </div>
+                                                <div class="right mla">
+                                                    <div class="tree-menu">
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable">미리보기</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_02">수정</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_02">추가</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_01">삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="left">
+                                                    <div class="tree-cont">
+                                                        <button type="button"
+                                                            class="krds-btn icon tree-btn clickable">
+                                                            <span class="sr-only">토글 버튼</span>
+                                                            <i class="svg-icon ico-angle02"></i>
+                                                        </button>
+                                                        <p class="tree-line"><i class="svg-icon ico-line"></i>
+                                                        </p>
+                                                    </div>
+                                                    <p class="tree-tit flex alc"><i
+                                                            class="svg-icon ico-drag right"></i>정책정보</p>
+                                                </div>
+                                                <div class="right mla">
+                                                    <div class="tree-menu">
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable">미리보기</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_02">수정</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_02">추가</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_01">삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="left">
+                                                    <div class="tree-cont">
+                                                        <button type="button"
+                                                            class="krds-btn icon tree-btn clickable">
+                                                            <span class="sr-only">토글 버튼</span>
+                                                            <i class="svg-icon ico-angle02"></i>
+                                                        </button>
+                                                        <p class="tree-line"><i class="svg-icon ico-line"></i>
+                                                        </p>
+                                                    </div>
+                                                    <p class="tree-tit flex alc"><i
+                                                            class="svg-icon ico-drag right"></i>정책정보</p>
+                                                </div>
+                                                <div class="right mla">
+                                                    <div class="tree-menu">
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable">미리보기</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_02">수정</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_02">추가</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_01">삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="left">
+                                                    <div class="tree-cont">
+                                                        <button type="button"
+                                                            class="krds-btn icon tree-btn clickable">
+                                                            <span class="sr-only">토글 버튼</span>
+                                                            <i class="svg-icon ico-angle02"></i>
+                                                        </button>
+                                                        <p class="tree-line"><i class="svg-icon ico-line"></i>
+                                                        </p>
+                                                    </div>
+                                                    <p class="tree-tit flex alc"><i
+                                                            class="svg-icon ico-drag right"></i>정책정보</p>
+                                                </div>
+                                                <div class="right mla">
+                                                    <div class="tree-menu">
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable">미리보기</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_02">수정</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_02">추가</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_01">삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li data-depth="1">
+                            <div class="disabled">
+                                <div class="left">
+                                    <div class="tree-cont">
+                                        <button type="button" class="krds-btn icon tree-btn clickable">
+                                            <span class="sr-only">토글 버튼</span>
+                                            <i class="svg-icon ico-angle02"></i>
+                                        </button>
+                                        <p class="tree-line"><i class="svg-icon ico-line"></i></p>
+                                    </div>
+                                    <p class="tree-tit flex alc"><i class="svg-icon ico-drag right"></i>정책정보3
+                                    </p>
+                                </div>
+                                <div class="right mla">
+                                    <div class="krds-tag-wrap small">
+                                        <span class="krds-btn-tag unused">
+                                            미사용
+                                        </span>
+                                    </div>
+                                    <div class="tree-menu">
+                                        <button type="button" class="krds-btn xsmall clickable">미리보기</button>
+                                        <button type="button" class="krds-btn xsmall clickable open-modal"
+                                            data-target="modal_02">수정</button>
+                                        <button type="button" class="krds-btn xsmall clickable open-modal"
+                                            data-target="modal_02">추가</button>
+                                        <button type="button" class="krds-btn xsmall clickable open-modal"
+                                            data-target="modal_01">삭제</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li data-depth="1">
+                            <div>
+                                <div class="left">
+                                    <div class="tree-cont">
+                                        <button type="button" class="krds-btn icon tree-btn clickable">
+                                            <span class="sr-only">토글 버튼</span>
+                                            <i class="svg-icon ico-angle02"></i>
+                                        </button>
+                                        <p class="tree-line"><i class="svg-icon ico-line"></i></p>
+                                    </div>
+                                    <p class="tree-tit flex alc"><i class="svg-icon ico-drag right"></i>정책정보4
+                                    </p>
+                                </div>
+                                <div class="right mla">
+                                    <div class="tree-menu">
+                                        <button type="button" class="krds-btn xsmall clickable">미리보기</button>
+                                        <button type="button" class="krds-btn xsmall clickable open-modal"
+                                            data-target="modal_02">수정</button>
+                                        <button type="button" class="krds-btn xsmall clickable open-modal"
+                                            data-target="modal_02">추가</button>
+                                        <button type="button" class="krds-btn xsmall clickable open-modal"
+                                            data-target="modal_01">삭제</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul>
+                                <li data-depth="2">
+                                    <div>
+                                        <div class="left">
+                                            <div class="tree-cont">
+                                                <button type="button" class="krds-btn icon tree-btn clickable">
+                                                    <span class="sr-only">토글 버튼</span>
+                                                    <i class="svg-icon ico-angle02"></i>
+                                                </button>
+                                                <p class="tree-line"><i class="svg-icon ico-line"></i></p>
+                                            </div>
+                                            <p class="tree-tit flex alc"><i
+                                                    class="svg-icon ico-drag right"></i>정책정보4-1</p>
+                                        </div>
+                                        <div class="right mla">
+                                            <div class="tree-menu">
+                                                <button type="button"
+                                                    class="krds-btn xsmall clickable">미리보기</button>
+                                                <button type="button"
+                                                    class="krds-btn xsmall clickable">수정</button>
+                                                <button type="button"
+                                                    class="krds-btn xsmall clickable">추가</button>
+                                                <button type="button"
+                                                    class="krds-btn xsmall clickable open-modal"
+                                                    data-target="modal_01">삭제</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li data-depth="3">
+                                            <div>
+                                                <div class="left">
+                                                    <div class="tree-cont">
+                                                        <button type="button"
+                                                            class="krds-btn icon tree-btn clickable">
+                                                            <span class="sr-only">토글 버튼</span>
+                                                            <i class="svg-icon ico-angle02"></i>
+                                                        </button>
+                                                        <p class="tree-line"><i class="svg-icon ico-line"></i>
+                                                        </p>
+                                                    </div>
+                                                    <p class="tree-tit flex alc"><i
+                                                            class="svg-icon ico-drag right"></i>정책정보4-2-1</p>
+                                                </div>
+                                                <div class="right mla">
+                                                    <div class="tree-menu">
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable">미리보기</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable">수정</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable">추가</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_01">삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li data-depth="3">
+                                            <div>
+                                                <div class="left">
+                                                    <div class="tree-cont">
+                                                        <button type="button"
+                                                            class="krds-btn icon tree-btn clickable">
+                                                            <span class="sr-only">토글 버튼</span>
+                                                            <i class="svg-icon ico-angle02"></i>
+                                                        </button>
+                                                        <p class="tree-line"><i class="svg-icon ico-line"></i>
+                                                        </p>
+                                                    </div>
+                                                    <p class="tree-tit flex alc"><i
+                                                            class="svg-icon ico-drag right"></i>정책정보4-2-2</p>
+                                                </div>
+                                                <div class="right mla">
+                                                    <div class="tree-menu">
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable">미리보기</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable">수정</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable">추가</button>
+                                                        <button type="button"
+                                                            class="krds-btn xsmall clickable open-modal"
+                                                            data-target="modal_01">삭제</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button type="button" class="krds-btn small type06 full"><i
+                            class="svg-icon ico-plus02 right"></i> 대분류 추가</button>
+                    <div class="btn-group jce">
+                        <button type="button" class="krds-btn small mt20">저장</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- modal 삭제 -->
+<section id="modal_01" class="krds-modal modal-type02 fade" role="dialog" aria-labelledby="modal_01">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <!-- modal title -->
+            <div class="modal-header">
+                <h2 id="tit_modal" class="modal-title">
+                    메뉴 삭제
+                </h2>
+            </div>
+            <!-- //modal title -->
+            <!-- modal contents -->
+            <div class="modal-conts">
+                <div class="conts-area">
+                    <div class="cont tct">
+                        <p>정말로 메뉴를 삭제하시겠습니까?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //modal contents -->
+            <!-- modal btn -->
+            <div class="modal-btn btn-wrap jcc">
+                <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+                <button type="button" class="krds-btn medium primary close-modal">삭제</button>
+            </div>
+            <!-- //modal btn -->
+            <!-- close button -->
+            <button type="button" class="krds-btn medium icon btn-close close-modal">
+                <span class="sr-only">닫기</span>
+                <i class="svg-icon ico-popup-close"></i>
+            </button>
+            <!-- //close button -->
+        </div>
+    </div>
+    <div class="modal-back"></div>
+</section>
+<!-- //modal 삭제 -->
+
+<!-- modal 추가/수정 -->
+<section id="modal_02" class="krds-modal modal-type02 fade" role="dialog" aria-labelledby="modal_02">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <!-- modal title -->
+            <div class="modal-header">
+                <h2 id="tit_modal" class="modal-title">
+                    메뉴 추가 / 메뉴 수정
+                </h2>
+            </div>
+            <!-- //modal title -->
+            <!-- modal contents -->
+            <div class="modal-conts">
+                <div class="conts-area">
+                    <div class="form-pop-group">
+                        <div class="item mt20">
+                            <div class="form-tit">
+                                <label for="consult_name01">메뉴명</label>
+                            </div>
+                            <div class="form-conts">
+                                <input type="text" id="consult_name01" class="krds-input small"
+                                    placeholder="메뉴명을 입력하세요">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="form-tit">
+                                <label for="consult_name02">연결 링크</label>
+                            </div>
+                            <div class="form-conts">
+                                <input type="text" id="consult_name02" class="krds-input small"
+                                    placeholder="연결 링크를 입력하세요.">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="form-tit">
+                                사용 여부
+                            </div>
+                            <div class="form-conts">
+                                <div class="krds-check-area">
+                                    <div class="krds-form-check">
+                                        <input type="radio" name="rdo_1" id="rdo_1">
+                                        <label for="rdo_1">Y</label>
+                                    </div>
+                                    <div class="krds-form-check">
+                                        <input type="radio" name="rdo_1" id="rdo_2">
+                                        <label for="rdo_2">N</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //modal contents -->
+            <!-- modal btn -->
+            <div class="modal-btn btn-wrap jcc">
+                <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+                <button type="button" class="krds-btn medium primary close-modal">저장</button>
+            </div>
+            <!-- //modal btn -->
+            <!-- close button -->
+            <button type="button" class="krds-btn medium icon btn-close close-modal">
+                <span class="sr-only">닫기</span>
+                <i class="svg-icon ico-popup-close"></i>
+            </button>
+            <!-- //close button -->
+        </div>
+    </div>
+    <div class="modal-back"></div>
+</section>
+<!-- //modal 추가/수정 -->
+<script>
+    // tree 메뉴
+    var options = {
+        placeholderCss: {
+            'background-color': '#eee'
+        },
+        hintCss: {
+            'background-color': '#ddd'
+        },
+        ignoreClass: 'clickable',
+    };    
+    $('#sTree2').sortableLists(options);
+    $('.sTree .tree-btn').click(function () {
+        $(this).parent().parent().parent().parent().toggleClass('s-l-open');
+        if ($(this).parent().parent().parent().parent().hasClass("s-l-open")) {
+            $(this).parent().parent().parent().parent().children('ul').show();
+        } else if (!$(this).parent().parent().parent().parent().hasClass("s-l-open")) {
+            $(this).parent().parent().parent().parent().children('ul').hide();
+        }
+    });
+    $('.all-view').click(function () {
+    $('.sTree > li  ul').show();
+    $('.sTree  li').addClass('s-l-open');
+    });
+    $('.all-fold').click(function () {
+        $('.sTree > li  ul').hide();
+        $('.sTree  li').removeClass('s-l-open');
+    });
+ </script>

@@ -1133,6 +1133,10 @@ a.krds-btn:hover {
   color: #fff;
 }
 
+.krds-btn:active, .krds-btn:focus {
+  color: #fff;
+}
+
 .krds-btn .svg-icon {
   vertical-align: baseline;
 }
