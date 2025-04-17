@@ -1,0 +1,90 @@
+<div id="container">
+  <h1 class="contain-title">신규 메일 등록/메일 상세(수정)</h1>
+  <div class="container_wr">
+    <section>
+      <div class="inner-section in-between">
+        <div class="board-container full">
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">메일 등록/수정</p>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_1">템플릿 제목</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_1" class="krds-input small" placeholder="메일 템플릿 제목">
+                </div>
+              </div>
+            </div>   
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_select1">발송 구분</label>
+                </div>
+                <div class="cont">
+                  <div class="krds-check-area alc">
+                    <div class="krds-form-check medium">
+                      <input type="radio" name="rdo_a" id="rdo_a1" class="drop-radio-menu" data-target="radio-target">
+                      <label for="rdo_a1">자동</label>                          
+                    </div>
+                    <div class="drop-cont wfc" data-target="radio-target">
+                      <select id="consult_select2" class="krds-form-select small type02" title="발송구분">
+                        <option value="">회원가입</option>
+                        <option value="">아이디 찾기</option>
+                        <option value="" disabled>비밀번호 찾기</option>
+                        <option value="">1:1문의 답변 등록</option>
+                        <option value="" disabled>관심기업 채용공고 등록</option>
+                        <option value="">관심 정보 신청 마감 1일전</option>
+                      </select>
+                    </div>
+                    <div class="krds-form-check">
+                      <input type="radio" name="rdo_a" id="rdo_a2">
+                      <label for="rdo_a2">수동</label>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="item item-col">
+              <div class="b-item">
+                <div class="tit">
+                  메일내용
+                </div>
+                <div class="cont">
+                  에디터 영역
+                </div>
+              </div>
+            </div>    
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_select2">사용 여부</label>
+                </div>
+                <div class="cont">
+                  <select id="consult_select2" class="krds-form-select small type02 wfc" title="사용 여부">
+                    <option value="">사용</option>
+                    <option value="">미사용</option>
+                  </select>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="btn-group">
+            <button type="button" class="krds-btn medium delete">삭제</button>
+            <div class="mla">
+              <button type="button" class="krds-btn medium type04">목록</button>
+              <button type="button" class="krds-btn medium type02">복제</button>
+              <button type="button" class="krds-btn medium md">수정</button>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+  </div>
+</div>

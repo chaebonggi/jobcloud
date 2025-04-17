@@ -1,11 +1,11 @@
 <div id="container">
-  <h1 class="contain-title">기업지원</h1>
+  <h1 class="contain-title">팝업 관리</h1>
   <div class="container_wr">
     <section>
       <div class="inner-section">
         <div class="items-group">
           <div class="input-group">
-            <input type="text" class="krds-input small" placeholder="검색어 입력">
+            <input type="text" class="krds-input small" placeholder="검색명을 입력하세요.">
             <div class="btn-group">
               <button type="button" class="krds-btn small search"><i class="svg-icon ico-sch right"></i>검색</button>
               <button type="button" class="krds-btn small filter filter-btn"><i
@@ -15,10 +15,9 @@
           <div class="filter-item">
             <div class="item">
               <div class="input-group sel-group">
-                <select class="krds-form-select small type02 drop-sel" title="등록일">
+                <select class="krds-form-select small type02" title="등록일">
                   <option value="">등록일</option>
-                  <option value="">수정일</option>
-                  <option value="" class="drop-sel-btn">접수기간</option>
+                  <option value="">노출기간</option>
                 </select>
                 <!-- calendar -->
                 <div class="calendar-conts">
@@ -290,432 +289,137 @@
                   <button type="button" class="krds-btn small nomal">3개월</button>
                   <button type="button" class="krds-btn small nomal">6개월</button>
                 </div>
-                <div class="drop-sel-cont">
-                  <div class="krds-check-area">
-                    <div class="krds-form-check medium">
-                      <input type="checkbox" id="chk_1-1">
-                      <label for="chk_1-1">상시</label>
-                    </div>
-                    <div class="krds-form-check medium">
-                      <input type="checkbox" id="chk_1-2">
-                      <label for="chk_1-2">모집완료 시</label>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
             <div class="item">
               <div class="dl-group">
                 <dl>
-                  <dt><label for="chk_2-1">카테고리</label></dt>
+                  <dt><label for="chk_2-1">구분</label></dt>
                   <dd>
-                    <div class="krds-check-area flex-w">
-                      <div class="krds-form-check medium">
-                        <input type="checkbox" id="chk_2-1">
-                        <label for="chk_2-1">기업지원</label>
+                      <div class="krds-check-area">
+                        <div class="krds-form-check medium">
+                            <input type="checkbox" id="chk_2-1">
+                            <label for="chk_2-1">일반</label>
+                        </div>
+                        <div class="krds-form-check medium">
+                            <input type="checkbox" id="chk_2-2">
+                            <label for="chk_2-2">레이어</label>
+                        </div>
                       </div>
-                      <div class="krds-form-check medium">
-                        <input type="checkbox" id="chk_2-2">
-                        <label for="chk_2-2">창업지원</label>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt><label for="chk_3-1">유형</label></dt>
+                  <dd>
+                      <div class="krds-check-area">
+                        <div class="krds-form-check medium">
+                            <input type="checkbox" id="chk_3-1">
+                            <label for="chk_3-1">이미지</label>
+                        </div>
+                        <div class="krds-form-check medium">
+                            <input type="checkbox" id="chk_3-2">
+                            <label for="chk_3-2">에디터</label>
+                        </div>
                       </div>
-                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="item">
+              <div class="dl-group">
+                <dl>
+                  <dt><label for="chk_4-1">진행 상태</label></dt>
+                  <dd>
+                      <div class="krds-check-area flex-w">
+                        <div class="krds-form-check medium">
+                            <input type="checkbox" id="chk_4-1">
+                            <label for="chk_4-1">예정</label>
+                        </div>
+                        <div class="krds-form-check medium">
+                            <input type="checkbox" id="chk_4-2">
+                            <label for="chk_4-2">진행</label>
+                        </div>
+                        <div class="krds-form-check medium">
+                          <input type="checkbox" id="chk_4-3">
+                          <label for="chk_4-3">중지</label>
+                        </div>
+                        <div class="krds-form-check medium">
+                          <input type="checkbox" id="chk_4-4">
+                          <label for="chk_4-4">만료</label>
+                        </div>
+                      </div>
                   </dd>
                 </dl>
               </div>
             </div>
           </div>
         </div>
+
         <div class="table-group">
           <div class="flex-group">
-            <div class="switch-group">
-              <input type="radio" id="radio-one" name="switch-one" value="simple" checked />
-              <label for="radio-one">간편 목록</label>
-              <input type="radio" id="radio-two" name="switch-one" value="detail" />
-              <label for="radio-two">상세 목록</label>
-            </div>
-            <div class="btn-group">
-              <button type="button" class="krds-btn small type04 drop-menu" data-target="sort-menu">정렬 <i
-                  class="svg-icon ico-sort left"></i></button>
+            <div class="btn-group mla">
               <select class="krds-form-select small type02" title="20개">
                 <option value="">20개</option>
                 <option value="">30개</option>
                 <option value="">50개</option>
                 <option value="">100개</option>
               </select>
-            </div>
-            <div class="btn-group mla">
-              <button type="button" class="krds-btn small type02" data-url="sample/제공정보관리-기업지원-상세.html"><i class="svg-icon ico-plus02 right"></i> 신규 작성</button>
-              <button type="button" class="krds-btn small type03"><i class="svg-icon ico-download right"></i> 엑셀
-                다운로드</button>
+              <button type="button" class="krds-btn small type02" data-url="sample/홍보관리-팝업관리-상세.html"><i class="svg-icon ico-plus02 right"></i> 신규 팝업</button>
             </div>
           </div>
 
-          <div class="input-group sort-group drop-cont" data-target="sort-menu">
-            <div class="sort-container">
-              <div class="krds-tag-wrap large">
-                <span class="krds-btn-tag">
-                  <i class="svg-icon ico-sort-up"></i>
-                  카테고리
-                  <button type="button" class="btn-delete">
-                    <span class="sr-only">삭제</span>
-                  </button>
-                </span>
-                <span class="krds-btn-tag">
-                  <i class="svg-icon ico-sort-down"></i>
-                  카테고리
-                  <button type="button" class="btn-delete">
-                    <span class="sr-only">삭제</span>
-                  </button>
-                </span>
-              </div>
-              <div class="sort-controls">
-                <button type="button" class="krds-btn small type05 drop-menu" data-target="sort-add"><i
-                    class="svg-icon ico-plus02 right"></i> 정렬 추가</button>
-                <div class="sort-options drop-cont" data-target="sort-add">
-                  <div class="sort-list">
-                    <ul>
-                      <li>
-                        <select class="krds-form-select small" title="카테고리">
-                          <option value="">카테고리</option>
-                        </select>
-                        <select class="krds-form-select small" title="정렬">
-                          <option value="">내림차순</option>
-                          <option value="">오름차순</option>
-                        </select>
-                        <button type="button" class="btn-delete">
-                          <span class="sr-only">삭제</span>
-                          <i class="svg-icon ico-delete02"></i>
-                        </button>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="btn-group jcs">
-                    <button type="button" class="krds-btn small type05"><i class="svg-icon ico-plus02 right"></i> 정렬
-                      추가</button>
-                    <button type="button" class="krds-btn small type03 sort-cancel-btn">취소</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <!-- table -->
           <div class="table-container">
             <div class="krds-table-wrap tbl-type">
               <table class="tbl col data">
-                <caption>지원정책 정보</caption>
+                <caption>배너 관리 정보</caption>
                 <colgroup>
-                  <col style="width: 80px;">
-                  <col style="width: 100px;">
-                  <col style="width: 120px;">
-                  <col style="width: 120px;" class="detail">
-                  <col>
-                  <col style="width: 120px;">
-                  <col style="width: 110px;">
-                  <col style="width: 80px;">
+                  <col style="width: 80px;">                      
+                  <col style="width: 150px;">
+                  <col style="width: 150px;">
+                  <col style="min-width: 400px;">
+                  <col style="width: 250px;">
+                  <col style="width: 150px;">
+                  <col style="width: 150px;">
+                  <col style="width: 150px;">
                 </colgroup>
                 <thead>
                   <tr>
                     <th scope="col">No.</th>
-                    <th scope="col">노출여부</th>
-                    <th scope="col">카테고리</th>
-                    <th scope="col" class="detail">상세메뉴</th>
-                    <th scope="col">제목</th>
-                    <th scope="col">등록일</th>
-                    <th scope="col">조회</th>
-                    <th scope="col">삭제</th>
+                    <th scope="col">구분</th>
+                    <th scope="col">유형</th>
+                    <th scope="col">팝업명</th>
+                    <th scope="col">노출기간</th>
+                    <th scope="col">노출</th>
+                    <th scope="col">클릭</th>
+                    <th scope="col">진행 상태</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td scope="row">535</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium active toggle-btn">
-                        <span class="sr-only">공개여부</span>
-                        <i class="svg-icon ico-public"></i>
-                      </button>
-                    </td>
-                    <td>기업지원</td>
-                    <td class="detail">상세메뉴</td>
+                    <td>1</td>
+                    <td>일반</td>
+                    <td>이미지</td>
                     <td class="tlt">
                       <div class="ellip">
-                        <a href="#!" class="krds-btn link small" title="상세페이지 이동" data-url="sample/제공정보관리-기업지원-상세.html">청년활동지원센터 공간 제공 청년활동지원센터 공간 제공</a>
-                        <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical"
-                          data-tooltip="미리보기">
-                          <span class="sr-only">미리보기</span>
+                        <a href="#" class="krds-btn link small" title="상세페이지 이동" data-url="sample/홍보관리-팝업관리-상세.html">팝업 제목이 출력, 클릭 시 팝업 상세로 이동</a>
+                        <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical" data-tooltip="미리보기">
+                          <span class="sr-only">미리보기</span>                                            
                           <i class="svg-icon ico-preview"></i>
                         </button>
-                      </div>
+                      </div>                                          
                     </td>
-                    <td>2025-01-20</td>
-                    <td>2,354</td>
+                    <td>2025-02-21~2025-03-20</td> 
+                    <td>1,351</td>
+                    <td>311</td>
                     <td>
-                      <button type="button" class="krds-btn icon medium">
-                        <span class="sr-only">삭제</span>
-                        <i class="svg-icon ico-del02"></i>
-                      </button>
+                      <select class="krds-form-select small type02" title="진행 상태">
+                        <option value="">진행</option>
+                      </select>
                     </td>
                   </tr>
-                  <tr>
-                    <td scope="row">535</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium toggle-btn">
-                        <span class="sr-only">공개여부</span>
-                        <i class="svg-icon ico-public"></i>
-                      </button>
-                    </td>
-                    <td>창업지원</td>
-                    <td class="detail">상세메뉴</td>
-                    <td class="tlt">
-                      <div class="ellip">
-                        <a href="#">청년활동지원센터 공간</a>
-                        <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical"
-                          data-tooltip="미리보기">
-                          <span class="sr-only">미리보기</span>
-                          <i class="svg-icon ico-preview"></i>
-                        </button>
-                      </div>
-                    </td>
-                    <td>2025-01-20</td>
-                    <td>2,354</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium">
-                        <span class="sr-only">삭제</span>
-                        <i class="svg-icon ico-del02"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td scope="row">535</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium toggle-btn">
-                        <span class="sr-only">공개여부</span>
-                        <i class="svg-icon ico-public"></i>
-                      </button>
-                    </td>
-                    <td>기업지원</td>
-                    <td class="detail">상세메뉴</td>
-                    <td class="tlt">
-                      <div class="ellip">
-                        <a href="#">청년활동지원센터 공간</a>
-                        <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical"
-                          data-tooltip="미리보기">
-                          <span class="sr-only">미리보기</span>
-                          <i class="svg-icon ico-preview"></i>
-                        </button>
-                      </div>
-                    </td>
-                    <td>2025-01-20</td>
-                    <td>2,354</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium">
-                        <span class="sr-only">삭제</span>
-                        <i class="svg-icon ico-del02"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td scope="row">535</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium toggle-btn">
-                        <span class="sr-only">공개여부</span>
-                        <i class="svg-icon ico-public"></i>
-                      </button>
-                    </td>
-                    <td>기업지원</td>
-                    <td class="detail">상세메뉴</td>
-                    <td class="tlt">
-                      <div class="ellip">
-                        <a href="#">청년활동지원센터 공간</a>
-                        <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical"
-                          data-tooltip="미리보기">
-                          <span class="sr-only">미리보기</span>
-                          <i class="svg-icon ico-preview"></i>
-                        </button>
-                      </div>
-                    </td>
-                    <td>2025-01-20</td>
-                    <td>2,354</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium">
-                        <span class="sr-only">삭제</span>
-                        <i class="svg-icon ico-del02"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td scope="row">535</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium toggle-btn">
-                        <span class="sr-only">공개여부</span>
-                        <i class="svg-icon ico-public"></i>
-                      </button>
-                    </td>
-                    <td>기업지원</td>
-                    <td class="detail">상세메뉴</td>
-                    <td class="tlt">
-                      <div class="ellip">
-                        <a href="#">청년활동지원센터 공간</a>
-                        <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical"
-                          data-tooltip="미리보기">
-                          <span class="sr-only">미리보기</span>
-                          <i class="svg-icon ico-preview"></i>
-                        </button>
-                      </div>
-                    </td>
-                    <td>2025-01-20</td>
-                    <td>2,354</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium">
-                        <span class="sr-only">삭제</span>
-                        <i class="svg-icon ico-del02"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td scope="row">535</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium toggle-btn">
-                        <span class="sr-only">공개여부</span>
-                        <i class="svg-icon ico-public"></i>
-                      </button>
-                    </td>
-                    <td>기업지원</td>
-                    <td class="detail">상세메뉴</td>
-                    <td class="tlt">
-                      <div class="ellip">
-                        <a href="#">청년활동지원센터 공간</a>
-                        <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical"
-                          data-tooltip="미리보기">
-                          <span class="sr-only">미리보기</span>
-                          <i class="svg-icon ico-preview"></i>
-                        </button>
-                      </div>
-                    </td>
-                    <td>2025-01-20</td>
-                    <td>2,354</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium">
-                        <span class="sr-only">삭제</span>
-                        <i class="svg-icon ico-del02"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td scope="row">535</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium toggle-btn">
-                        <span class="sr-only">공개여부</span>
-                        <i class="svg-icon ico-public"></i>
-                      </button>
-                    </td>
-                    <td>기업지원</td>
-                    <td class="detail">상세메뉴</td>
-                    <td class="tlt">
-                      <div class="ellip">
-                        <a href="#">청년활동지원센터 공간</a>
-                        <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical"
-                          data-tooltip="미리보기">
-                          <span class="sr-only">미리보기</span>
-                          <i class="svg-icon ico-preview"></i>
-                        </button>
-                      </div>
-                    </td>
-                    <td>2025-01-20</td>
-                    <td>2,354</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium">
-                        <span class="sr-only">삭제</span>
-                        <i class="svg-icon ico-del02"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td scope="row">535</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium toggle-btn">
-                        <span class="sr-only">공개여부</span>
-                        <i class="svg-icon ico-public"></i>
-                      </button>
-                    </td>
-                    <td>기업지원</td>
-                    <td class="detail">상세메뉴</td>
-                    <td class="tlt">
-                      <div class="ellip">
-                        <a href="#">청년활동지원센터 공간</a>
-                        <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical"
-                          data-tooltip="미리보기">
-                          <span class="sr-only">미리보기</span>
-                          <i class="svg-icon ico-preview"></i>
-                        </button>
-                      </div>
-                    </td>
-                    <td>2025-01-20</td>
-                    <td>2,354</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium">
-                        <span class="sr-only">삭제</span>
-                        <i class="svg-icon ico-del02"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td scope="row">535</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium toggle-btn">
-                        <span class="sr-only">공개여부</span>
-                        <i class="svg-icon ico-public"></i>
-                      </button>
-                    </td>
-                    <td>기업지원</td>
-                    <td class="detail">상세메뉴</td>
-                    <td class="tlt">
-                      <div class="ellip">
-                        <a href="#">청년활동지원센터 공간</a>
-                        <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical"
-                          data-tooltip="미리보기">
-                          <span class="sr-only">미리보기</span>
-                          <i class="svg-icon ico-preview"></i>
-                        </button>
-                      </div>
-                    </td>
-                    <td>2025-01-20</td>
-                    <td>2,354</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium">
-                        <span class="sr-only">삭제</span>
-                        <i class="svg-icon ico-del02"></i>
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td scope="row">535</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium toggle-btn">
-                        <span class="sr-only">공개여부</span>
-                        <i class="svg-icon ico-public"></i>
-                      </button>
-                    </td>
-                    <td>기업지원</td>
-                    <td class="detail">상세메뉴</td>
-                    <td class="tlt">
-                      <div class="ellip">
-                        <a href="#">청년활동지원센터 공간</a>
-                        <button type="button" class="krds-btn icon krds-tooltip btn-op preview tooltip-vertical"
-                          data-tooltip="미리보기">
-                          <span class="sr-only">미리보기</span>
-                          <i class="svg-icon ico-preview"></i>
-                        </button>
-                      </div>
-                    </td>
-                    <td>2025-01-20</td>
-                    <td>2,354</td>
-                    <td>
-                      <button type="button" class="krds-btn icon medium">
-                        <span class="sr-only">삭제</span>
-                        <i class="svg-icon ico-del02"></i>
-                      </button>
-                    </td>
-                  </tr>
+             
+                 
                 </tbody>
               </table>
             </div>
@@ -747,4 +451,5 @@
       </div>
     </section>
   </div>
+
 </div>

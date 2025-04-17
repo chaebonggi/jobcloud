@@ -1,0 +1,181 @@
+<div id="container">
+  <h1 class="contain-title">배너 등록/수정(상세)</h1>
+  <div class="container_wr">
+    <section>
+      <div class="inner-section in-between">
+        <div class="board-container full">
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">배너 등록/수정</p>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_1">배너명</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_1" class="krds-input small" placeholder="배너명">
+                </div>
+              </div>
+            </div>   
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_select1">배너 위치</label>
+                </div>
+                <div class="cont">
+                  <select id="consult_select1" class="krds-form-select small type02 wfc" title="배너 위치">
+                    <option value="">메인 상단 배너</option>
+                  </select>
+                </div>
+              </div>
+            </div>   
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  노출기간
+                </div>
+                <div class="cont">
+                  <ul class="ct-group">
+                    <li>
+                      <div class="calendar-conts">
+                        <div class="calendar-input">
+                          <input type="number" class="krds-input datepicker cal small" placeholder="2025-12-12" id="cal">
+                          <button type="button" class="krds-btn small icon form-btn-datepicker">
+                            <span class="sr-only">달력 열기</span>
+                            <i class="svg-icon ico-calendar"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <input type="time" id="" name="" class="krds-input small wfc">
+                    </li>
+                    <li class="mark">~</li>
+                    <li>
+                      <div class="calendar-conts">
+                        <div class="calendar-input">
+                          <input type="number" class="krds-input datepicker cal small" placeholder="2025-12-12" id="cal">
+                          <button type="button" class="krds-btn small icon form-btn-datepicker">
+                            <span class="sr-only">달력 열기</span>
+                            <i class="svg-icon ico-calendar"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <input type="time" id="" name="" class="krds-input small wfc">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>  
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_2">링크</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_2" class="krds-input small" placeholder="링크" value="https://">
+                </div>
+              </div>
+            </div>   
+               
+            <div class="item item-col">
+              <div class="b-item">
+                <div class="tit">
+                  PC용 배너 이미지(000*000px)
+                </div>
+                <div class="cont">
+                  <div class="krds-file-upload">                                
+                    <!-- 파일 업로드 영역 -->
+                    <div class="file-upload">
+                      <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
+                      <div class="file-upload-btn-wrap">
+                        <input type="file" name="myFile" id="fileu-upload" hidden="">
+                        <label for="fileu-upload">
+                          <button type="button" class="krds-btn medium"><i class="svg-icon ico-upload"></i>파일선택</button>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- //파일 업로드 영역 -->
+                    <!-- 파일 리스트 영역 -->
+                    <div class="file-list">
+                      <ul class="upload-list">
+                        <li>
+                          <div class="file-info">
+                            <div class="file-name">pc용 배너 이미지 [jpg, 17KB] </div>
+                            <div class="btn-wrap">
+                              <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- //파일 리스트 영역 -->
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="item item-col">
+              <div class="b-item">
+                <div class="tit">
+                  모바일용 배너 이미지(000*000px)
+                </div>
+                <div class="cont">
+                  <div class="krds-file-upload">                                
+                    <!-- 파일 업로드 영역 -->
+                    <div class="file-upload">
+                      <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
+                      <div class="file-upload-btn-wrap">
+                        <input type="file" name="myFile" id="fileu-upload" hidden="">
+                        <label for="fileu-upload">
+                          <button type="button" class="krds-btn medium"><i class="svg-icon ico-upload"></i>파일선택</button>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- //파일 업로드 영역 -->
+                    <!-- 파일 리스트 영역 -->
+                    <div class="file-list">
+                      <ul class="upload-list">
+                        <li>
+                          <div class="file-info">
+                            <div class="file-name">모바일용 배너 이미지 [jpg, 17KB] </div>
+                            <div class="btn-wrap">
+                              <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- //파일 리스트 영역 -->
+                  </div>
+                </div>
+              </div>
+            </div>  
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_select2">사용 여부</label>
+                </div>
+                <div class="cont">
+                  <select id="consult_select2" class="krds-form-select small type02 wfc" title="사용 여부">
+                    <option value="">Y</option>
+                    <option value="">N</option>
+                  </select>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="btn-group">
+            <button type="button" class="krds-btn medium delete" data-target="modal_02">삭제</button>
+            <div class="mla">
+              <button type="button" class="krds-btn medium type04">목록</button>
+              <button type="button" class="krds-btn medium type02">복제</button>
+              <button type="button" class="krds-btn medium md">수정</button>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+  </div>
+</div>
