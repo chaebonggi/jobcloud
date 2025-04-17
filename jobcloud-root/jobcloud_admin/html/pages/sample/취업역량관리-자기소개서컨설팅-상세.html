@@ -1,0 +1,355 @@
+<div id="container">
+  <h1 class="contain-title">자기소개서 컨설팅 상세</h1>
+  <div class="container_wr">
+    <section>
+      <div class="inner-section in-between">
+        <div class="board-container full">
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">신청자 정보</p>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name1">제목<span class="marking">*</span></label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name1" class="krds-input small" placeholder="제목" value="자기소개서 제목" readonly>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name2">신청자</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name2" class="krds-input small" placeholder="신청자명" value="홍길동" readonly>
+                </div>
+              </div>
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_name3">신청일</label>
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_name3" class="krds-input small" placeholder="신청일" value="2025-01-01" readonly>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  희망직무
+                </div>
+                <div class="cont">
+                  <div class="c-item">
+                    <select class="krds-form-select small type02" title="희망직무" disabled>
+                      <option value="">직무분류 1단계</option>
+                    </select>
+                    <select class="krds-form-select small type02" title="희망직무" disabled>
+                      <option value="">직무분류 2단계</option>
+                    </select>
+                    <select class="krds-form-select small type02" title="희망직무" disabled>
+                      <option value="">직무분류 3단계</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  기업 분류
+                </div>
+                <div class="cont">
+                  <select class="krds-form-select small type02 wfc" title="기업분류" disabled>
+                    <option value="">중견기업</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="board-cont">
+            <div class="board-tit">
+              <input type="text" id="consult_name4" class="krds-input small" placeholder="단락 제목" value="단락 제목" readonly>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="cont">
+                  <div class="textarea-wrap">
+                    <textarea class="krds-input" placeholder="단락 내용" id="textarea" disabled></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="cont">
+                  컨설턴트 첨삭 영역(에디터)
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="sub-menu">
+          <div class="sticky-box">
+            <div class="board-cont">
+              <div class="board-tit">
+                <p class="tit">컨설팅 정보</p>
+              </div>
+              <div class="item">
+                <div class="b-item">
+                  <div class="tit">
+                    컨설턴트
+                  </div>
+                  <div class="cont">
+                    <select class="krds-form-select small type02" title="컨설턴트">
+                      <option value="">정유나</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="b-item">
+                  <div class="tit">
+                    진행 상태
+                  </div>
+                  <div class="cont">
+                    <select class="krds-form-select small type02" title="진행 상태" disabled>
+                      <option value="">진행</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="b-item">
+                  <div class="tit">
+                    만족도
+                  </div>
+                  <div class="cont">
+                    <div class="star-menu disabled">
+                      <ul class="select-btn">
+                          <li>
+                              <div class="rate-area">
+                                  <div class="rv-rate">
+                                      <span style="width:100%"></span>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-group jcc flex-w">
+              <button type="button" class="krds-btn type04 medium">취소</button>
+              <button type="button" class="krds-btn medium flex-1">임시저장</button>
+              <button type="button" class="krds-btn type02 medium full">첨삭 완료</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </div>
+</div>
+<!-- 사이드 메뉴 -->
+<div class="side-menu">
+  <div class="side-wrap">
+    <div class="top-btn">
+      <button type="button" class="krds-btn medium icon side-close-btn">
+        <span class="sr-only">사이드 메뉴 닫기</span>
+        <i class="svg-icon ico-popup-close"></i>
+      </button>
+    </div>
+    <div class="board-container full">
+      <div class="board-cont">
+        <div class="board-tit">
+          <p class="tit">상담카드</p>
+        </div>
+        <div class="item">
+          <div class="cont">
+            <div class="textarea-wrap">
+              <textarea class="krds-input" placeholder="상담 내용" id="textarea"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="cont">
+            <div class="b-item sel-group">
+              <select class="krds-form-select small type02" title="상담매체">
+                <option value="">채팅상담</option>
+                <option value="">유선상담</option>
+                <option value="">대면상담</option>
+              </select>
+              <div class="calendar-conts">
+                <div class="calendar-input">
+                  <input type="number" class="krds-input datepicker cal small" placeholder="2025-12-12" id="cal">
+                  <button type="button" class="krds-btn small icon form-btn-datepicker">
+                    <span class="sr-only">달력 열기</span>
+                    <i class="svg-icon ico-calendar"></i>
+                  </button>
+                </div>
+              </div>
+              <ul class="input-group range mxw320">
+                <li>
+                  <input type="time" id="" name="" class="krds-input small">
+                </li>
+                <li class="mark">~</li>
+                <li>
+                  <input type="time" id="" name="" class="krds-input small">
+                </li>
+              </ul>
+            </div>
+            <div class="b-item">
+              <div class="btn-group mla">
+                <button type="button" class="krds-btn small type04 drop-menu" data-target="link-menu"><i class="svg-icon ico-link"></i>링크</button>
+                <button type="button" class="krds-btn small type04 drop-menu" data-target="file-menu"><i class="svg-icon ico-file"></i>파일</button>
+                <button type="button" class="krds-btn small">상담카드 작성</button>
+              </div>
+            </div>
+            <div class="b-item">
+              <div class="drop-cont" data-target="link-menu">
+                <ul class="flex-list">
+                  <li>
+                    <input type="text" class="krds-input small" placeholder="링크">
+                    <button type="button" class="krds-btn small type04"><i class="svg-icon ico-plus"></i>추가</button>
+                  </li>
+                  <li>
+                    <input type="text" class="krds-input small" placeholder="링크">
+                    <button type="button" class="krds-btn small delete"><i class="svg-icon ico-minus"></i>삭제</button>
+                  </li>
+                </ul>
+              </div>                  
+            </div>
+            <div class="b-item">
+              <div class="drop-cont" data-target="file-menu">
+                <div class="krds-file-upload small">
+                  <!-- 파일 업로드 영역 -->
+                  <div class="file-upload">
+                    <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
+                    <div class="file-upload-btn-wrap">
+                      <input type="file" name="myFile" id="fileu-upload" hidden="">
+                      <label for="fileu-upload">
+                        <button type="button" class="krds-btn xsmall"><i class="svg-icon ico-upload"></i>파일선택</button>
+                      </label>
+                    </div>
+                  </div>
+                  <!-- //파일 업로드 영역 -->
+                  <!-- 파일 리스트 영역 -->
+                  <!-- <div class="file-list">
+                              <ul class="upload-list">
+                                <li>
+                                  <div class="file-info">
+                                    <div class="file-name">전입재등록신고서 [hwp, 17KB]</div>
+                                    <div class="btn-wrap">
+                                      <button type="button" class="krds-btn small text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div> -->
+                  <!-- //파일 리스트 영역 -->
+                </div>
+              </div>                  
+            </div>
+            
+          </div>
+        </div>
+        <div class="item">
+          <div class="cont">
+            <div class="b-item">
+              <div class="c-item">
+                <p>총 3회</p>
+              </div>
+              <div class="c-item mla">
+                <select class="krds-form-select small type02 w120" title="전체 매체">
+                  <option value="">전체 매체</option>
+                </select>
+                <select class="krds-form-select small type02 w120" title="전체 기간">
+                  <option value="">전체</option>
+                </select>
+                <div class="sch-input">
+                  <input type="text" class="krds-input small" id="search-total-input-id" placeholder="검색어를 입력해주세요.">
+                  <button type="button" class="krds-btn icon small ico-search">
+                    <span class="sr-only">검색</span>
+                    <i class="svg-icon ico-sch"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="b-item">
+              <ul class="counsel-list">
+                <li>
+                  <div class="cs-info">
+                    <p><i class="svg-icon ico-faq xsmall right"></i>유선 상담</p>
+                    <p><i class="svg-icon ico-calendar xsmall right"></i>2025-02-25</p>
+                    <p><i class="svg-icon ico-time xsmall right"></i>14:10 ~ 14:25</p>
+                    <p><i class="svg-icon ico-my xsmall right"></i>홍길동 상담사</p>
+                  </div>
+                  <div class="cs-cont">
+                    <div class="cs-text">
+                      <p>상담 내용이 표시됩니다. 상담 내용은 상담사별 중요 내용만 간략 요약할 수 있도록 하며, 링크/첨부
+                        기능을 통해 유선 녹음 내용이나, 채팅 캡쳐화면, 대면상담 카드 스캔본 등을 첨부하거나 역량강화용
+                        자료 링크, 추천한 공고 링크 등을 추가할 수 있습니다.</p>
+                    </div>
+                    <div class="cs-file">
+                      <p><i class="svg-icon ico-link xsmall right"></i>www.naver.com</p>
+                      <p><i class="svg-icon ico-file xsmall right"></i>첨부된 파일 명.jpg(27kb)</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="cs-info">
+                    <p><i class="svg-icon ico-faq xsmall right"></i>유선 상담</p>
+                    <p><i class="svg-icon ico-calendar xsmall right"></i>2025-02-25</p>
+                    <p><i class="svg-icon ico-time xsmall right"></i>14:10 ~ 14:25</p>
+                    <p><i class="svg-icon ico-my xsmall right"></i>홍길동 상담사</p>
+                  </div>
+                  <div class="cs-cont">
+                    <div class="cs-text">
+                      <p>상담 내용이 표시됩니다. 상담 내용은 상담사별 중요 내용만 간략 요약할 수 있도록 하며, 링크/첨부
+                        기능을 통해 유선 녹음 내용이나, 채팅 캡쳐화면, 대면상담 카드 스캔본 등을 첨부하거나 역량강화용
+                        자료 링크, 추천한 공고 링크 등을 추가할 수 있습니다.</p>
+                    </div>
+                    <div class="cs-file">
+                      <p><i class="svg-icon ico-link xsmall right"></i>www.naver.com</p>
+                      <p><i class="svg-icon ico-file xsmall right"></i>첨부된 파일 명.jpg(27kb)</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="cs-info">
+                    <p><i class="svg-icon ico-faq xsmall right"></i>유선 상담</p>
+                    <p><i class="svg-icon ico-calendar xsmall right"></i>2025-02-25</p>
+                    <p><i class="svg-icon ico-time xsmall right"></i>14:10 ~ 14:25</p>
+                    <p><i class="svg-icon ico-my xsmall right"></i>홍길동 상담사</p>
+                  </div>
+                  <div class="cs-cont">
+                    <div class="cs-text">
+                      <p>상담 내용이 표시됩니다. 상담 내용은 상담사별 중요 내용만 간략 요약할 수 있도록 하며, 링크/첨부
+                        기능을 통해 유선 녹음 내용이나, 채팅 캡쳐화면, 대면상담 카드 스캔본 등을 첨부하거나 역량강화용
+                        자료 링크, 추천한 공고 링크 등을 추가할 수 있습니다.</p>
+                    </div>
+                    <div class="cs-file">
+                      <p><i class="svg-icon ico-link xsmall right"></i>www.naver.com</p>
+                      <p><i class="svg-icon ico-file xsmall right"></i>첨부된 파일 명.jpg(27kb)</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- //사이드메뉴 -->

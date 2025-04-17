@@ -123,16 +123,16 @@
                             <!-- lnb-list -->
                             <ul class="lnb-list" role="menubar">
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">진단 서비스</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/취업역량관리-진단서비스.html">진단 서비스</a>
                               </li>
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">자기소개서 컨설팅</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/취업역량관리-자기소개서컨설팅.html">자기소개서 컨설팅</a>
                               </li>
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">AI역량진단</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/취업역량관리-AI역량진단.html">AI역량진단</a>
                               </li>
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">취업상담</a>
+                                <a href="#!" class="lnb-btn lnb-link" role="menuitem" data-url="sample/취업역량관리-취업상담.html">취업상담</a>
                               </li>
                             </ul>
                             <!-- //lnb-list -->
@@ -378,6 +378,53 @@
                         curRow.fadeOut(100, function() {
                             $(this).next().after(this);
                             $(this).fadeIn();
+                        });
+                    }
+                });
+                // select 별점 메뉴
+                $(".star-menu .select-btn").click(function(){
+                    $(this).parents().addClass("active");
+                });
+                $(".star-menu .options li").click(function(){
+                    var defaultOption = $(this).html();
+                    $(".star-menu .select-btn li").html(defaultOption);
+                    $(this).parents(".star-menu").removeClass("active");
+                });
+                
+                // 신규메일 select list
+                $(".sel-list-wrap .sel-item[data-value='option6'] .list-option > li").hide();
+                $(".date-single-container").hide();
+                $(".date-range-container").hide();
+
+                $(".sel-list-wrap .sel-list").change(function() {
+                    var selectedValue = $(this).val();
+                    var $parent = $(this).closest(".sel-item");
+
+                    $parent.find(".list-option > li").hide();
+
+                    $parent.find(".list-option > li[data-value='" + selectedValue + "']").show();
+
+                    if (selectedValue === 'option6') {
+                        var $dateSelect = $parent.find(".list-option > li[data-value='option6'] .date-type-select");
+                        var $singleDateDiv = $parent.find(".date-single-container");
+                        var $rangeDateDiv = $parent.find(".date-range-container");
+
+                        $singleDateDiv.hide();
+                        $rangeDateDiv.hide();
+
+                        $dateSelect.change(function() {
+                            var dateSelectValue = $(this).val();
+
+                            if (dateSelectValue === 'type01' || dateSelectValue === 'type02') {
+                                $singleDateDiv.show();
+                                $rangeDateDiv.hide();
+                            } else if (dateSelectValue === 'type03') {
+                                $singleDateDiv.hide();
+                                $rangeDateDiv.show();
+                            } else {
+                                $singleDateDiv.hide();
+                                $rangeDateDiv.hide();
+                            }
                         });
                     }
                 });
