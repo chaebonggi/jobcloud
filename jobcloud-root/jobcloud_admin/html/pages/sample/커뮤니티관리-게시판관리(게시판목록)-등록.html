@@ -1,0 +1,124 @@
+<div id="container">
+  <h1 class="contain-title">게시물 등록</h1>
+  <div class="container_wr">
+    <section>
+      <div class="inner-section in-between">
+        <div class="board-container full">
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">게시물 등록/수정</p>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_select1">분류</label>
+                </div>
+                <div class="cont">
+                  <select id="consult_select1" class="krds-form-select small type02 wfc" title="분류">
+                    <option value="">질문</option>
+                  </select>
+                </div>
+              </div>
+            </div>   
+            <div class="item">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_select1">제목</label>
+                </div>
+                <div class="cont">
+                  <div class="c-item">
+                    <input type="text" id="consult_select1" class="krds-input small" placeholder="제목">
+                    <div class="krds-form-check medium">
+                      <input type="checkbox" id="chk_1-1">
+                      <label for="chk_1-1">비밀글</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>      
+            <div class="item">
+              <div class="b-item">
+                <div class="cont">
+                  에디터 영역
+                </div>
+              </div>
+            </div>
+            <div class="item fd-c">
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_select2">링크1</label>                                
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_select2" class="krds-input small" placeholder="링크1">
+                </div>
+              </div>
+              <div class="b-item">
+                <div class="tit">
+                  <label for="consult_select3">링크2</label>                                
+                </div>
+                <div class="cont">
+                  <input type="text" id="consult_select3" class="krds-input small" placeholder="링크2">
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="cont">
+                  <div class="krds-file-upload">                                
+                    <!-- 파일 업로드 영역 -->
+                    <div class="file-upload">
+                      <p class="txt">첨부할 파일을 여기에 끌어다 놓거나, 파일 선택 버튼을 눌러 파일을 직접 선택해주세요.</p>
+                      <div class="file-upload-btn-wrap">
+                        <input type="file" name="myFile" id="fileu-upload" hidden="">
+                        <label for="fileu-upload">
+                          <button type="button" class="krds-btn medium"><i class="svg-icon ico-upload"></i>파일선택</button>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- //파일 업로드 영역 -->
+                    <!-- 파일 리스트 영역 -->
+                    <div class="file-list">
+                      <div class="total"><span class="current">2개</span> / 10개</div>
+                      <ul class="upload-list">
+                        <li>
+                          <div class="file-info">
+                            <div class="file-name">전입재등록신고서 [hwp, 17KB] </div>
+                            <div class="btn-wrap">
+                              <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="file-info">
+                            <div class="file-name">전입신고서 [hwp, 17KB] </div>
+                            <div class="btn-wrap">
+                              <button type="button" class="krds-btn medium text">삭제 <i class="svg-icon ico-delete-fill"></i></button>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="upload-delete-btn">
+                        <button type="button" class="krds-btn xsmall delete"><i class="svg-icon ico-delete02 right"></i>전체 파일 삭제</button>
+                      </div>
+                    </div>
+                    <!-- //파일 리스트 영역 -->
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div class="btn-group">
+            <button type="button" class="krds-btn medium delete" data-target="modal_02">삭제</button>
+            <div class="mla">
+              <button type="button" class="krds-btn medium type04">취소</button>
+              <button type="button" class="krds-btn medium md">수정</button>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+  </div>
+</div>

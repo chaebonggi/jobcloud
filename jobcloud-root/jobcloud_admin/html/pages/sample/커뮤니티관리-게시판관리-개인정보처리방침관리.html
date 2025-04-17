@@ -1,0 +1,163 @@
+<div id="container">
+  <h1 class="contain-title">개인정보처리방침 관리</h1>
+  <div class="container_wr">
+    <section>
+      <div class="inner-section in-between">
+        <div class="board-container full board-col">
+          <div class="board-cont">
+            <div class="board-tit">
+              <p class="tit">개인정보처리방침 관리</p>
+            </div>
+            <div class="item">
+              <div class="b-item">
+                <div class="cont">
+                  <div class="table-container ov-scroll">
+                    <div class="krds-table-wrap tbl-type02">
+                        <table class="tbl col data min-full">
+                            <caption>개인정보처리방침 버전관리</caption>
+                            <colgroup>
+                                <col style="width: 100px;">
+                                <col style="width: 80px;">
+                                <col style="width: 150px;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">사용</th>
+                                    <th scope="col">버전</th>
+                                    <th scope="col">작성일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td>                                        
+                                    <div class="krds-form-check small">
+                                      <input type="radio" name="rdo_a" id="rdo_a1" class="open-modal" data-target="modal_01">
+                                      <label for="rdo_a1">사용</label>
+                                    </div>
+                                  </td>
+                                  <td>2.31</td>
+                                  <td>2025-03-05</td>                                  
+                                </tr>        
+                                <tr>
+                                  <td>
+                                    <div class="krds-form-check small">
+                                      <input type="radio" name="rdo_a" id="rdo_a2" class="open-modal" data-target="modal_01">
+                                      <label for="rdo_a2">사용</label>
+                                    </div>
+                                  </td>
+                                  <td>2.30</td>
+                                  <td>2024-03-05</td>                                  
+                                </tr>                   
+                            </tbody>
+                        </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+          <div class="board-cont flex-1">
+            <div class="board-tit">
+              <button type="button" class="krds-btn small type02 mla"><i class="svg-icon ico-plus02 right"></i> 신규 버전 추가</button>
+            </div>
+            <div class="item">
+              <div class="b-item form-group wfc">
+                <div class="tit">
+                  <label for="consult_name1">버전</label>
+                </div>
+                <div class="cont">
+                  <div class="input-group wfc">
+                    <input type="text" id="consult_name1" class="krds-input small w80 trt">
+                    <span>.</span>
+                    <input type="text" id="consult_name2" class="krds-input small w80 trt">
+                  </div>
+                </div>
+              </div>
+              <div class="b-item">
+                <div class="tit">이전버전</div>
+                <div class="cont">
+                  <select class="krds-form-select small type02 wfc" title="이전 버전">
+                    <option value="">2.30</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="b-item form-group wfc">
+                <div class="tit">
+                  <label for="consult_name1">버전</label>
+                </div>
+                <div class="cont is-error">
+                  <div class="input-group">
+                    <input type="text" id="consult_name1" class="krds-input small w80 trt" value="2">
+                    <span>.</span>
+                    <input type="text" id="consult_name2" class="krds-input small w80 trt" value="30">
+                    <p class="form-hint-invalid">이미 사용 중인 버전 입니다.</p>
+                  </div>
+                </div>                    
+              </div>
+              <div class="b-item wfc">
+                <div class="tit">이전버전</div>
+                <div class="cont">
+                  <select class="krds-form-select small type02 wfc" title="이전 버전">
+                    <option value="">2.30</option>
+                  </select>
+                </div>
+              </div>
+            </div> 
+            <div class="item">
+                <div class="cont">
+                  에디터 영역
+              </div>
+            </div>
+            <div class="btn-group mt20 mla">
+              <button type="button" class="krds-btn medium type04">취소</button>
+              <button type="button" class="krds-btn medium">저장</button>
+            </div>
+          </div>
+          
+         
+        </div>
+
+
+      </div>
+    </section>
+  </div>
+</div>
+  <!-- modal -->
+  <section id="modal_01" class="krds-modal modal-type02 fade" role="dialog" aria-labelledby="modal_01">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <!-- modal title -->
+        <div class="modal-header">
+          <h2 id="tit_modal" class="modal-title">
+            개인정보처리방침 관리
+          </h2>
+        </div>
+        <!-- //modal title -->
+        <!-- modal contents -->
+        <div class="modal-conts">
+          <div class="conts-area">                
+            <div class="cont">
+              <p class="tct small">선택한 개인정보처리방침 버전은 "<strong>2.31</strong>" 입니다.<br>해당 버전을 사용으로 변경하시겠습니까?</p>
+            </div>
+          </div>
+        </div>
+        <!-- //modal contents -->
+        <!-- modal btn -->
+        <div class="modal-btn btn-wrap">
+          <button type="button" class="krds-btn medium tertiary close-modal">취소</button>
+          <button type="button" class="krds-btn medium primary close-modal">변경</button>
+        </div>
+        <!-- //modal btn -->
+        <!-- close button -->
+        <button type="button" class="krds-btn medium icon btn-close close-modal">
+          <span class="sr-only">닫기</span>
+          <i class="svg-icon ico-popup-close"></i>
+        </button>
+        <!-- //close button -->
+      </div>
+    </div>
+    <div class="modal-back"></div>
+  </section>
+  <!-- //modal -->
