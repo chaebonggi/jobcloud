@@ -38,8 +38,7 @@
             </li>
             <li>
               <div class="krds-drop-wrap">
-                <button type="button" class="krds-btn drop-btn util-button"><span>홍길동</span> 님<i
-                    class="svg-icon ico-toggle-type02"></i></button>
+                <button type="button" class="krds-btn drop-btn util-button"><span>홍길동</span> 님<i class="svg-icon xsmall ico-toggle-type02 left"></i></button>
                 <div class="drop-menu">
                   <div class="drop-in">
                     <ul class="drop-list">
@@ -52,7 +51,7 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="btn-navi all" aria-controls="mobile-nav">전체메뉴</button>
+        <button type="button" class="btn-navi mobile-all" aria-controls="mobile-nav">전체메뉴</button>
       </div>
       <nav class="main-menu">
         <ul class="gnb-list">
@@ -271,6 +270,157 @@
           </li>
         </ul>
       </nav>
+      <!-- 메인메뉴 : 모바일 -->
+       <style>
+        .mobile-menu {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          z-index: 100;
+          width: 100%;
+          height: 100%;
+          visibility: hidden;
+          z-index: 300;
+          transition: all 0.5s ease-in-out;
+        }
+        .mobile-menu::after {
+          opacity: 0;
+          content: "";
+          position: fixed;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #000000bf;
+        }
+        
+        .mobile-menu.is-open::after {
+          opacity: 1;
+        }
+        .mobile-menu.is-open {
+          visibility: visible;
+          right: 0;
+        }
+        #close-mobile-nav {
+          position: absolute;
+          top: 2rem;
+          right: 2rem;
+        }
+        .mobile-menu .gnb-wrap {
+          display: flex;
+          align-items: normal;
+          justify-content: flex-start;
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          width: 40rem;
+          background-color: #fff;
+          z-index: 5;
+        }
+        .mobile-menu .gnb-wrap .gnb-wrap-inner {
+            display: flex;
+            align-items: normal;
+            justify-content: flex-start;
+            flex-direction: column;
+            height: 100%;
+        }
+        .mobile-menu .gnb-wrap .gnb-header {
+          padding: 2rem;
+        }
+        .mobile-menu .gnb-wrap .gnb-header .m-logo {
+          width: 20rem;
+        }
+        .mobile-menu .gnb-wrap .gnb-header .m-logo a {
+          display: flex;
+        }
+        
+       </style>
+      <nav id="mobile-nav" class="mobile-menu">
+        <div class="gnb-wrap">
+          <div class="gnb-wrap-inner">
+            <!-- gnb-header -->
+            <div class="gnb-header">
+              <h2 class="m-logo">
+                <a href="#!" ><img src="../../images/jobcloud/common/logo_img.png" alt="jobcloud admin"></a>
+              </h2>
+              <div class="gnb-utils">
+                <ul class="util-list">
+                  <li>
+                    <a href="#!" class="krds-btn link type04"><span>사이트 바로가기</span></a>
+                  </li>
+                  <li>
+                    <div class="krds-drop-wrap">
+                      <button type="button" class="krds-btn drop-btn util-button"><span>홍길동</span> 님<i class="svg-icon ico-toggle-type02"></i></button>
+                      <div class="drop-menu">
+                        <div class="drop-in">
+                          <ul class="drop-list">
+                            <li><a href="#" class="item-link active">정보 변경</a></li>
+                            <li><a href="#" class="item-link">로그 아웃</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- //gnb-header -->
+
+            <!-- gnb-body -->
+            <div class="gnb-body">
+              <div class="submenu-wrap">
+                <div class="gnb-sub-list">
+                  <div class="krds-side-navigation">
+                    <h3 class="lnb-tit">커뮤니티 관리</h3>
+                    <!-- lnb-list -->
+                    <ul class="lnb-list">
+                      <li class="lnb-item">
+                        <a href="#!" class="lnb-btn lnb-toggle">게시판 관리</a>
+                        <!-- lnb-submenu -->
+                        <div class="lnb-submenu">
+                          <ul role="menu">
+                            <li class="lnb-subitem">
+                              <a href="#!" class="lnb-btn lnb-link">게시판 목록</a>
+                            </li>
+                            <li class="lnb-subitem">
+                              <a href="#" class="lnb-btn lnb-link" >1:1문의</a>
+                            </li>
+                            <li class="lnb-subitem">
+                              <a href="#" class="lnb-btn lnb-link">FAQ관리</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <!-- //lnb-submenu -->
+                      </li>
+                      <li class="lnb-item">
+                        <a href="#!" class="lnb-btn lnb-link">이용약관 관리</a>
+                      </li>
+                      <li class="lnb-item">
+                        <a href="#!" class="lnb-btn lnb-link">개인정보처리방침</a>
+                      </li>
+                    </ul>
+                    <!-- //lnb-list -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- //gnb-body -->
+
+            <!-- gnb-close -->
+            <button type="button" class="krds-btn medium icon" id="close-mobile-nav">
+              <span class="sr-only">전체메뉴 닫기</span>
+              <i class="svg-icon ico-popup-close"></i>
+            </button>
+            <!-- //gnb-close -->
+          </div>
+          <!-- //gnb-wrap-inner -->
+        </div>
+      </nav>
+
+      <!-- //메인메뉴 : 모바일 -->
     </header>
     
     <div id="container">

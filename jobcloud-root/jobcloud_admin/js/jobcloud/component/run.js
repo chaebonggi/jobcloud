@@ -34,6 +34,14 @@ $(document).ready(function () {
     $(window).on("resize", removeClassesOnResize);
     removeClassesOnResize();
 
+    // header mobile
+    $(".mobile-all").click(function() {
+        $("#mobile-nav").addClass("is-open");
+    });
+    $("#close-mobile-nav").click(function() {
+        $("#mobile-nav").removeClass("is-open");
+    });
+
     // 토글 버튼
     $(".toggle-btn").on("click", function () {
         $(this).toggleClass("active");

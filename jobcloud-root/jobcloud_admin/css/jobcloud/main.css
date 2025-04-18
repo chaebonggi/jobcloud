@@ -79,7 +79,7 @@ textarea.krds-input {
   width: 100%;
 }
 
-#jc-header .header-top .ht-util .util-button {
+#jc-header .header-top .util-button {
   width: 100%;
   height: 30px;
   background: #1e2326;
@@ -90,10 +90,14 @@ textarea.krds-input {
   font-weight: 500;
 }
 
-#jc-header .header-top .ht-util .drop-btn.util-button {
+#jc-header .header-top .drop-btn.util-button {
   background-color: #fff;
   color: #000;
   border-color: #d9d9d9;
+}
+
+#jc-header .header-top .drop-btn.util-button .svg-icon {
+  background-color: #6c6e72;
 }
 
 #jc-header .header-top .ht-util .drop-menu {
@@ -111,15 +115,6 @@ textarea.krds-input {
 
 #jc-header .header-top .ht-util .drop-menu .drop-list li + li {
   border-top: 1px solid #d9d9d9;
-}
-
-#jc-header .header-top .ico-toggle-type02 {
-  width: 12px;
-  height: 8px;
-  margin-left: 10px;
-  background-color: #6c6e72;
-  mask-image: url(../../images/jobcloud/component/icon/ico-toggle-type02.svg);
-  mask-repeat: no-repeat;
 }
 
 #jc-header .header-top .btn-gnb {
@@ -321,7 +316,7 @@ textarea.krds-input {
   forced-color-adjust: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   #jc-header .header-top {
     padding: 0 1.6rem;
   }
@@ -391,7 +386,7 @@ textarea.krds-input {
   padding-left: 50px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   #container {
     padding-left: 0;
   }
@@ -1368,10 +1363,13 @@ a.krds-btn:hover {
   background-color: initial;
 }
 
-.svg-icon.ico-download, .svg-icon.ico-plus02, .svg-icon.ico-angle02, .svg-icon.ico-public, .svg-icon.ico-del02, .svg-icon.ico-filter02, .svg-icon.ico-preview, .svg-icon.ico-sort, .svg-icon.ico-sort-up, .svg-icon.ico-sort-down, .svg-icon.ico-delete02, .svg-icon.ico-phone, .svg-icon.ico-drag, .svg-icon.ico-line, .svg-icon.ico-password, .svg-icon.ico-open-box, .svg-icon.ico-close-box, .svg-icon.ico-sub-directory, .svg-icon.ico-minus, .svg-icon.ico-menu, .svg-icon.ico-click, .svg-icon.ico-group-add, .svg-icon.ico-arrow-up, .svg-icon.ico-arrow-down, .svg-icon.ico-man, .svg-icon.ico-woman, .svg-icon.ico-link, .svg-icon.ico-time, .svg-icon.ico-lock, .svg-icon.ico-comment, .svg-icon.ico-view, .svg-icon.ico-info {
+.svg-icon.ico-toggle-type02, .svg-icon.ico-download, .svg-icon.ico-plus02, .svg-icon.ico-angle02, .svg-icon.ico-public, .svg-icon.ico-del02, .svg-icon.ico-filter02, .svg-icon.ico-preview, .svg-icon.ico-sort, .svg-icon.ico-sort-up, .svg-icon.ico-sort-down, .svg-icon.ico-delete02, .svg-icon.ico-phone, .svg-icon.ico-drag, .svg-icon.ico-line, .svg-icon.ico-password, .svg-icon.ico-open-box, .svg-icon.ico-close-box, .svg-icon.ico-sub-directory, .svg-icon.ico-minus, .svg-icon.ico-menu, .svg-icon.ico-click, .svg-icon.ico-group-add, .svg-icon.ico-arrow-up, .svg-icon.ico-arrow-down, .svg-icon.ico-man, .svg-icon.ico-woman, .svg-icon.ico-link, .svg-icon.ico-time, .svg-icon.ico-lock, .svg-icon.ico-comment, .svg-icon.ico-view, .svg-icon.ico-info {
   mask-repeat: no-repeat;
   mask-position: center center;
   mask-size: contain;
+}
+.svg-icon.ico-toggle-type02 {
+  mask-image: url(../../images/jobcloud/component/icon/ico-toggle-type02.svg);
 }
 .svg-icon.ico-download {
   mask-image: url(../../images/jobcloud/component/icon/ico_download.svg);
@@ -2090,11 +2088,6 @@ a.krds-btn:hover {
 
 .tree-container .disabled {
   opacity: 0.5;
-}
-
-.inner-section.in-between {
-  display: flex;
-  gap: 2rem;
 }
 
 .board-container {

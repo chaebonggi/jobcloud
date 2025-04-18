@@ -1,4 +1,5 @@
 .svg-icon {
+  &.ico-toggle-type02,
   &.ico-download,
   &.ico-plus02,
   &.ico-angle02,
@@ -34,6 +35,10 @@
     mask-repeat: no-repeat;
     mask-position: center center;
     mask-size: contain;
+  }
+
+  &.ico-toggle-type02 {
+    mask-image: url(../../images/jobcloud/component/icon/ico-toggle-type02.svg);
   }
 
   &.ico-download {
