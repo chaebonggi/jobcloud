@@ -150,7 +150,7 @@
                             <!-- lnb-list -->
                             <ul class="lnb-list" role="menubar">
                               <li class="lnb-item">
-                                <a href="#!" class="lnb-btn lnb-link" role="menuitem">LMS 정보</a>
+                                <a href="https://hglobal.learning-hub.co.kr/admin" target="_blank" class="lnb-btn lnb-link" role="menuitem">LMS 정보</a>
                               </li>
                             </ul>
                             <!-- //lnb-list -->
@@ -532,10 +532,14 @@
         }
 
         $('.lnb-item a').click(function(e) {
-            e.preventDefault();
+            const href = $(this).attr('href');
             const url = $(this).data('url');
-            if (url) {
-                loadPage(url);
+            if (href && href !== '#!' && href !== '') {
+            } else {
+                e.preventDefault();
+                if (url) {
+                    loadPage(url);
+                }
             }
         });
 
