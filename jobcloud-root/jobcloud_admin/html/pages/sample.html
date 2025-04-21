@@ -534,7 +534,12 @@
         $('.lnb-item a').click(function(e) {
             const href = $(this).attr('href');
             const url = $(this).data('url');
-            if (href && href !== '#!' && href !== '') {
+            if (href === '#' || href === '#!') {
+                e.preventDefault();
+                if (url) {
+                    loadPage(url);
+                }
+            } else if (href && href !== '') {
             } else {
                 e.preventDefault();
                 if (url) {
