@@ -4,3 +4,12 @@
 .switch-group input:checked + label { background-color: #1e2326; color: #fff; } 
 .switch-group label:first-of-type { border-radius: 5px 0 0 5px; } 
 .switch-group label:last-of-type { border-radius: 0 5px 5px 0; } 
+
+@media (max-width: 640px) {
+    .switch-group {
+        width: 100%;
+    }
+    .switch-group label {
+        width: 100%;
+    }
+}

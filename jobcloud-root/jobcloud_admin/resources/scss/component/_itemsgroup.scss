@@ -19,15 +19,15 @@
 }
 .items-group .dl-group {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
 }  
 .items-group .dl-group dl {
-  display: flex;
   align-items: center;
-  flex: 1 1 0;
+  flex: 1 1 40%;
   gap: 1rem;
+  display: flex;
+  min-width: 15rem;
 }
 .items-group dl dt {
   width: 12rem;
@@ -35,6 +35,36 @@
   font-weight: 500;
 }
 
+
 .items-group .krds-form-check input[type=checkbox]:checked~label:before {background-color: #1e2326;border-color: #1e2326; } 
 .items-group .krds-form-check input[type=radio]:checked~label:before {border-color: #1e2326;}
 .items-group .krds-form-check input[type=radio]:checked~label:after {background-color: #1e2326;}
+
+@media (max-width: 768px) {
+  .items-group .filter-item .sel-group select:first-child {
+    width: 100%;
+  }
+  .items-group .filter-item .calendar-conts {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .items-group .sel-group select:first-child {
+    width: 100%;
+  }
+  .items-group > .input-group {
+    flex-wrap: wrap;
+  }
+  .items-group > .input-group .btn-group {
+    margin-left: auto;
+  }
+  .items-group .dl-group dl {
+    flex-direction: column;
+  }
+  .items-group dl dt {
+    width: 100%;
+  }
+  .items-group dl dd {
+    width: 100%;
+  }
+}

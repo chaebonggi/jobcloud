@@ -49,3 +49,15 @@
     }
   }
 }
+@media (max-width: 768px) {
+  .krds-step-wrap>li:last-child {
+    flex: 1;
+  }
+  .krds-step-wrap>li .step-tit {
+    position: static !important;
+    width: inherit !important;
+    height: inherit !important;
+    padding: inherit !important;
+    margin: inherit !important;
+  }
+}

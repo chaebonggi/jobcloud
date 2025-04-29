@@ -34,7 +34,7 @@
     align-items: normal;
     justify-content: flex-start;
     flex-direction: column;
-    width: 40%;
+    width: 72rem;
     height: 100%;
     position: absolute;
     top: 0;
@@ -53,4 +53,18 @@
   left: -4.4rem;
   background-color: #fff;
   font-size: 0;
+}
+@media (max-width: 1024px){
+  .side-menu .side-wrap {
+    width: 100%;
+  }
+  .side-menu .top-btn {
+    position: static;
+    margin-left: auto;
+  }
+}
+@media (max-width: 640px){
+  .side-menu .board-container {
+    padding: 1rem;
+  }
 }

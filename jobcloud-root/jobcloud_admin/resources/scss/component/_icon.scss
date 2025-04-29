@@ -1,4 +1,13 @@
 .svg-icon {
+  &.ico-nav-menu01,
+  &.ico-nav-menu02,
+  &.ico-nav-menu03,
+  &.ico-nav-menu04,
+  &.ico-nav-menu05,
+  &.ico-nav-menu06,
+  &.ico-nav-menu07,
+  &.ico-nav-menu08,
+  &.ico-nav-menu09,
   &.ico-toggle-type02,
   &.ico-download,
   &.ico-plus02,
@@ -35,6 +44,42 @@
     mask-repeat: no-repeat;
     mask-position: center center;
     mask-size: contain;
+  }
+
+  &.ico-nav-menu01 {
+    mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu01.svg);
+  }
+
+  &.ico-nav-menu02 {
+    mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu02.svg);
+  }
+
+  &.ico-nav-menu03 {
+    mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu03.svg);
+  }
+
+  &.ico-nav-menu04 {
+    mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu04.svg);
+  }
+
+  &.ico-nav-menu05 {
+    mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu05.svg);
+  }
+
+  &.ico-nav-menu06 {
+    mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu06.svg);
+  }
+
+  &.ico-nav-menu07 {
+    mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu07.svg);
+  }
+
+  &.ico-nav-menu08 {
+    mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu08.svg);
+  }
+
+  &.ico-nav-menu09 {
+    mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu09.svg);
   }
 
   &.ico-toggle-type02 {

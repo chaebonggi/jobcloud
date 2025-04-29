@@ -1,7 +1,10 @@
+.tab-group {
+  overflow-x: auto;
+}
 .tabs {
   display: flex;
-  margin-bottom: 2rem;
   border-bottom: 1px solid #ddd;
+ 
 }
 .tabs li a {
   display: block;
@@ -16,6 +19,10 @@
   border-bottom: 0;
   color: #fff;
   z-index: 1;
+}
+.tabs li a:focus {
+  outline: none;
+  box-shadow: none;
 }
 .tabs li a::before {
   content: '';
@@ -62,3 +69,39 @@
 .tabs.type02 li:last-of-type a {
   border-radius: 0 5px 5px 0;
 }
+
+.tab.full {
+  overflow-x: auto;
+}
+.tab.full ul {
+  min-width: 70rem;
+}
+.tab.type02 ul {
+    border: 1px solid #99B2F9;
+    border-radius: 1rem;
+  }
+  .tab.type02 ul li {
+    position: relative;
+  }
+  .tab.type02 ul li:not(:first-child)::before {
+    content: '';
+    width: 0.1rem;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #99B2F9;
+    z-index: 1;
+  }
+  .tab.type02 ul li .btn-tab {
+    height: 5rem;
+    color: #99B2F9;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .tab.type02 ul li .btn-tab {
+    background-color: #fff;
+  }
+  .tab.type02 ul li.active .btn-tab {
+    color: #fff;
+    background-color: #99B2F9;
+  }

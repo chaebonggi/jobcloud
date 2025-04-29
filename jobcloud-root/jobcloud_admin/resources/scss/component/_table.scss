@@ -1,6 +1,6 @@
 
 .table-group .total {padding-left: 1rem; font-size: 1.8rem;}
-.krds-table-wrap { overflow-x: auto;} 
+.krds-table-wrap {width: 100%; overflow-x: auto;} 
 .krds-table-wrap.full table {min-width: 100% !important; width: 100% !important;}
 .krds-table-wrap.tbl-type table {min-width: 1400px; width: 100%;}
 .krds-table-wrap.tbl-type table.min-full {min-width: 100%;}
@@ -74,36 +74,18 @@
     top: 0px;
     z-index: 10;
 }
+@media (max-width: 768px) {
+  .table-inner {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  .krds-table-wrap .tbl {
+      min-width: 102.4rem;
+  }
+}
 
-.tab.type02 ul {
-    border: 1px solid #99B2F9;
-    border-radius: 1rem;
-  }
-  .tab.type02.full ul li {
-    position: relative;
-  }
-  .tab.type02.full ul li:not(:first-child)::before {
-    content: '';
-    width: 0.1rem;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    background: #99B2F9;
-    z-index: 1;
-  }
-  .tab.type02.full ul li .btn-tab {
-    height: 5rem;
-    color: #99B2F9;
-    font-size: 1.6rem;
-    font-weight: 500;
-  }
-  .tab.type02 ul li .btn-tab {
-    background-color: #fff;
-  }
-  .tab.type02 ul li.active .btn-tab {
-    color: #fff;
-    background-color: #99B2F9;
-  }
+
 
   .grid-table-group {
     overflow-x: auto;
@@ -155,4 +137,9 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     word-break: break-all;
+  }
+  @media (max-width: 768px){
+    // .krds-table-wrap {
+    //   width: 100% !important;
+    // }
   }

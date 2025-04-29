@@ -8,6 +8,7 @@
 .flex {display: flex;}
 .flex {flex: content;}
 .flex.flex-col {flex-direction: column; gap: 1rem;}
+.felx-row {flex-direction: row;}
 .fd-c {flex-direction: column;}
 .flex-list {display: flex; flex-direction: column; gap: 1rem;}
 .flex-list li {display: flex; gap: 1rem;}
@@ -20,6 +21,7 @@
 .mla {margin-left: auto;}
 .mt10 {margin-top: 1rem !important;}
 .mt20 {margin-top: 2rem !important;}
+.mb20 {margin-bottom: 2rem !important;}
 .tlt {text-align: left !important;}
 .tct {text-align: center;}
 .trt {text-align: right;}
@@ -33,7 +35,11 @@
     padding-top: 2rem;
     margin-top: 2rem;
     border-top: 1px solid #cdd1d5;}
-.b-line {
+  .bt-line {
+    padding-top: 2rem;
+    border-top: 1px solid #cdd1d5;
+  }
+.bb-line {
     padding-bottom: 2rem;
     margin-bottom: 2rem;
     border-bottom: 1px solid #cdd1d5;
@@ -56,7 +62,7 @@ p.small {font-size: 1.4rem;}
     height: 3.2rem;
     font-size: 1.4rem;
 }
-.ico-group {display: flex; align-items: center; gap: 0.5rem; font-size: 1.6rem;}
+.ico-group {display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; font-size: 1.6rem;}
 .ico-group.small {gap: 0.2rem; font-size: 1.4rem;}
 .ico-group .svg-icon {vertical-align: bottom;}
 .sel-group select:first-child {
@@ -121,6 +127,7 @@ p.small {font-size: 1.4rem;}
 .table-group .table-top {padding-bottom: 2rem;border-bottom: 1px solid #d9d9d9; } 
 .table-group .krds-table-wrap {margin-top: 2.5rem; } 
 
+
 .input-group.range>li.mark {
     height: 4rem;
 }
@@ -162,11 +169,10 @@ p.small {font-size: 1.4rem;}
     display: flex;
     gap: 1rem;
   }
-  .inner-section {padding: 0 2rem}
   .inner-section.in-between {
     display: flex;
     gap: 2rem;
-  
+    
     @media (max-width: 1140px) {
       flex-direction: column;
     }

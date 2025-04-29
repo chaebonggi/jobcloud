@@ -26,15 +26,6 @@
 #jc-header .main-menu .krds-tooltip-popover::before { background-color: #4158d1; } 
 #jc-header .main-menu .krds-tooltip-popover { background-color: #4158d1; } 
 #jc-header .main-menu .ico-nav { background-color: #f7f7f7; mask-repeat: no-repeat; } 
-#jc-header .main-menu .ico-nav-menu01 { mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu01.svg); } 
-#jc-header .main-menu .ico-nav-menu02 { mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu02.svg); } 
-#jc-header .main-menu .ico-nav-menu03 { mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu03.svg); } 
-#jc-header .main-menu .ico-nav-menu04 { mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu04.svg); } 
-#jc-header .main-menu .ico-nav-menu05 { mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu05.svg); } 
-#jc-header .main-menu .ico-nav-menu06 { mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu06.svg); } 
-#jc-header .main-menu .ico-nav-menu07 { mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu07.svg); } 
-#jc-header .main-menu .ico-nav-menu08 { mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu08.svg); } 
-#jc-header .main-menu .ico-nav-menu09 { mask-image: url(../../images/jobcloud/component/icon/ico-nav-menu09.svg); } 
 #jc-header .main-menu .gnb-item.active .gnb-depth { display: block; } 
 #jc-header .main-menu .gnb-depth { display: none; width: 200px; height: 100%; padding: 10px 20px; position: absolute; top: 0; left:50px; background-color: #F4F4F4; } 
 #jc-header .main-menu .gnb-depth::before {content: ''; width: 100%; height: 100%; position: absolute; left: 0; top: -100%; background-color: #F4F4F4;} 
@@ -54,6 +45,29 @@
 
 #jc-header .header-top .btn-navi { display: none; margin-left: auto; flex-direction: column; align-items: center; } 
 #jc-header .header-top .btn-navi::before { content: ""; display: inline-flex; width: var(--krds-icon--size-medium); height: var(--krds-icon--size-medium); background-color: var(--krds-light-color-text-basic); -webkit-mask-repeat: no-repeat; -webkit-mask-position: center center; -webkit-mask-size: contain; mask-repeat: no-repeat; mask-position: center center; mask-size: contain; mask-image: url(../../images/jobcloud/component/icon/ico_all.svg); forced-color-adjust: none; } 
+
+.mobile-menu { position: fixed; top: 0; right: -100%; z-index: 100; width: 100%; height: 100%; visibility: hidden; z-index: 300; transition: all 0.5s ease-in-out; } 
+.mobile-menu::after { opacity: 0; content: ""; position: fixed; top: 0; right: 0; width: 100%; height: 100%; background-color: #000000bf; } 
+
+.mobile-menu.is-open::after { opacity: 1; } 
+.mobile-menu.is-open { visibility: visible; right: 0; } 
+ #close-mobile-nav { position: absolute; top: 2rem; right: 2rem; } 
+ #close-mobile-nav .svg-icon { background-color: #fff; } 
+.mobile-menu .gnb-wrap { display: flex; align-items: normal; justify-content: flex-start; flex-direction: column; position: absolute; top: 0; right: 0; height: 100%; width: 40rem; background-color: #fff; z-index: 5; } 
+.mobile-menu .gnb-wrap .gnb-wrap-inner { display: flex; align-items: normal; justify-content: flex-start; flex-direction: column; height: 100%; } 
+.mobile-menu .gnb-wrap .gnb-header { padding: 2rem; background-color: #4158d1; } 
+.mobile-menu .gnb-header .m-logo { width: 20rem; } 
+.mobile-menu .gnb-header .m-logo a { display: flex; } 
+.mobile-menu .gnb-header .gnb-utils { margin: 4rem 0 2rem; } 
+.mobile-menu .gnb-header .gnb-utils .mo-login a { color: #fff; } 
+.mobile-menu .gnb-header .gnb-utils .mo-login .ico-angle02 { background-color: #fff; transform: rotate(-90deg); } 
+.mobile-menu .gnb-body { overflow-y: auto; } 
+.mobile-menu .gnb-body .gnb-sub-wrap { padding: 0 2rem; } 
+.mobile-menu .gnb-body .krds-side-navigation { display: flex; flex-direction: column; gap: 3rem; } 
+.mobile-menu .gnb-body .krds-side-navigation h3 { display: flex; align-items: center; gap: 1rem; padding: 1rem 0; color: #000; font-size: 1.8rem; border-bottom: 0; } 
+.mobile-menu .gnb-body .krds-side-navigation .ico-mo-nav { display: flex; align-items: center; justify-content: center; width: 2.8rem; height: 2.8rem; background-color: #828f9d; border-radius: 50%; } 
+.mobile-menu .gnb-body .krds-side-navigation .ico-mo-nav .svg-icon { background-color: #fff; } 
+.mobile-menu .gnb-body .krds-side-navigation .lnb-btn { font-size: 1.6rem; font-weight: 500; } 
 
 @media (max-width: 1400px) { 
     #jc-header .header-top {
