@@ -1,27 +1,55 @@
-.textarea-wrap.small {
-  textarea.krds-input {
-    font-size: 1.4rem;
-    height: 10rem;
+.textarea-wrap {
+  &.small {
+    textarea.krds-input {
+      font-size: 1.4rem;
+      height: 10rem;
+    }
   }
 }
 
-.krds-file-upload.small {
-  .file-upload {
-    padding: 2rem 1rem;
-    gap: 1rem;
+.krds-file-upload {
+  &.small {
+    .file-upload {
+      padding: 2rem 1rem;
+      gap: 1rem;
 
-    .txt {
-      font-size: 1.4rem;
+      .txt {
+        font-size: 1.4rem;
+      }
+    }
+
+    .file-list {
+      .upload-list {
+        > li {
+          padding: 1rem;
+        }
+
+        .file-info {
+          .file-name {
+            color: #8a949e;
+            font-size: 1.4rem;
+          }
+        }
+      }
     }
   }
-
-  .file-list {
-    .upload-list > li {
-      padding: 1rem;
-    }
-
-    .upload-list .file-info .file-name {
-      font-size: 1.4rem;
-    }
+}
+.krds-form-select {
+  &.type02 {
+    background-size: 2rem !important;
+    background-image: url(../../images/jobcloud/component/icon/ico_angle03.svg);
   }
+
+  option:disabled {
+    color: #ddd;
+  }
+
+  &.xsmall {
+    height: 3.2rem;
+    font-size: 1.4rem;
+  }
+}
+
+.krds-input[readonly] {
+  background-color: #f3f3f3;
 }

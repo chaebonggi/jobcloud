@@ -1,62 +1,238 @@
-.sign-wrap { display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #fff; flex-direction: column; } 
-.sign-wrap .sign-area { max-width: 600px; width: 100%; } 
-.sign-wrap .sign-top { width: 100%; background-color: #F4F4F4; border: 1px solid #ddd; border-bottom: 0; border-radius: 10px 10px 0 0; } 
-.sign-wrap .sign-top h2 { padding: 30px; } 
-.sign-wrap .sign-top h2 img { display: block; margin: 0 auto; } 
-.sign-wrap .sign-mid { background-color: #fff; border: 1px solid #ddd; border-radius: 0 0 10px 10px; overflow: hidden;} 
-.sign-wrap .sign-mid .sign-link ul { display: flex; } 
-.sign-wrap .sign-mid .sign-link li { width: 100%; } 
-.sign-wrap .sign-mid .sign-link li .btn-link { display: block; padding: 1.6rem 0; position: relative; color: #464C53; font-size: 1.8rem; font-weight: 700; text-align: center; border-bottom: 1px solid #b1b8be; } 
-.sign-wrap .sign-mid .sign-link li.active .btn-link { color: #4158D1; } 
-.sign-wrap .sign-mid .sign-link li .btn-link::before { position: absolute; bottom: 0; left: 50%; content: ""; width: 0; height: 0.4rem; background-color: #4158D1; } 
-.sign-wrap .sign-mid .sign-link li.active .btn-link::before { width: 100%; left: 0; bottom: -0.1rem; } 
-.sign-wrap .sign-mid .sign-cont {padding: 30px 50px;}
-.sign-wrap .sign-mid .tab li .btn-tab { color: #cdcdcd; font-size: 1.8rem; font-weight: 400; } 
-.sign-wrap .sign-mid .tab li .btn-tab .svg-icon { background-color: #cdcdcd; } 
-.sign-wrap .sign-mid .tab li.active .btn-tab { color: #4158D1; } 
-.sign-wrap .sign-mid .tab li.active .btn-tab .svg-icon { background-color: #4158D1; } 
-.sign-wrap .sign-mid .input-area {margin-top: 20px;}
-.sign-wrap .sign-mid .input-area .krds-form-check.medium>input[type=checkbox]~label:before { border-radius: 50%; } 
-.sign-wrap .sign-mid .krds-btn.sign { background-color: #4158D1; }        
-.sign-wrap .sign-mid .krds-btn.full {width: 100%;}
-.sign-wrap .sign-mid .find-area {margin-top: 20px; text-align: right;} 
-.sign-wrap .sign-mid .find-area .find-btns a { display: inline-block; position: relative; } 
-.sign-wrap .sign-mid .find-area .find-btns a:first-child { padding-right: 10px; margin-right: 5px; } 
-.sign-wrap .sign-mid .find-area .find-btns a:first-child::after { content: ""; position: absolute; right: 0; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); width: 4px; height: 4px; border-radius: 50%; background: #dcdee5; } 
-.sign-wrap .sign-mid .cont-bottom {display: flex;padding: 20px;background-color: #D8D8D8;align-items: center;justify-content: space-between;flex-wrap: wrap;gap: 10px;}
-.sign-wrap .sign-mid .cont-bottom .cont-txt {font-size: 1.4rem;}
-.sign-wrap .sign-bottom {margin-top: 20px; text-align: center;}
-.sign-wrap .btn-wrap {margin-top: 20px;}
-.sign-wrap .find-txt {font-size: 2rem; text-align: center;}
-.sign-wrap .find-txt .find-id {margin-top: 10px; padding: 10px; color: #4158D1; font-weight: bold; border-radius: 10px; border: 1px solid #ddd;}
+.sign-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+    flex-direction: column;
+  
+    .sign-area {
+      max-width: 600px;
+      width: 100%;
+    }
+  
+    .sign-top {
+      width: 100%;
+      background-color: #F4F4F4;
+      border: 1px solid #ddd;
+      border-bottom: 0;
+      border-radius: 10px 10px 0 0;
+  
+      h2 {
+        padding: 30px;
+  
+        img {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  
+    .sign-mid {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 0 0 10px 10px;
+      overflow: hidden;
+  
+      .sign-link {
+        ul {
+          display: flex;
+        }
+  
+        li {
+          width: 100%;
+  
+          .btn-link {
+            display: block;
+            padding: 1.6rem 0;
+            position: relative;
+            color: #464C53;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-align: center;
+            border-bottom: 1px solid #b1b8be;
+  
+            &::before {
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              content: "";
+              width: 0;
+              height: 0.4rem;
+              background-color: #4158D1;
+            }
+          }
+  
+          &.active .btn-link {
+            color: #4158D1;
+  
+            &::before {
+              width: 100%;
+              left: 0;
+              bottom: -0.1rem;
+            }
+          }
+        }
+      }
+  
+      .sign-cont {
+        padding: 30px 50px;
+      }
+  
+      .tab {
+        .tab-link {
+          li {
+            .btn-tab {
+              color: #cdcdcd;
+              font-size: 1.8rem;
+              font-weight: 400;
+  
+              .svg-icon {
+                background-color: #cdcdcd;
+              }
+            }
+  
+            &.active .btn-tab {
+              color: #4158D1;
+  
+              .svg-icon {
+                background-color: #4158D1;
+              }
+            }
+          }
+        }
+        
+        &.full {
+            .tab-link {
+                min-width: auto;
+            }
 
-@media (max-width: 640px) {
-    .sign-wrap .sign-area {
-        width: 90%;
-    }
-    .sign-wrap .sign-top {
-        border: 0;
-    }
-    
-    .sign-wrap .sign-top h2 {
-        background-color: #fff;
-    }
-    .sign-wrap .sign-mid {
-        border: 0;
-    }
-    .sign-wrap .sign-mid .sign-cont {
-        padding: 1rem;
-    }
-    .sign-wrap .sign-cont .krds-tab-area {
-        gap: 1rem;
-    }
-    .sign-wrap .sign-cont .tab-link .btn-tab {
-        flex-direction: column;
-    }
-    .sign-wrap .sign-mid .cont-bottom {
-        border-radius: 1rem;
-    }
-    .sign-wrap .btn-wrap {
+        }
+      }
+  
+      .input-area {
+        margin-top: 20px;
+  
+        .krds-form-check.medium > input[type="checkbox"] ~ label:before {
+          border-radius: 50%;
+        }
+      }
+  
+      .krds-btn {
+        &.sign {
+          background-color: #4158D1;
+        }
+  
+        &.full {
+          width: 100%;
+        }
+      }
+  
+      .find-area {
+        margin-top: 20px;
+        text-align: right;
+  
+        .find-btns {
+          a {
+            display: inline-block;
+            position: relative;
+  
+            &:first-child {
+              padding-right: 10px;
+              margin-right: 5px;
+  
+              &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: #dcdee5;
+              }
+            }
+          }
+        }
+      }
+  
+      .cont-bottom {
+        display: flex;
+        padding: 20px;
+        background-color: #D8D8D8;
+        align-items: center;
+        justify-content: space-between;
         flex-wrap: wrap;
+        gap: 10px;
+  
+        .cont-txt {
+          font-size: 1.4rem;
+        }
+      }
     }
-}
+  
+    .sign-bottom {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .btn-wrap {
+      margin-top: 20px;
+    }
+  
+    .find-txt {
+      font-size: 2rem;
+      text-align: center;
+  
+      .find-id {
+        margin-top: 10px;
+        padding: 10px;
+        color: #4158D1;
+        font-weight: bold;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+      }
+    }
+  
+    @media (max-width: 640px) {
+      .sign-area {
+        width: 90%;
+      }
+  
+      .sign-top {
+        border: 0;
+  
+        h2 {
+          background-color: #fff;
+        }
+      }
+  
+      .sign-mid {
+        border: 0;
+  
+        .sign-cont {
+          padding: 1rem;
+  
+          .krds-tab-area {
+            gap: 1rem;
+          }
+  
+          .tab-link {
+            .btn-tab {
+              flex-direction: column;
+            }
+          }
+        }
+  
+        .cont-bottom {
+          border-radius: 1rem;
+        }
+      }
+  
+      .btn-wrap {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  

@@ -214,4 +214,11 @@
   &.ico-info {
     mask-image: url(../../images/jobcloud/component/icon/ico_information.svg);
   }
+  &.right {
+    margin-right: 0.5rem;
+  }
+
+  &.left {
+    margin-left: 0.5rem;
+  }
 }

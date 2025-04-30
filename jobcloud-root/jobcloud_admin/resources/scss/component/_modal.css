@@ -1,0 +1,55 @@
+.krds-modal.modal-type02 .modal-dialog .modal-header,
+.krds-modal.modal-type03 .modal-dialog .modal-header {
+    padding: 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+  .krds-modal.modal-type02 .modal-dialog .modal-conts,
+  .krds-modal.modal-type03 .modal-dialog .modal-conts {
+    padding: 2rem;
+  }
+  .krds-modal.modal-type02 .conts-area .cont {
+    padding: 2rem;
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+  }
+  .krds-modal .modal-dialog .modal-btn.jcc {
+    justify-content: center;
+  }
+
+  .krds-modal .form-pop-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.krds-modal .form-pop-group .item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.krds-modal .form-pop-group .item .form-tit {
+    width: 10rem;
+    font-weight: 500;
+}
+.krds-modal .form-pop-group .item .form-conts {
+    width: 100%;
+}
+.krds-modal .table-container {
+  overflow-x: auto;
+}
+
+.krds-modal .cert-wrap .cert-item {
+  padding: 3rem 2rem;
+  margin-top: 2rem;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+}
+.krds-modal .cert-wrap .cert-txt {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  border-top: 1px solid #ddd;
+}
+.krds-modal .cert-wrap .cert-txt p {
+  text-align: center;
+}

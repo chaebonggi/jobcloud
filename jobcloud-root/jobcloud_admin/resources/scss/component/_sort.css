@@ -1,0 +1,28 @@
+.sort-group .sort-container .sort-controls { position: relative; } 
+.sort-group .sort-container .sort-options { display: none; min-width: 30rem; padding: 1.2rem; position: absolute; top: 5rem; left: 0; background: #fff; border: 1px solid #d9d9d9; border-radius: 10px; z-index: 10; } 
+.sort-group .sort-container .sort-options .sort-list ul { margin-bottom: 2rem; } 
+.sort-group .sort-container .sort-options .sort-list li { display: flex; align-items: center; gap: 0.5rem; } 
+.sort-group .sort-container .sort-options .sort-list li + li { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #d9d9d9;; } 
+
+.sort-group {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #d9d9d9;   
+}
+.sort-group .sort-container {
+    display: flex;
+    gap: 0.5rem;    
+}
+.sort-group .sort-container .svg-icon.ico-sort-up {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.sort-group .sort-container .svg-icon.ico-sort-down {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+@media (max-width: 640px) {
+    .sort-group .sort-container {
+        flex-direction: column;
+    }
+}

@@ -192,7 +192,7 @@ $(document).ready(function () {
 
     // select 별점 메뉴
     $(".star-menu .select-btn").click(function(){
-        $(this).parents().addClass("active");
+        $(this).parent().toggleClass("active");
     });
     $(".star-menu .options li").click(function(){
         var defaultOption = $(this).html();
