@@ -1,0 +1,72 @@
+.form-group [class^=form-hint-]::before {
+  flex-shrink: 0;
+}
+.cal-group .calendar-conts {
+  width: 16rem;
+  flex: none;
+}
+.ico-group {display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem; font-size: 1.6rem;}
+.ico-group.small {gap: 0.2rem; font-size: 1.4rem;}
+.ico-group .svg-icon {vertical-align: bottom;}
+.sel-group select:first-child {
+    width: 12rem;
+    flex: none;
+}
+.flex-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: var(--krds-gap-5);
+  width: 100%;
+}
+.input-group {
+gap: 1rem;
+}
+.input-group dl,
+.form-group dl {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.input-group dl dt,
+.form-group dl dt {
+  width: 12rem;    
+}
+.input-group dl dd,
+.form-group dl dd {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 5px;    
+  position: relative;
+}
+
+.table-group { margin-top: 6rem; } 
+.table-group .table-top {padding-bottom: 2rem;border-bottom: 1px solid #d9d9d9; } 
+.table-group .krds-table-wrap {margin-top: 2.5rem; } 
+
+
+.input-group.range>li.mark {
+  height: 4rem;
+}
+.ct-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.ct-group li {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-group.range > li:not(.mark) {    
+  flex: 1 1 0px;
+}
