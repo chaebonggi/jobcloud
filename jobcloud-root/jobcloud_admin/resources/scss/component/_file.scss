@@ -1,0 +1,51 @@
+.file-group {
+    display: flex;
+    gap: 1rem;
+  
+    .file-info {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      gap: 1.6rem;
+      padding: 0 1.6rem;
+      background-color: #fff;
+      color: #8a949e;
+      border: 1px solid #d9d9d9;
+  
+      &.small {
+        height: 4rem;
+        border-radius: 0.6rem;
+        font-size: 1.6rem;
+      }
+    }
+  
+    .file-name {
+      flex: 1;
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+    }
+  
+    .btn-wrap {
+      width: auto;
+    }
+  }
+  
+  .krds-file-upload {
+    .file-list {
+      .upload-list {
+        gap: 1rem;
+  
+        > li {
+          padding: 0 1.6rem;
+        }
+  
+        .file-info {
+          height: 4rem;
+        }
+      }
+    }
+  }
+  

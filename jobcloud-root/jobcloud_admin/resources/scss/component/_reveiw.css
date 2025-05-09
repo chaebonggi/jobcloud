@@ -1,0 +1,35 @@
+.reveiw-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.reveiw-group li {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.reveiw-group li.none-data {
+  padding: 2rem 0;
+  justify-content: center;
+}
+.reveiw-group li:not(:last-child) {
+padding-bottom: 1rem;
+border-bottom: 1px solid #eee;
+}
+.reveiw-group li .review-info {
+  width: 100%;
+}
+.reveiw-group li .review-info .rv-txt {
+color: #222;
+font-size: 1.4rem;
+}
+.reveiw-group li .review-info .rv-date {
+color: #adadad;
+font-size: 1.4rem;
+}
+@media (max-width: 640px) {
+  .reveiw-group li {
+    flex-direction: column;
+  }
+}

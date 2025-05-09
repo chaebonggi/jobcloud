@@ -1,0 +1,45 @@
+.rank-group {
+  ul {
+    display: flex;
+    gap: 1rem;
+
+    &.half {
+      flex-wrap: wrap;
+
+      li {
+        flex-basis: calc(50% - 1rem);
+      }
+    }
+  }
+
+  li {
+    width: 100%;
+    position: relative;
+  }
+
+  .rank {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #595959;
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1.4rem;
+    z-index: 1;
+  }
+
+  input {
+    padding: 0 1.6rem 0 6rem;
+  }
+
+  @media (max-width: 640px) {
+    ul {
+      flex-direction: column;
+    }
+  }
+}
