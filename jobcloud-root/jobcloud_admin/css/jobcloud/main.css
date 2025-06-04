@@ -2742,6 +2742,7 @@ input[type=time] {
 .input-group dl dt,
 .form-group dl dt {
   width: 12rem;
+  font-weight: 500;
 }
 
 .input-group dl dd,
