@@ -1,0 +1,30 @@
+.datep-wrap {
+  position: relative;
+
+  .ui-datepicker-trigger {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    background: none;
+    border: 0;
+  }
+}
+.ui-datepicker {z-index: 100 !important;}
+.ui-widget-header{background: none !important;border: 0 !important}
+.ui-datepicker th{color: #9ea4aa;font-weight: 500 !important}
+.ui-widget-content{border: 1px solid #c9cdd2 !important;}
+.ui-dialog:not(.min,.max){top: 50% !important;left: 50% !important;transform: translate(-50%,-50%);height: auto !important}
+.ui-datepicker .ui-datepicker-buttonpane{border: none !important}
+.ui-datepicker .ui-datepicker-prev span{background: url(/images/jobcloud/component/assets/select_arrow02.svg) no-repeat center;transform: rotate(180deg)}
+.ui-datepicker .ui-datepicker-next span{background: url(/images/jobcloud/component/assets/select_arrow02.svg) no-repeat center;}
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {transition: none;}
+.ui-datepicker .ui-datepicker-prev {top: 2px !important; left: 2px !important;}
+.ui-datepicker .ui-datepicker-next { right: 2px !important; top: 2px !important;}
+.ui-datepicker-title select{color: #1b1d1f;background: url('/images/jobcloud/component/assets/select_arrow.png') no-repeat right 1rem center #fff; -webkit-appearance: none; -moz-appearance: none;appearance: none;font-family: inherit;margin: 0 !important; padding: 0.3rem 40px 0.3rem 1rem;border-radius: 0;border: 1px solid #c9cdd2;box-sizing: border-box;font-size: 1.5rem !important;font-family: inherit}
+.ui-datepicker-title select + select{margin-left: 5px !important}
+.ui-state-default,.ui-widget-header .ui-state-default{border: 0 !important;background: none !important;text-align: center !important}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button{font-family: inherit;font-size: 1.5rem !important}
+.ui-datepicker-close{background: #1b1d1f !important;color: #fff !important}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight,
+.ui-datepicker .ui-state-active{background: #f7f8fa !important;border-radius: 5px !important;font-weight: 500 !important;color:#333 !important}
